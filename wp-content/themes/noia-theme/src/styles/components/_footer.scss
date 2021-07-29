@@ -1,7 +1,7 @@
 .global-footer {
 	margin-top: auto;
 	text-align: center;
-	background-color: var(--color-primary);
+	background-color: white;
 	padding: var(--spacing);
 }
 
@@ -13,7 +13,7 @@
 }
 
 .global-footer p {
-	color: white;
+	color: var(--color-text-base);
 	margin: 0;
 	font-size: var(--font-size-small);
 }

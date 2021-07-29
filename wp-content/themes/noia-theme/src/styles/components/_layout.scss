@@ -22,3 +22,15 @@
 	margin-bottom: var(--spacing-l);
 	flex: 1;
 }
+
+.bkg {
+	&--red {
+		background-color: var(--color-secondary);
+	}
+	&--yellow {
+		background-color: var(--color-tertiary);
+	}
+	&--white {
+		background-color: white;
+	}
+}
