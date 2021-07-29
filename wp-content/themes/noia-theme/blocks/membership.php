@@ -5,5 +5,5 @@
 ?>
 
 <section class="membership">
-	I will be an membership
+	I will be a membership block
 </section>

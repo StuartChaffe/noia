@@ -17,7 +17,21 @@ function noia_block_categories( $categories, $post )
 add_action('acf/init', 'noia_acf_blocks');
 function noia_acf_blocks() {
 	if( function_exists('acf_register_block') ) {
-
+		acf_register_block(array(
+			'name'				=> 'accordion',
+			'title'				=> __('Accordion'),
+			'description'		=> __('Add expanding content'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'insert',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'accordion, expanding' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
 		acf_register_block(array(
 			'name'				=> 'banner',
 			'title'				=> __('Banner'),
@@ -26,7 +40,72 @@ function noia_acf_blocks() {
 			'category'			=> 'noia-blocks',
 			'icon'				=> 'format-image',
 			'align' 			=> 'full',
-			'keywords'			=> array( 'banner' )
+			'keywords'			=> array( 'banner' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'carousel',
+			'title'				=> __('Carousel'),
+			'description'		=> __('Add a carousel'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'slides',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'carousel, slider' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'cta',
+			'title'				=> __('Call to action'),
+			'description'		=> __('Add a CTA block'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'megaphone',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'cta, call to action' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'featured-space',
+			'title'				=> __('Featured space'),
+			'description'		=> __('Add featured space'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'admin-home',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'featured space, space' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'featured-journal',
+			'title'				=> __('Featured journal'),
+			'description'		=> __('Add featured journal'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'sticky',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'featured journal, journal' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
 		));
 		acf_register_block(array(
 			'name'				=> 'image',
@@ -34,8 +113,119 @@ function noia_acf_blocks() {
 			'description'		=> __('Add a full width image'),
 			'render_callback'	=> 'noia_acf_block_render_callback',
 			'category'			=> 'noia-blocks',
+			'icon'				=> 'format-image',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'images, image' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'image-block',
+			'title'				=> __('Image block'),
+			'description'		=> __('Add an image block'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
 			'icon'				=> 'format-gallery',
-			'keywords'			=> array( 'images, image' )
+			'align' 			=> 'full',
+			'keywords'			=> array( 'images, image' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'image-slider',
+			'title'				=> __('Image slider'),
+			'description'		=> __('Add multiple image slider'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'slides',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'images, slider' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'logos',
+			'title'				=> __('Logos block'),
+			'description'		=> __('Add a logos block'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'youtube',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'logos' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'membership',
+			'title'				=> __('Membership block'),
+			'description'		=> __('Add a membership block'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'universal-access',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'membership' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'space-description',
+			'title'				=> __('Space description'),
+			'description'		=> __('Add space description'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'menu',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'space, space description' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'spaces',
+			'title'				=> __('All Spaces'),
+			'description'		=> __('Add all spaces'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'admin-home',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'spaces' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
+			'name'				=> 'text-block',
+			'title'				=> __('Text block'),
+			'description'		=> __('Add a standard text block'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'text-page',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'content, text' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
 		));
 		// acf_register_block(array(
 		// 	'name'				=> 'stat',
@@ -46,33 +236,7 @@ function noia_acf_blocks() {
 		// 	'icon'				=> 'admin-comments',
 		// 	'keywords'			=> array( 'stat' )
 		// ));
-		acf_register_block(array(
-			'name'				=> 'cta',
-			'title'				=> __('Call to action'),
-			'description'		=> __('Add a CTA block'),
-			'render_callback'	=> 'noia_acf_block_render_callback',
-			'category'			=> 'noia-blocks',
-			'icon'				=> 'megaphone',
-			'keywords'			=> array( 'cta, call to action' )
-		));
-		acf_register_block(array(
-			'name'				=> 'text-block',
-			'title'				=> __('Text block'),
-			'description'		=> __('Add a standard text block'),
-			'render_callback'	=> 'noia_acf_block_render_callback',
-			'category'			=> 'noia-blocks',
-			'icon'				=> 'text-page',
-			'keywords'			=> array( 'content, text' )
-		));
-		// acf_register_block(array(
-		// 	'name'				=> 'featured-events',
-		// 	'title'				=> __('Featured events'),
-		// 	'description'		=> __('Add featured events'),
-		// 	'render_callback'	=> 'noia_acf_block_render_callback',
-		// 	'category'			=> 'noia-blocks',
-		// 	'icon'				=> 'screenoptions',
-		// 	'keywords'			=> array( 'project, featured events' )
-		// ));
+	
 		// acf_register_block(array(
 		// 	'name'				=> 'quote',
 		// 	'title'				=> __('Quote'),
@@ -82,15 +246,7 @@ function noia_acf_blocks() {
 		// 	'icon'				=> 'format-status',
 		// 	'keywords'			=> array( 'testimonial, quote' )
 		// ));
-		acf_register_block(array(
-			'name'				=> 'accordion',
-			'title'				=> __('Accordion'),
-			'description'		=> __('Add expanding content'),
-			'render_callback'	=> 'noia_acf_block_render_callback',
-			'category'			=> 'noia-blocks',
-			'icon'				=> 'insert',
-			'keywords'			=> array( 'accordion, expanding' )
-		));
+		
 		// acf_register_block(array(
 		// 	'name'				=> 'image-text',
 		// 	'title'				=> __('Image with text'),
@@ -172,24 +328,6 @@ function noia_acf_blocks() {
 		// 	'icon'				=> 'align-wide',
 		// 	'keywords'			=> array( 'spacer' )
 		// ));
-		acf_register_block(array(
-			'name'				=> 'image-block',
-			'title'				=> __('Image block'),
-			'description'		=> __('Add an image block'),
-			'render_callback'	=> 'noia_acf_block_render_callback',
-			'category'			=> 'noia-blocks',
-			'icon'				=> 'format-gallery',
-			'keywords'			=> array( 'images, image' )
-		));
-		acf_register_block(array(
-			'name'				=> 'image-slider',
-			'title'				=> __('Image slider'),
-			'description'		=> __('Add multiple image slider'),
-			'render_callback'	=> 'noia_acf_block_render_callback',
-			'category'			=> 'noia-blocks',
-			'icon'				=> 'slides',
-			'keywords'			=> array( 'images, slider' )
-		));
 		// acf_register_block(array(
 		// 	'name'				=> 'project-details',
 		// 	'title'				=> __('Project details'),
@@ -235,42 +373,6 @@ function noia_acf_blocks() {
 		// 	'icon'				=> 'location-alt',
 		// 	'keywords'			=> array( 'map, location' )
 		// ));
-		acf_register_block(array(
-			'name'				=> 'carousel',
-			'title'				=> __('Carousel'),
-			'description'		=> __('Add a carousel'),
-			'render_callback'	=> 'noia_acf_block_render_callback',
-			'category'			=> 'noia-blocks',
-			'icon'				=> 'slides',
-			'keywords'			=> array( 'carousel, slider' )
-		));
-		acf_register_block(array(
-			'name'				=> 'logos',
-			'title'				=> __('Logos block'),
-			'description'		=> __('Add a logos block'),
-			'render_callback'	=> 'noia_acf_block_render_callback',
-			'category'			=> 'noia-blocks',
-			'icon'				=> 'youtube',
-			'keywords'			=> array( 'logos' )
-		));
-		acf_register_block(array(
-			'name'				=> 'membership',
-			'title'				=> __('Membership block'),
-			'description'		=> __('Add a membership block'),
-			'render_callback'	=> 'noia_acf_block_render_callback',
-			'category'			=> 'noia-blocks',
-			'icon'				=> 'universal-access',
-			'keywords'			=> array( 'membership' )
-		));
-		acf_register_block(array(
-			'name'				=> 'spaces',
-			'title'				=> __('All Spaces'),
-			'description'		=> __('Add all spaces'),
-			'render_callback'	=> 'noia_acf_block_render_callback',
-			'category'			=> 'noia-blocks',
-			'icon'				=> 'admin-home',
-			'keywords'			=> array( 'spaces' )
-		));
 	}
 }
 
@@ -290,34 +392,17 @@ function noia_allowed_block_types( $allowed_blocks ) {
 		'acf/accordion',
 		'acf/banner',
 		'acf/carousel',
-		// 'acf/columns',
-		// 'acf/content',
 		'acf/cta',
-		// 'acf/downloads',
-		// 'acf/events',
-		// 'acf/featured-carousel',
-		// 'acf/featured-events',
+		'acf/featured-space',
+		'acf/featured-journal',
 		'acf/image',
-		// 'acf/image-text',
-		// 'acf/posts',
-		// 'acf/quote',
-		// 'acf/role-models',
-		// 'acf/spacer',
-		// 'acf/stat',
-		// 'core/html',
-		// 'acf/form',
-		// 'acf/gallery',
 		'acf/image-block',
 		'acf/image-slider',
 		'acf/logos',
 		'acf/membership',
-		// 'acf/map',
-		// 'acf/next-project',
-		// 'acf/project-details',
-		// 'acf/pull-out',
 		'acf/text-block',
-		// 'acf/text-image',
-		'acf/spaces'
+		'acf/spaces',
+		'acf/space-description'
 	);
  
 }

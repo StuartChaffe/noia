@@ -19,11 +19,11 @@
   --color-grey-dark: #6a6a6a;
   --color-grey: #ddd;
   --color-grey-light: #efefef;
-  --color-primary: #59BACC;
-  --color-secondary: #58AD69;
-  --color-tertiary: #FFBC49;
-  --color-quaternary: #E2574C;
-  --color-text-base: #333;
+  --color-primary: #FF001C;
+  --color-secondary: #FECFCF;
+  --color-tertiary: #F3EEE1;
+  --color-quaternary: #000000;
+  --color-text-base: #000;
   --color-text-dark: #181822;
   --color-text-reversed: #fff;
   --color-text-link: #0087D0;
@@ -33,7 +33,7 @@
   --color-instagram: #262626;
   --color-youtube: #cc181e;
   --color-linkedin: #0077B5;
-  --body-background-color: #fff;
+  --body-background-color: var(--color-tertiary);
   --border-radius: 16px;
   --spacing-xxl: 3em;
   --spacing-xl: 2em;

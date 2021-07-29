@@ -11,14 +11,14 @@ function origin_cpts() {
 
 	$post_type_options = array(
 	    'label'                 => $single_name,
-	    'public'                => false,
+	    'public'                => true,
 	    'menu_icon'             => $icon,
 	    'show_ui'               => true,
 	    'show_in_menu'          => true,
 	    'capability_type'       => 'post',
 	    'hierarchical'          => true,
 	    'rewrite'               => array(
-	        'slug'                  => '',
+	        'slug'                  => 'spaces',
 	        'with_front'            => '0'
 	    ),
 	    'query_var'             => true,
@@ -63,7 +63,7 @@ function origin_cpts() {
 		global $wp_post_types;
 		$labels = &$wp_post_types['post']->labels;
 		$labels->name = 'Journal';
-		$labels->singular_name = 'Journals';
+		$labels->singular_name = 'Journal';
 		$labels->add_new = 'Add Journal';
 		$labels->add_new_item = 'Add Journal';
 		$labels->edit_item = 'Edit Journal';
