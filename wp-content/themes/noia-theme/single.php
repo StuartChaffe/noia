@@ -5,6 +5,14 @@
 	$editor = get_field( 'journal-editor');
 ?>
 	<article>
+	<?php
+		$categories = get_the_category();
+		foreach( $categories as $category) {
+			$cat = $category->name;
+			$category_link = get_category_link( $category->term_id );
+		}
+	?>
+		<?php echo $cat ?>.
 		<h1><?php the_title(); ?></h1>
 		<?php if ( $author ) { ?>
 			Written by <?php echo $author ?>.

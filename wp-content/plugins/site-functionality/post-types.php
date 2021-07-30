@@ -54,8 +54,8 @@ function origin_cpts() {
 	function change_post_label() {
 		global $menu;
 		global $submenu;
-		$menu[5][0] = 'Journals';
-		$submenu['edit.php'][5][0] = 'Journals';
+		$menu[5][0] = 'Journal';
+		$submenu['edit.php'][5][0] = 'Journal';
 		$submenu['edit.php'][10][0] = 'Add Journal';
 		$submenu['edit.php'][16][0] = 'Journal Tags';
 	}

@@ -25,6 +25,9 @@
 
 .bkg {
 	&--red {
+		background-color: var(--color-primary);
+	}
+	&--pink {
 		background-color: var(--color-secondary);
 	}
 	&--yellow {

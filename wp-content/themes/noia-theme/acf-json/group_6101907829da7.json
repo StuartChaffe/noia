@@ -69,7 +69,7 @@
         {
             "key": "field_6102ffcc7841c",
             "label": "Background colour",
-            "name": "logos-bkgcolor",
+            "name": "bkgcolor",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -81,10 +81,11 @@
             },
             "choices": {
                 "bkg--red": "Red",
+                "bkg--pink": "Pink",
                 "bkg--yellow": "Yellow",
                 "bkg--white": "White"
             },
-            "default_value": false,
+            "default_value": "bkg--pink",
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -110,5 +111,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1627586633
+    "modified": 1627653767
 }

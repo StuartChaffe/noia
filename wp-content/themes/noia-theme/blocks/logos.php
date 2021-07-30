@@ -3,7 +3,7 @@
 * The template used for displaying a logos block.
 */
 $title = get_field( 'logos-title');
-$bkgcolor = get_field( 'logos-bkgcolor');
+$bkgcolor = get_field( 'bkgcolor');
 ?>
 
 <section class="logos <?php echo $bkgcolor ?>">

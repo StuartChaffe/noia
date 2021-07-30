@@ -1,0 +1,41 @@
+.carousel {
+    height: 100vh;
+    background-color: green;
+	&-slider {
+		height: 100%;
+		.slick-list, .slick-track, .slick-slide {
+			height: 100vh !important;
+		}
+		.slick-slide {
+			max-height: 100vh !important;
+		}
+
+		&-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+			&__title {
+				position: absolute;
+				z-index: 1;
+			}
+            &__image {
+                border: 10px solid red;
+            }
+			// img {
+			// 	display: inline-block;
+			// 	position: absolute;
+			// 	top: 50%;
+			// 	left: 50%;
+			// 	transform: translate(-50%, -50%);
+			// 	max-width: none;
+			// 	@include mq($until: medium) {
+			// 		height: 100%;
+			// 	}
+			// 	@include mq(medium) {
+			// 		min-width: 100%;
+			// 		min-height: 100%;
+			// 	}
+			// }
+		}
+	}
+}

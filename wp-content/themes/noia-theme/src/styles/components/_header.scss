@@ -31,6 +31,11 @@
 	display: flex;
 	margin-left: auto;
 	z-index: 999;
+	width: 50px;
+    height: 50px;
+	top: var(--spacing-s);
+    right: var(--spacing-s);
+	position: absolute;
 }
 
 .global-header__nav ul {
@@ -51,13 +56,16 @@
 .global-header__menu-btn {
 	cursor: pointer;
 	overflow: visible;
-	background-color: transparent;
-	border: 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: var(--color-primary);
+	border: 1px solid #FF6F6F;
 	outline: none;
 	display: flex;
     align-items: center;
+	justify-content: center;
 	z-index: z-scale(btn);
-	margin-left: 1.5rem;
 	z-index: 999;
 	transition: .3s background-color ease-in-out;
 
@@ -85,33 +93,34 @@
 .global-header--nav-btn.is-toggled .global-header--nav-inner::after {
 	background-color: white;
 }
-
 .global-header--nav-box {
-	width: 30px;
-	height: 26px;
+	width: 18px;
+	height: 25px;
 	display: inline-block;
 	position: relative;
 }
 
 .global-header--nav-inner {
-	display: block;
-	top: 50%;
-	margin-top: -2px;
+	display: block;	
+	// transform: translateY(-9px);
+	// top: 0;
+
 	span {
 		visibility: hidden;
 		position: absolute;
 		display: none;
+		transform: translateY(-9px);
 	}
 }
 .global-header--nav-inner,
 .global-header--nav-inner::before,
 .global-header--nav-inner::after {
-	width: 30px;
+	width: 18px;
 	height: 2px;
 	background-color: white;
 	border-radius: 4px;
 	position: absolute;
-	transition-property: transform;
+	transition-property: opacity;
 	transition-duration: 0.15s;
 	transition-timing-function: ease;
 }
@@ -119,12 +128,15 @@
 .global-header--nav-inner::after {
 	content: "";
 	display: block;
+	transform: rotate(90deg);
 }
 .global-header--nav-inner::before {
-	top: -9px;
+	top: 10px;
+	left: -10px;
 }
 .global-header--nav-inner::after {
-	bottom: -9px;
+	top: 10px;
+	right: -10px;
 }
 
 .global-header--nav-inner {
@@ -136,6 +148,7 @@
 	transition-duration: 0s;
 	transition-delay: 0s;
 	transition-timing-function: linear;
+	width: 22px;
 }
 .global-header--nav-inner::before {
 	transition-property: top, opacity;
@@ -158,4 +171,52 @@
 .is-toggled .global-header--nav-inner::after {
 	bottom: 0;
 	transform: rotate(90deg);
+}
+.is-toggled {
+	background-color: black;
+	border: 1px solid black;
+
+	.global-header--nav-box {
+		width: 30px;
+		height: 26px;
+		display: inline-block;
+		position: relative;
+	}
+
+	.global-header--nav-inner {
+		display: block;
+		top: 50%;
+		margin-top: -2px;
+		span {
+			visibility: hidden;
+			position: absolute;
+			display: none;
+		}
+	}
+	.global-header--nav-inner::before,
+	.global-header--nav-inner::after {
+		content: "";
+		display: block;
+	}
+	.global-header--nav-inner::before {
+		top: -9px;
+		left: 0;
+	}
+	.global-header--nav-inner::after {
+		top: 0;
+		right: 0;
+	}
+
+	.global-header--nav-inner,
+	.global-header--nav-inner::before,
+	.global-header--nav-inner::after {
+		width: 30px;
+		height: 2px;
+		background-color: white;
+		border-radius: 4px;
+		position: absolute;
+		transition-property: transform;
+		transition-duration: 0.15s;
+		transition-timing-function: ease;
+	}
 }

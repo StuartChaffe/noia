@@ -6,24 +6,24 @@ $posts = get_field( 'featured-journal' );
 ?>
 
 <section class="featured-journal">
-	I will be a featured journal block
 	<?php if( $posts ): ?>
 	<?php foreach( $posts as $post): ?>
 		<?php
-			$subtitle = get_field( 'post-subtitle', $post);
-			$shortdesc = get_field( 'post-short-desc', $post);
-			$featuredtext = get_field( 'post-featured-text', $post);
+			$author = get_field( 'journal-author', $post);
+			$editor = get_field( 'journal-editor', $post);
 			$title = get_the_title($post);
-			$color = get_field( 'post-colour', $post);
-
-			$image = get_field( 'post-image', $post);
-			$alt = $image['alt'];
-			$size = 'Square-large';
-			$thumb = $image['sizes'][ $size ];
-
-			$featuredimage = get_field( 'post-featured-image', $post);
+			$categories = get_the_category($post);
+			foreach( $categories as $category) {
+				$cat = $category->name;
+				$category_link = get_category_link( $category->term_id );
+			}
 		?>
-		<?php the_title($post); ?>
+		Latest Artical — <?php echo $cat ?>
+		<?php echo $title ?>
+		<?php echo $author ?>
+		<?php echo $editor ?>
+
+		<a href="<?php the_permalink($post); ?>">Read</a>
 	<?php endforeach; ?>
 	<?php endif; ?>
 
