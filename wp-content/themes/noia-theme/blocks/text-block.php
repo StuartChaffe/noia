@@ -13,11 +13,13 @@ $position = $image['textblock-image-position'];
 
 <section class="text-block <?php echo $bkgcolor ?>">
 	<div class="text-block--text <?php echo $size ?>">
-		<?php echo $content ?>
-		Showing text
+		<div class="text-block--text__sticky">
+			<?php echo $content ?>
+			Showing text
+		</div>
 	</div>
 	<div class="text-block--image <?php echo $position ?>">
-		<img loading="lazy" src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" width="100"/>
+		<img loading="lazy" src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" />
 		Showing image
 	</div>
 </section>

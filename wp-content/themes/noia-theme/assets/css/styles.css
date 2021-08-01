@@ -154,7 +154,9 @@ select {
   }
 }
 p {
-  margin-top: var(--spacing-l);
+  margin-bottom: var(--spacing-l);
+}
+p:last-of-type {
   margin-bottom: 0;
 }
 
@@ -385,9 +387,69 @@ input[type=button]:focus {
   height: 100vh;
 }
 
+.heading {
+  margin: 80px 0 0 80px;
+  font-size: 64px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+}
+.heading > div {
+  overflow: hidden;
+}
+.heading > div > p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  white-space: nowrap;
+  margin: 0;
+  line-height: 117%;
+}
+
+div.heading > div {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+div.heading > div:nth-child(2) > p {
+  -webkit-animation-delay: 0.22s;
+          animation-delay: 0.22s;
+}
+
+div.heading > div {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+div.heading > div:nth-child(3) > p {
+  -webkit-animation-delay: 0.33s;
+          animation-delay: 0.33s;
+}
+
+.slide-up {
+  -webkit-animation: slide-up 4s cubic-bezier(0.65, 0, 0.35, 1) both;
+          animation: slide-up 4s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .carousel {
   height: 100vh;
-  background-color: green;
 }
 .carousel-slider {
   height: 100%;
@@ -402,13 +464,31 @@ input[type=button]:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  width: 100%;
 }
-.carousel-slider-item__title {
-  position: absolute;
-  z-index: 1;
+.carousel-slider-item--content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  font-size: 5rem;
 }
-.carousel-slider-item__image {
-  border: 10px solid red;
+
+.text-block {
+  display: flex;
+}
+.text-block--text {
+  flex: 100%;
+}
+.text-block--text__sticky {
+  position: sticky;
+  top: 0;
+}
+.text-block--image {
+  flex: 100%;
 }
 
 .global-container {
@@ -1041,10 +1121,10 @@ body.nav-open {
   font-size: 0px;
   margin-top: 2px;
   cursor: pointer;
-  background-color: var(--color-primary);
+  background-color: black;
   color: transparent;
   top: 50%;
-  transform: translate(0, -100%);
+  transform: translate(0, -50%);
   border: none;
   outline: none;
   z-index: 9;

@@ -15,5 +15,11 @@ $bkgvideo = get_field( 'banner-background-video');
 <?php if ( $text ) { ?>
 	<?php echo $text ?>
 <?php } ?>	
+<div class="heading">
+	<div>
+		<p class="slide-up">This is the title</p>
+	</div>
+</div>
+
 	I will be a banner
 </section>

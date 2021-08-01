@@ -9,12 +9,12 @@ function origin_scripts() {
 		
 		wp_register_script( 'slick', get_template_directory_uri().'/assets/js/slick.js', array( 'jquery' ), null, true );
 		wp_enqueue_script( 'slick' );
-		
-		wp_register_script('scroll', get_template_directory_uri().'/assets/js/scroll.js', array( 'jquery' ), null, true );
-		wp_enqueue_script('scroll');
 
 		wp_register_script( 'parallax', get_template_directory_uri().'/assets/js/parallax.js', array( 'jquery' ), null, true );
 		wp_enqueue_script( 'parallax' );
+
+		wp_register_script('scroll', get_template_directory_uri().'/assets/js/scroll.js', array( 'jquery' ), null, true );
+		wp_enqueue_script('scroll');
 
 		wp_register_script( 'scripts', get_template_directory_uri().'/assets/js/scripts.js', array( 'jquery' ), null, true );
 		wp_enqueue_script( 'scripts' );
