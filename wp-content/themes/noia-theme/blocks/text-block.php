@@ -7,7 +7,7 @@ $text = get_field('textblock-text');
 $content = $text['textblock-content'];
 $size = $text['textblock-text-size'];
 $images = get_field('textblock-images');
-$position = $images['textblock-image-position'];
+$position = get_field('textblock-image-position');
 ?>
 
 <section class="text-block <?php echo $bkgcolor ?>">

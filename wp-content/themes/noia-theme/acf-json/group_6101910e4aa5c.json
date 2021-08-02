@@ -64,93 +64,6 @@
             ]
         },
         {
-            "key": "field_6103c2ebcc2ed",
-            "label": "Image(s)",
-            "name": "textblock-images",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_6103c305cc2ee",
-                    "label": "Image(s)",
-                    "name": "textblock-images",
-                    "type": "repeater",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "collapsed": "",
-                    "min": 0,
-                    "max": 0,
-                    "layout": "row",
-                    "button_label": "Add image",
-                    "sub_fields": [
-                        {
-                            "key": "field_61081085284da",
-                            "label": "Image",
-                            "name": "textblock-image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "medium",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        }
-                    ]
-                },
-                {
-                    "key": "field_6103c35acc2ef",
-                    "label": "Position",
-                    "name": "textblock-image-position",
-                    "type": "select",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "text-block--image__left": "Left",
-                        "text-block--image__right": "Right"
-                    },
-                    "default_value": "text-block--image__right",
-                    "allow_null": 0,
-                    "multiple": 0,
-                    "ui": 0,
-                    "return_format": "value",
-                    "ajax": 0,
-                    "placeholder": ""
-                }
-            ]
-        },
-        {
             "key": "field_6103cafdcc2f2",
             "label": "Background colour",
             "name": "bkgcolor",
@@ -221,6 +134,31 @@
                     "mime_types": ""
                 }
             ]
+        },
+        {
+            "key": "field_610826d62dc22",
+            "label": "Image position",
+            "name": "textblock-image-position",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "text-block--image__left": "Left",
+                "text-block--image__right": "Right"
+            },
+            "default_value": "text-block--image__right",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -240,5 +178,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1627923016
+    "modified": 1627924226
 }
