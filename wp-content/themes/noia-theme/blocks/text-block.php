@@ -6,20 +6,23 @@ $bkgcolor = get_field( 'bkgcolor');
 $text = get_field('textblock-text');
 $content = $text['textblock-content'];
 $size = $text['textblock-text-size'];
-$image = get_field('textblock-image');
-$img = $image['textblock-image'];
-$position = $image['textblock-image-position'];
+$images = get_field('textblock-images');
+$position = $images['textblock-image-position'];
 ?>
 
 <section class="text-block <?php echo $bkgcolor ?>">
 	<div class="text-block--text <?php echo $size ?>">
 		<div class="text-block--text__sticky">
 			<?php echo $content ?>
-			Showing text
 		</div>
 	</div>
-	<div class="text-block--image <?php echo $position ?>">
-		<img loading="lazy" src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" />
-		Showing image
-	</div>
+	<?php if( have_rows('textblock-images') ): ?>
+		<div class="text-block--image <?php echo $position ?>">
+		<?php while( have_rows('textblock-images') ): the_row();
+			$image = get_sub_field('textblock-image');
+		?>
+			<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+		<?php endwhile; ?>
+		</div>
+	<?php endif; ?>
 </section>

@@ -1,0 +1,10 @@
+.ask {
+	background-color: var(--color-primary);
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	position: fixed;
+	bottom: var(--spacing-s);
+	right: var(--spacing-s);
+	z-index: 9999;
+}

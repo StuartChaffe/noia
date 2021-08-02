@@ -3,12 +3,29 @@
 
 	&--text {
 		flex: 100%;
+		width: 50%;
 		&__sticky {
 			position: sticky;
 			top: 0;
 		}
 	}
 	&--image {
-		flex: 100%;		
+		flex: 100%;
+		width: 50%;
+		// height: 50vw;
+		.slick-track,
+		.slick-list {
+			height: 100%;
+		}
+		.slick-slide {
+			max-height: none;
+			// height: 50vw;
+			div {
+				height: 100%;
+				img {
+					height: 100%;
+				}
+			}
+		}
 	}
 }
