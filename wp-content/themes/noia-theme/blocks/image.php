@@ -7,9 +7,7 @@ $content = get_field( 'image-content');
 $link = get_field('image-button');
 ?>
 
-<section class="image">
-	I will be an image block
-	<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="100"/>
+<section class="image" <?php if ( $image ) { ?>style="background-image: url(<?php echo $image['url']; ?>)"<?php } ?>>
 	<?php if ( $content ) { ?>
 		<?php echo $content ?>
 	<?php } ?>	

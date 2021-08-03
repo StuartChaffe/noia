@@ -1,5 +1,8 @@
 .carousel {
     height: 100vh;
+	&-inner {
+		background: red;
+	}
 	&-slider {
 		height: 100%;
 		.slick-list, .slick-track, .slick-slide {
@@ -17,6 +20,7 @@
 			width: 100%;
 			background-size: cover;
 			background-position: center center;
+			background-attachment: fixed;
 
 			&--content {
 				display: flex;

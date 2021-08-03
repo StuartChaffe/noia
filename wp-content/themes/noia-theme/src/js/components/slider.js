@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
 		autoplaySpeed: 4000,
 		arrows: true,
 		infinite: true,
-		dots: true,
+		dots: false,
 		adaptiveHeight: true,
 		pauseOnHover: false,
 		fade: true,

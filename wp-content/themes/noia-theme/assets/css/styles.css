@@ -3,7 +3,8 @@
   --body-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --display-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-size: calc(1rem + 0.15vw);
-  --font-size-lead: calc(1.2rem + 0.1vw);
+  --font-size-lead: calc(1.5rem + 0.15vw);
+  --font-size-large: calc(2.5rem + 0.1vw);
   --font-size-small: calc(0.9rem + 0.1vw);
   --font-size-h1: calc(2rem + 0.2vw);
   --font-size-h2: calc(1.8rem + 0.2vw);
@@ -162,6 +163,10 @@ p:last-of-type {
 
 p.lead {
   font-size: var(--font-size-lead);
+}
+
+p.large {
+  font-size: var(--font-size-large);
 }
 
 ul,
@@ -403,6 +408,31 @@ input[type=button]:focus {
   background-position: center center;
   background-attachment: fixed;
 }
+.banner-space {
+  position: absolute;
+  z-index: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.banner-space--details {
+  margin-top: auto;
+  color: white;
+  padding-left: 1rem;
+  max-width: 550px;
+}
+.banner-space--details p {
+  color: white;
+}
+.banner-space--details + .banner--content {
+  margin-top: 0;
+}
+.banner-space p {
+  margin-bottom: 0;
+}
+
+.single .banner-space .banner--content {
+  margin-top: auto;
+}
 
 .banner--content {
   margin-top: auto;
@@ -415,39 +445,32 @@ input[type=button]:focus {
   color: white;
 }
 
+.fade {
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+
+.fade--visible {
+  opacity: 1;
+  transition: opacity 2s ease-out;
+}
+
 .animate {
   transform: translateY(-100%);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: transform 0.25s ease-out;
 }
 
 .animate--visible {
   transform: translateY(0);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  -webkit-animation: slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both;
-          animation: slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  transition: transform 0.25s ease-out;
+  transition-delay: 1s;
 }
 
-@-webkit-keyframes slide-up {
-  0% {
-    transform: translateY(-400px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes slide-up {
-  0% {
-    transform: translateY(-400px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .carousel {
   height: 100vh;
+}
+.carousel-inner {
+  background: red;
 }
 .carousel-slider {
   height: 100%;
@@ -466,6 +489,7 @@ input[type=button]:focus {
   width: 100%;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
 }
 .carousel-slider-item--content {
   display: flex;
@@ -476,6 +500,31 @@ input[type=button]:focus {
   font-size: 5rem;
   height: auto;
   overflow: hidden;
+}
+
+.image {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center center;
+}
+.image p {
+  font-size: var(--font-size-large);
+  color: white;
+}
+
+.space-images--content {
+  margin-top: auto;
+  height: auto;
+  overflow: hidden;
+}
+.space-images--content h1, .space-images--content h2, .space-images--content h3, .space-images--content h4, .space-images--content p {
+  line-height: 100%;
+  text-transform: uppercase;
+  color: white;
 }
 
 .text-block {

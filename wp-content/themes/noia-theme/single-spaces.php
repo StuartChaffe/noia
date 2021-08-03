@@ -6,6 +6,7 @@
 	$rooms = get_field( 'spaces-rooms' );
 	$price = get_field( 'spaces-price' );
 	$shortdesc = get_field( 'spaces-short-desc' );
+	$images = get_field('spaces-images');
 
 	// Image
 	$image = get_field( 'post-image', $post);
@@ -13,7 +14,24 @@
 	$size = 'Square-large';
 	$thumb = $image['sizes'][ $size ];
 ?>
-	<h1><?php the_title(); ?></h1>
+	<?php if( have_rows('spaces-images') ): ?>
+	<div class="carousel">
+		<div class="banner banner-space">
+			<div class="banner--content fit-content">
+				<p class="animate"><?php the_title(); ?></p>
+			</div>
+		</div>
+		<div class="carousel-slider">
+		<?php while( have_rows('spaces-images') ): the_row();
+			$image = get_sub_field('spaces-image');
+		?>
+			<div class="carousel-slider-item" style="background-image: url(<?php echo $image['url']; ?>)">&nbsp;</div>
+		<?php endwhile; ?>
+		</div>
+	</div>
+	<?php endif; ?>
+
+
 	<?php if ( $shortdesc ) { ?>
 		<?php echo $shortdesc ?>
 	<?php } ?>
