@@ -29,3 +29,11 @@
 @import "components/buttons";
 @import "components/social-links";
 @import "components/slick-slider";
+
+
+.fade {
+	opacity: 1;
+}
+.animate {
+	transform: translateY(0);
+}

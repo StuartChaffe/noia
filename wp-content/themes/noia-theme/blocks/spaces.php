@@ -28,11 +28,11 @@
 			$thumb = $image['sizes'][ $size ];
 			$featuredimage = get_field( 'post-featured-image', $post);
 		?>
-		<div class="spaces-item">
+		<!-- <div class="spaces-item"> -->
 		<?php if( have_rows('spaces-images', get_the_ID()) ): ?>
 			<div class="carousel">
-				<div class="banner banner-space">
-					<div class="banner-space--details">
+				<div class="banner banner-space fade">
+					<div class="animate-up banner-space--details">
 						<?php if ( $shortdesc ) { ?>
 							<p class="lead"><?php echo $shortdesc ?></p>
 						<?php } ?>
@@ -55,12 +55,12 @@
 				<?php while( have_rows('spaces-images', get_the_ID()) ): the_row();
 					$image = get_sub_field('spaces-image', get_the_ID());
 				?>
-					<div class="carousel-slider-item" style="background-image: url(<?php echo $image['url']; ?>)">&nbsp;</div>
+					<div class="carousel-slider-item fade" style="background-image: url(<?php echo $image['url']; ?>)">&nbsp;</div>
 				<?php endwhile; ?>
 				</div>
 			</div>
 		<?php endif; ?>
-		</div>
+		<!-- </div> -->
 		<?php endwhile; wp_reset_query(); ?>
 	</section>
 <?php endif; ?>

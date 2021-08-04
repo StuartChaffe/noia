@@ -141,40 +141,42 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-prev,
 .slick-next {
 	position: absolute;
-	display: block;
-	height: 50px;
-	width: 50px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 40px;
+	width: 40px;
+	border-radius: 40px;
 	line-height: 0px;
 	font-size: 0px;
-	margin-top: 2px;
+	// margin-top: 2px;
 	cursor: pointer;
-	background-color:  black;
+	background-color:  white;
 	color: transparent;
 	top: 50%;
 	transform: translate(0, -50%);
 	border: none;
 	outline: none;
 	z-index: 9;
-	transition: .2s background-color ease-in-out;
+	transition: .2s transform ease-in-out;
 	@include mq(medium) {
-		height: 60px;
-		width: 60px;
+		height: 40px;
+		width: 40px;
+		border-radius: 40px;
 	}
 	&:hover, &:focus {
 		outline: none;
-		background-color: var(--color-tertiary);
-		color: transparent;
-		transition: .2s background-color ease-in-out;
+		transition: .2s transform ease-in-out;
 	}
 	&:before {
 		// font-family: $slick-font-family;
 		// font-size: 20px;
 		// line-height: 1;
 		top: 50%;
-		transform: translate(0, -8px);
+		transform: translate(0, -50%);
 		color: white;
-		width: 20px;
-		height: 20px;
+		width: 10px;
+		height: 22px;
 		opacity: $slick-opacity-default;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
@@ -182,42 +184,36 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-	left: 2rem;
-	padding: 0 1rem 0 2rem;
+	left: 1rem;
+	// padding: 0 1rem 0 2rem;
 	&:before {
 		position: absolute;
 		right: 1rem;
 		transition: .2s all ease-in-out;
-		content: url("../../src/icons/arrow-white-left.svg");
+		content: url("../../src/icons/arrow-black-left.svg");
 		[dir="rtl"] & {
-			content: url("../../src/icons/arrow-white-left.svg");
+			content: url("../../src/icons/arrow-black-left.svg");
 		}
 	}
 	&:hover {
-		&:before {
-			// transform: translate(-0.5rem, -50%);
-			transition: .2s all ease-in-out;
-		}
+		transform: translate(10px, -50%);
 	}
 }
 
 .slick-next {
-	right: 2rem;
-	padding: 0 2rem 0 1rem;
+	right: 1rem;
+	// padding: 0 2rem 0 1rem;
 	&:before {
 		position: absolute;
 		// left: 1rem;
 		transition: .2s all ease-in-out;
-		content: url("../../src/icons/arrow-white.svg");
+		content: url("../../src/icons/arrow-black.svg");
 		[dir="rtl"] & {
-			content: url("../../src/icons/arrow-white.svg");
+			content: url("../../src/icons/arrow-black.svg");
 		}
 	}
 	&:hover {
-		&:before {
-			// transform: translate(0.5rem, -50%);
-			transition: .2s all ease-in-out;
-		}
+		transform: translate(-10px, -50%);
 	}
 }
 

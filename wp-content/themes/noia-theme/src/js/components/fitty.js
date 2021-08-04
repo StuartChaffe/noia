@@ -12,6 +12,13 @@ jQuery(function ($) {
 			$(this).addClass('animate--visible');
 			} 
 		});
+		$('.animate-up').each(function(){
+			//var ImageHeight = $(window).height() / 2;
+			var screenHeight = $(window).height() - 200;
+			if($(document).scrollTop() >= $(this).offset().top - screenHeight) {
+			$(this).addClass('animate-up--visible');
+			} 
+		});
 
 		$('.fade').each(function(){
 			//var ImageHeight = $(window).height() / 2;

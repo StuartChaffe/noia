@@ -16,7 +16,7 @@
 ?>
 	<?php if( have_rows('spaces-images') ): ?>
 	<div class="carousel">
-		<div class="banner banner-space">
+		<div class="banner banner-space fade">
 			<div class="banner--content fit-content">
 				<p class="animate"><?php the_title(); ?></p>
 			</div>
@@ -25,7 +25,7 @@
 		<?php while( have_rows('spaces-images') ): the_row();
 			$image = get_sub_field('spaces-image');
 		?>
-			<div class="carousel-slider-item" style="background-image: url(<?php echo $image['url']; ?>)">&nbsp;</div>
+			<div class="carousel-slider-item fade" style="background-image: url(<?php echo $image['url']; ?>)">&nbsp;</div>
 		<?php endwhile; ?>
 		</div>
 	</div>

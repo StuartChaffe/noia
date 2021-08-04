@@ -7,7 +7,8 @@
 	<div class="carousel-slider slick-slider">
 		<div class="carousel-slider-item" style="background-image: url(/wp-content/uploads/jakob-owens-kWX141upca4-unsplash.jpg)">
 			<div class="carousel-slider-item--content">
-				test
+				Design Idea<br />
+				THE BED
 			</div>
 		</div>
 		<div class="carousel-slider-item" style="background-image: url(/wp-content/uploads/blog-featured.png)">

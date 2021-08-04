@@ -1,22 +1,29 @@
 .space {
 	&-images {
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        // height: 100vh;
-        // width: 100%;
-        .banner--content {
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+	// height: 100vh;
+	// width: 100%;
+		.banner--content {
 
-        }
-        &--content {
-            margin-top: auto;
-            height: auto;
-            overflow: hidden;
-            h1, h2, h3, h4, p {
-                line-height: 100%;
-                text-transform: uppercase;
-                color: white;
-            }
-        }
-    }
+		}
+		&--content {
+			margin-top: auto;
+			height: auto;
+			overflow: hidden;
+			h1, h2, h3, h4, p {
+				line-height: 100%;
+				text-transform: uppercase;
+				color: white;
+			}
+		}
+	}
+}
+.spaces {
+	.banner-space {
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	&-item {
+	}
 }

@@ -17,8 +17,8 @@ $featuredspaces = get_field( 'featured-space' );
 	?>
 	<?php if( have_rows('spaces-images', $featuredspace) ): ?>
 		<div class="carousel">
-			<div class="banner banner-space">
-				<div class="banner-space--details">
+			<div class="banner banner-space fade">
+				<div class="animate-up banner-space--details">
 					<?php if ( $shortdesc ) { ?>
 						<p class="lead"><?php echo $shortdesc ?></p>
 					<?php } ?>
@@ -41,7 +41,7 @@ $featuredspaces = get_field( 'featured-space' );
 			<?php while( have_rows('spaces-images', $featuredspace) ): the_row();
 				$image = get_sub_field('spaces-image', $featuredspace);
 			?>
-				<div class="carousel-slider-item" style="background-image: url(<?php echo $image['url']; ?>)">&nbsp;</div>
+				<div class="carousel-slider-item fade" style="background-image: url(<?php echo $image['url']; ?>)">&nbsp;</div>
 			<?php endwhile; ?>
 			</div>
 		</div>
