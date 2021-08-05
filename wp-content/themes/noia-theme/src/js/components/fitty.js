@@ -19,6 +19,13 @@ jQuery(function ($) {
 			$(this).addClass('animate-up--visible');
 			} 
 		});
+		$('.arrow').each(function(){
+			//var ImageHeight = $(window).height() / 2;
+			var screenHeight = $(window).height() - 20;
+			if($(document).scrollTop() >= $(this).offset().top - screenHeight) {
+			$(this).addClass('arrow--visible');
+			} 
+		});
 
 		$('.fade').each(function(){
 			//var ImageHeight = $(window).height() / 2;

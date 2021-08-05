@@ -6,8 +6,8 @@
   --font-size-lead: calc(1.5rem + 0.15vw);
   --font-size-large: calc(2.5rem + 0.1vw);
   --font-size-small: calc(0.9rem + 0.1vw);
-  --font-size-h1: calc(2rem + 0.2vw);
-  --font-size-h2: calc(4rem + 0.2vw);
+  --font-size-h1: calc(4rem + 0.2vw);
+  --font-size-h2: calc(3rem + 0.2vw);
   --font-size-h3: calc(1.5rem + 0.2vw);
   --font-size-h4: calc(1.3rem + 0.2vw);
   --font-size-h5: calc(1.2rem + 0.2vw);
@@ -49,7 +49,7 @@
 }
 @media (min-width: 70em) {
   :root {
-    --font-size-h1: calc(3.2rem + 0.2vw);
+    --font-size-h1: calc(7rem + 0.2vw);
     --font-size-h2: calc(6rem + 0.2vw);
     --font-size-h3: calc(1.6rem + 0.2vw);
     --font-size-h4: calc(1.4rem + 0.2vw);
@@ -397,6 +397,98 @@ input[type=button]:focus {
   color: #BF5D58;
 }
 
+.accordion {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+}
+.accordion-block {
+  position: relative;
+  display: flex;
+  top: 0;
+}
+.accordion-block--title {
+  position: absolute;
+  width: 100%;
+  background-color: red;
+  bottom: 0;
+}
+.accordion-block--title__inner {
+  position: sticky;
+  display: flex;
+  height: auto;
+  overflow: hidden;
+  z-index: 2;
+  width: 100%;
+  top: 106px;
+  align-items: center;
+  justify-content: center;
+}
+.accordion-block--title__inner h1, .accordion-block--title__inner h2, .accordion-block--title__inner h3, .accordion-block--title__inner h4, .accordion-block--title__inner p {
+  line-height: 100%;
+  text-transform: uppercase;
+  color: white;
+}
+.accordion-block--title__inner .fit-content {
+  text-align: center;
+}
+.accordion-item {
+  position: relative;
+  display: flex;
+  width: 20%;
+  padding: 0 1rem;
+  transition: width 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.accordion-item--number {
+  width: 120px;
+  line-height: 100px;
+  text-transform: uppercase;
+  color: white;
+  transition: line-height 0.2s ease-in-out;
+}
+.accordion-item--number .fit-content {
+  transition: font-size 0.2s ease-in-out;
+}
+.accordion-item:hover {
+  width: 50%;
+}
+.accordion-item:hover .accordion-block--title__inner {
+  display: none;
+}
+.accordion-item:hover .accordion-item--number {
+  line-height: 50px;
+  transition: line-height 0.2s ease-in-out;
+}
+.accordion-item:hover .accordion-item--number .fit-content {
+  font-size: 1rem !important;
+  transition: font-size 0.2s ease-in-out;
+}
+.accordion-item span {
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.accordion-item:hover span {
+  opacity: 1;
+  transition-delay: 300ms;
+}
+.accordion-item:nth-child(1) {
+  background-color: #FF8B8B;
+}
+.accordion-item:nth-child(2) {
+  background-color: #0BBCD6;
+}
+.accordion-item:nth-child(3) {
+  background-color: #B18AE0;
+}
+.accordion-item:nth-child(4) {
+  background-color: #EED974;
+}
+.accordion-item:nth-child(5) {
+  background-color: #005397;
+}
+
 .ask {
   background-color: var(--color-primary);
   width: 100px;
@@ -455,6 +547,7 @@ input[type=button]:focus {
 }
 .banner--link:hover .banner--link__arrow {
   right: -165px;
+  transition-delay: 0s !important;
 }
 .banner--content {
   margin-top: auto;
@@ -494,20 +587,26 @@ input[type=button]:focus {
   flex-direction: column;
   align-items: flex-start;
 }
+.banner-space p {
+  margin-bottom: 0;
+}
 .banner-space--details {
   margin-top: auto;
   color: white;
   padding-left: 1rem;
   max-width: 550px;
 }
+.banner-space--details .btn {
+  margin-top: 1rem;
+}
 .banner-space--details p {
   color: white;
 }
+.banner-space--details .lead {
+  margin-bottom: 1rem;
+}
 .banner-space--details + .banner--content {
   margin-top: 0;
-}
-.banner-space p {
-  margin-bottom: 0;
 }
 
 .single .banner-space .banner--content {
@@ -549,6 +648,82 @@ input[type=button]:focus {
   overflow: hidden;
 }
 
+.cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.cta--video {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.cta--video video {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cta--links {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  padding: 1rem 0;
+}
+.cta--links-item {
+  display: flex;
+  width: 50%;
+  align-items: flex-end;
+  height: auto;
+  overflow: hidden;
+  z-index: 2;
+  padding: 0 2rem 1rem 2rem;
+}
+.cta--links-item:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.cta--links-item p {
+  line-height: 100%;
+  text-transform: uppercase;
+  color: white;
+}
+.cta--links-item a {
+  margin-top: auto;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: auto;
+  overflow: hidden;
+}
+.cta--links-item a .arrow {
+  margin-left: 1rem;
+  width: 100px;
+}
+.cta--links-item a:hover .arrow {
+  margin-left: 0;
+  transition-delay: 0s !important;
+}
+
 .featured-journal {
   background-color: var(--color-tertiary);
 }
@@ -565,49 +740,6 @@ input[type=button]:focus {
 .image p {
   font-size: var(--font-size-large);
   color: white;
-}
-
-.table {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  min-height: 600px;
-}
-
-.table__cell {
-  position: relative;
-  display: flex;
-  width: 20%;
-  align-items: center;
-  justify-content: center;
-  transition: width 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.table__cell:nth-child(1) {
-  background-color: #FF8B8B;
-}
-.table__cell:nth-child(2) {
-  background-color: #0BBCD6;
-}
-.table__cell:nth-child(3) {
-  background-color: #B18AE0;
-}
-.table__cell:nth-child(4) {
-  background-color: #EED974;
-}
-.table__cell:nth-child(5) {
-  background-color: #005397;
-}
-.table__cell:hover {
-  width: 50%;
-}
-.table__cell span {
-  opacity: 0;
-  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
-}
-.table__cell:hover span {
-  opacity: 1;
-  transition-delay: 300ms;
 }
 
 .space-description {
@@ -670,9 +802,6 @@ input[type=button]:focus {
 }
 .text-block--text__full .text-block--text__half {
   width: 50%;
-}
-.text-block--text__full .text-block--text__content {
-  padding: var(--spacing);
 }
 .text-block--has-image {
   margin-right: 0 !important;
@@ -857,27 +986,23 @@ input[type=button]:focus {
 
 .btn {
   display: inline-block;
-  border-radius: var(--border-radius);
-  padding: 0 3rem;
-  border: 1px solid var(--color-grey);
-  color: var(--color-text-dark);
-  height: 40px;
-  line-height: 40px;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  border: 0;
+  color: white;
   font-family: var(--display-family);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-normal);
   font-size: var(--font-size);
   text-align: center;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
+  background-color: var(--color-primary);
 }
 .btn:hover, .btn:focus {
-  border-color: var(--color-grey-dark);
   outline: 0;
-  color: var(--color-grey-dark);
+  color: white;
   text-decoration: none;
-  position: relative;
-  top: -1px;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  background-color: black;
 }
 
 .btn--primary {
@@ -1163,7 +1288,36 @@ input[type=button]:focus {
 body.nav-open {
   overflow: hidden;
 }
+body.nav-open:after {
+  content: "";
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
+}
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -1641,6 +1795,19 @@ img.aligncenter {
 }
 
 .animate-up--visible {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.25s ease-out;
+  transition-delay: 0.5s;
+}
+
+.arrow {
+  transform: translateX(-40px);
+  opacity: 0;
+  transition: all 0.25s ease-out;
+}
+
+.arrow--visible {
   transform: translateX(0);
   opacity: 1;
   transition: all 0.25s ease-out;

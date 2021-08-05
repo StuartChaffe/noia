@@ -51,6 +51,7 @@
 		&:hover {
 			.banner--link__arrow {
 				right: -165px;
+				transition-delay: 0s !important;
 			}
 		}
 	}
@@ -108,20 +109,26 @@
 		z-index: 1;
 		flex-direction: column;
 		align-items: flex-start;
+		p {
+			margin-bottom: 0;
+		}
 		&--details {
 			margin-top: auto;
 			color: white;
 			padding-left: 1rem;
 			max-width: 550px;
+			.btn {
+				margin-top: 1rem;
+			}
 			p {
 				color: white;
+			}
+			.lead {
+				margin-bottom: 1rem;
 			}
 			+ .banner--content {
 				margin-top: 0;
 			}
-		}
-		p {
-			margin-bottom: 0;
 		}
 		// .banner--content {
 		// 	margin-top: 0;

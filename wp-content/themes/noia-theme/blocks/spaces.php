@@ -45,7 +45,7 @@
 						<?php if ( $price ) { ?>
 							<p>£<?php echo $price ?> pcm</p>
 						<?php } ?>
-						<a class="button" href="<?php echo get_permalink(); ?>">Read more</a>
+						<a class="btn" href="<?php echo get_permalink(); ?>">Read more</a>
 					</div>
 					<div class="banner--content fit-content">
 						<p class="animate"><?php the_title(); ?></p>

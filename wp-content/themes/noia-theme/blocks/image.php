@@ -6,13 +6,6 @@ $image = get_field( 'image-image');
 $content = get_field( 'image-content');
 $link = get_field('image-button');
 ?>
-<div class="table">
-	<div class="table__cell"><span>A</span></div>
-	<div class="table__cell"><span>B</span></div>
-	<div class="table__cell"><span>C</span></div>
-	<div class="table__cell"><span>D</span></div>
-	<div class="table__cell"><span>E</span></div>
-</div>
 <section class="image" <?php if ( $image ) { ?>style="background-image: url(<?php echo $image['url']; ?>)"<?php } ?>>
 	<?php if ( $content ) { ?>
 		<?php echo $content ?>
