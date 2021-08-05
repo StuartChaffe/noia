@@ -46,6 +46,21 @@
             "delay": 0
         },
         {
+            "key": "field_610bb2cbf9671",
+            "label": "Link",
+            "name": "banner-background-link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
             "key": "field_61017493028bc",
             "label": "Background",
             "name": "banner-background",
@@ -106,7 +121,7 @@
             "key": "field_6101764333f9f",
             "label": "Video",
             "name": "banner-background-video",
-            "type": "text",
+            "type": "file",
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -123,11 +138,30 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_610bab8a62bfd",
+            "label": "Overlay?",
+            "name": "banner-background-overlay",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -147,5 +181,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1627653947
+    "modified": 1628156653
 }

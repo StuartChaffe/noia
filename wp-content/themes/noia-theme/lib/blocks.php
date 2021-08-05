@@ -398,7 +398,7 @@ function noia_allowed_block_types( $allowed_blocks ) {
 		'acf/image',
 		'acf/image-block',
 		'acf/image-slider',
-		'acf/logos',
+		// 'acf/logos',
 		'acf/membership',
 		'acf/text-block',
 		'acf/spaces',
