@@ -138,14 +138,14 @@ function noia_acf_blocks() {
 			),
 		));
 		acf_register_block(array(
-			'name'				=> 'image-slider',
-			'title'				=> __('Image slider'),
-			'description'		=> __('Add multiple image slider'),
+			'name'				=> 'location-images',
+			'title'				=> __('Location images'),
+			'description'		=> __('Add location image slider'),
 			'render_callback'	=> 'noia_acf_block_render_callback',
 			'category'			=> 'noia-blocks',
 			'icon'				=> 'slides',
 			'align' 			=> 'full',
-			'keywords'			=> array( 'images, slider' ),
+			'keywords'			=> array( 'images, slider, location images' ),
 			'example'         => array(
 				'attributes' => array(
 					'mode' => 'preview',
@@ -395,10 +395,10 @@ function noia_allowed_block_types( $allowed_blocks ) {
 		'acf/cta',
 		'acf/featured-space',
 		'acf/featured-journal',
-		'acf/image',
 		'acf/image-block',
 		'acf/image-slider',
 		// 'acf/logos',
+		'acf/location-images',
 		'acf/membership',
 		'acf/text-block',
 		'acf/spaces',

@@ -2,11 +2,13 @@
 	display: flex;
 	position: relative;
 	hr {
-		margin-bottom: var(--spacing-xs);
 		// position: absolute;
 		// width: 100%;
 		// top: 0;
 		// left: 0;
+		+ h3, h4, p {
+			margin-top: var(--spacing-xs);
+		}
 	}
 	&--text {
 		padding-left: var(--spacing);

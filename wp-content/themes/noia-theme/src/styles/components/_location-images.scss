@@ -1,0 +1,21 @@
+.location-images {
+	padding-bottom: var(--spacing-l);
+	&--slider {
+		padding-top: var(--spacing);
+		.slick-list {
+			.slick-track {
+				display: flex;
+				align-items: baseline;
+			}
+		}
+		&-item {
+			// width: 25%;
+			padding: 0 1rem;
+			display: flex;
+
+			p {
+				font-size: var(--font-size-small);
+			}
+		}
+	}
+}

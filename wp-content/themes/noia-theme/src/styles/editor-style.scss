@@ -16,7 +16,7 @@
 @import "components/featured-journal";
 @import "components/featured-space";
 @import "components/image-block";
-@import "components/image-slider";
+@import "components/location-images";
 @import "components/image";
 @import "components/logos";
 @import "components/membership";
@@ -42,4 +42,8 @@
 	p {
 		font-size: 100px;
 	}
+}
+
+.carousel-slider-item {
+	background-attachment: inherit;
 }

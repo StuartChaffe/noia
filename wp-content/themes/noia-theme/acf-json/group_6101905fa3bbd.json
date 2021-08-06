@@ -1,13 +1,33 @@
 {
     "key": "group_6101905fa3bbd",
-    "title": "Image slider",
-    "fields": [],
+    "title": "Location images",
+    "fields": [
+        {
+            "key": "field_610d3ca12027f",
+            "label": "",
+            "name": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
     "location": [
         [
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/image-slider"
+                "value": "acf\/location-images"
             }
         ]
     ],
@@ -19,5 +39,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1627492459
+    "modified": 1628257458
 }

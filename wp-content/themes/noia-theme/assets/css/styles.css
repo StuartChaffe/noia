@@ -39,7 +39,7 @@
   --border-radius: 16px;
   --spacing-xxl: 3em;
   --spacing-xl: 2em;
-  --spacing-l: 1.5em;
+  --spacing-l: 100px;
   --spacing: 50px;
   --spacing-s: 25px;
   --spacing-xs: 1rem;
@@ -606,7 +606,7 @@ input[type=button]:focus {
   margin-bottom: 1rem;
 }
 .banner-space--details + .banner--content {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 .single .banner-space .banner--content {
@@ -728,6 +728,10 @@ input[type=button]:focus {
   background-color: var(--color-tertiary);
 }
 
+.featured-space .banner-space {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .image {
   min-height: 600px;
   display: flex;
@@ -740,6 +744,24 @@ input[type=button]:focus {
 .image p {
   font-size: var(--font-size-large);
   color: white;
+}
+
+.location-images {
+  padding-bottom: var(--spacing-l);
+}
+.location-images--slider {
+  padding-top: var(--spacing);
+}
+.location-images--slider .slick-list .slick-track {
+  display: flex;
+  align-items: baseline;
+}
+.location-images--slider-item {
+  padding: 0 1rem;
+  display: flex;
+}
+.location-images--slider-item p {
+  font-size: var(--font-size-small);
 }
 
 .space-description {
@@ -768,8 +790,8 @@ input[type=button]:focus {
   display: flex;
   position: relative;
 }
-.text-block hr {
-  margin-bottom: var(--spacing-xs);
+.text-block hr + h3, .text-block hr h4, .text-block hr p {
+  margin-top: var(--spacing-xs);
 }
 .text-block--text {
   padding-left: var(--spacing);
@@ -1589,6 +1611,10 @@ body.nav-open:after {
 }
 .slick-next:hover {
   transform: translate(-10px, -50%);
+}
+
+.slick-disabled {
+  display: none !important;
 }
 
 .slick-dots {

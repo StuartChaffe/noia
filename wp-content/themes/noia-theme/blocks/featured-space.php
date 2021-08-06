@@ -31,7 +31,7 @@ $featuredspaces = get_field( 'featured-space' );
 					<?php if ( $price ) { ?>
 						<p>£<?php echo $price ?> pcm</p>
 					<?php } ?>
-					<a href="<?php the_permalink($featuredspace); ?>">Read</a>
+					<a class="btn" href="<?php the_permalink($featuredspace); ?>">Read more</a>
 				</div>
 				<div class="banner--content fit-content">
 					<p class="animate"><?php echo $title ?></p>

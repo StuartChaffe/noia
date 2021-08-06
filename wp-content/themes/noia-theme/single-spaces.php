@@ -7,12 +7,6 @@
 	$price = get_field( 'spaces-price' );
 	$shortdesc = get_field( 'spaces-short-desc' );
 	$images = get_field('spaces-images');
-
-	// Image
-	$image = get_field( 'post-image', $post);
-	$alt = $image['alt'];
-	$size = 'Square-large';
-	$thumb = $image['sizes'][ $size ];
 ?>
 	<?php if( have_rows('spaces-images') ): ?>
 	<div class="carousel">
@@ -24,14 +18,16 @@
 		<div class="carousel-slider">
 		<?php while( have_rows('spaces-images') ): the_row();
 			$image = get_sub_field('spaces-image');
+			$overlay = get_sub_field( 'spaces-image-overlay');
 		?>
-			<div class="carousel-slider-item fade" style="background-image: url(<?php echo $image['url']; ?>)">&nbsp;</div>
+			<div class="carousel-slider-item fade" style="background-image: url(<?php echo $image['url']; ?>)">
+			<?php if ( $overlay == '1' ) { ?><div class="banner--overlay"></div><?php } ?>&nbsp;</div>
 		<?php endwhile; ?>
 		</div>
 	</div>
 	<?php endif; ?>
 
-
+	<div style="display: none">
 	<?php if ( $shortdesc ) { ?>
 		<?php echo $shortdesc ?>
 	<?php } ?>
@@ -44,6 +40,7 @@
 	<?php if ( $price ) { ?>
 		£<?php echo $price ?> pcm
 	<?php } ?>
+	</div>
 	
 	<?php the_content(); ?>
 	
