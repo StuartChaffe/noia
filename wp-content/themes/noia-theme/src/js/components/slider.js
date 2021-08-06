@@ -12,23 +12,9 @@ jQuery(document).ready(function($) {
 		adaptiveHeight: true,
 		pauseOnHover: false,
 		fade: true,
-		responsive: [
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 1,
-				}
-			},
-			{
-				breakpoint: 640,
-				settings: {
-					slidesToShow: 1,
-				}
-			}
-		]
 	});
 
-	$(".text-block--image").slick({
+	$(".text-block--images").slick({
 		// settings: "unslick",
 		speed: 300,
 		slidesToShow: 1,

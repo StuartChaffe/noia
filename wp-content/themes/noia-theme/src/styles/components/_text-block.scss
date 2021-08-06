@@ -58,6 +58,35 @@
 			padding-top: var(--spacing) !important;
 		}
 	}
+	&--images {
+		// flex: 100%;
+		width: 50%;
+		// height: 50vw;
+		.slick-track,
+		.slick-list {
+			height: 100%;
+		}
+		.slick-slide {
+			max-height: none;
+			// height: 50vw;
+			div {
+				height: 100%;
+				img {
+					height: 100%;
+				}
+			}
+		}
+		&__left {
+			// margin-left: 0 !important;
+			.text-block--text {
+				order: 1;
+				// margin-left: var(--spacing);
+			}
+			.text-block--image {
+				order: 0;
+			}
+		}
+	}
 	&--image {
 		// flex: 100%;
 		width: 50%;

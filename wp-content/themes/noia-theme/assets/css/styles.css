@@ -810,6 +810,28 @@ input[type=button]:focus {
 .text-block--has-image + .text-block {
   padding-top: var(--spacing) !important;
 }
+.text-block--images {
+  width: 50%;
+}
+.text-block--images .slick-track,
+.text-block--images .slick-list {
+  height: 100%;
+}
+.text-block--images .slick-slide {
+  max-height: none;
+}
+.text-block--images .slick-slide div {
+  height: 100%;
+}
+.text-block--images .slick-slide div img {
+  height: 100%;
+}
+.text-block--images__left .text-block--text {
+  order: 1;
+}
+.text-block--images__left .text-block--image {
+  order: 0;
+}
 .text-block--image {
   width: 50%;
 }

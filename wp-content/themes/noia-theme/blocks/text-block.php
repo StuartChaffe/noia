@@ -22,13 +22,24 @@ $position = get_field('textblock-image-position');
 		<?php if ( $images ) { ?></div><?php } ?>
 	</div>
 	<?php if( have_rows('textblock-images') ): ?>
-		<div class="text-block--image">
-		<?php while( have_rows('textblock-images') ): the_row();
-			$image = get_sub_field('textblock-image');
-		?>
-			<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-		<?php endwhile; ?>
-		</div>
+
+		<?php if (count($images) == 1) {?>
+			<div class="text-block--image">
+			<?php while( have_rows('textblock-images') ): the_row();
+				$image = get_sub_field('textblock-image');
+			?>
+				<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+			<?php endwhile; ?>
+			</div>
+		<?php } else { ?>
+			<div class="text-block--images">
+			<?php while( have_rows('textblock-images') ): the_row();
+				$image = get_sub_field('textblock-image');
+			?>
+				<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+			<?php endwhile; ?>
+			</div>
+		<?php } ?>
 	<?php endif; ?>
 
 	<?php } else { ?>
