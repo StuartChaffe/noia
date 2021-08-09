@@ -2,53 +2,38 @@
 /**
 * The template used for displaying a location images block.
 */
+$items = get_field('location-item');
+$title = get_field('location-title');
+$content = get_field('location-content');
 ?>
 
-
 <section class="location-images">
+<?php if ( $title || $content ) { ?>
 	<div class="text-block">
 		<div class="text-block--text__half">
 			<div class="text-block--text-inner">
 				<hr>
+				<?php if ( $title ) { ?><h2><?php echo $title ?></h2><?php } ?>
 				<div class="text-block--text__content">
-					<h2>Locations</h2>
-					<p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words with normal letter frequencies, it cannot deceive eye or brain. This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words with normal letter frequencies, it cannot deceive eye or brain.</p>
+					<?php if ( $content ) { ?><?php echo $content ?><?php } ?>
 				</div>
 			</div>
 		</div>
 	</div>
+<?php } ?>
+
 	<div class="location-images--slider">
+	<?php if( have_rows('location-item') ): ?>
+
+		<?php while( have_rows('location-item') ): the_row();
+			$image = get_sub_field('location-images');
+			$content = get_sub_field('location-content');
+		?>
 		<div class="location-images--slider-item">
-			<img loading="lazy" src="//localhost:3000/wp-content/uploads/high-street-banner.jpeg" alt="">
-			<p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words.</p>
+			<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+			<div class="location-images--slider-item--content"><p><?php echo $content ?></p></div>
 		</div>
-		<div class="location-images--slider-item">
-			<img loading="lazy" src="//localhost:3000/wp-content/uploads/high-street-3.jpeg" alt="">
-			<p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words.</p>
-		</div>
-		<div class="location-images--slider-item">
-			<img loading="lazy" src="//localhost:3000/wp-content/uploads/high-street-banner.jpeg" alt="">
-			<p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words.</p>
-		</div>
-		<div class="location-images--slider-item">
-			<img loading="lazy" src="//localhost:3000/wp-content/uploads/high-street-3.jpeg" alt="">
-			<p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words.</p>
-		</div>
-		<div class="location-images--slider-item">
-			<img loading="lazy" src="//localhost:3000/wp-content/uploads/high-street-banner.jpeg" alt="">
-			<p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words.</p>
-		</div>
-		<div class="location-images--slider-item">
-			<img loading="lazy" src="//localhost:3000/wp-content/uploads/high-street-3.jpeg" alt="">
-			<p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words.</p>
-		</div>
-		<div class="location-images--slider-item">
-			<img loading="lazy" src="//localhost:3000/wp-content/uploads/high-street-banner.jpeg" alt="">
-			<p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words.</p>
-		</div>
-		<div class="location-images--slider-item">
-			<img loading="lazy" src="//localhost:3000/wp-content/uploads/high-street-3.jpeg" alt="">
-			<p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words.</p>
-		</div>
+		<?php endwhile; ?>
+	<?php endif; ?>
 	</div>
 </section>

@@ -2,19 +2,31 @@
 	padding-bottom: var(--spacing-l);
 	&--slider {
 		padding-top: var(--spacing);
+		.slick-slide {
+			margin-top: auto;
+		}
 		.slick-list {
 			.slick-track {
 				display: flex;
 				align-items: baseline;
 			}
+			    height: 100%;
 		}
 		&-item {
 			// width: 25%;
 			padding: 0 1rem;
 			display: flex;
+			flex-direction: column;
+			&--content {
+				min-height: 66px;
+			}
 
 			p {
 				font-size: var(--font-size-small);
+			}
+			img {
+				width: 100%;
+				margin-bottom: 1rem;
 			}
 		}
 	}
