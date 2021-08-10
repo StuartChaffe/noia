@@ -2,7 +2,6 @@ jQuery(function ($) {
 	fitty('.fit-content');
 });
 
-
 jQuery(function ($) {
 	function Animation() {
 		$('.animate').each(function(){

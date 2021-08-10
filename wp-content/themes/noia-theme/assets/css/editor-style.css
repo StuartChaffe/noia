@@ -308,58 +308,110 @@ hr {
 }
 .accordion-item {
   position: relative;
-  display: flex;
   width: 20%;
   padding: 0 1rem;
+  background-position: center center;
   transition: width 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.accordion-item:before {
+  opacity: 0;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .accordion-item--number {
   width: 120px;
   line-height: 100px;
   text-transform: uppercase;
   color: white;
-  transition: line-height 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .accordion-item--number .fit-content {
   transition: font-size 0.2s ease-in-out;
 }
+.accordion-item--header {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+.accordion-item--title {
+  align-items: center;
+  opacity: 0;
+  color: white;
+}
+.accordion-item--title p {
+  color: white;
+}
+.accordion-item--content {
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+.accordion-item--content p {
+  color: white;
+}
+.accordion-item .show {
+  display: flex;
+  opacity: 1;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.accordion-item .show-content {
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+.accordion-item--active {
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.accordion-item--active:before {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .accordion-item:hover {
   width: 50%;
+}
+.accordion-item:hover:before {
+  opacity: 1;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.accordion-item:hover .accordion-item--active:before {
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .accordion-item:hover .accordion-block--title__inner {
   display: none;
 }
 .accordion-item:hover .accordion-item--number {
+  width: 30px;
   line-height: 50px;
-  transition: line-height 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .accordion-item:hover .accordion-item--number .fit-content {
-  font-size: 1rem !important;
+  font-size: var(--font-size) !important;
   transition: font-size 0.2s ease-in-out;
 }
-.accordion-item span {
+.accordion-item .accordion-item--title,
+.accordion-item .show-content,
+.accordion-item .show {
   opacity: 0;
   transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
 }
-.accordion-item:hover span {
+.accordion-item:hover .accordion-item--title,
+.accordion-item:hover .show-content {
   opacity: 1;
-  transition-delay: 300ms;
 }
-.accordion-item:nth-child(1) {
-  background-color: #FF8B8B;
-}
-.accordion-item:nth-child(2) {
-  background-color: #0BBCD6;
-}
-.accordion-item:nth-child(3) {
-  background-color: #B18AE0;
-}
-.accordion-item:nth-child(4) {
-  background-color: #EED974;
-}
-.accordion-item:nth-child(5) {
-  background-color: #005397;
+.accordion-item:hover .show {
+  opacity: 1;
+  transition-delay: 0;
 }
 
 .banner {
