@@ -1,6 +1,6 @@
 <?php
 
-add_filter( 'block_categories', 'noia_block_categories', 10, 2 );
+add_filter( 'block_categories_all', 'noia_block_categories', 10, 2 );
 function noia_block_categories( $categories, $post )
 {
     return array_merge(
@@ -106,6 +106,15 @@ function noia_acf_blocks() {
 					'mode' => 'preview',
 				),
 			),
+		));
+		acf_register_block(array(
+			'name'				=> 'journals',
+			'title'				=> __('All Journals'),
+			'description'		=> __('Add all journals'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'calendar-alt',
+            'keywords'			=> array( 'journals' )
 		));
 		acf_register_block(array(
 			'name'				=> 'image',
@@ -311,15 +320,6 @@ function noia_acf_blocks() {
 		// 	'keywords'			=> array( 'carousel, featured carousel' )
 		// ));
 		// acf_register_block(array(
-		// 	'name'				=> 'posts',
-		// 	'title'				=> __('All Posts'),
-		// 	'description'		=> __('Add all posts'),
-		// 	'render_callback'	=> 'noia_acf_block_render_callback',
-		// 	'category'			=> 'noia-blocks',
-		// 	'icon'				=> 'calendar-alt',
-        //     'keywords'			=> array( 'posts' )
-		// ));
-		// acf_register_block(array(
 		// 	'name'				=> 'spacer',
 		// 	'title'				=> __('Spacer'),
 		// 	'description'		=> __('Add a spacer'),
@@ -384,7 +384,7 @@ function noia_acf_block_render_callback( $block ) {
 	}
 }
 
-add_filter( 'allowed_block_types', 'noia_allowed_block_types' );
+add_filter( 'allowed_block_types_all', 'noia_allowed_block_types' );
  
 function noia_allowed_block_types( $allowed_blocks ) {
  
@@ -397,6 +397,7 @@ function noia_allowed_block_types( $allowed_blocks ) {
 		'acf/featured-journal',
 		'acf/image-block',
 		'acf/image-slider',
+		'acf/journals',
 		// 'acf/logos',
 		'acf/location-images',
 		'acf/membership',

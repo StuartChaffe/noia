@@ -22,11 +22,11 @@
 			$images = get_field('spaces-images', get_the_ID());
 
 			// Image
-			$image = get_field( 'post-image', $post);
-			$alt = $image['alt'];
-			$size = 'Square-large';
-			$thumb = $image['sizes'][ $size ];
-			$featuredimage = get_field( 'post-featured-image', $post);
+			// $image = get_field( 'post-image', $post);
+			// $alt = $image['alt'];
+			// $size = 'Square-large';
+			// $thumb = $image['sizes'][ $size ];
+			// $featuredimage = get_field( 'post-featured-image', $post);
 		?>
 		<!-- <div class="spaces-item"> -->
 		<?php if( have_rows('spaces-images', get_the_ID()) ): ?>

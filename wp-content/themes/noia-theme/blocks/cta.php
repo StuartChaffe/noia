@@ -9,7 +9,6 @@ $bkgvideo = get_field( 'cta-background-video');
 ?>
 
 <section class="cta fade" <?php if ( $bkgimage ) { ?>style="background-image: url(<?php echo $bkgimage['url']; ?>)"<?php } ?>>
-<?php if ( $overlay == '1' ) { ?><div class="cta--overlay"></div><?php } ?>
 
 <?php if ( $bkgvideo ) { ?>
 	<div class="cta--video">

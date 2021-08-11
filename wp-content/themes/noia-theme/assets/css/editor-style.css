@@ -511,7 +511,7 @@ hr {
 }
 .banner-space {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   flex-direction: column;
 }
 .banner-space p {
@@ -535,6 +535,35 @@ hr {
   margin-bottom: 1rem;
 }
 .banner-space--details + .banner--content {
+  margin-top: 0 !important;
+}
+.banner-journal {
+  position: relative;
+  z-index: 3;
+  flex-direction: column;
+}
+.banner-journal p {
+  margin-bottom: 0;
+}
+.banner-journal--details {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  color: white;
+  padding-left: 1.9rem;
+  width: 100%;
+  padding-right: 60%;
+  z-index: 9;
+}
+.banner-journal--details .btn {
+  margin-top: 1rem;
+}
+.banner-journal--details p {
+  color: white;
+}
+.banner-journal--details .lead {
+  margin: 1rem 0;
+}
+.banner-journal--details + .banner--content {
   margin-top: 0 !important;
 }
 
