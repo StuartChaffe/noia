@@ -8,6 +8,7 @@ $price = get_field('membership-price');
 $colone = get_field('membership-column-one');
 $coltwo = get_field('membership-column-two');
 $colthree = get_field('membership-column-three');
+  
 ?>
 
 <section class="membership-block">

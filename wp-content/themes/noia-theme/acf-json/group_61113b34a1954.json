@@ -96,7 +96,8 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "",
+                    "default_value": 411
                 },
                 {
                     "key": "field_61117c9dac0eb",
@@ -111,7 +112,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
+                    "default_value": "<h4><span>Live<\/span> at High Street House<\/h4>\r\n<p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words with normal letter frequencies, it cannot deceive eye or brain. This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words with normal letter frequencies, it cannot deceive eye or brain.<\/p>",
                     "tabs": "all",
                     "toolbar": "full",
                     "media_upload": 0,
@@ -156,7 +157,8 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "",
+                    "default_value": 412
                 },
                 {
                     "key": "field_61118402b3da9",
@@ -171,7 +173,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
+                    "default_value": "<h4><span>Work<\/span> at Noiascape.<\/h4>\r\n<p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words with normal letter frequencies, it cannot deceive eye or brain. This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words with normal letter frequencies, it cannot deceive eye or brain.<\/p>",
                     "tabs": "all",
                     "toolbar": "full",
                     "media_upload": 0,
@@ -216,7 +218,8 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "",
+                    "default_value": 413
                 },
                 {
                     "key": "field_6111841de7ddd",
@@ -231,7 +234,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
+                    "default_value": "<h4><span>Art<\/span><br \/>\r\n<span>Food<\/span><br \/>\r\n<span>Fashion<\/span><br \/>\r\n<span>Learning<\/span> at Noiascape.<\/h4>\r\n<p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words with normal letter frequencies, it cannot deceive eye or brain. This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words with normal letter frequencies, it cannot deceive eye or brain.<\/p>",
                     "tabs": "all",
                     "toolbar": "full",
                     "media_upload": 0,
@@ -257,5 +260,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1628537901
+    "modified": 1628672223
 }

@@ -101,7 +101,7 @@
                 "bkg--yellow": "Yellow",
                 "bkg--white": "White"
             },
-            "default_value": "bkg--pink",
+            "default_value": "bkg--yellow",
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -161,7 +161,14 @@
             "type": "select",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_610821cab77f8",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -197,5 +204,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1628072015
+    "modified": 1628673309
 }

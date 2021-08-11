@@ -1,3 +1,39 @@
 .image-block {
-	
+	display: flex;
+	padding-bottom: var(--spacing);
+	padding-right: var(--spacing);
+	&--text {
+		width: 40%;
+		padding: var(--spacing);
+		padding-top: 0;
+		padding-bottom: 0;
+		position: sticky;
+		top: 0;
+		&__sticky {
+			position: sticky;
+			top: var(--spacing);
+			padding-bottom: var(--spacing);
+		}
+	}
+	&--images {
+		width: 60%;
+		display: flex;
+		align-items: flex-start;
+		margin-left: auto;
+		&-item {
+			margin: 0 12.5px;
+			position: sticky;
+			top: 0;
+			width: 50%;
+			&:first-child {
+				margin-left: 0;
+				img {
+					margin-left: auto;
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
 }
