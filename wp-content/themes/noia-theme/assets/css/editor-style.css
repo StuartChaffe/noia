@@ -37,14 +37,15 @@
   --color-linkedin: #0077B5;
   --body-background-color: var(--color-tertiary);
   --border-radius: 16px;
-  --spacing-xxl: 3em;
-  --spacing-xl: 2em;
+  --spacing-xxl: 200px;
+  --spacing-xl: 150px;
   --spacing-l: 100px;
   --spacing: 50px;
   --spacing-s: 25px;
   --spacing-xs: 1rem;
   --container-width: 75rem;
   --container-width-l: 100rem;
+  --container-width-s: 50rem;
   --content-width: 50rem;
 }
 @media (min-width: 70em) {
@@ -104,6 +105,10 @@ body {
   background-color: var(--body-background-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.single {
+  background-color: white;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -983,6 +988,13 @@ hr {
   max-width: var(--container-width);
 }
 
+.container--small {
+  margin: 0 auto;
+  padding: 0 1em;
+  width: 100%;
+  max-width: var(--container-width-s);
+}
+
 .main {
   max-width: var(--content-width);
   margin-top: var(--spacing-l);
@@ -1001,6 +1013,11 @@ hr {
 }
 .bkg--white {
   background-color: white;
+}
+
+.grad {
+  background: #fecfcf;
+  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-tertiary) 100%);
 }
 
 .content > * {

@@ -46,8 +46,8 @@
 
 	--border-radius: 16px;
 
-	--spacing-xxl: 3em;
-	--spacing-xl: 2em;
+	--spacing-xxl: 200px;
+	--spacing-xl: 150px;
 	--spacing-l: 100px;
 	--spacing: 50px;
 	--spacing-s: 25px;
@@ -55,6 +55,7 @@
 
 	--container-width: 75rem;
 	--container-width-l: 100rem;
+	--container-width-s: 50rem;
 	--content-width: 50rem;
 
 	@include mq(large) {

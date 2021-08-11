@@ -18,6 +18,6 @@ $contentright = get_field( 'space-content-right' );
 		<?php echo $contentright ?>
 	<?php } ?>
 	<br />
-	Share <?php echo get_the_title($post) ?>:
+	Share <?php echo get_the_title() ?>:
 	</div>
 </section>

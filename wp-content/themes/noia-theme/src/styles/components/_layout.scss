@@ -15,6 +15,13 @@
 	max-width: var(--container-width);
 }
 
+.container--small {
+	margin: 0 auto;
+	padding: 0 1em;
+	width: 100%;
+	max-width: var(--container-width-s);
+}
+
 .main {
 	@extend .container;
 	max-width: var(--content-width);
@@ -36,4 +43,9 @@
 	&--white {
 		background-color: white;
 	}
+}
+
+.grad {
+	background: rgb(254,207,207);
+	background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-tertiary) 100%);
 }
