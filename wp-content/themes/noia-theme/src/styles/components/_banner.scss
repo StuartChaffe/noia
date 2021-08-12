@@ -26,6 +26,7 @@
 		width: 100%;
 		margin-right: 200px;
 		position: relative;
+		width: calc(100% - 200px);
 
 		&__inner {
 			height: auto;
@@ -47,6 +48,7 @@
 			width: 150px;
 			right: -175px;
 			top: 50%;
+			z-index: 2;
 		}
 		&:hover {
 			.banner--link__arrow {
@@ -170,6 +172,9 @@
 		// .banner--content {
 		// 	margin-top: 0;
 		// }
+		.banner--link {
+			margin-top: 0;
+		}
 	}
 }
 .single {
