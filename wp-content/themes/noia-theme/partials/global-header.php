@@ -15,8 +15,8 @@
 			)); ?>
 
 			<p class="heading">Contact</p>
-			<a href=""><p class="heading-3">Stay/Live with Noiascape</p></a>
-			<a href=""><p class="heading-3">Collaborate with Noiscape</p></a>
+			<p class="heading-3">Stay/Live with Noiascape</p>
+			<p class="heading-3">Collaborate with Noiscape</p>
 			<a href="" class="btn">Speak to us</a>
 		</div>
 		<div class="mobile-menu--foot">
