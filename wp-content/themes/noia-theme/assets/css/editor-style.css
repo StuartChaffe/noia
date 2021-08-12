@@ -43,7 +43,7 @@
   --spacing: 50px;
   --spacing-s: 25px;
   --spacing-xs: 1rem;
-  --container-width: 75rem;
+  --container-width: 60rem;
   --container-width-l: 100rem;
   --container-width-s: 50rem;
   --content-width: 50rem;
@@ -107,7 +107,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.single {
+article {
   background-color: white;
 }
 
@@ -136,10 +136,6 @@ img[class*=wp-image-] {
 }
 
 /* Natural flow and rhythm in articles by default */
-article > * + * {
-  margin-top: 1em;
-}
-
 /* Inherit fonts for inputs and buttons */
 input,
 button,
@@ -160,7 +156,7 @@ select {
   }
 }
 p {
-  margin-bottom: var(--spacing-s);
+  margin-bottom: var(--spacing-xs);
 }
 p:last-of-type {
   margin-bottom: 0;
@@ -273,6 +269,19 @@ hr {
   padding: 0;
   border-top: 1px solid black;
   border-bottom: 0;
+}
+
+.caption,
+.wp-caption-text {
+  font-size: 16px;
+  color: #B5B5B5;
+  margin-top: 1rem;
+}
+
+.heading {
+  color: #7E7E7E;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
 }
 
 .accordion {
@@ -1020,10 +1029,28 @@ hr {
   background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-tertiary) 100%);
 }
 
+.content {
+  font-size: var(--font-size-small);
+  padding-bottom: var(--spacing-l);
+}
 .content > * {
   max-width: var(--content-width);
   margin-right: auto;
   margin-left: auto;
+}
+.content--share {
+  margin-top: var(--spacing-l);
+  border-top: 1px solid black;
+  padding-top: 0.5rem;
+}
+.content img {
+  margin-top: var(--spacing-l);
+}
+.content .wp-caption {
+  margin-bottom: var(--spacing-l);
+}
+.content p {
+  font-size: var(--font-size-small);
 }
 .content h2,
 .content h3,
@@ -1128,7 +1155,7 @@ hr {
 .btn {
   display: inline-block;
   border-radius: 0;
-  padding: 0.5rem 0.8rem;
+  padding: 0.3rem 0.6rem;
   border: 0;
   color: white;
   font-family: var(--display-family);

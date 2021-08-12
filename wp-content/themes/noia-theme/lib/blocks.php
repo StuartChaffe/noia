@@ -63,6 +63,17 @@ function noia_acf_blocks() {
 			),
 		));
 		acf_register_block(array(
+			'name'				=> 'content',
+			'title'				=> __('Content block'),
+			'description'		=> __('Add a content block'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'format-aside',
+			'align' 			=> 'full',
+			'mode' => 'auto',
+			'keywords'			=> array( 'content, journal' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'cta',
 			'title'				=> __('Call to action'),
 			'description'		=> __('Add a CTA block'),
@@ -114,7 +125,13 @@ function noia_acf_blocks() {
 			'render_callback'	=> 'noia_acf_block_render_callback',
 			'category'			=> 'noia-blocks',
 			'icon'				=> 'calendar-alt',
-            'keywords'			=> array( 'journals' )
+            'align' 			=> 'full',
+			'keywords'			=> array( 'journals' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
 		));
 		acf_register_block(array(
 			'name'				=> 'image',
@@ -392,6 +409,7 @@ function noia_allowed_block_types( $allowed_blocks ) {
 		'acf/accordion',
 		'acf/banner',
 		'acf/carousel',
+		'acf/content',
 		'acf/cta',
 		'acf/featured-space',
 		'acf/featured-journal',

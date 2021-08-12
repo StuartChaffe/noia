@@ -1,6 +1,6 @@
 p {
 	// margin-top: var(--spacing-l);
-	margin-bottom: var(--spacing-s);
+	margin-bottom: var(--spacing-xs);
 	&:last-of-type {
 		margin-bottom: 0;
 	}
@@ -100,4 +100,15 @@ hr {
 	padding: 0;
 	border-top: 1px solid black;
 	border-bottom: 0;
+}
+.caption,
+.wp-caption-text { 
+	font-size: 16px;
+	color: #B5B5B5;
+	margin-top: 1rem;
+}
+.heading {
+	color: #7E7E7E;
+	font-size: 16px;
+	margin-bottom: 0.5rem;
 }
