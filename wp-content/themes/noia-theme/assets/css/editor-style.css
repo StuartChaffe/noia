@@ -304,7 +304,7 @@ hr {
 }
 .accordion-block--title {
   position: absolute;
-  height: calc(100vh - 106px);
+  height: calc(90vh - 106px);
   width: 100%;
   top: 106px;
   opacity: 1;
@@ -728,10 +728,6 @@ hr {
 }
 .cta--links-item a:hover p {
   color: var(--color-text-base);
-}
-.cta--links-item a:hover .arrow {
-  margin-left: 0;
-  transition-delay: 0s !important;
 }
 
 .featured-journal {
