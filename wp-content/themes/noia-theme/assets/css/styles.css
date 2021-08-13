@@ -602,7 +602,7 @@ input[type=button]:focus {
   transform: scale(1.1, 1.1);
   cursor: pointer;
   transition: all 0.1s ease-in-out;
-  padding: 0.8rem 0.8rem 0.8rem 0.5rem;
+  background-color: black;
 }
 
 .banner {
@@ -1496,8 +1496,6 @@ input[type=button]:focus {
   display: flex;
   margin-left: auto;
   z-index: 999;
-  width: 50px;
-  height: 50px;
   top: var(--spacing-s);
   right: var(--spacing-s);
   position: absolute;
@@ -1523,7 +1521,7 @@ input[type=button]:focus {
   overflow: visible;
   width: 50px;
   height: 50px;
-  border-radius: 50px;
+  border-radius: 100px;
   background-color: var(--color-primary);
   border: 0;
   outline: none;
@@ -1531,7 +1529,11 @@ input[type=button]:focus {
   align-items: center;
   justify-content: center;
   z-index: 999;
-  transition: 0.3s background-color ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.global-header__menu-btn:hover {
+  transform: scale(1.1, 1.1);
+  background-color: black;
 }
 .menu-active {
   overflow: hidden;

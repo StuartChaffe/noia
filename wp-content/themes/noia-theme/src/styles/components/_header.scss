@@ -31,8 +31,8 @@
 	display: flex;
 	margin-left: auto;
 	z-index: 999;
-	width: 50px;
-    height: 50px;
+	// width: 50px;
+    // height: 50px;
 	top: var(--spacing-s);
     right: var(--spacing-s);
 	position: absolute;
@@ -58,7 +58,7 @@
 	overflow: visible;
 	width: 50px;
 	height: 50px;
-	border-radius: 50px;
+	border-radius: 100px;
 	background-color: var(--color-primary);
 	border: 0;
 	outline: none;
@@ -67,7 +67,12 @@
 	justify-content: center;
 	z-index: z-scale(btn);
 	z-index: 999;
-	transition: .3s background-color ease-in-out;
+	transition: all .1s ease-in-out;
+
+	&:hover {
+		transform: scale(1.1, 1.1);
+		background-color: black;
+	}
 
 	@include mq(medium) {
 		// display: none;
