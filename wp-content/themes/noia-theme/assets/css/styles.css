@@ -615,6 +615,11 @@ input[type=button]:focus {
   background-position: center center;
   background-attachment: fixed;
 }
+.banner--logo {
+  z-index: 9;
+  max-width: 80%;
+  margin: 0 auto;
+}
 .banner--overlay {
   position: absolute;
   top: 0;

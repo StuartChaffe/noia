@@ -9,6 +9,12 @@
 	background-position: center center;
 	background-attachment: fixed;
 
+	&--logo {
+		z-index: 9;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
 	&--overlay {
 		position: absolute;
 		top: 0;
