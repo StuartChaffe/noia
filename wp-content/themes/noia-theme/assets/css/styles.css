@@ -2264,16 +2264,6 @@ img.aligncenter {
   border: 0;
 }
 
-.fade {
-  opacity: 0;
-  transition: opacity 2s ease-out;
-}
-
-.fade--visible {
-  opacity: 1;
-  transition: opacity 2s ease-out;
-}
-
 .animate {
   transform: translateY(-100%);
   transition: transform 0.25s ease-out;

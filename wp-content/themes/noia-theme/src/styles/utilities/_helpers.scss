@@ -52,14 +52,14 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
     }
 }
 
-.fade {
-	opacity: 0;
-	transition: opacity 2s ease-out;
-}
-.fade--visible {
-	opacity: 1;
-	transition: opacity 2s ease-out;
-}
+// .fade {
+// 	opacity: 0;
+// 	transition: opacity 2s ease-out;
+// }
+// .fade--visible {
+// 	opacity: 1;
+// 	transition: opacity 2s ease-out;
+// }
 .animate {
 	transform: translateY(-100%);
 	transition: transform .25s ease-out;

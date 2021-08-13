@@ -26,13 +26,13 @@ jQuery(function ($) {
 			} 
 		});
 
-		$('.fade').each(function(){
-			//var ImageHeight = $(window).height() / 2;
-			var screenHeight = $(window).height() - 300;
-			if($(document).scrollTop() >= $(this).offset().top - screenHeight) {
-			$(this).addClass('fade--visible');
-			} 
-		});
+		// $('.fade').each(function(){
+		// 	//var ImageHeight = $(window).height() / 2;
+		// 	var screenHeight = $(window).height() - 300;
+		// 	if($(document).scrollTop() >= $(this).offset().top - screenHeight) {
+		// 	$(this).addClass('fade--visible');
+		// 	} 
+		// });
 	};
 	Animation();
 		$(document).scroll(function(){
