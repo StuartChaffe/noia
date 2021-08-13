@@ -18,7 +18,7 @@ $overlay = get_field( 'banner-background-overlay');
 
 <?php if ( $bkgvideo ) { ?>
 	<div class="banner--video">
-		<video src="<?php echo $bkgvideo['url']; ?>" loop="" muted="" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
+		<video src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
 	</div>
 <?php } ?>
 
