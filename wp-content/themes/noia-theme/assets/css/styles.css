@@ -629,7 +629,9 @@ input[type=button]:focus {
 .banner--link {
   margin-top: auto;
   width: 100%;
+  margin-right: 200px;
   position: relative;
+  width: calc(100% - 200px);
 }
 .banner--link__inner {
   height: auto;
@@ -649,12 +651,6 @@ input[type=button]:focus {
   right: -175px;
   top: 50%;
   z-index: 2;
-}
-.banner--link:hover {
-  color: var(--color-text-base);
-}
-.banner--link:hover p {
-  color: var(--color-text-base);
 }
 .banner--link:hover .banner--link__arrow {
   right: -165px;

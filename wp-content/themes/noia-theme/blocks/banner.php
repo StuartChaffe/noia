@@ -24,7 +24,7 @@ $overlay = get_field( 'banner-background-overlay');
 <?php if ( $text ) { ?>
 	<?php if ( $link ) { ?>
 	<a href="<?php echo $link['url'] ?>" class="banner--link">
-		<!-- <div class="banner--link__arrow arrow"><img src="<?php echo get_template_directory_uri(); ?>/src/icons/arrow-large.svg" alt="link arrow" /></div> -->
+		<div class="banner--link__arrow arrow"><img src="<?php echo get_template_directory_uri(); ?>/src/icons/arrow-large.svg" alt="link arrow" /></div>
 		<div class="banner--link__inner">
 			<div class="fit-content">
 				<p class="animate"><?php echo $text ?></p>
