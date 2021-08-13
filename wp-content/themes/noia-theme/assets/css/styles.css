@@ -878,6 +878,12 @@ input[type=button]:focus {
   margin-left: 1rem;
   width: 100px;
 }
+.cta--links-item a:hover {
+  color: var(--color-text-base);
+}
+.cta--links-item a:hover p {
+  color: var(--color-text-base);
+}
 .cta--links-item a:hover .arrow {
   margin-left: 0;
   transition-delay: 0s !important;

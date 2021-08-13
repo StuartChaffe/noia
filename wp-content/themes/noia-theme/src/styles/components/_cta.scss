@@ -69,6 +69,10 @@
 					// transition-delay: 0s !important;
 				}
 				&:hover {
+					color: var(--color-text-base);
+					p {
+						color: var(--color-text-base);
+					}
 					.arrow {
 						margin-left: 0;
 						transition-delay: 0s !important;
