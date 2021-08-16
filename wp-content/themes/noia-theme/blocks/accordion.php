@@ -28,7 +28,7 @@ $counter = 1;
 				<div class="accordion-item--number"><div class="fit-content"><p>0<?php echo $i ?></p></div></div>
 				<div class="accordion-item--title"><p>0<?php echo $i ?> — <?php echo $title ?></p></div>
 			</div>
-			<div class="show-content">[Read]</div>
+			<!-- <div class="show-content">[Read]</div> -->
 			<div class="accordion-item--content">
 				<?php echo $content ?>
 			</div>

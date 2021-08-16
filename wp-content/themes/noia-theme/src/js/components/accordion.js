@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-    $('body').on('click', '.show-content', function () {
+    $('body').on('click', '.accordion-item--open', function () {
 		$(this).closest('.accordion').scrollView();
 	})
 
@@ -10,12 +10,16 @@ jQuery(document).ready(function($) {
         $( ".accordion-block--title" ).toggleClass( "accordion-block--title__hide" );
 	});
 
-	$(".show-content").click(function(){
-		$(this).text($(this).text() == '[Read]' ? '[Close]' : '[Read]');
+	$(".accordion-item--open").click(function(){
+		$(this).text($(this).text() == '+' ? '-' : '+');
 	});
 
-	$( ".accordion-item--open" ).click(function() {
-		$( ".accordion-item" ).toggleClass( "accordion-item--show" );
-	});
+	// $( ".accordion-item--open" ).click(function() {
+	// 	$( ".accordion-item" ).toggleClass( "accordion-item--show" );
+	// });
+	$('.accordion-item--open').on('click', function () {
+		$(this).closest('.accordion-item').toggleClass( "accordion-item--show" );
+		$( ".accordion-block--title__inner" ).toggleClass( "accordion-block--title__hide" );
+	})
 	  
 });
