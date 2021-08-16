@@ -3,6 +3,7 @@
 	background-color: white;
 	padding: var(--spacing-s);
 	display: flex;
+	z-index: 99;
 
 	&--logo {
 		width: 25%;

@@ -1848,6 +1848,7 @@ body.nav-open:after {
   background-color: white;
   padding: var(--spacing-s);
   display: flex;
+  z-index: 99;
 }
 .global-footer--logo {
   width: 25%;
