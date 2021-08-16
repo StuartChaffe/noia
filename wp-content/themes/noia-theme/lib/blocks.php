@@ -253,6 +253,21 @@ function noia_acf_blocks() {
 				),
 			),
 		));
+		acf_register_block(array(
+			'name'				=> 'intro-block',
+			'title'				=> __('Intro block'),
+			'description'		=> __('Add an intro text block'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'text-page',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'content, text, intro' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
 		// acf_register_block(array(
 		// 	'name'				=> 'stat',
 		// 	'title'				=> __('Stat'),
@@ -413,6 +428,7 @@ function noia_allowed_block_types( $allowed_blocks ) {
 		'acf/cta',
 		'acf/featured-space',
 		'acf/featured-journal',
+		'acf/intro-block',
 		'acf/image-block',
 		'acf/image-slider',
 		'acf/journals',

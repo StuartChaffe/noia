@@ -1004,6 +1004,13 @@ hr {
   padding-top: var(--spacing);
 }
 
+.intro-block .text-block--text-inner {
+  padding: var(--spacing) var(--spacing-l);
+}
+.intro-block p {
+  font-size: var(--font-size-lead);
+}
+
 .global-container {
   display: flex;
   flex-direction: column;
