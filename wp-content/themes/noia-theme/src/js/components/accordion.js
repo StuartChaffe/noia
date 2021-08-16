@@ -13,5 +13,9 @@ jQuery(document).ready(function($) {
 	$(".show-content").click(function(){
 		$(this).text($(this).text() == '[Read]' ? '[Close]' : '[Read]');
 	});
+
+	$( ".accordion-item--open" ).click(function() {
+		$( ".accordion-item" ).toggleClass( "accordion-item--show" );
+	});
 	  
 });

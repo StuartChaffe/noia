@@ -26,6 +26,14 @@ jQuery(function ($) {
 			} 
 		});
 
+		$('.accordion-block--title__inner').each(function(){
+			//var ImageHeight = $(window).height() / 2;
+			var screenHeight = $(window).height() - 0;
+			if($(document).scrollTop() >= $(this).offset().top - screenHeight) {
+			$(this).addClass('stick-bottom');
+			} 
+		});
+
 		// $('.fade').each(function(){
 		// 	//var ImageHeight = $(window).height() / 2;
 		// 	var screenHeight = $(window).height() - 300;
