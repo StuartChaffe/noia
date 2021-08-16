@@ -37,8 +37,10 @@ $overlay = get_field( 'banner-background-overlay');
 		</div>
 	</a>
 	<?php } else { ?>
+	<div class="banner--outer">
 	<div class="banner--content fit-content">
 		<p class="animate"><?php echo $text ?></p>
+	</div>
 	</div>
 	<?php } ?>
 <?php } ?>

@@ -470,6 +470,7 @@ hr {
   margin-right: 200px;
   position: relative;
   width: calc(100% - 200px);
+  padding-left: 1rem;
 }
 .banner--link__inner {
   height: auto;
@@ -488,6 +489,7 @@ hr {
   width: 150px;
   right: -175px;
   top: 50%;
+  transform: translateY(-50%);
   z-index: 2;
 }
 .banner--link:hover .banner--link__arrow {

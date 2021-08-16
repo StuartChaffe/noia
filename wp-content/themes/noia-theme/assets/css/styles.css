@@ -625,6 +625,7 @@ input[type=button]:focus {
   margin-right: 200px;
   position: relative;
   width: calc(100% - 200px);
+  padding-left: 1rem;
 }
 .banner--link__inner {
   height: auto;
@@ -643,6 +644,7 @@ input[type=button]:focus {
   width: 150px;
   right: -175px;
   top: 50%;
+  transform: translateY(-50%);
   z-index: 2;
 }
 .banner--link:hover .banner--link__arrow {
@@ -2294,13 +2296,13 @@ img.aligncenter {
 }
 
 .arrow {
-  transform: translateX(-40px);
+  transform: translate(-40px, -50%);
   opacity: 0;
   transition: all 0.25s ease-out;
 }
 
 .arrow--visible {
-  transform: translateX(0);
+  transform: translate(0, -50%);
   opacity: 1;
   transition: all 0.25s ease-out;
   transition-delay: 0.5s;

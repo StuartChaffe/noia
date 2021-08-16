@@ -33,6 +33,7 @@
 		margin-right: 200px;
 		position: relative;
 		width: calc(100% - 200px);
+		padding-left: 1rem;
 
 		&__inner {
 			height: auto;
@@ -54,6 +55,7 @@
 			width: 150px;
 			right: -175px;
 			top: 50%;
+			transform: translateY(-50%);
 			z-index: 2;
 		}
 		&:hover {
