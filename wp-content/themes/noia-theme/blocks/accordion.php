@@ -24,6 +24,7 @@ $counter = 1;
 		?>
 		<div class="accordion-item <?php echo $i ?>" style="background-image:url(<?php echo $image['url']; ?>);">
 			<div class="accordion-item--header">
+				<a href="" class="accordion-item--open">+</a>
 				<div class="accordion-item--number"><div class="fit-content"><p>0<?php echo $i ?></p></div></div>
 				<div class="accordion-item--title"><p>0<?php echo $i ?> — <?php echo $title ?></p></div>
 			</div>
