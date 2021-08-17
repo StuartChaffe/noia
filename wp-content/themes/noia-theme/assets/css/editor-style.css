@@ -468,6 +468,18 @@ hr {
   color: var(--color-primary);
   font-size: calc(1rem + 4vw);
   line-height: 4.8rem;
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 0.25s ease-out;
+}
+.banner--text-overlay__reveal {
+  opacity: 0;
+}
+.banner--text-overlay__show {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: all 0.25s ease-out;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .banner--overlay {
   position: absolute;

@@ -42,23 +42,40 @@ jQuery(function ($) {
 		// });
 
 
-		$(document).ready(function() {
-			var reveal = $('.reveal').offset();
-			var $window = $(window);
+		// $(document).ready(function() {
+		// 	var reveal = $('.reveal').offset();
+		// 	var $window = $(window);
 			
-			$window.scroll(function() {
-				if ( $window.scrollTop() >= reveal.top) {
-					$(".banner--text-overlay").addClass("text-reveal");
-					$(".banner--logo").addClass("hide");
-				}
-			});			
-		});
-
-
-
+		// 	$window.scroll(function() {
+		// 		if ( $window.scrollTop() >= reveal.top) {
+		// 			$(".banner--text-overlay").addClass("text-reveal");
+		// 			$(".banner--logo").addClass("hide");
+		// 		}
+		// 	});			
+		// });
 	};
 	Animation();
 		$(document).scroll(function(){
 		Animation();
 	});
+
+	$(window).scroll(function() {
+
+		if ($(this).scrollTop()>0)
+		 {
+			// $('.banner--text-overlay').fadeIn();
+			$(".banner--text-overlay").addClass("banner--text-overlay__show");
+			$(".banner--logo").addClass("hide");
+		 }
+		else
+		 {
+		//   $('.banner--text-overlay').fadeOut();
+		  $(".banner--text-overlay").removeClass("banner--text-overlay__show");
+		  $(".banner--logo").removeClass("hide");
+		 }
+	 });
+
+	 
+
 })
+
