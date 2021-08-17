@@ -8,11 +8,30 @@
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
+	// position: sticky;
+	// top: 0;
+
+	&--outer {
+		height: 200vh;
+		.banner {
+			position: sticky;
+			top: 0;
+		}
+	}
 
 	&--logo {
 		z-index: 9;
 		max-width: 80%;
 		margin: 0 auto;
+	}
+	&--text-overlay {
+		position: absolute;
+		top: 0;
+		height: 100vh;
+		z-index: 999;
+		color: var(--color-primary);
+		font-size: calc(1rem + 4vw);
+		line-height: 4.8rem;
 	}
 
 	&--overlay {
@@ -26,6 +45,12 @@
 		z-index: 1;
 		background-color: rgba(0, 0, 0, 0.2);
 	}
+	// &--text-overlay {
+	// 	background: rgba(0, 0, 0, 0.2);
+	// 	height: 200vh;
+	// 	position: sticky;
+	// 	top: 0;
+	// }
 
 	&--link {
 		margin-top: auto;

@@ -603,10 +603,26 @@ input[type=button]:focus {
   background-position: center center;
   background-attachment: fixed;
 }
+.banner--outer {
+  height: 200vh;
+}
+.banner--outer .banner {
+  position: sticky;
+  top: 0;
+}
 .banner--logo {
   z-index: 9;
   max-width: 80%;
   margin: 0 auto;
+}
+.banner--text-overlay {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  z-index: 999;
+  color: var(--color-primary);
+  font-size: calc(1rem + 4vw);
+  line-height: 4.8rem;
 }
 .banner--overlay {
   position: absolute;
@@ -2306,6 +2322,23 @@ img.aligncenter {
   opacity: 1;
   transition: all 0.25s ease-out;
   transition-delay: 0.5s;
+}
+
+.reveal {
+  opacity: 0;
+  transition: all 0.25s ease-out;
+  transform: translateY(200px);
+}
+
+.text-reveal {
+  opacity: 1;
+  transition: all 0.25s ease-out;
+  transform: translateY(0px);
+}
+
+.hide {
+  opacity: 0;
+  transition: all 0.25s ease-out;
 }
 
 .keyline {

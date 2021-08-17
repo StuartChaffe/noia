@@ -9,7 +9,10 @@ $link = get_field( 'banner-background-link');
 $bkgimage = get_field( 'banner-background-image');
 $bkgvideo = get_field( 'banner-background-video');
 $overlay = get_field( 'banner-background-overlay');
+$textoverlay = get_field( 'banner-text-overlay');
+
 ?>
+<?php if ( $textoverlay ) { ?><div class="banner--outer"><?php } ?>
 <section class="banner fade" <?php if ( $bkgimage ) { ?>style="background-image: url(<?php echo $bkgimage['url']; ?>)"<?php } ?>>
 	<?php if ( $overlay == '1' ) { ?><div class="banner--overlay"></div><?php } ?>
 <?php if ( $image ) { ?>
@@ -25,6 +28,12 @@ $overlay = get_field( 'banner-background-overlay');
 <?php if ( $logo ) { ?>
 	<img class="banner--logo" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['url']; ?>" />
 <?php } ?>
+<?php if ( $textoverlay ) { ?>
+<div class="banner--text-overlay reveal">
+	<p><?php echo $textoverlay ?></p>
+</div>
+<?php } ?>
+
 	
 <?php if ( $text ) { ?>
 	<?php if ( $link ) { ?>
@@ -46,3 +55,4 @@ $overlay = get_field( 'banner-background-overlay');
 <?php } ?>
 
 </section>
+<?php if ( $textoverlay ) { ?></div><?php } ?>

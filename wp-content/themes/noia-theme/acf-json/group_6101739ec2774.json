@@ -163,6 +163,25 @@
             "ui": 1,
             "ui_on_text": "",
             "ui_off_text": ""
+        },
+        {
+            "key": "field_611b8464bcf54",
+            "label": "Text overlay",
+            "name": "banner-text-overlay",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         }
     ],
     "location": [
@@ -182,5 +201,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1628855348
+    "modified": 1629193358
 }
