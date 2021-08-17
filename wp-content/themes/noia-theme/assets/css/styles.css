@@ -2334,7 +2334,7 @@ img.aligncenter {
   opacity: 1;
   transition: all 0.25s ease-out;
   transform: translateY(0px);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .hide {
