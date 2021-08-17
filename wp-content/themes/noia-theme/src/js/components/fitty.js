@@ -66,12 +66,14 @@ jQuery(function ($) {
 			// $('.banner--text-overlay').fadeIn();
 			$(".banner--text-overlay").addClass("banner--text-overlay__show");
 			$(".banner--logo").addClass("hide");
+			$(".banner--content").addClass("hide");
 		 }
 		else
 		 {
 		//   $('.banner--text-overlay').fadeOut();
 		  $(".banner--text-overlay").removeClass("banner--text-overlay__show");
 		  $(".banner--logo").removeClass("hide");
+		  $(".banner--content").removeClass("hide");
 		 }
 	 });
 

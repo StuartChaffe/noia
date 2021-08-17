@@ -1,4 +1,6 @@
-$('.modal').featherlight({
-    galleryFadeIn: 300,
-    galleryFadeOut: 300
+jQuery(function ($) {
+	$('.modal').featherlight({
+        galleryFadeIn: 300,
+        galleryFadeOut: 300
+    });
 });

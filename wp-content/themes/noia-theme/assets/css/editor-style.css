@@ -449,10 +449,10 @@ hr {
   background-position: center center;
   background-attachment: fixed;
 }
-.banner--outer {
+.banner-text--outer {
   height: 200vh;
 }
-.banner--outer .banner {
+.banner-text--outer .banner {
   position: sticky;
   top: 0;
 }
@@ -533,6 +533,8 @@ hr {
   height: auto;
   overflow: hidden;
   z-index: 2;
+  opacity: 1;
+  transition: all 0.25s ease-out;
 }
 .banner--content h1, .banner--content h2, .banner--content h3, .banner--content h4, .banner--content p {
   line-height: 100%;
