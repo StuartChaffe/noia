@@ -459,7 +459,7 @@ input[type=button]:focus {
   align-items: center;
   justify-content: center;
   opacity: 1;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .accordion-block--title__inner h1, .accordion-block--title__inner h2, .accordion-block--title__inner h3, .accordion-block--title__inner h4, .accordion-block--title__inner p {
   line-height: 100%;
