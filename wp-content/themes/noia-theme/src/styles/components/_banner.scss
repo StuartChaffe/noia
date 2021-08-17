@@ -23,6 +23,9 @@
 		z-index: 9;
 		max-width: 80%;
 		margin: 0 auto;
+		opacity: 1;
+		transition: all .25s ease-out;
+		transition-delay: 0.5s;
 	}
 	&--text-overlay {
 		position: absolute;
