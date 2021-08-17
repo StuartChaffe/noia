@@ -13,6 +13,9 @@ function origin_scripts() {
 		wp_register_script( 'fitty', get_template_directory_uri().'/assets/js/fitty.js', array( 'jquery' ), null, true );
 		wp_enqueue_script( 'fitty' );
 
+		wp_register_script( 'featherlight', get_template_directory_uri().'/assets/js/featherlight.js', array( 'jquery' ), null, true );
+		wp_enqueue_script( 'featherlight' );
+
 		wp_register_script( 'parallax', get_template_directory_uri().'/assets/js/parallax.js', array( 'jquery' ), null, true );
 		wp_enqueue_script( 'parallax' );
 

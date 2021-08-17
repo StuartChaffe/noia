@@ -48,6 +48,9 @@
 		&__contact {
 			width: 50%;
 			// margin-left: auto;
+			p {
+				margin-bottom: 0;
+			}
 		}
 		&__foot {
 			display: flex;
