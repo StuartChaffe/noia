@@ -805,7 +805,6 @@ input[type=button]:focus {
   width: 100%;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
 }
 .carousel-slider-item--content {
   display: flex;
@@ -1732,6 +1731,8 @@ html.with-featherlight {
 }
 .text-block--images {
   width: 50%;
+  max-height: 600px;
+  overflow: hidden;
 }
 .text-block--images .slick-slide div img {
   display: block !important;

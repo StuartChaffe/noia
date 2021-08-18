@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
 		dots: false,
 		adaptiveHeight: true,
 		pauseOnHover: false,
-		fade: true
+		// fade: true
 	});
 	$(".location-images--slider").slick({
 		// speed: 10000,
