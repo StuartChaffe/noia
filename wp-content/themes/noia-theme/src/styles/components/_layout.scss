@@ -28,6 +28,8 @@
 	margin-top: var(--spacing-l);
 	margin-bottom: var(--spacing-l);
 	flex: 1;
+	min-height: 100vh;
+	// z-index: 1;
 }
 
 .bkg {

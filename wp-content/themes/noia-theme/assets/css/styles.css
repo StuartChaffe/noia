@@ -603,6 +603,7 @@ input[type=button]:focus {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  z-index: 2;
 }
 .banner-text--outer {
   height: 200vh;
@@ -638,7 +639,6 @@ input[type=button]:focus {
   transform: translateY(0px);
   opacity: 1;
   transition: all 0.25s ease-out;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 .banner--overlay {
   position: absolute;
@@ -1808,6 +1808,7 @@ html.with-featherlight {
   margin-top: var(--spacing-l);
   margin-bottom: var(--spacing-l);
   flex: 1;
+  min-height: 100vh;
 }
 
 .bkg--red {

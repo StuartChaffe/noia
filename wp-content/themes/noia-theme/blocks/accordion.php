@@ -2,17 +2,20 @@
 /**
 * The template used for displaying an accordion block.
 */
+$title = get_field('accordion-title');
 $items = get_field('accordion-item');
 $counter = 1;
 ?>
 <section class="accordion-block fade">
+	<?php if ( $title ) { ?>
 	<div class="accordion-block--title">
 		<div class="accordion-block--title__inner">
 			<div class="fit-content">
-				<p class="animate">Ideas for modern urban living</p>
+				<p class="animate"><?php echo $title ?></p>
 			</div>
 		</div>
 	</div>
+	<?php } ?>
 	<div class="accordion">
 	<?php if( have_rows('accordion-item') ): ?>
 

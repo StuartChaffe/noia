@@ -25,7 +25,7 @@ $textoverlay = get_field( 'banner-text-overlay');
 <?php } ?>
 
 <?php if ( $logo ) { ?>
-	<img class="banner--logo" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['url']; ?>" />
+	<img class="banner--logo" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
 <?php } ?>
 <?php if ( $textoverlay ) { ?>
 <div class="banner--text-overlay">
