@@ -484,6 +484,7 @@ hr {
   transform: translateY(0px);
   opacity: 1;
   transition: all 0.25s ease-out;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .banner--overlay {
   position: absolute;
@@ -1227,13 +1228,12 @@ hr {
 }
 
 .btn--primary {
-  background-color: var(--color-primary);
-  border: 1px solid var(--color-primary);
-  color: var(--color-text-reversed);
+  background-color: black;
+  color: white;
 }
 .btn--primary:hover, .btn--primary:focus {
   border-color: var(--color-primary);
-  color: var(--color-primary);
+  color: white;
 }
 
 .social-links {

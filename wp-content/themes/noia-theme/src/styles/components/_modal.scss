@@ -1,289 +1,213 @@
-/**
- * Featherlight – ultra slim jQuery lightbox
- * Version 1.7.14 - http://noelboss.github.io/featherlight/
- *
- * Copyright 2019, Noël Raoul Bossart (http://www.noelboss.com)
- * MIT Licensed.
-**/
 
-html.with-featherlight {
-	/* disable global scrolling when featherlights are visible */
-	overflow: hidden;
-}
-
-.featherlight {
-	display: none;
-
-	/* dimensions: spanning the background from edge to edge */
-	position:fixed;
-	top: 0; right: 0; bottom: 0; left: 0;
-	z-index: 2147483647; /* z-index needs to be >= elements on the site. */
-
-	/* position: centering content */
-	text-align: center;
-
-	/* insures that the ::before pseudo element doesn't force wrap with fixed width content; */
-	white-space: nowrap;
-
-	/* styling */
-	cursor: pointer;
-	background: #333;
-	/* IE8 "hack" for nested featherlights */
-	background: rgba(0, 0, 0, 0);
-}
-
-/* support for nested featherlights. Does not work in IE8 (use JS to fix) */
-.featherlight:last-of-type {
-	background: rgba(0, 0, 0, 0.8);
-}
-
-.featherlight:before {
-	/* position: trick to center content vertically */
-	content: '';
-	display: inline-block;
+.modal-inner {
+	display: flex !important;
+	width: 100%;
 	height: 100%;
-	vertical-align: middle;
-}
-
-.featherlight .featherlight-content {
-	/* make content container for positioned elements (close button) */
-	position: relative;
-
-	/* position: centering vertical and horizontal */
-	text-align: left;
-	vertical-align: middle;
-	display: inline-block;
-
-	/* dimensions: cut off images */
-	overflow: auto;
-	padding: 25px 25px 0;
-	border-bottom: 25px solid transparent;
-
-	/* dimensions: handling large content */
-	margin-left: 5%;
-	margin-right: 5%;
-	max-height: 95%;
-
-	/* styling */
-	background: #fff;
-	cursor: auto;
-
-	/* reset white-space wrapping */
-	white-space: normal;
-
-    width: 100%;
-    @include mq(medium) {
-		width: 50%;
+	padding: 2rem 0;
+	&-item {
+		flex: 1;
+		padding: 0 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		height: 100%;
+		&:first-of-type {
+			border-right: 1px solid #C7C7C7;
+		}
+		&--buttons {
+			margin-top: 2rem;
+		}
 	}
 }
-
-/* contains the content */
-.featherlight .featherlight-inner {
-	/* make sure its visible */
+.btn-back {
+	position: absolute;
+	color: var(--color-text-base);
+	margin: 1rem 0 0 1rem;
+	display: block;
+}
+// .sw-main, .tab-content {
+// 	height: 100%;
+// }
+.step-content {
+	height: 80vh;
+}
+.tab-content, .sw-main, .tab-pane {
+	// height: 100%;
+}
+.tab-content>.tab-pane {
+	display: none;
+	
+}
+.tab-content>.active {
 	display: block;
 }
 
-/* don't show these though */
-.featherlight script.featherlight-inner,
-.featherlight link.featherlight-inner,
-.featherlight style.featherlight-inner {
-	display: none;
-}
 
-.featherlight .featherlight-close-icon {
-	/* position: centering vertical and horizontal */
+.modal-open {
+	overflow: hidden;
+}
+.modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.modal {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:1050;
+	display:none;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	outline:0
+}
+.modal-dialog {
+	position: relative;
+	width: auto;
+	pointer-events: none;
+	height: 100%;
+}
+.modal.fade .modal-dialog {
+	transition:transform .3s ease-out;
+	transform:translate(0,-50px)
+}
+@media (prefers-reduced-motion:reduce) {
+	.modal.fade .modal-dialog {
+		transition:none
+	}
+}
+.modal.show
+.modal-dialog {
+	transform:none
+}
+.modal-dialog-scrollable {
+	display:flex;
+	max-height: 100%;
+}
+.modal-dialog-scrollable .modal-content {
+	max-height: 100%;
+	overflow: hidden
+}
+.modal-dialog-scrollable .modal-footer,.modal-dialog-scrollable .modal-header {
+	-ms-flex-negative:0;flex-shrink:0
+}
+.modal-dialog-scrollable .modal-body{
+	overflow-y:auto
+}
+.modal-dialog-centered{
+	display:flex;
+	align-items:center;
+	min-height: 100%;
+}
+.modal-dialog-centered::before {
+	display:block;
+	height: 100%;
+	content:""
+}
+.modal-dialog-centered.modal-dialog-scrollable {
+	flex-direction:column;
+	justify-content:center;
+	height:100%
+}
+.modal-dialog-centered.modal-dialog-scrollable .modal-content {
+	max-height:none
+}
+.modal-dialog-centered.modal-dialog-scrollable::before {
+	content:none
+}
+.modal-content {
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	height: 80%;
+	pointer-events:auto;
+	background-color:#fff;
+	background-clip:padding-box;
+	outline: 0
+}
+.modal-backdrop {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:1040;
+	width:100vw;
+	height:100vh;
+	background-color:#000
+}
+.modal-backdrop.fade {
+	opacity:0
+}
+.modal-backdrop.show {
+	opacity:.5
+}
+.modal-header {
+	display:flex;
+	align-items:flex-start;
+	justify-content:space-between;
+	padding:1rem 1rem;
+}
+.modal-content .close {
 	position: absolute;
-	z-index: 9999;
-	top: 0;
-	right: 0;
-
-	/* dimensions: 25px x 25px */
-	line-height: 25px;
-	width: 25px;
-
-	/* styling */
-	cursor: pointer;
-	text-align: center;
-	font-family: Arial, sans-serif;
-	background: #fff; /* Set the background in case it overlaps the content */
-	background: rgba(255, 255, 255, 0.3);
-	color: #000;
-	border: none;
+	right: 0.4rem;
+	top: 0.4rem;
+	z-index: 99;
 	padding: 0;
-}
-
-/* See http://stackoverflow.com/questions/16077341/how-to-reset-all-default-styles-of-the-html5-button-element */
-.featherlight .featherlight-close-icon::-moz-focus-inner {
+	background: transparent;
 	border: 0;
-	padding: 0;
+	&:hover {
+		cursor: pointer;
+	}
 }
-
-.featherlight .featherlight-image {
-	/* styling */
-	width: 100%;
+.modal-title {
+	margin-bottom:0;
+	line-height:1.5
 }
-
-
-.featherlight-iframe .featherlight-content {
-	/* removed the border for image croping since iframe is edge to edge */
-	border-bottom: 0;
-	padding: 0;
-	-webkit-overflow-scrolling: touch;
+.modal-body {
+	position:relative;
+	flex:1 1 auto;
+	padding: 0 0 2rem 0;
 }
-
-.featherlight iframe {
-	/* styling */
-	border: none;
+.modal-footer {
+	display:flex;
+	align-items:center;
+	justify-content:flex-end;
+	padding:1rem;
+	border-top:1px solid #dee2e6;
+	border-bottom-right-radius:.3rem;
+	border-bottom-left-radius:.3rem
 }
-
-.featherlight * { /* See https://github.com/noelboss/featherlight/issues/42 */
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+.modal-footer>:not(:first-child) {
+	margin-left:.25rem
 }
-
-/* handling phones and small screens */
-@media only screen and (max-width: 1024px) {
-	.featherlight .featherlight-content {
-		/* dimensions: maximize lightbox with for small screens */
-		margin-left: 0;
-		margin-right: 0;
-		max-height: 98%;
-
-		padding: 10px 10px 0;
-		border-bottom: 10px solid transparent;
+.modal-footer>:not(:last-child) {
+	margin-right:.25rem
+}
+.modal-scrollbar-measure {
+	position:absolute;
+	top:-9999px;
+	width:50px;
+	height:50px;
+	overflow:scroll
+}
+@media (min-width:576px) {
+	.modal-dialog {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	.modal-dialog-scrollable {
+		max-height:calc(100% - 3.5rem)
+	}
+	.modal-dialog-scrollable .modal-content {
+		max-height:calc(100vh - 3.5rem)
+	}
+	.modal-dialog-centered::before {
+		height:calc(100vh - 3.5rem)
 	}
 }
 
-/* hide non featherlight items when printing */
-@media print {
-	html.with-featherlight > * > :not(.featherlight) {
-		display: none;
-	}
-}
-
-
-/**
- * Featherlight Gallery – an extension for the ultra slim jQuery lightbox
- * Version 1.7.14 - http://noelboss.github.io/featherlight/
- *
- * Copyright 2019, Noël Raoul Bossart (http://www.noelboss.com)
- * MIT Licensed.
-**/
-html.with-featherlight {
-    overflow: unset;
-}
-.featherlight-next,
-.featherlight-previous {
+.btn-toolbar {
 	display: none;
-	position: absolute;
-	top: 25px;
-	right: 25px;
-	bottom: 0;
-	left: 80%;
-	cursor: pointer;
-	/* preventing text selection */
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	/* IE9 hack, otherwise navigation doesn't appear */
-	background: rgba(0,0,0,0);
-}
-
-.featherlight-previous {
-	left: 25px;
-	right: 80%;
-}
-
-.featherlight-next:hover,
-.featherlight-previous:hover {
-	background: rgba(255,255,255,0.25);
-}
-
-
-.featherlight-next span,
-.featherlight-previous span {
-	display: none;
-	position: absolute;
-
-	top: 50%;
-	left: 5%;
-	width: 82%;
-
-	/* center horizontally */
-	text-align: center;
-
-	font-size: 40px;
-	line-height: 80px;
-
-	/* center vertically */
-	margin-top: -40px;
-
-	text-shadow: 0px 0px 5px #fff;
-	color: #fff;
-	font-style: normal;
-	font-weight: normal;
-}
-.featherlight-next span {
-	right: 5%;
-	left: auto;
-}
-
-
-.featherlight-next:hover span,
-.featherlight-previous:hover span {
-	display: inline-block;
-}
-
-.featherlight-swipe-aware .featherlight-next,
-.featherlight-swipe-aware .featherlight-previous {
-	display: none;
-}
-
-/* Hide navigation while loading */
-.featherlight-loading .featherlight-previous, .featherlight-loading .featherlight-next {
-	display:none;
-}
-
-/* Hide navigation in case of single image */
-.featherlight-first-slide.featherlight-last-slide .featherlight-previous,
-.featherlight-first-slide.featherlight-last-slide .featherlight-next {
-	display:none;
-}
-
-
-/* Always display arrows on touch devices */
-@media only screen and (max-device-width: 1024px){
-	.featherlight-next:hover,
-	.featherlight-previous:hover {
-		background: none;
-	}
-	.featherlight-next span,
-	.featherlight-previous span {
-		display: block;
-	}
-}
-
-/* handling phones and small screens */
-@media only screen and (max-width: 1024px) {
-	.featherlight-next,
-	.featherlight-previous {
-		top: 10px;
-		right: 10px;
-		left: 85%;
-	}
-
-	.featherlight-previous {
-		left: 10px;
-		right: 85%;
-	}
-
-	.featherlight-next span,
-	.featherlight-previous span {
-		margin-top: -30px;
-		font-size: 40px;
-	}
 }

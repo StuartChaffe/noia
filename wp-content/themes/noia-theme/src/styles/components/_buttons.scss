@@ -21,12 +21,11 @@
 }
 
 .btn--primary {
-	background-color: var(--color-primary);
-	border: 1px solid var(--color-primary);
-	color: var(--color-text-reversed);
+	background-color: black;
+	color: white;
 
 	&:hover, &:focus {
 		border-color: var(--color-primary);
-		color: var(--color-primary);
+		color: white;
 	}
 }
