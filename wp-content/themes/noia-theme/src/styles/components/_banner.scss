@@ -49,6 +49,9 @@
 			opacity: 1;
 			transition: all .25s ease-out;
 			background-color: rgba(0, 0, 0, 0.2);
+			+ .banner--content {
+				opacity: 0;
+			}
 
 			// &:before {
 			// 	content: '';

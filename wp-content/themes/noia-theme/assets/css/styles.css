@@ -641,6 +641,9 @@ input[type=button]:focus {
   transition: all 0.25s ease-out;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.banner--text-overlay__show + .banner--content {
+  opacity: 0;
+}
 .banner--overlay {
   position: absolute;
   top: 0;
