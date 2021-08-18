@@ -1,4 +1,26 @@
 .space {
+	&-nav {
+		position: sticky;
+		top: 0;
+		z-index: 9;
+		padding: 1rem var(--spacing);
+
+		ul {
+			display: flex;
+			list-style-type: none;
+			width: 100%;
+			justify-content: space-between;
+			margin: 0;
+			padding: 0;
+			li {
+				font-size: var(--font-size-small);
+				padding-right: 1rem;
+				a {
+					color: var(--color-primary);
+				}
+			}
+		}
+	}
 	&-images {
 	// display: flex;
 	// align-items: center;

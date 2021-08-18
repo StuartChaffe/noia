@@ -26,6 +26,15 @@
 		</div>
 	</div>
 	<?php endif; ?>
+	<nav class="space-nav grad">
+		<ul>
+			<li><p><?php the_title(); ?></p></li>
+			<li><a href="#info">Info</a></li>
+			<li><a href="#inside">Inside</a></li>
+			<li><a href="#membership">Membership</a></li>
+		</ul>
+	</nav>
+		
 
 	<div style="display: none">
 	<?php if ( $shortdesc ) { ?>

@@ -5,12 +5,16 @@
 $bkgcolor = get_field( 'bkgcolor');
 $contentleft = get_field( 'space-content-left' );
 $contentright = get_field( 'space-content-right' );
+$price = get_field( 'spaces-price', get_the_ID());
 ?>
 
-<section class="space-description <?php echo $bkgcolor ?>">
+<section class="space-description <?php echo $bkgcolor ?>" id="info">
 	<div class="space-description-item space-description--left">
 	<?php if ( $contentleft ) { ?>
 		<?php echo $contentleft ?>
+		<?php if ( $price ) { ?>
+			<p>From £<?php echo $price ?> pcm</p>
+		<?php } ?>
 	<?php } ?>
 	</div>
 	<div class="space-description-item space-description--right">
