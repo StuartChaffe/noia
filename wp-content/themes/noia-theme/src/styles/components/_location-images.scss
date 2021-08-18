@@ -17,6 +17,9 @@
 			padding: 0 1rem;
 			display: flex;
 			flex-direction: column;
+			&:hover {
+				cursor: pointer;
+			}
 			&--content {
 				min-height: 66px;
 			}

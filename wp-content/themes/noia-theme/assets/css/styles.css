@@ -1319,6 +1319,9 @@ html.with-featherlight {
   display: flex;
   flex-direction: column;
 }
+.location-images--slider-item:hover {
+  cursor: pointer;
+}
 .location-images--slider-item--content {
   min-height: 66px;
 }
@@ -1771,10 +1774,6 @@ html.with-featherlight {
 
 .text-block.bkg--red {
   margin-bottom: 0;
-}
-
-.carousel + .text-block {
-  padding-top: var(--spacing);
 }
 
 .intro-block .text-block--text-inner {
