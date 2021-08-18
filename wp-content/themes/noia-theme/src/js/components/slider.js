@@ -54,7 +54,7 @@ jQuery(document).ready(function($) {
 		arrows: true,
 		infinite: true,
 		dots: false,
-		// adaptiveHeight: true,
+		adaptiveHeight: true,
 		pauseOnHover: false,
 		fade: true,
 		responsive: [
