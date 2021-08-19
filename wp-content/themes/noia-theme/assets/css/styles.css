@@ -601,7 +601,7 @@ input[type=button]:focus {
 .ask:hover {
   width: 110px;
   height: 110px;
-  transform: translate(5px, 5px);
+  margin: 5px -5px -5px 0;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
   background-color: black;
@@ -1870,7 +1870,7 @@ h2:hover a.heading-link {
 .global-header__menu-btn:hover {
   width: 60px;
   height: 60px;
-  transform: translate(5px, -5px);
+  margin: -5px -5px 0 0;
   background-color: black;
 }
 .menu-active {
