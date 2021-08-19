@@ -589,7 +589,7 @@ input[type=button]:focus {
   bottom: var(--spacing-s);
   right: var(--spacing-s);
   z-index: 99;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.1s ease-in-out;
@@ -608,7 +608,7 @@ input[type=button]:focus {
 }
 
 :not(.single-spaces) .ask {
-  display: flex;
+  display: none;
 }
 
 .banner {
