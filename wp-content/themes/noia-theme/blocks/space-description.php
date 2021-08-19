@@ -21,8 +21,9 @@ $price = get_field( 'spaces-price', get_the_ID());
 	<?php if ( $contentright ) { ?>
 		<?php echo $contentright ?>
 	<?php } ?>
-	<br />
-	Share <?php echo get_the_title() ?>:
-	<div class="addthis_inline_share_toolbox"></div>
+		<div class="share">
+			Share <?php echo get_the_title() ?>:
+			<div class="addthis_inline_share_toolbox"></div>
+		</div>
 	</div>
 </section>

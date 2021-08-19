@@ -429,6 +429,7 @@ function noia_allowed_block_types( $allowed_blocks ) {
 		'acf/featured-space',
 		'acf/featured-journal',
 		'acf/intro-block',
+		'acf/image',
 		'acf/image-block',
 		'acf/image-slider',
 		'acf/journals',
