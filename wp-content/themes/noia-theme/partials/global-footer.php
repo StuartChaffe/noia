@@ -5,7 +5,7 @@
 $logo = get_field( 'logo-footer', 'options');
 ?>
 
-<a href="#" class="ask" data-toggle="modal" data-target="#contact"><img src="<?php echo get_template_directory_uri(); ?>/src/images/ask.svg" alt="ask Logo" /></a>
+<div class="ask-btn"><a href="#" class="ask" data-toggle="modal" data-target="#contact"><img src="<?php echo get_template_directory_uri(); ?>/src/images/ask.svg" alt="ask Logo" /></a></div>
 <?php get_template_part( 'partials/global-contact' ); ?>
 <footer class="global-footer">
 	<div class="global-footer--logo">

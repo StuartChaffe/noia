@@ -589,7 +589,7 @@ input[type=button]:focus {
   bottom: var(--spacing-s);
   right: var(--spacing-s);
   z-index: 99;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   transition: all 0.1s ease-in-out;
@@ -605,6 +605,10 @@ input[type=button]:focus {
   cursor: pointer;
   transition: all 0.1s ease-in-out;
   background-color: black;
+}
+
+:not(.single-spaces) .ask {
+  display: flex;
 }
 
 .banner {
@@ -645,6 +649,7 @@ input[type=button]:focus {
   transform: translateY(200px);
   opacity: 0;
   transition: all 0.25s ease-out;
+  padding: 1rem;
 }
 .banner--text-overlay__reveal {
   opacity: 0;

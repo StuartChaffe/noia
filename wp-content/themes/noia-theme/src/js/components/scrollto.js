@@ -47,6 +47,15 @@ jQuery(function ($) {
     });
 
 
+	// $(document).scroll(function () {
+	// 	var y = $(this).scrollTop();
+	// 	if (y > 800) {
+	// 		$('.ask-btn').fadeIn();
+	// 	} else {
+	// 		$('.ask-btn').fadeOut();
+	// 	}
+	
+	// });
 
 })
 

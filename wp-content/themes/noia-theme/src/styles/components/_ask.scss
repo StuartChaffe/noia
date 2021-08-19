@@ -10,13 +10,10 @@
 	bottom: var(--spacing-s);
 	right: var(--spacing-s);
 	z-index: 99;
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	transition: all .1s ease-in-out;
-	// &:not(.single) {
-	// 	display: none;
-	// }
 	img {
 		width: 48px;
 		height: 62px;
@@ -30,5 +27,11 @@
 		transition: all .1s ease-in-out;
 		// padding: 0.8rem 0.8rem 0.8rem 0.5rem;
 		background-color: black;
+	}
+}
+
+:not(.single-spaces) {
+	.ask {
+		display: flex;
 	}
 }

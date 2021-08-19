@@ -8,18 +8,6 @@ add_theme_support( 'align-wide' );
 add_theme_support( 'disable-custom-font-sizes' );
 
 
-
-//Page Slug Body Class
-function add_slug_body_class( $classes ) {
-global $post;
-if ( isset( $post ) ) {
-$classes[] = $post->post_type . '-' . $post->post_name;
-}
-return $classes;
-}
-add_filter( 'body_class', 'add_slug_body_class' );
-
-
 /**
  * Tidy up head
  */
@@ -58,14 +46,23 @@ add_filter( 'body_class', 'origin_no_js_body_classes', 20 );
 /**
  * Tidy up body classes
  */
-function origin_clean_body_classes( $classes ) {
-    $allowed_classes = [
-        'single',
-        'page',
-        'archive',
-        'admin-bar',
-        'no-js',
-    ];
-    return array_intersect( $classes, $allowed_classes );
+// function origin_clean_body_classes( $classes ) {
+//     $allowed_classes = [
+//         'single',
+//         'page',
+//         'archive',
+//         'admin-bar',
+//         'no-js',
+//     ];
+//     return array_intersect( $classes, $allowed_classes );
+// }
+// add_filter( 'body_class', 'origin_clean_body_classes', 20 );
+
+add_filter( 'body_class','my_body_classes' );
+function my_body_classes( $classes ) {
+    global $post;
+    $name = $post->post_name;
+    $classes[] = $name;
+     
+    return $classes;
 }
-add_filter( 'body_class', 'origin_clean_body_classes', 20 );
