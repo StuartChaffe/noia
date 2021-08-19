@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Add theme support
  */

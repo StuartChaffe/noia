@@ -3,7 +3,7 @@
 	background-color: white;
 	padding: var(--spacing-s);
 	display: flex;
-	z-index: 99;
+	z-index: 5;
 
 	// position: sticky;
 	// bottom: 0;
@@ -67,6 +67,9 @@
 		}
 		&__copy {
 			margin-top: auto;
+			span {
+				margin: 0 1rem;
+			}
 		}
 		&__website {
 			margin-top: auto;

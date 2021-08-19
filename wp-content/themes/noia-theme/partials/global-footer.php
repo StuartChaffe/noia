@@ -41,7 +41,7 @@ $logo = get_field( 'logo-footer', 'options');
 		</div>
 		<div class="global-footer--content__foot">
 			<div class="global-footer--content__copy">
-				<p>&copy; <?php bloginfo( 'name' ); ?> <?php echo date('Y'); ?></p>
+				<p>&copy; <?php bloginfo( 'name' ); ?> <?php echo date('Y'); ?> <span>|</span> <a href="mailto:hello@noiascape.com">hello@noiascape.com</a> <span>|</span> <a href="tel:+442087629185">+44 (0)208 762 9185</a></p>
 			</div>
 			<div class="global-footer--content_website">
 				<p>Designed: <a href="https://peterandpaul.co.uk/" target="_blank">Peter & Paul</a> / Build: <a href="https://www.stuartchaffe.co.uk/" target="_blank">Stuart Chaffe</a></p>

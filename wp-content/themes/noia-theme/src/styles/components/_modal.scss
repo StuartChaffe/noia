@@ -126,7 +126,8 @@
 	pointer-events:auto;
 	background-color:#fff;
 	background-clip:padding-box;
-	outline: 0
+	outline: 0;
+	overflow: auto;
 }
 .modal-backdrop {
 	position:fixed;

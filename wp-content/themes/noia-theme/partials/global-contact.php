@@ -35,7 +35,7 @@
 
 								<div class="modal-inner-item">
 									<h3>Stay with Noiascape</h3>
-									FORM 
+									<?php echo do_shortcode('[contact-form-7 id="611" title="Stay with Noiascape"]'); ?>
 									<div class="modal-inner-item--buttons">
 										<a href="#step-5" class="btn">Submit</a>
 									</div>
