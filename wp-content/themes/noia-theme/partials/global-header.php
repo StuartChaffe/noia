@@ -26,7 +26,7 @@
 			<p class="heading">Contact</p>
 			<p class="heading-3">Stay/Live with Noiascape</p>
 			<p class="heading-3">Collaborate with Noiscape</p>
-			<a href="" data-featherlight="#ask" class="btn">Speak to us</a>
+			<a href="#" class="btn" data-toggle="modal" data-target="#contact">Speak to us</a>
 		</div>
 		<div class="mobile-menu--foot">
 			<div class="mobile-menu--foot__contact">

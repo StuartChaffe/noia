@@ -590,11 +590,18 @@ input[type=button]:focus {
   right: var(--spacing-s);
   z-index: 99;
   display: flex;
+  align-items: center;
   justify-content: center;
   transition: all 0.1s ease-in-out;
 }
+.ask img {
+  width: 48px;
+  height: 62px;
+}
 .ask:hover {
-  transform: scale(1.1, 1.1);
+  width: 110px;
+  height: 110px;
+  transform: translate(5px, 5px);
   cursor: pointer;
   transition: all 0.1s ease-in-out;
   background-color: black;
@@ -1861,7 +1868,9 @@ h2:hover a.heading-link {
   transition: all 0.1s ease-in-out;
 }
 .global-header__menu-btn:hover {
-  transform: scale(1.1, 1.1);
+  width: 60px;
+  height: 60px;
+  transform: translate(5px, -5px);
   background-color: black;
 }
 .menu-active {
