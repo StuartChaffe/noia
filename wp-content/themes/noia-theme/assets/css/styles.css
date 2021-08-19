@@ -589,7 +589,7 @@ input[type=button]:focus {
   bottom: var(--spacing-s);
   right: var(--spacing-s);
   z-index: 99;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   transition: all 0.1s ease-in-out;
@@ -607,8 +607,8 @@ input[type=button]:focus {
   background-color: black;
 }
 
-:not(.single-spaces) .ask {
-  display: none;
+.single-spaces .ask {
+  display: flex;
 }
 
 .banner {
@@ -1385,6 +1385,19 @@ input[type=button]:focus {
 }
 .btn-toolbar {
   display: none;
+}
+
+.addthis_inline_share_toolbox {
+  margin-top: 1rem;
+}
+.addthis_inline_share_toolbox .at-share-btn {
+  background-color: transparent !important;
+}
+.addthis_inline_share_toolbox .at-share-btn:hover {
+  transform: translateY(0) !important;
+}
+.addthis_inline_share_toolbox .at-share-btn:hover svg {
+  fill: var(--color-primary) !important;
 }
 
 .space-description {

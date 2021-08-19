@@ -1,0 +1,12 @@
+.addthis_inline_share_toolbox {
+	margin-top: 1rem;
+	.at-share-btn {
+		background-color: transparent !important;
+		&:hover {
+			transform: translateY(0) !important;
+			svg {
+				fill: var(--color-primary) !important;
+			}
+		}
+	}
+}

@@ -10,7 +10,7 @@
 	bottom: var(--spacing-s);
 	right: var(--spacing-s);
 	z-index: 99;
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	transition: all .1s ease-in-out;
@@ -30,8 +30,8 @@
 	}
 }
 
-:not(.single-spaces) {
+.single-spaces {
 	.ask {
-		display: none;
+		display: flex;
 	}
 }
