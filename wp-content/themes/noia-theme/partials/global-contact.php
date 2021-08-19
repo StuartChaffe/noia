@@ -36,9 +36,6 @@
 								<div class="modal-inner-item">
 									<h3>Stay with Noiascape</h3>
 									<?php echo do_shortcode('[contact-form-7 id="611" title="Stay with Noiascape"]'); ?>
-									<div class="modal-inner-item--buttons">
-										<a href="#step-5" class="btn">Submit</a>
-									</div>
 								</div>
 					
 						</div>
@@ -79,6 +76,7 @@
 
 								<div class="modal-inner-item--buttons">
 									<button type="button" class="btn btn--primary" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">Back to Noiascape</span> </button>
+									<a href="#step-1" class="btn">Start again</a>
 								</div>
 							</div>
 						</div>

@@ -57,5 +57,10 @@ jQuery(function ($) {
 	
 	// });
 
+
+	document.addEventListener( 'wpcf7mailsent', function( event ) {
+		location = '#step-5';
+	  }, false );
+
 })
 
