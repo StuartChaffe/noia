@@ -78,6 +78,8 @@
 			height: 34px;
 			line-height: 34px;
 			text-align: center;
+			transform: rotate(0deg);
+			transition: transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 			&:hover {
 				cursor: pointer;
 			}
@@ -233,6 +235,10 @@
 		opacity: 1;
 		transition: opacity 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 		transition-delay: 1s;
+	}
+	.accordion-item--open {
+		transform: rotate(45deg);
+		transition: transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 	}
 }
 .accordion-item.accordion-item--show {

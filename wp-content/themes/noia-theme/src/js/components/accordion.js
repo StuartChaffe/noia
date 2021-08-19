@@ -10,9 +10,9 @@ jQuery(document).ready(function($) {
         $( ".accordion-block--title" ).toggleClass( "accordion-block--title__hide" );
 	});
 
-	$(".accordion-item--open").click(function(){
-		$(this).text($(this).text() == '+' ? '-' : '+');
-	});
+	// $(".accordion-item--open").click(function(){
+	// 	$(this).text($(this).text() == '+' ? '-' : '+');
+	// });
 
 	// $( ".accordion-item--open" ).click(function() {
 	// 	$( ".accordion-item" ).toggleClass( "accordion-item--show" );
