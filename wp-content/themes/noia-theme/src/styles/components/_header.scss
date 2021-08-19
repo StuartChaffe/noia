@@ -98,11 +98,24 @@
 .global-header--nav-btn.is-toggled .global-header--nav-inner::after {
 	background-color: white;
 }
+
+
+.global-header--nav {
+	&-logo {
+		width: 22px;
+		height: 28px;
+	}
+	&-close {
+		display: none;
+	}
+}
 .global-header--nav-box {
-	width: 18px;
-	height: 20px;
-	display: inline-block;
+	width: 40px;
+    height: 34px;
+	display: flex;
 	position: relative;
+	align-items: center;
+	justify-content: center;
 }
 
 .global-header--nav-inner {
@@ -161,7 +174,14 @@
 .global-header--nav-inner::after {
 	transition-property: bottom, transform;
 }
-
+.is-toggled {
+	.global-header--nav-logo {
+		display: none;
+	}
+	.global-header--nav-close {
+		display: flex;
+	}
+}
 .is-toggled .global-header--nav-inner {
 	transform: rotate(765deg);
 	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
@@ -182,9 +202,9 @@
 	border: 0;
 
 	.global-header--nav-box {
-		width: 30px;
-		height: 26px;
-		display: inline-block;
+		width: 40px;
+		height: 34px;
+		display: flex;
 		position: relative;
 	}
 

@@ -1886,11 +1886,21 @@ h2:hover a.heading-link {
   background-color: white;
 }
 
+.global-header--nav-logo {
+  width: 22px;
+  height: 28px;
+}
+.global-header--nav-close {
+  display: none;
+}
+
 .global-header--nav-box {
-  width: 18px;
-  height: 20px;
-  display: inline-block;
+  width: 40px;
+  height: 34px;
+  display: flex;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 .global-header--nav-inner {
@@ -1954,6 +1964,13 @@ h2:hover a.heading-link {
   transition-property: bottom, transform;
 }
 
+.is-toggled .global-header--nav-logo {
+  display: none;
+}
+.is-toggled .global-header--nav-close {
+  display: flex;
+}
+
 .is-toggled .global-header--nav-inner {
   transform: rotate(765deg);
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
@@ -1978,9 +1995,9 @@ h2:hover a.heading-link {
   border: 0;
 }
 .is-toggled .global-header--nav-box {
-  width: 30px;
-  height: 26px;
-  display: inline-block;
+  width: 40px;
+  height: 34px;
+  display: flex;
   position: relative;
 }
 .is-toggled .global-header--nav-inner {
@@ -2332,9 +2349,9 @@ body.nav-open:after {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
-  width: 40px;
-  border-radius: 40px;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
   line-height: 0px;
   font-size: 0px;
   cursor: pointer;
@@ -2347,14 +2364,6 @@ body.nav-open:after {
   z-index: 9;
   transition: 0.2s transform ease-in-out;
 }
-@media (min-width: 50em) {
-  .slick-prev,
-.slick-next {
-    height: 40px;
-    width: 40px;
-    border-radius: 40px;
-  }
-}
 .slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
@@ -2363,8 +2372,6 @@ body.nav-open:after {
 }
 .slick-prev:before,
 .slick-next:before {
-  top: 50%;
-  transform: translate(0, -50%);
   color: white;
   width: 10px;
   height: 22px;
@@ -2377,7 +2384,7 @@ body.nav-open:after {
   left: 1rem;
 }
 .slick-prev:before {
-  position: absolute;
+  margin-left: -5px;
   right: 1rem;
   transition: 0.2s all ease-in-out;
   content: url("../../src/icons/arrow-black-left.svg");
@@ -2393,7 +2400,6 @@ body.nav-open:after {
   right: 1rem;
 }
 .slick-next:before {
-  position: absolute;
   transition: 0.2s all ease-in-out;
   content: url("../../src/icons/arrow-black.svg");
 }
