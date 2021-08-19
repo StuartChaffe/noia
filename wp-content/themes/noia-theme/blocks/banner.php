@@ -10,6 +10,7 @@ $bkgimage = get_field( 'banner-background-image');
 $bkgvideo = get_field( 'banner-background-video');
 $overlay = get_field( 'banner-background-overlay');
 $textoverlay = get_field( 'banner-text-overlay');
+$textcolor = get_field( 'banner-text-overlay-colour');
 ?>
 <?php if ( $textoverlay ) { ?><div class="banner-text--outer"><?php } ?>
 <section class="banner fade" <?php if ( $bkgimage ) { ?>style="background-image: url(<?php echo $bkgimage['url']; ?>)"<?php } ?>>
@@ -28,7 +29,7 @@ $textoverlay = get_field( 'banner-text-overlay');
 	<img class="banner--logo" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
 <?php } ?>
 <?php if ( $textoverlay ) { ?>
-<div class="banner--text-overlay">
+<div class="banner--text-overlay <?php echo $textcolor ?>">
 	<p><?php echo $textoverlay ?></p>
 </div>
 <?php } ?>

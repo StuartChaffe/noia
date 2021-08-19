@@ -51,3 +51,10 @@
 	background: rgb(254,207,207);
 	background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-tertiary) 100%);
 }
+
+.color-red {
+	color: var(--color-primary);
+}
+.color-white {
+	color: white;
+}

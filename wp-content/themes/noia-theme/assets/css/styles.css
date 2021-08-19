@@ -99,7 +99,6 @@ dd {
 
 html, body {
   height: 100%;
-  scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
@@ -1624,6 +1623,14 @@ h2:hover a.heading-link {
 .grad {
   background: #fecfcf;
   background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-tertiary) 100%);
+}
+
+.color-red {
+  color: var(--color-primary);
+}
+
+.color-white {
+  color: white;
 }
 
 .content {
