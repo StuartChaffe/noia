@@ -74,8 +74,5 @@ jQuery(function ($) {
 		//   $(".banner--content").removeClass("hide");
 		 }
 	 });
-
-	 
-
 })
 

@@ -932,7 +932,7 @@ hr {
 .space-nav {
   position: sticky;
   top: 0;
-  z-index: 9;
+  z-index: 99;
   padding: 1rem var(--spacing);
 }
 .space-nav ul {
@@ -964,6 +964,30 @@ hr {
 .spaces .banner-space {
   background-color: rgba(0, 0, 0, 0.4);
 }
+.toc {
+  text-decoration: none;
+}
+
+#anchor-icon {
+  display: inline;
+  background: url("anchor.jpg");
+  background-repeat: no-repeat;
+}
+
+a.heading-link {
+  opacity: 0;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+h1:hover a.heading-link {
+  opacity: 1;
+}
+
+h2:hover a.heading-link {
+  opacity: 1;
+}
+
 .text-block {
   display: flex;
   position: relative;

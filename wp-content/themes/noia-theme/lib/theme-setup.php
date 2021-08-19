@@ -33,8 +33,6 @@ add_theme_support( 'editor-styles' );
 add_editor_style( 'assets/css/editor-style.css' );
 
 
-
-
 /**
  * Add no-js class to body
  */

@@ -11,7 +11,7 @@ $colthree = get_field('membership-column-three');
   
 ?>
 
-<section class="membership-block">
+<section class="membership-block" id="membership">
 <?php if ( $title || $content ) { ?>
 	<div class="text-block">
 		<div class="text-block--text__half">
