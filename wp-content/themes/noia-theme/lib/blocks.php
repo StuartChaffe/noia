@@ -194,6 +194,21 @@ function noia_acf_blocks() {
 			),
 		));
 		acf_register_block(array(
+			'name'				=> 'manifesto',
+			'title'				=> __('Manifesto'),
+			'description'		=> __('Add a manifesto block'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'media-document',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'manifesto' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
 			'name'				=> 'membership',
 			'title'				=> __('Membership block'),
 			'description'		=> __('Add a membership block'),
@@ -450,6 +465,7 @@ function noia_allowed_block_types( $allowed_blocks ) {
 		'acf/journals',
 		// 'acf/logos',
 		'acf/location-images',
+		'acf/manifesto',
 		'acf/membership',
 		'acf/text-block',
 		'acf/space-cta',
