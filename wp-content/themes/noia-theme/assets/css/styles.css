@@ -1276,6 +1276,35 @@ input[type=radio] {
   margin-bottom: 1rem;
 }
 
+.manifesto {
+  background-color: white;
+  width: 100%;
+  padding: var(--spacing-l) 0;
+}
+.manifesto-inner {
+  border-left: 1px solid #C7C7C7;
+  padding-left: 1rem;
+}
+.manifesto-inner--content {
+  width: 50%;
+  padding-right: 120px;
+}
+.manifesto-item {
+  display: flex;
+}
+.manifesto-item--content {
+  width: 50%;
+  padding-right: 120px;
+}
+.manifesto-item--content p {
+  font-size: var(--font-size-small);
+}
+.manifesto-item--image {
+  width: 50%;
+  position: sticky;
+  top: 0;
+}
+
 .membership {
   display: flex;
   padding-left: var(--spacing);
@@ -1679,30 +1708,6 @@ input[type=radio] {
 .spaces .banner-space {
   background-color: rgba(0, 0, 0, 0.4);
 }
-.toc {
-  text-decoration: none;
-}
-
-#anchor-icon {
-  display: inline;
-  background: url("anchor.jpg");
-  background-repeat: no-repeat;
-}
-
-a.heading-link {
-  opacity: 0;
-  margin-left: 10px;
-  text-decoration: none;
-}
-
-h1:hover a.heading-link {
-  opacity: 1;
-}
-
-h2:hover a.heading-link {
-  opacity: 1;
-}
-
 .text-block {
   display: flex;
   position: relative;

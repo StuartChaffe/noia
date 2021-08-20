@@ -15,13 +15,16 @@ $bkgvideo = get_field( 'cta-background-video');
 		<video src="<?php echo $bkgvideo['url']; ?>" loop="" muted="" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
 	</div>
 <?php } ?>
-
 	<div class="cta--links">
+	<?php if ( $linkleft ) { ?>
 		<div class="cta--links-item">
 			<a href="<?php echo $linkleft['url']; ?>"><p class="animate heading-1"><?php echo $linkleft['title']; ?></p> <div class="arrow"><img src="<?php echo get_template_directory_uri(); ?>/src/icons/arrow-large.svg" alt="link arrow" /></div></a>
 		</div>
+	<?php } ?>
+	<?php if ( $linkright ) { ?>
 		<div class="cta--links-item">
 			<a href="<?php echo $linkright['url']; ?>"><p class="animate heading-1"><?php echo $linkright['title']; ?></p> <div class="arrow"><img src="<?php echo get_template_directory_uri(); ?>/src/icons/arrow-large.svg" alt="link arrow" /></div></a>
 		</div>
+	<?php } ?>
 	</div>
 </section>

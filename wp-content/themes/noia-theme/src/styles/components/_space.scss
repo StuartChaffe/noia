@@ -49,28 +49,3 @@
 	&-item {
 	}
 }
-
-.toc
-  { 
-    text-decoration:none; 
-  }
-  #anchor-icon
-  {
-    display:inline;
-    background:url("anchor.jpg");
-    background-repeat:no-repeat;
-  }
-  a.heading-link
-  {
-    opacity:0;
-    margin-left:10px;
-    text-decoration:none;
-  }
-  h1:hover a.heading-link
-  {
-    opacity:1;
-  }
-  h2:hover a.heading-link
-  {
-    opacity:1;
-  }
