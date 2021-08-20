@@ -1288,9 +1288,20 @@ input[type=radio] {
 .manifesto-inner--content {
   width: 50%;
   padding-right: 120px;
+  margin-bottom: var(--spacing);
+}
+.manifesto-inner--content p {
+  font-size: var(--font-size-small);
 }
 .manifesto-item {
   display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.manifesto-item--number {
+  position: absolute;
+  left: -6rem;
 }
 .manifesto-item--content {
   width: 50%;
@@ -1301,8 +1312,6 @@ input[type=radio] {
 }
 .manifesto-item--image {
   width: 50%;
-  position: sticky;
-  top: 0;
 }
 
 .membership {

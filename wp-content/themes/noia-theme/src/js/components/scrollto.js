@@ -46,21 +46,5 @@ jQuery(function ($) {
         anchors++;
     });
 
-
-	// $(document).scroll(function () {
-	// 	var y = $(this).scrollTop();
-	// 	if (y > 800) {
-	// 		$('.ask-btn').fadeIn();
-	// 	} else {
-	// 		$('.ask-btn').fadeOut();
-	// 	}
-	
-	// });
-
-
-	document.addEventListener( 'wpcf7mailsent', function( event ) {
-		location = '#step-5';
-	  }, false );
-
 })
 
