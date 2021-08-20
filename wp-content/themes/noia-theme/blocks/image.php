@@ -5,6 +5,7 @@
 $image = get_field( 'image-image');
 $content = get_field( 'image-content');
 $link = get_field('image-button');
+$link_target = $link['target'] ? $link['target'] : '_self';
 ?>
 <section class="image" <?php if ( $image ) { ?>style="background-image: url(<?php echo $image['url']; ?>)"<?php } ?>>
 	<?php if ( $content ) { ?>
