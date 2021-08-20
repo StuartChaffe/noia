@@ -1,16 +1,13 @@
 <header class="global-header__menu">
 	<button class="global-header__menu-btn" data-toggle="#mobile-menu" data-toggle-body-class="nav-open" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
 		<span class="global-header--nav-box">
-		<span class="global-header--nav-logo"><svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M22 28H19.9048V1.86667H2.09524V28L0 28V0H22V28Z" fill="white"/>
-		</svg></span>
+			<span class="global-header--nav-logo"><svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M22 28H19.9048V1.86667H2.09524V28L0 28V0H22V28Z" fill="white"/>
+			</svg></span>
 
-		<span class="global-header--nav-close"><svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path d="M14.1714 18.4142L15.5856 19.8284L9.22168 26.1924L7.80747 24.7782L14.1714 18.4142Z" fill="white"/>
-		<path d="M9.22168 7.80761L7.80747 9.22183L24.778 26.1924L26.1922 24.7782L18.4141 17L26.1922 9.22183L24.778 7.80761L16.9999 15.5858L9.22168 7.80761Z" fill="white"/>
-		</svg>
-		</span>
-		
+			<span class="global-header--nav-close">
+				<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square"><g id="Group" transform="translate(2.000000, 2.000000)" stroke="#FFFFFF" stroke-width="2"><line x1="0" y1="0" x2="7" y2="7" id="Line"></line><line x1="10" y1="10" x2="20" y2="20" id="Line"></line><line x1="0" y1="0" x2="20" y2="20" id="Line" transform="translate(10.000000, 10.000000) scale(-1, 1) translate(-10.000000, -10.000000) "></line></g></g></svg>
+			</span>
 		</span>
 	</button>
 	<div class="mobile-menu" id="mobile-menu">
