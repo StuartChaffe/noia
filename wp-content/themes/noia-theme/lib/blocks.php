@@ -224,6 +224,21 @@ function noia_acf_blocks() {
 			),
 		));
 		acf_register_block(array(
+			'name'				=> 'space-cta',
+			'title'				=> __('Space call to action'),
+			'description'		=> __('Add a Space CTA block'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'megaphone',
+			'align' 			=> 'full',
+			'keywords'			=> array( 'cta, call to action. space cta' ),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+				),
+			),
+		));
+		acf_register_block(array(
 			'name'				=> 'spaces',
 			'title'				=> __('All Spaces'),
 			'description'		=> __('Add all spaces'),
@@ -437,6 +452,7 @@ function noia_allowed_block_types( $allowed_blocks ) {
 		'acf/location-images',
 		'acf/membership',
 		'acf/text-block',
+		'acf/space-cta',
 		'acf/spaces',
 		'acf/space-description'
 	);

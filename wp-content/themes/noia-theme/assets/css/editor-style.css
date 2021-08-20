@@ -1293,6 +1293,9 @@ h2:hover a.heading-link {
   text-decoration: none;
   background-color: black;
 }
+.btn + .btn {
+  margin-left: 1rem;
+}
 
 .btn--primary {
   background-color: black;

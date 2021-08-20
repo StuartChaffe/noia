@@ -1595,6 +1595,37 @@ input[type=radio] {
   fill: var(--color-primary) !important;
 }
 
+.space-cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--spacing) 0;
+}
+.space-cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.space-cta--content {
+  z-index: 1;
+}
+.space-cta--content h2, .space-cta--content h3, .space-cta--content h4, .space-cta--content p {
+  color: white;
+}
+.space-cta--content p {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.space-cta--content .btn {
+  margin-top: 2rem;
+}
+
 .space-description {
   display: flex;
 }
@@ -1964,6 +1995,9 @@ h2:hover a.heading-link {
   color: white;
   text-decoration: none;
   background-color: black;
+}
+.btn + .btn {
+  margin-left: 1rem;
 }
 
 .btn--primary {
