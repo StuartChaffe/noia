@@ -897,6 +897,8 @@ hr {
 .manifesto-item--content {
   width: 50%;
   padding-right: 120px;
+  position: sticky;
+  top: 0;
 }
 .manifesto-item--content p {
   font-size: var(--font-size-small);

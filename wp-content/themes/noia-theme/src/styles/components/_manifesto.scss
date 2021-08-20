@@ -27,6 +27,8 @@
 		&--content {
 			width: 50%;
 			padding-right: 120px;
+			position: sticky;
+			top: 0;
 			p {
 				font-size: var(--font-size-small);
 			}
