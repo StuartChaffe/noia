@@ -887,6 +887,12 @@ hr {
   padding: 0.1rem 0.4rem;
   font-size: var(--font-size-small);
 }
+.membership-block .text-block--text__half {
+  width: 100%;
+}
+.membership-block .text-block--text__content {
+  width: 50%;
+}
 .membership-item {
   width: calc(100% / 3);
   margin: 0 12.5px;

@@ -13,6 +13,12 @@
 				font-size: var(--font-size-small);
 			}
 		}
+		.text-block--text__half {
+			width: 100%;
+		}
+		.text-block--text__content {
+			width: 50%;
+		}
 	}
 	display: flex;
 	padding-left: var(--spacing);
