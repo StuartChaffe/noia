@@ -21,19 +21,17 @@
 			)); ?>
 
 			<p class="heading">Contact</p>
-			<p class="heading-3">Stay/Live with Noiascape</p>
-			<p class="heading-3">Collaborate with Noiscape</p>
-			<a href="#" class="btn" data-toggle="modal" data-target="#contact">Speak to us</a>
+			<a href="#" data-toggle="modal" data-target="#contact"><p class="heading-3">Interested in staying or collaborating with Noiascape?</p></a>
 		</div>
 		<div class="mobile-menu--foot">
 			<div class="mobile-menu--foot__contact">
-				<a href=""><p>hello@noiascape.com</p></a>
-				<a href=""><p>+44 (0)208 762 9185</p></a>
 				<div class="mobile-menu--foot__social">
 					<a href=""><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-twitter.svg" alt="twitter Logo" /></a>
 					<a href=""><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-insta.svg" alt="instagram Logo" /></a>
 					<a href=""><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-medium.svg" alt="medium Logo" /></a>
 				</div>
+
+				<a href=""><p>hello@noiascape.com</p></a>
 			</div>
 			<div class="mobile-menu--foot__logo">
 				<img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-footer.svg" alt="Noia Logo" />
