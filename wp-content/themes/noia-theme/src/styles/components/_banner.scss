@@ -114,14 +114,26 @@
 			position: absolute;
 			width: 150px;
 			right: -175px;
-			top: 50%;
+			// top: 50%;
+			bottom: 2rem;
 			transform: translateY(-50%);
 			z-index: 2;
+			color: white;
+			svg {
+				color: white;
+			}
 		}
 		&:hover {
 			.banner--link__arrow {
-				right: -165px;
+				// right: -165px;
 				transition-delay: 0s !important;
+				color: var(--color-text-base);
+				svg {
+					color: var(--color-text-base);
+				}
+			}
+			.banner--link__inner p {
+				color: var(--color-text-base);
 			}
 		}
 	}

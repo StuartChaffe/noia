@@ -38,7 +38,10 @@ $textcolor = get_field( 'banner-text-overlay-colour');
 <?php if ( $text ) { ?>
 	<?php if ( $link ) { ?>
 	<a href="<?php echo $link['url'] ?>" class="banner--link">
-		<div class="banner--link__arrow arrow"><img src="<?php echo get_template_directory_uri(); ?>/src/icons/arrow-large.svg" alt="link arrow" /></div>
+		<div class="banner--link__arrow arrow">
+		<svg width="150" height="47" viewBox="0 0 150 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M150 23.5L110 0.405989V46.594L150 23.5ZM0 27.5H114V19.5H0V27.5Z" fill="currentColor"/>
+		</svg></div>
 		<div class="banner--link__inner">
 			<div class="fit-content">
 				<p class="animate"><?php echo $text ?></p>

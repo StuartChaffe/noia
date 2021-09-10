@@ -58,7 +58,7 @@
 				margin-top: auto;
 				flex-direction: row;
 				display: flex;
-				align-items: center;
+				align-items: flex-end;
 				text-decoration: none;
 				height: auto;
 				overflow: hidden;
@@ -66,6 +66,7 @@
 				.arrow {
 					margin-left: 1rem;
 					width: 100px;
+					margin-bottom: 5px;
 					// transition-delay: 0s !important;
 				}
 				&:hover {
