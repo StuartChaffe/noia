@@ -56,21 +56,7 @@ jQuery(document).ready(function($) {
 		dots: false,
 		adaptiveHeight: true,
 		pauseOnHover: false,
-		fade: true,
-		responsive: [
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 1,
-				}
-			},
-			{
-				breakpoint: 640,
-				settings: {
-					slidesToShow: 1,
-				}
-			}
-		]
+		fade: true
 	});
 
 	$.fn.scrollView = function () {
