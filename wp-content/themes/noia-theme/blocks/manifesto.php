@@ -23,41 +23,41 @@
 			</div>
 			<div class="manifesto-item">
 				<div class="manifesto-item--number heading-4">01.</div>
-				<div class="manifesto-item--content">
+				<div class="manifesto-item--content manifesto-item-1">
 					<h4>Make unique places, create unexpected encounters.</h4>
 					<p>Create buildings that talk to their surroundings, places for old cultures to live and new cultures to thrive. Unique and unexpected.</p>
 				</div>
-				<div class="manifesto-item--image">
+				<div class="manifesto-item--image manifesto-image-1">
 					<img src="<?php echo get_template_directory_uri(); ?>/src/images/book1.jpg" alt="Manifesto 1" />
 				</div>
 			</div>
 			<div class="manifesto-item">
 				<div class="manifesto-item--number heading-4">02.</div>
-				<div class="manifesto-item--content">
+				<div class="manifesto-item--content manifesto-item-2">
 					<h4>Difference creates preference.</h4>
 					<p>Don't follow suit. Offer alternatives and improve things. Change habits, open up possibilities and see the value in difference. Commit to creation not repetition.</p>
 				</div>
-				<div class="manifesto-item--image">
+				<div class="manifesto-item--image manifesto-image-2">
 					<img src="<?php echo get_template_directory_uri(); ?>/src/images/book2.jpg" alt="Manifesto 2" />
 				</div>
 			</div>
 			<div class="manifesto-item">
 				<div class="manifesto-item--number heading-4">03.</div>
-				<div class="manifesto-item--content">
+				<div class="manifesto-item--content manifesto-item-3">
 					<h4>Create long term and permanent not short term and transient.</h4>
 					<p>Reinvest, reassess, revisit and reappraise spaces. In a world of the short term fix, be proud of a long term fixation.</p>
 				</div>
-				<div class="manifesto-item--image">
+				<div class="manifesto-item--image manifesto-image-3">
 					<img src="<?php echo get_template_directory_uri(); ?>/src/images/book3.jpg" alt="Manifesto 3" />
 				</div>
 			</div>
 			<div class="manifesto-item">
 				<div class="manifesto-item--number heading-4">04.</div>
-				<div class="manifesto-item--content">
+				<div class="manifesto-item--content manifesto-item-4">
 					<h4>Uniquity over ubiquity.</h4>
-					<p>Find, meet, get to know and collaborate with craftspeople to create one-off, unique pieces. Don't control the process, allow them to take  control. Stand back and admire their work.</p>
+					<p>Find, meet, get to know and collaborate with craftspeople to create one-off, unique pieces. Don't control the process, allow them to take control. Stand back and admire their work.</p>
 				</div>
-				<div class="manifesto-item--image">
+				<div class="manifesto-item--image manifesto-image-4">
 					<img src="<?php echo get_template_directory_uri(); ?>/src/images/book4.jpg" alt="Manifesto 4" />
 				</div>
 			</div>
