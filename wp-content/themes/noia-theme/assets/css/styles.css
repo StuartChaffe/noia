@@ -739,7 +739,7 @@ input[type=radio] {
 }
 
 .accordion-item--show {
-  width: 50% !important;
+  width: 100% !important;
 }
 .accordion-item--show .accordion-item--number {
   opacity: 0;
