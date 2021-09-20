@@ -66,13 +66,19 @@
 				.arrow {
 					margin-left: 1rem;
 					width: 100px;
-					margin-bottom: 5px;
+					color: white;
+					transition: none;
+					transition-delay: 0s !important;
 					// transition-delay: 0s !important;
 				}
 				&:hover {
 					color: var(--color-text-base);
 					p {
 						color: var(--color-text-base);
+					}
+					.arrow {
+						color: black;
+						transition-delay: 0s !important;
 					}
 					// .arrow {
 					// 	margin-left: 0;

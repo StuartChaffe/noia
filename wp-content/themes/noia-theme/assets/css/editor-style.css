@@ -773,13 +773,19 @@ hr {
 .cta--links-item a .arrow {
   margin-left: 1rem;
   width: 100px;
-  margin-bottom: 5px;
+  color: white;
+  transition: none;
+  transition-delay: 0s !important;
 }
 .cta--links-item a:hover {
   color: var(--color-text-base);
 }
 .cta--links-item a:hover p {
   color: var(--color-text-base);
+}
+.cta--links-item a:hover .arrow {
+  color: black;
+  transition-delay: 0s !important;
 }
 
 .featured-journal {
