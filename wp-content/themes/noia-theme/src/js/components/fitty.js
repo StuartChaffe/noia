@@ -75,16 +75,16 @@ jQuery(function ($) {
 		 }
 	 });
 
-	 $(window).scroll(function() {
+	//  $(window).scroll(function() {
 
-		if ($(this).scrollTop()>100)
-		 {
-			$(".banner--video").addClass("blur");
-		 }
-		else
-		 {
-		  $(".banner--video").removeClass("blur");
-		 }
-	 });
+	// 	if ($(this).scrollTop()>100)
+	// 	 {
+	// 		$(".banner--video").addClass("blur");
+	// 	 }
+	// 	else
+	// 	 {
+	// 	  $(".banner--video").removeClass("blur");
+	// 	 }
+	//  });
 })
 
