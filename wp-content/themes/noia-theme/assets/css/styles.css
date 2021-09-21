@@ -815,6 +815,7 @@ input[type=radio] {
   background-position: center center;
   background-attachment: fixed;
   z-index: 2;
+  overflow: hidden;
 }
 .banner-text--outer {
   height: 200vh;
@@ -931,6 +932,7 @@ input[type=radio] {
   height: 100vh;
   background-size: cover;
   background-position: center;
+  transform: scale(1.1);
 }
 .banner--video video {
   min-width: 100%;
@@ -3020,6 +3022,11 @@ img.aligncenter {
 
 .hide {
   opacity: 0;
+  transition: all 0.25s ease-out;
+}
+
+.blur {
+  filter: blur(30px);
   transition: all 0.25s ease-out;
 }
 

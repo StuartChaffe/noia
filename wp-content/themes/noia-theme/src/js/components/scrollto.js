@@ -1,4 +1,13 @@
 jQuery(function ($) {
+
+	// $(window).on('scroll', function () {
+	// 	var pixs = $(document).scrollTop()
+	// 	pixs = pixs / 30;
+	// 	$(".banner--video").css({"-webkit-filter": "blur("+pixs+"px)","filter": "blur("+pixs+"px)" })     
+	// });
+
+	
+
 	//  $('.scroll').on('click',function(e) {
 	// 	e.preventDefault();
 	// 	var offset = 0;
@@ -47,4 +56,3 @@ jQuery(function ($) {
     });
 
 })
-

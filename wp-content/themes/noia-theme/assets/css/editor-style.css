@@ -466,6 +466,7 @@ hr {
   background-position: center center;
   background-attachment: fixed;
   z-index: 2;
+  overflow: hidden;
 }
 .banner-text--outer {
   height: 200vh;
@@ -582,6 +583,7 @@ hr {
   height: 100vh;
   background-size: cover;
   background-position: center;
+  transform: scale(1.1);
 }
 .banner--video video {
   min-width: 100%;

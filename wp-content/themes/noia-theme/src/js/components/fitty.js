@@ -74,5 +74,17 @@ jQuery(function ($) {
 		//   $(".banner--content").removeClass("hide");
 		 }
 	 });
+
+	 $(window).scroll(function() {
+
+		if ($(this).scrollTop()>100)
+		 {
+			$(".banner--video").addClass("blur");
+		 }
+		else
+		 {
+		  $(".banner--video").removeClass("blur");
+		 }
+	 });
 })
 
