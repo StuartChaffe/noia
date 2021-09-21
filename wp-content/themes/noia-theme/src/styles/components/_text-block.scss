@@ -19,7 +19,7 @@
 		padding-right: var(--spacing);
 		&__sticky {
 			position: sticky;
-			top: var(--spacing);
+			top: calc(var(--spacing) + 35px);
 			// padding-bottom: var(--spacing);
 			hr {
 				border-top: 1px solid var(--color-primary) !important;

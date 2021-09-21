@@ -10,6 +10,7 @@ p {
 p.small,
 .small {
 	font-size: var(--font-size-small);
+	line-height: 1.2;
 }
 
 p.lead,
@@ -67,6 +68,9 @@ h5 {
 	color: var(--heading-color);
 	margin-bottom: 1rem;
 
+}
+h4 {
+	margin-bottom: 0.5rem;
 }
 
 h1, .heading-1 { font-size: var(--font-size-h1); }

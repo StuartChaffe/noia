@@ -19,6 +19,9 @@
 		.text-block--text__content {
 			width: 50%;
 		}
+		.text-block--text__half .text-block--text__content p {
+			padding-right: 0;
+		}
 	}
 	display: flex;
 	padding-left: var(--spacing);
