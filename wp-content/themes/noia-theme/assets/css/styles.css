@@ -946,20 +946,20 @@ input[type=radio] {
 }
 .banner-space--details {
   margin-top: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 2.75rem;
   color: white;
   padding-left: 1.9rem;
   width: 100%;
   padding-right: 60%;
 }
 .banner-space--details .btn {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .banner-space--details p {
   color: white;
 }
 .banner-space--details .lead {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 .banner-space--details + .banner--content {
   margin-top: 0 !important;
@@ -982,13 +982,13 @@ input[type=radio] {
   z-index: 9;
 }
 .banner-journal--details .btn {
-  margin-top: 1rem;
+  margin-top: 0.6rem;
 }
 .banner-journal--details p {
   color: white;
 }
 .banner-journal--details .lead {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 .banner-journal--details + .banner--content {
   margin-top: 0 !important;
@@ -1122,7 +1122,7 @@ input[type=radio] {
   overflow: hidden;
 }
 .cta--links-item a .arrow {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   width: 100px;
   color: white;
   transition: none;
@@ -2708,10 +2708,10 @@ body.nav-open:after {
 }
 
 .slick-prev {
-  left: 1rem;
+  left: 10px;
 }
 .slick-prev:before {
-  margin-left: -5px;
+  margin-left: -8px;
   right: 1rem;
   transition: 0.2s all ease-in-out;
   content: url("../../src/icons/arrow-black-left.svg");
@@ -2720,11 +2720,12 @@ body.nav-open:after {
   content: url("../../src/icons/arrow-black-left.svg");
 }
 .slick-prev:hover {
-  transform: translate(10px, -50%);
+  content: url("../../src/icons/arrow-swhite-left.svg");
+  background-color: var(--color-text-base);
 }
 
 .slick-next {
-  right: 1rem;
+  right: 10px;
 }
 .slick-next:before {
   transition: 0.2s all ease-in-out;
@@ -2734,7 +2735,8 @@ body.nav-open:after {
   content: url("../../src/icons/arrow-black.svg");
 }
 .slick-next:hover {
-  transform: translate(-10px, -50%);
+  background-color: var(--color-text-base);
+  content: url("../../src/icons/arrow-swhite.svg");
 }
 
 .slick-disabled {

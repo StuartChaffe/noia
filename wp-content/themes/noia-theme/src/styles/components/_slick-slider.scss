@@ -179,12 +179,13 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-	left: 1rem;
+	left: 10px;
 	// padding: 0 1rem 0 2rem;
 	&:before {
 		// position: absolute;
-		margin-left: -5px;
+		margin-left: -8px;
 		right: 1rem;
+
 		transition: .2s all ease-in-out;
 		content: url("../../src/icons/arrow-black-left.svg");
 		[dir="rtl"] & {
@@ -192,12 +193,14 @@ $slick-opacity-not-active: 0.25 !default;
 		}
 	}
 	&:hover {
-		transform: translate(10px, -50%);
+		// transform: translate(10px, -50%);
+		content: url("../../src/icons/arrow-swhite-left.svg");
+		background-color:  var(--color-text-base);
 	}
 }
 
 .slick-next {
-	right: 1rem;
+	right: 10px;
 	// padding: 0 2rem 0 1rem;
 	&:before {
 		// position: absolute;
@@ -209,7 +212,9 @@ $slick-opacity-not-active: 0.25 !default;
 		}
 	}
 	&:hover {
-		transform: translate(-10px, -50%);
+		background-color:  var(--color-text-base);
+		content: url("../../src/icons/arrow-swhite.svg");
+		// transform: translate(-10px, -50%);
 	}
 }
 
