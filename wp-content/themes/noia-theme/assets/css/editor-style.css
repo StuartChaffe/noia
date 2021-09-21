@@ -23,7 +23,7 @@
   --font-weight-bold: 700;
   --font-weight-heavy: 900;
   --font-weight-heavy: var(--font-weight-bold);
-  --line-height: 1.2;
+  --line-height: 1.15;
   --line-height-headings: 1.2;
   --color-grey-dark: #6a6a6a;
   --color-grey: #ddd;
@@ -380,6 +380,7 @@ hr {
   left: 0px;
   opacity: 1;
   width: 120px;
+  font-size: 5rem;
   line-height: 100px;
   text-transform: uppercase;
   color: white;
@@ -401,9 +402,10 @@ hr {
   color: white;
   margin-top: 0.5rem;
   transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.6rem 0 0 0.55rem;
 }
 .accordion-item--title p {
-  font-size: var(--font-size-lead);
+  font-size: 55px;
   color: white;
 }
 .accordion-item--content {
@@ -414,7 +416,9 @@ hr {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
+  margin-top: 0.7rem;
+  width: 60%;
+  padding: 0 0.75rem;
 }
 .accordion-item--content p {
   font-size: var(--font-size-lead);

@@ -32,7 +32,7 @@ $counter = 1;
 						<path d="M13 0H11V24H13V13H24V11L13 11V0Z" fill="currentColor"/>
 					</svg>
 				</div>
-				<div class="accordion-item--number"><div class="fit-content"><p>0<?php echo $i ?></p></div></div>
+				<div class="accordion-item--number"><p>0<?php echo $i ?></p></div>
 				<div class="accordion-item--title"><p>0<?php echo $i ?> — <?php echo $title ?></p></div>
 			</div>
 			<!-- <div class="show-content">[Read]</div> -->
