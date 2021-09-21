@@ -23,7 +23,7 @@
   --font-weight-bold: 700;
   --font-weight-heavy: 900;
   --font-weight-heavy: var(--font-weight-bold);
-  --line-height: 1.15;
+  --line-height: 1.17;
   --line-height-headings: 1.2;
   --color-grey-dark: #6a6a6a;
   --color-grey: #ddd;
@@ -1704,7 +1704,14 @@ input[type=radio] {
 .space-description-item {
   width: 50%;
   padding: var(--spacing);
-  padding-right: var(--spacing-xl);
+  padding-right: var(--spacing-l);
+}
+.space-description-item .share p {
+  font-size: var(--font-size-small);
+}
+.space-description--left ul {
+  margin-top: 0;
+  margin-bottom: 1.4rem;
 }
 .space-description--left ul li {
   font-size: var(--font-size-small);
@@ -1780,7 +1787,8 @@ input[type=radio] {
   padding-right: 50%;
 }
 .text-block--text-inner {
-  padding: var(--spacing);
+  padding: 55px var(--spacing);
+  padding-bottom: var(--spacing-s);
 }
 .text-block--text-inner .text-block--text__content {
   padding: 0;
@@ -1812,6 +1820,8 @@ input[type=radio] {
 }
 .text-block--image {
   width: 70%;
+  max-height: 600px;
+  overflow: hidden;
 }
 .text-block--image img {
   width: 100%;

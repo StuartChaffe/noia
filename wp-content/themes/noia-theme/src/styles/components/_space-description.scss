@@ -4,10 +4,21 @@
 	&-item {
 		width: 50%;
 		padding: var(--spacing);
-		padding-right: var(--spacing-xl);
+		padding-right: var(--spacing-l);
+
+		.lead {
+			// margin-bottom: 0;
+		}
+		.share {
+			p {
+				font-size: var(--font-size-small);
+			}
+		}
 	}
 	&--left {
 		ul {
+			margin-top: 0;
+			margin-bottom: 1.4rem;
 			li {
 				font-size: var(--font-size-small);
 			}

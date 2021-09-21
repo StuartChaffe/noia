@@ -22,7 +22,7 @@ $price = get_field( 'spaces-price', get_the_ID());
 		<?php echo $contentright ?>
 	<?php } ?>
 		<div class="share">
-			Share <?php echo get_the_title() ?>:
+			<p>Share <?php echo get_the_title() ?>:</p>
 			<div class="addthis_inline_share_toolbox"></div>
 		</div>
 	</div>
