@@ -198,9 +198,10 @@
             },
             "choices": {
                 "color-red": "Red",
-                "color-white": "White"
+                "color-white": "White",
+                "color-black": "Black"
             },
-            "default_value": "Red",
+            "default_value": "Black",
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -226,5 +227,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1629388482
+    "modified": 1632215853
 }
