@@ -478,6 +478,7 @@ hr {
   top: 0;
   height: 100vh;
   z-index: 999;
+  letter-spacing: -0.25px;
   font-size: calc(1rem + 3.5vw);
   line-height: 105%;
   transform: translateY(200px);
