@@ -2132,8 +2132,8 @@ input[type=radio] {
   display: flex;
   margin-left: auto;
   z-index: 999;
-  top: var(--spacing-s);
-  right: var(--spacing-s);
+  top: 10px;
+  right: 10px;
   position: fixed;
 }
 

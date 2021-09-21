@@ -11,7 +11,7 @@ $counter = 1;
 	<div class="accordion-block--title">
 		<div class="accordion-block--title__inner">
 			<div class="fit-content">
-				<p class="animate"><?php echo $title ?></p>
+				<p><?php echo $title ?></p>
 			</div>
 		</div>
 	</div>
