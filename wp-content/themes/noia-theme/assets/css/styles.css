@@ -864,10 +864,8 @@ input[type=radio] {
 .banner--link {
   margin-top: auto;
   width: 100%;
-  margin-right: 200px;
   position: relative;
-  width: calc(100% - 200px);
-  padding-left: 1rem;
+  padding: 0 1rem;
 }
 .banner--link__inner {
   height: auto;
@@ -882,6 +880,7 @@ input[type=radio] {
   color: white;
 }
 .banner--link__arrow {
+  display: none;
   position: absolute;
   width: 150px;
   right: -175px;
