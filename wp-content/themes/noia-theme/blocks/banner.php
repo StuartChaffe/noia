@@ -21,7 +21,7 @@ $textcolor = get_field( 'banner-text-overlay-colour');
 
 <?php if ( $bkgvideo ) { ?>
 	<div class="banner--video">
-		<video src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
+		<video class="banner--video-item" src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
 	</div>
 <?php } ?>
 
