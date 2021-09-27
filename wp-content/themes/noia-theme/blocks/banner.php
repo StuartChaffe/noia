@@ -11,9 +11,10 @@ $bkgvideo = get_field( 'banner-background-video');
 $overlay = get_field( 'banner-background-overlay');
 $textoverlay = get_field( 'banner-text-overlay');
 $textcolor = get_field( 'banner-text-overlay-colour');
+$bkgfade = get_field( 'banner-blur');
 ?>
 <?php if ( $textoverlay ) { ?><div class="banner-text--outer"><?php } ?>
-<section class="banner fade" <?php if ( $bkgimage ) { ?>style="background-image: url(<?php echo $bkgimage['url']; ?>)"<?php } ?>>
+<section class="banner fade<?php if ( $bkgfade ) { ?> banner__blur<?php } ?>" <?php if ( $bkgimage ) { ?>style="background-image: url(<?php echo $bkgimage['url']; ?>)"<?php } ?>>
 	<?php if ( $overlay == '1' ) { ?><div class="banner--overlay"></div><?php } ?>
 <?php if ( $image ) { ?>
 	<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
