@@ -301,6 +301,7 @@ hr {
   width: 100%;
   height: 90vh;
   min-height: 600px;
+  overflow: hidden;
 }
 .accordion-block {
   position: relative;
