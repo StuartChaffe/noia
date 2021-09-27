@@ -1,14 +1,9 @@
 jQuery(function ($) {
-	// $('.modal').featherlight({
-    //     galleryFadeIn: 300,
-    //     galleryFadeOut: 300
-    // });
-
-    $('#smartwizard').smartWizard({
-        selected: 0,
-        theme: 'dots',
-        autoAdjustHeight:true,
-        transitionEffect:'fade',
-        showStepURLhash: false,
+    $(".ajax-featherlight").featherlight({
+        targetAttr: 'href',
+        closeSpeed: 1,
+        afterClose: function(event){
+            $('.featherlight-close').click();
+        } 
     });
 });
