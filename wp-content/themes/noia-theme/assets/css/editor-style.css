@@ -902,40 +902,56 @@ hr {
   width: 100%;
   padding: var(--spacing-l) 0;
 }
-.manifesto-inner {
-  border-left: 1px solid #C7C7C7;
-  padding-left: 1rem;
-}
-.manifesto-inner--content {
+.manifesto--intro {
   width: 50%;
   padding-right: 120px;
+  padding-left: 1rem;
   margin-bottom: var(--spacing);
 }
-.manifesto-inner--content p {
+.manifesto--intro p {
   font-size: var(--font-size-small);
+}
+.manifesto-list {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+.manifesto-list--content {
+  width: 50%;
+  border-left: 1px solid #C7C7C7;
+  padding-left: 1rem;
+  margin-bottom: 280px;
+}
+.manifesto-list--images {
+  width: 50%;
+  position: sticky;
+  top: 2rem;
 }
 .manifesto-item {
   display: flex;
   align-items: flex-start;
   position: relative;
   margin-bottom: 2rem;
+  min-height: 300px;
 }
 .manifesto-item--number {
-  position: absolute;
-  top: 0;
+  position: sticky;
+  top: 3rem;
   transform: translateX(-4rem);
 }
 .manifesto-item--content {
-  width: 50%;
   padding-right: 120px;
   position: sticky;
-  top: 1rem;
+  top: 3rem;
 }
 .manifesto-item--content p {
   font-size: var(--font-size-small);
 }
 .manifesto-item--image {
   width: 50%;
+  position: sticky;
+  top: 0;
+  right: 0;
 }
 
 .show {
