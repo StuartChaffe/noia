@@ -14,7 +14,7 @@ $textcolor = get_field( 'banner-text-overlay-colour');
 $bkgfade = get_field( 'banner-blur');
 ?>
 <?php if ( $textoverlay ) { ?><div class="banner-text--outer"><?php } ?>
-<section class="banner fade<?php if ( $bkgfade ) { ?> banner__blur<?php } ?>" <?php if ( $bkgimage ) { ?>style="background-image: url(<?php echo $bkgimage['url']; ?>)"<?php } ?>>
+<section class="banner fade" <?php if ( $bkgimage ) { ?>style="background-image: url(<?php echo $bkgimage['url']; ?>)"<?php } ?>>
 	<?php if ( $overlay == '1' ) { ?><div class="banner--overlay"></div><?php } ?>
 <?php if ( $image ) { ?>
 	<img loading="lazy" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
@@ -22,7 +22,7 @@ $bkgfade = get_field( 'banner-blur');
 
 <?php if ( $bkgvideo ) { ?>
 	<div class="banner--video">
-		<video class="banner--video-item" src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
+		<video class="banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?>" src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
 	</div>
 <?php } ?>
 
