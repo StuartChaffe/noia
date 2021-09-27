@@ -7,6 +7,11 @@ jQuery(document).ready(function($) {
 		// Remove all classes
 		$('.accordion-item--open').removeClass('is-expanded');
 		$('.accordion-item').removeClass('accordion-item--show');
+		$('.accordion-item').removeClass('accordion-item--show');
+		$('.accordion-item--number').addClass('hide');
+		$('.accordion-item').addClass('accordion-item--shrink');
+		// $('.accordion-item--number').toggleClass('hide');
+		// $('.accordion-item').addClass('accordion-item--shrink');
 
 		// Now add class to specifc accordion item we need to show
 		$(this).addClass('is-expanded');
@@ -21,6 +26,8 @@ jQuery(document).ready(function($) {
 		// Remove all classes
 		$(this).removeClass('is-expanded');
 		$('.accordion-item').removeClass('accordion-item--show');
+		$('.accordion-item--number').removeClass('hide');
+		$('.accordion-item').removeClass('accordion-item--shrink');
 
 		// Show text
 		$('.accordion-block--title__inner').removeClass('accordion-block--title__hide');

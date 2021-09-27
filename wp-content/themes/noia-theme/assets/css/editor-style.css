@@ -346,6 +346,7 @@ hr {
   padding: 0 0.5rem;
   background-position: center center;
   background-attachment: fixed;
+  background-size: cover;
   transition: width 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .accordion-item:before {
@@ -378,6 +379,9 @@ hr {
   cursor: pointer;
   transform: rotate(90deg);
 }
+.accordion-item--shrink {
+  width: 44px;
+}
 .accordion-item--number {
   display: flex;
   position: absolute;
@@ -405,7 +409,6 @@ hr {
   align-items: center;
   opacity: 0;
   color: white;
-  margin-top: 0.5rem;
   transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0.6rem 0 0 0.55rem;
 }
