@@ -27,6 +27,7 @@
 		<a href="#part-1" class="btn-back ajax-featherlight">Back</a>
 		<div class="modal-inner-item">
 			<h3>Stay with Noiascape</h3>
+			<p>Some content here?</p>
 			<?php echo do_shortcode('[contact-form-7 id="683" title="Stay with Noiascape"]'); ?>
 		</div>
 	</div>	
