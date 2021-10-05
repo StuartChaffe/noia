@@ -7,6 +7,7 @@
 <div class="manifesto">
 	<div class="container">
 		<div class="manifesto--intro">
+			<h2>MANIFESTO</h2>
 			<p>Whether we're designing a small living space, or a large mixed use project, we follow a set of beliefs and ideas. </p>
 			<p>We think carefully about the work we do. How it's made, how you use it, what it means, and the relationship it has with the community it's part of.</p>
 			<br />
