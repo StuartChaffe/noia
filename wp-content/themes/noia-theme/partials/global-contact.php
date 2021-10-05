@@ -1,8 +1,3 @@
-<a href="#part-1" class="ajax-featherlight">Part 1</a>
-<a href="#part-2" class="ajax-featherlight">Part 2</a>
-<a href="#part-3" class="ajax-featherlight">Part 3</a>
-<a href="#part-4" class="ajax-featherlight">Part 4</a>
-
 <div class="global-modal" id="part-1">
 	<div class="modal-inner">
 		<div class="modal-inner-item">
