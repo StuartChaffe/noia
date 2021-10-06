@@ -6,11 +6,13 @@
 
 <div class="manifesto">
 	<div class="container">
+		<h2>Read our<br />
+			(UNFINISHED)<br />
+			MANIFESTO</h2>
 		<div class="manifesto--intro">
-			<h2>MANIFESTO</h2>
+			
 			<p>Whether we're designing a small living space, or a large mixed use project, we follow a set of beliefs and ideas. </p>
 			<p>We think carefully about the work we do. How it's made, how you use it, what it means, and the relationship it has with the community it's part of.</p>
-			<br />
 			<p>We'll admit it: we're idealists.</p>
 			<br />
 			<h3>That's<br />
