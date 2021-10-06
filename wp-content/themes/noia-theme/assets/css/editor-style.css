@@ -1238,10 +1238,11 @@ hr {
 }
 
 .intro-block .text-block--text-inner {
-  padding: var(--spacing) var(--spacing-l);
+  padding: var(--spacing-l) var(--spacing-xxl);
 }
 .intro-block p {
-  font-size: var(--font-size-lead);
+  font-size: calc(var(--font-size-lead) * 2);
+  line-height: 1;
 }
 
 .global-container {
