@@ -6,6 +6,14 @@ jQuery(function ($) {
 		$(".banner__blur").css({"-webkit-filter": "blur("+pixs+"px)","filter": "blur("+pixs+"px)" })     
 	});
 
+	$(window).scroll(function() {
+		if ($(this).scrollTop()>600) {
+			$('.ask').fadeIn();
+		} else {
+			$('.ask').fadeOut();
+		}
+	});
+
 	
 
 	//  $('.scroll').on('click',function(e) {
