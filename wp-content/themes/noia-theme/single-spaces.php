@@ -29,8 +29,6 @@
 	<nav class="space-nav grad">
 		<ul class="page-nav">
 				<li><p><?php the_title(); ?></p></li>
-				<li><a href="#info">Info</a></li>
-				<li><a href="#membership">Membership</a></li>
 		</ul>
 		<!-- <ul id="nav">
 			<li><p><?php the_title(); ?></p></li>
