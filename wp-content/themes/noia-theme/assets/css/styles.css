@@ -975,37 +975,8 @@ html.with-featherlight {
   transition: all 0.1s ease-in-out;
   background-color: black;
 }
-
-.Nav_talkToUs__2xpbj .Nav_itemText__2SXiz:hover {
-  background-color: #dcfa14;
-}
-
-.Nav_isLight__3dnqw .Nav_itemText__2SXiz {
-  color: #fff;
-}
-
-.Nav_isLight__3dnqw .Nav_itemText__2SXiz:hover {
-  background-color: rgba(0, 0, 0, 0.25);
-}
-
-.Nav_isLight__3dnqw .Nav_isActive__2vhzG .Nav_itemText__2SXiz:before {
-  background-color: #fff;
-}
-
-.Nav_isLight__3dnqw .Nav_talkToUs__2xpbj .Nav_itemText__2SXiz {
-  color: #000;
-}
-
-.Nav_isLight__3dnqw .Nav_talkToUs__2xpbj .Nav_itemText__2SXiz:hover {
-  background-color: #dcfa14;
-}
-
-.Nav_isVentures__2JyI4 .Nav_itemText__2SXiz {
-  color: red;
-}
-
-.Nav_isVentures__2JyI4 .Nav_isActive__2vhzG .Nav_itemText__2SXiz:before {
-  background-color: red;
+.ask:hover:before {
+  background-color: black;
 }
 
 .banner {
