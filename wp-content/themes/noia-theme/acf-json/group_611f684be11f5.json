@@ -45,6 +45,25 @@
             "toolbar": "full",
             "media_upload": 0,
             "delay": 0
+        },
+        {
+            "key": "field_61684b2f335f0",
+            "label": "Button text",
+            "name": "spacecta-button",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -64,5 +83,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1629448509
+    "modified": 1634225075
 }
