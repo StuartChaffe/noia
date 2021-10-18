@@ -21,7 +21,7 @@
 			)); ?>
 
 			<p class="heading">Contact</p>
-			<a href="#" data-toggle="modal" data-target="#contact"><p class="heading-3">Interested in staying or collaborating with Noiascape?</p></a>
+			<a href="#part-1" class="ajax-featherlight"><p class="heading-3">Interested in staying or collaborating with Noiascape?</p></a>
 		</div>
 		<div class="mobile-menu--foot">
 			<div class="mobile-menu--foot__contact">

@@ -4,12 +4,12 @@
 			<h3>Stay with <br />Noiascape</h3>
 			<p>Tell us about you, where you want to stay, what you need, or just ask a general question.</p>
 			<div class="modal-inner-item--buttons">
-				<a href="#part-2" class="btn ajax-featherlight">Stay with us</a> <a href="#part-3" class="btn ajax-featherlight">Live with us</a>
+				<a href="#part-2" class="btn ajax-featherlight">Stay with us</a>
 			</div>
 		</div>
 		<div class="modal-inner-item">
 			<h3>Collaborate with <br />Noiascape</h3>
-			<p>Use our social spaces as a way to find your<br /> audience and contribute to your local culture.</p>
+			<p>Use our social spaces as a way to find your audience and contribute to your local culture.</p>
 			<div class="modal-inner-item--buttons">
 				<a href="#part-4" class="btn ajax-featherlight">Tell us about your idea</a>
 			</div>

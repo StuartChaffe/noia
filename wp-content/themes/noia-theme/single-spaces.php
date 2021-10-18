@@ -7,6 +7,7 @@
 	$price = get_field( 'spaces-price' );
 	$shortdesc = get_field( 'spaces-short-desc' );
 	$images = get_field('spaces-images');
+	$classes = get_body_class();
 ?>
 	<?php if( have_rows('spaces-images') ): ?>
 	<div class="carousel">
@@ -29,6 +30,7 @@
 	<nav class="space-nav grad">
 		<ul class="page-nav">
 				<li><p><?php the_title(); ?></p></li>
+				<?php if ( in_array('high-street-house',$classes)) { ?><li><a href="#membership">Membership</a></li><?php } ?>
 		</ul>
 		<!-- <ul id="nav">
 			<li><p><?php the_title(); ?></p></li>

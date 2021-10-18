@@ -1,9 +1,6 @@
 .global-modal {
 	display: none;
 }
-
-
-
 .modal-inner {
 	display: flex !important;
 	width: 100%;
@@ -21,6 +18,9 @@
 		height: 100%;
 		overflow: auto;
 		border-left: 1px solid #C7C7C7;
+		p {
+			max-width: 500px;
+		}
 		h3 {
 			margin-top: 2rem;
 		}

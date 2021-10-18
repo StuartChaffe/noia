@@ -7,4 +7,12 @@ jQuery(function ($) {
             $.featherlight.close()
         } 
     });
+
+    $(window).scroll(function() {
+		if ($(this).scrollTop()>600) {
+			$('.ask').fadeIn();
+		} else {
+			$('.ask').fadeOut();
+		}
+	});
 });
