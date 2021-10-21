@@ -33,7 +33,6 @@ $rightcontent = get_field( 'form_content_right', 'options');
 <div class="global-modal" id="part-4">
 	<div class="modal-inner">
 		<a href="#part-1" class="btn-back ajax-featherlight">Back</a>
-
 		<div class="modal-inner-item">
 			<?php echo do_shortcode('[contact-form-7 title="Collaborate with Noiascape"]'); ?>
 			<!-- <div class="modal-inner-item--buttons">
