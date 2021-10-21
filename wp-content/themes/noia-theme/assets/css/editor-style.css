@@ -1608,8 +1608,8 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   border-radius: 30px;
   line-height: 0px;
   font-size: 0px;
@@ -1640,7 +1640,7 @@ hr {
 }
 
 .slick-prev {
-  left: 10px;
+  left: 5px;
 }
 .slick-prev:before {
   margin-left: -8px;
@@ -1659,7 +1659,7 @@ hr {
 }
 
 .slick-next {
-  right: 10px;
+  right: 5px;
 }
 .slick-next:before {
   transition: 0.2s all ease-in-out;
