@@ -797,6 +797,7 @@ hr {
   line-height: 100%;
   text-transform: uppercase;
   color: white;
+  font-weight: var(--font-weight-light);
 }
 .cta--links-item a {
   margin-top: auto;
