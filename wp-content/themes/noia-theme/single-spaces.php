@@ -6,10 +6,10 @@
 	$rooms = get_field( 'spaces-rooms' );
 	$price = get_field( 'spaces-price' );
 	$shortdesc = get_field( 'spaces-short-desc' );
-	$images = get_field('spaces-images');
+	$images = get_field('spaces-details-images');
 	$classes = get_body_class();
 ?>
-	<?php if( have_rows('spaces-images') ): ?>
+	<?php if( have_rows('spaces-details-images') ): ?>
 	<div class="carousel">
 		<div class="banner banner-space fade">
 			<div class="banner--content fit-content">
@@ -17,7 +17,7 @@
 			</div>
 		</div>
 		<div class="carousel-slider">
-		<?php while( have_rows('spaces-images') ): the_row();
+		<?php while( have_rows('spaces-details-images') ): the_row();
 			$image = get_sub_field('spaces-image');
 			$overlay = get_sub_field( 'spaces-image-overlay');
 		?>
