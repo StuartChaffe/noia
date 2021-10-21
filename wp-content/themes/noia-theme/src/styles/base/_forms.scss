@@ -10,6 +10,10 @@
 		margin: 0 1rem 0.5rem 1rem;
 		width: calc(50% - 2rem);
 	}
+	&--full {
+		margin: 0 1rem 0.5rem 1rem;
+		width: calc(100% - 1rem);
+	}
 }
 
 input[type="email"],

@@ -361,6 +361,10 @@ table tbody tr:hover {
   margin: 0 1rem 0.5rem 1rem;
   width: calc(50% - 2rem);
 }
+.form-fields--full {
+  margin: 0 1rem 0.5rem 1rem;
+  width: calc(100% - 1rem);
+}
 
 input[type=email],
 input[type=number],
