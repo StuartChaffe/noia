@@ -1,15 +1,18 @@
+<?php
+$leftcontent = get_field( 'form_content_left', 'options');
+$rightcontent = get_field( 'form_content_right', 'options');
+?>
+
 <div class="global-modal" id="part-1">
 	<div class="modal-inner">
 		<div class="modal-inner-item">
-			<h3>Stay with <br />Noiascape</h3>
-			<p>Tell us about you, where you want to stay, what you need, or just ask a general question.</p>
+			<?php echo $leftcontent ?>
 			<div class="modal-inner-item--buttons">
 				<a href="#part-2" class="btn ajax-featherlight">Stay with us</a>
 			</div>
 		</div>
 		<div class="modal-inner-item">
-			<h3>Collaborate with <br />Noiascape</h3>
-			<p>Use our social spaces as a way to find your audience and contribute to your local culture.</p>
+			<?php echo $rightcontent ?>
 			<div class="modal-inner-item--buttons">
 				<a href="#part-4" class="btn ajax-featherlight">Tell us about your idea</a>
 			</div>
@@ -21,25 +24,9 @@
 	<div class="modal-inner">
 		<a href="#part-1" class="btn-back ajax-featherlight">Back</a>
 		<div class="modal-inner-item">
-			<?php echo do_shortcode('[contact-form-7 id="683" title="Stay with Noiascape"]'); ?>
+			<?php echo do_shortcode('[contact-form-7 title="Stay with Noiascape"]'); ?>
 		</div>
 	</div>	
-</div>
-
-
-<div class="global-modal" id="part-3">
-	<div class="modal-inner">
-		<a href="#part-1" class="btn-back ajax-featherlight">Back</a>
-		<div class="modal-inner-item">
-			<h3>Live with <br />Noiascape</h3>
-			<p>Tell us about you, where you want to stay, what you<br /> need, or just ask a general question.</p>
-
-			3RD PARTY FORM 
-			<div class="modal-inner-item--buttons">
-				<a href="#part-5" class="btn ajax-featherlight">Submit</a>
-			</div>
-		</div>
-	</div>
 </div>
 
 
