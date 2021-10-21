@@ -1247,6 +1247,7 @@ html.with-featherlight {
 .carousel-slider-item--content h1, .carousel-slider-item--content h2, .carousel-slider-item--content h3, .carousel-slider-item--content h4 {
   padding-left: 200px;
   line-height: 1.08 !important;
+  font-weight: var(--font-weight-light);
 }
 .carousel-slider-item--content p {
   max-width: 900px;
