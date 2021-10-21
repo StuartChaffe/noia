@@ -8,6 +8,16 @@
 	font-weight: normal;
 	font-style: normal
 }
+@font-face {
+	font-family: 'Noiafont';
+	src: url('../fonts/noiafontlight.eot');
+	src: url('../fonts/noiafontlight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/noiafontlight.woff2') format('woff2'),
+		url('../fonts/noiafontlight.woff') format('woff'),
+		url('../fonts/noiafontlight.ttf')  format('truetype');
+	font-weight: 100;
+	font-style: normal
+}
 
 :root {
 	--body-family: "Noiafont", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -70,7 +80,7 @@
 	--content-width: 50rem;
 
 	@include mq(large) {
-		--font-size-h1: calc(7rem + 0.2vw);
+		--font-size-h1: calc(10rem + 0.2vw);
 		--font-size-h2: calc(6rem + 0.2vw);
 		--font-size-h3: calc(1.6rem + 0.2vw);
 		--font-size-h4: calc(1.4rem + 0.2vw);

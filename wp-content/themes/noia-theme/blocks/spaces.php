@@ -47,7 +47,7 @@
 						<?php } ?>
 						<a class="btn" href="<?php echo get_permalink(); ?>">Read more</a>
 					</div>
-					<div class="banner--content fit-content">
+					<div class="banner--content">
 						<p class="animate"><?php the_title(); ?></p>
 					</div>
 				</div>

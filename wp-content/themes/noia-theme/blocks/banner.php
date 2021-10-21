@@ -44,14 +44,14 @@ $bkgfade = get_field( 'banner-blur');
 			<path d="M150 23.5L110 0.405989V46.594L150 23.5ZM0 27.5H114V19.5H0V27.5Z" fill="currentColor"/>
 		</svg></div>
 		<div class="banner--link__inner">
-			<div class="fit-content">
+			<!-- <div class="fit-content"> -->
 				<p class="animate"><?php echo $text ?></p>
-			</div>
+			<!-- </div> -->
 		</div>
 	</a>
 	<?php } else { ?>
 	<!-- <div class="banner--outer"> -->
-	<div class="banner--content fit-content">
+	<div class="banner--content">
 		<p class="animate"><?php echo $text ?></p>
 	</div>
 	<!-- </div> -->
