@@ -9,8 +9,9 @@ $classes = get_body_class();
 
 <?php if ( $ask  == '1' | in_array('single-spaces',$classes)) { ?>
 <a href="#part-1" class="ask ajax-featherlight"><img src="<?php echo get_template_directory_uri(); ?>/src/images/ask.svg" alt="ask Logo" /></a>
-<?php get_template_part( 'partials/global-contact' ); ?>
 <?php } ?>
+<?php get_template_part( 'partials/global-contact' ); ?>
+
 <footer class="global-footer">
 	<div class="global-footer--logo">
 		<?php if ( $logo ) { ?>
