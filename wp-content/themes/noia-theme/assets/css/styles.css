@@ -628,6 +628,10 @@ input[type=radio] {
   margin-right: 0.25em;
 }
 
+.wpcf7-spinner {
+  position: absolute;
+}
+
 /**
  * Featherlight – ultra slim jQuery lightbox
  * Version 1.7.13 - http://noelboss.github.io/featherlight/
