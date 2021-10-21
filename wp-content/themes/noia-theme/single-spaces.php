@@ -28,15 +28,16 @@
 	</div>
 	<?php endif; ?>
 	<nav class="space-nav grad">
+		<?php if ( in_array('high-street-house',$classes)) { ?>
+		<ul class="page-nav">
+			<li><p><?php the_title(); ?></p></li>
+			<li><a href="#membership">Membership</a></li>
+		</ul>
+		<?php } else { ?>
 		<ul class="page-nav">
 				<li><p><?php the_title(); ?></p></li>
-				<?php if ( in_array('high-street-house',$classes)) { ?><li><a href="#membership">Membership</a></li><?php } ?>
 		</ul>
-		<!-- <ul id="nav">
-			<li><p><?php the_title(); ?></p></li>
-			<li><a href="#info">Info</a></li>
-			<li><a href="#membership">Membership</a></li>
-		</ul> -->
+		<?php } ?>
 	</nav>
 		
 
