@@ -1121,6 +1121,9 @@ html.with-featherlight {
   text-transform: uppercase;
   color: white;
 }
+.banner--content p {
+  font-weight: var(--font-weight-light);
+}
 .banner--video {
   position: absolute;
   overflow: hidden;
