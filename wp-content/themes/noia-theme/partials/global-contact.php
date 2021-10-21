@@ -35,13 +35,10 @@ $rightcontent = get_field( 'form_content_right', 'options');
 		<a href="#part-1" class="btn-back ajax-featherlight">Back</a>
 
 		<div class="modal-inner-item">
-			<h3>Collaborate with <br />Noiascape</h3>
-			<p>Use our social spaces as a way to find your audience and contribute to your local culture.</p>
-
-			FORM 
-			<div class="modal-inner-item--buttons">
+			<?php echo do_shortcode('[contact-form-7 id="672" title="Collaborate with Noiascape"]'); ?>
+			<!-- <div class="modal-inner-item--buttons">
 				<a href="#part-5" class="btn ajax-featherlight">Submit</a>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
