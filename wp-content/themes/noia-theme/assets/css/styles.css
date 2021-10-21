@@ -1665,6 +1665,7 @@ html.with-featherlight {
 }
 .modal-inner-item p {
   max-width: 500px;
+  margin: 0 auto;
 }
 .modal-inner-item h3 {
   margin-top: 2rem;
