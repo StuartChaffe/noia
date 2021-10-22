@@ -1022,18 +1022,26 @@ html.with-featherlight {
 
 .ask {
   background-color: var(--color-primary);
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   padding: 1rem 1rem 1rem 0.7rem;
   border-radius: 100px;
   position: fixed;
-  bottom: var(--spacing-s);
-  right: var(--spacing-s);
+  bottom: 10px;
+  right: 10px;
   z-index: 99;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.1s ease-in-out;
+}
+@media (min-width: 50em) {
+  .ask {
+    width: 100px;
+    height: 100px;
+    bottom: var(--spacing-s);
+    right: var(--spacing-s);
+  }
 }
 .ask:before {
   content: "";
@@ -1059,16 +1067,28 @@ html.with-featherlight {
   }
 }
 .ask img {
-  width: 48px;
-  height: 62px;
+  width: 38px;
+  height: 52px;
+}
+@media (min-width: 50em) {
+  .ask img {
+    width: 48px;
+    height: 62px;
+  }
 }
 .ask:hover {
-  width: 110px;
-  height: 110px;
+  width: 80px;
+  height: 80px;
   margin: 5px -5px -5px 0;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
   background-color: black;
+}
+@media (min-width: 50em) {
+  .ask:hover {
+    width: 110px;
+    height: 110px;
+  }
 }
 .ask:hover:before {
   background-color: black;
