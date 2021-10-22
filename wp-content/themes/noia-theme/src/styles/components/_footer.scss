@@ -3,7 +3,11 @@
 	background-color: white;
 	padding: var(--spacing-s);
 	display: flex;
+	flex-direction: column;
 	z-index: 5;
+	@include mq(medium) {
+		flex-direction: row;
+	}
 
 	// position: sticky;
 	// bottom: 0;
@@ -13,15 +17,22 @@
 	&--logo {
 		width: 25%;
 		display: flex;
+		margin-bottom: 2rem;
+		@include mq(medium) {
+			margin-bottom: 0;
+		}
 		img {
 			width: 200px;
 			margin-top: auto;
 		}
 	}
 	&--content {
-		width: 75%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
+		@include mq(medium) {
+			width: 75%;
+		}
 
 		a {
 			color: var(--color-text-base);
@@ -52,8 +63,10 @@
 		}
 		&__contact {
 			width: 50%;
-			padding-right: 130px;
-			// margin-left: auto;
+			@include mq(medium) {
+				width: 50%;
+				padding-right: 130px;
+			}
 			p {
 				margin-bottom: 0;
 			}
@@ -62,8 +75,11 @@
 			display: flex;
 			margin-top: auto;
 			justify-content: space-between;
-			padding-top: var(--spacing-l);
+			padding-top: var(--spacing);
 			font-size: 16px;
+			@include mq(medium) {
+				padding-top: var(--spacing-l);
+			}
 		}
 		&__copy {
 			margin-top: auto;
