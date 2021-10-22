@@ -1,17 +1,27 @@
 .manifesto {
 	background-color: white;
 	width: 100%;
-	padding: var(--spacing-l) 0;
+	padding: var(--spacing) 0;
+	@include mq(medium) {
+		padding: var(--spacing-l) 0;
+	}
 
 	h2 {
-		padding-left: 0.5rem;
+		@include mq(medium) {
+			padding-left: 0.5rem;
+		}
 	}
 
 	&--intro {
-		width: 50%;
+		width: 100%;
 		padding-right: 120px;
-		padding-left: 1rem;
+		padding-left: 0;
 		margin-bottom: var(--spacing);
+
+		@include mq(medium) {
+			width: 50%;
+			padding-left: 1rem;
+		}
 		p {
 			font-size: var(--font-size-small);
 		}
@@ -21,12 +31,19 @@
 	&-list {
 		display: flex;
 		align-items: flex-start;
-		padding-top: 2rem;
+		padding-top: 0;
+		padding-left: 1.5rem;
+		@include mq(medium) {
+			padding-top: 2rem;
+			padding-left: 0;
+		}
 		&--content {
 			width: 50%;
 			border-left: 1px solid #C7C7C7;
 			padding-left: 1rem;
-			margin-bottom: 280px;
+			@include mq(medium) {
+				margin-bottom: 280px;
+			}
 		}
 		&--images {
 			width: 50%;
@@ -40,20 +57,29 @@
 		align-items: flex-start;
 		position: relative;
 		margin-bottom: 2rem;
-		min-height: 300px;
+		@include mq(medium) {
+			min-height: 300px;
+		}
 		// &:first-child {
 		// 	padding-top: 0;
 		// }
 		&--number {
 			position: sticky;
-			top: 3rem;
-			transform: translateX(-4rem);
+			top: 2rem;
+			transform: translateX(-3rem);
+			@include mq(medium) {
+				transform: translateX(-4rem);
+				top: 3rem;
+			}
 		}
 		&--content {
-			padding-right: 120px;
 			position: sticky;
-			top: 3rem;
+			top: 2rem;
 			transform: translateX(-2rem);
+			@include mq(medium) {
+				padding-right: 120px;
+				top: 3rem;
+			}
 			p {
 				font-size: var(--font-size-small);
 			}

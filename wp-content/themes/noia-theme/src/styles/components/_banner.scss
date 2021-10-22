@@ -225,10 +225,14 @@
 			margin-top: auto;
 			margin-bottom: 2.75rem;
 			color: white;
-			padding-left: 1.9rem;
+			padding-left: 1rem;
 			width: 100%;
-			padding-right: 60%;
+			padding-right: 30px;
 			// max-width: 550px;
+			@include mq(medium) {
+				padding-left: 1.9rem;
+				padding-right: 60%;
+			}
 			.btn {
 				margin-top: 1.5rem;
 			}
@@ -260,11 +264,15 @@
 			margin-top: auto;
 			margin-bottom: 1rem;
 			color: white;
-			padding-left: 1.9rem;
+			padding-left: 1rem;
 			width: 100%;
-			padding-right: 60%;
+			padding-right: 80px;
 			z-index: 9;
 			// max-width: 550px;
+			@include mq(medium) {
+				padding-left: 1.9rem;
+				padding-right: 60%;
+			}
 			.btn {
 				margin-top: 0.6rem;
 			}

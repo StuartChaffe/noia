@@ -713,9 +713,15 @@ hr {
   margin-top: auto;
   margin-bottom: 2.75rem;
   color: white;
-  padding-left: 1.9rem;
+  padding-left: 1rem;
   width: 100%;
-  padding-right: 60%;
+  padding-right: 30px;
+}
+@media (min-width: 50em) {
+  .banner-space--details {
+    padding-left: 1.9rem;
+    padding-right: 60%;
+  }
 }
 .banner-space--details .btn {
   margin-top: 1.5rem;
@@ -741,10 +747,16 @@ hr {
   margin-top: auto;
   margin-bottom: 1rem;
   color: white;
-  padding-left: 1.9rem;
+  padding-left: 1rem;
   width: 100%;
-  padding-right: 60%;
+  padding-right: 80px;
   z-index: 9;
+}
+@media (min-width: 50em) {
+  .banner-journal--details {
+    padding-left: 1.9rem;
+    padding-right: 60%;
+  }
 }
 .banner-journal--details .btn {
   margin-top: 0.6rem;
@@ -1005,16 +1017,29 @@ hr {
 .manifesto {
   background-color: white;
   width: 100%;
-  padding: var(--spacing-l) 0;
+  padding: var(--spacing) 0;
 }
-.manifesto h2 {
-  padding-left: 0.5rem;
+@media (min-width: 50em) {
+  .manifesto {
+    padding: var(--spacing-l) 0;
+  }
+}
+@media (min-width: 50em) {
+  .manifesto h2 {
+    padding-left: 0.5rem;
+  }
 }
 .manifesto--intro {
-  width: 50%;
+  width: 100%;
   padding-right: 120px;
-  padding-left: 1rem;
+  padding-left: 0;
   margin-bottom: var(--spacing);
+}
+@media (min-width: 50em) {
+  .manifesto--intro {
+    width: 50%;
+    padding-left: 1rem;
+  }
 }
 .manifesto--intro p {
   font-size: var(--font-size-small);
@@ -1022,13 +1047,24 @@ hr {
 .manifesto-list {
   display: flex;
   align-items: flex-start;
-  padding-top: 2rem;
+  padding-top: 0;
+  padding-left: 1.5rem;
+}
+@media (min-width: 50em) {
+  .manifesto-list {
+    padding-top: 2rem;
+    padding-left: 0;
+  }
 }
 .manifesto-list--content {
   width: 50%;
   border-left: 1px solid #C7C7C7;
   padding-left: 1rem;
-  margin-bottom: 280px;
+}
+@media (min-width: 50em) {
+  .manifesto-list--content {
+    margin-bottom: 280px;
+  }
 }
 .manifesto-list--images {
   width: 50%;
@@ -1040,18 +1076,33 @@ hr {
   align-items: flex-start;
   position: relative;
   margin-bottom: 2rem;
-  min-height: 300px;
+}
+@media (min-width: 50em) {
+  .manifesto-item {
+    min-height: 300px;
+  }
 }
 .manifesto-item--number {
   position: sticky;
-  top: 3rem;
-  transform: translateX(-4rem);
+  top: 2rem;
+  transform: translateX(-3rem);
+}
+@media (min-width: 50em) {
+  .manifesto-item--number {
+    transform: translateX(-4rem);
+    top: 3rem;
+  }
 }
 .manifesto-item--content {
-  padding-right: 120px;
   position: sticky;
-  top: 3rem;
+  top: 2rem;
   transform: translateX(-2rem);
+}
+@media (min-width: 50em) {
+  .manifesto-item--content {
+    padding-right: 120px;
+    top: 3rem;
+  }
 }
 .manifesto-item--content p {
   font-size: var(--font-size-small);
