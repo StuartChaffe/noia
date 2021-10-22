@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
     $('body').on('click', '.accordion-item--open', function () {
-		$(this).closest('.accordion').scrollView();
+		$(this).closest('.accordion-item--show').scrollView();
 	})
 
 	$('.accordion').on('click', '.accordion-item--open', function(){

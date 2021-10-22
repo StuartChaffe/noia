@@ -12,4 +12,4 @@ import './components/manifesto';
 
 // var rellax = new Rellax('.parallax', {
 //     center: true
-// });
+// });r

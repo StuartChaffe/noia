@@ -792,10 +792,17 @@ html.with-featherlight {
 }
 .accordion {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 90vh;
-  min-height: 600px;
   overflow: hidden;
+  z-index: 999;
+}
+@media (min-width: 50em) {
+  .accordion {
+    flex-direction: row;
+    height: 90vh;
+    min-height: 600px;
+  }
 }
 .accordion-block {
   position: relative;
@@ -821,7 +828,7 @@ html.with-featherlight {
   overflow: hidden;
   z-index: 2;
   width: 100%;
-  top: calc(90vh + 20px);
+  top: calc(90vh + 0px);
   align-items: center;
   justify-content: center;
   opacity: 1;
@@ -837,7 +844,8 @@ html.with-featherlight {
 }
 .accordion-item {
   position: relative;
-  width: 20%;
+  width: 100%;
+  height: 100px;
   padding: 0 0.5rem;
   background-position: center center;
   background-attachment: fixed;
@@ -854,6 +862,12 @@ html.with-featherlight {
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 50em) {
+  .accordion-item {
+    width: 20%;
+    height: auto;
+  }
 }
 .accordion-item--open {
   position: absolute;
@@ -874,8 +888,10 @@ html.with-featherlight {
   cursor: pointer;
   transform: rotate(90deg);
 }
-.accordion-item--shrink {
-  width: 44px;
+@media (min-width: 50em) {
+  .accordion-item--shrink {
+    width: 44px;
+  }
 }
 .accordion-item--number {
   display: flex;
@@ -884,12 +900,17 @@ html.with-featherlight {
   left: 0px;
   opacity: 1;
   width: 120px;
-  font-size: 5rem;
-  line-height: 100px;
+  font-size: 4rem;
   text-transform: uppercase;
   color: white;
   transition: all 0.2s ease-in-out;
   transition-delay: 0.5s;
+}
+@media (min-width: 50em) {
+  .accordion-item--number {
+    font-size: 5rem;
+    line-height: 100px;
+  }
 }
 .accordion-item--number .fit-content {
   transition: font-size 0.2s ease-in-out;
@@ -900,16 +921,31 @@ html.with-featherlight {
   z-index: 1;
   position: relative;
 }
+@media (max-width: 49.99em) {
+  .accordion-item--header .hide {
+    opacity: 1;
+  }
+}
 .accordion-item--title {
   align-items: center;
   opacity: 0;
   color: white;
   transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 0.6rem 0 0 0.55rem;
+  padding: 0.6rem 0 0 0.3rem;
+}
+@media (min-width: 50em) {
+  .accordion-item--title {
+    padding: 0.6rem 0 0 0.55rem;
+  }
 }
 .accordion-item--title p {
-  font-size: 55px;
+  font-size: 45px;
   color: white;
+}
+@media (min-width: 50em) {
+  .accordion-item--title p {
+    font-size: 55px;
+  }
 }
 .accordion-item--content {
   opacity: 0;
@@ -920,8 +956,14 @@ html.with-featherlight {
   display: flex;
   flex-direction: column;
   margin-top: 0.7rem;
-  width: 60%;
-  padding: 0 0.75rem;
+  width: 90%;
+  padding: 0 0.75rem 2rem 0.4rem;
+}
+@media (min-width: 50em) {
+  .accordion-item--content {
+    width: 60%;
+    padding: 0 0.75rem;
+  }
 }
 .accordion-item--content p {
   font-size: var(--font-size-lead);
@@ -930,10 +972,17 @@ html.with-featherlight {
 
 .accordion-item--show {
   width: 100% !important;
+  height: 90vh;
+  transition: height 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .accordion-item--show .accordion-item--number {
   opacity: 0;
   transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 50em) {
+  .accordion-item--show .accordion-item--number {
+    opacity: 0;
+  }
 }
 .accordion-item--show .accordion-item--content,
 .accordion-item--show .accordion-item--title {
@@ -1010,6 +1059,7 @@ html.with-featherlight {
 .banner {
   position: relative;
   display: flex;
+  align-items: flex-start;
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -1017,6 +1067,11 @@ html.with-featherlight {
   background-attachment: fixed;
   z-index: 2;
   overflow: hidden;
+}
+@media (min-width: 70em) {
+  .banner {
+    align-items: center;
+  }
 }
 .banner-text--outer {
   height: 200vh;
@@ -1027,11 +1082,18 @@ html.with-featherlight {
 }
 .banner--logo {
   z-index: 9;
-  max-width: 60%;
+  max-width: 85%;
   margin: 0 auto;
   opacity: 1;
   transition: all 0.25s ease-out;
   transition-delay: 0.5s;
+  margin-top: 150px;
+}
+@media (min-width: 70em) {
+  .banner--logo {
+    max-width: 60%;
+    margin-top: 0px;
+  }
 }
 .banner--text-overlay {
   position: absolute;
@@ -2110,11 +2172,21 @@ html.with-featherlight {
 }
 
 .intro-block .text-block--text-inner {
-  padding: var(--spacing-l) var(--spacing-xxl);
+  padding: var(--spacing-s) var(--spacing);
+}
+@media (min-width: 70em) {
+  .intro-block .text-block--text-inner {
+    padding: var(--spacing-l) var(--spacing-xxl);
+  }
 }
 .intro-block p {
-  font-size: calc(var(--font-size-lead) * 2);
-  line-height: 1;
+  font-size: var(--font-size-lead);
+}
+@media (min-width: 70em) {
+  .intro-block p {
+    font-size: calc(var(--font-size-lead) * 2);
+    line-height: 1;
+  }
 }
 
 .global-container {

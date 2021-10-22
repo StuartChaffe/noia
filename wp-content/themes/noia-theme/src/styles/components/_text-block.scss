@@ -178,10 +178,16 @@
 
 .intro-block {
 	.text-block--text-inner {
-		padding: var(--spacing-l) var(--spacing-xxl);
+		padding: var(--spacing-s) var(--spacing);
+		@include mq(large) {
+			padding: var(--spacing-l) var(--spacing-xxl);
+		}
 	}
 	p {
-		font-size: calc(var(--font-size-lead) * 2);
-		line-height: 1;
+		font-size: var(--font-size-lead);
+		@include mq(large) {
+			font-size: calc(var(--font-size-lead) * 2);
+			line-height: 1;
+		}
 	}
 }
