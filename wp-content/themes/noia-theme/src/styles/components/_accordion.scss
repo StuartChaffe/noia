@@ -3,7 +3,9 @@
 	flex-direction: column;
 	width: 100%;
 	overflow: hidden;
-	z-index: 999;
+	@include mq($until: medium) {
+		z-index: 999;
+	}
 	@include mq(medium) {
 		flex-direction: row;
 		height: 90vh;
@@ -75,6 +77,19 @@
 		@include mq(medium) {
 			width: 20%;
 			height: auto;
+		}
+
+		&--title__mobile {
+			padding: 1rem 0;
+			background: black;
+			color: white;
+			text-transform: uppercase;
+			.fit-content {
+				padding: 0 0 0 1rem;
+			}
+			@include mq(medium) {
+				display: none;
+			}
 		}
 
 		&--open {

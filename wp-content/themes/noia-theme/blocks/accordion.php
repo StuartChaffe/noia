@@ -17,6 +17,11 @@ $counter = 1;
 	</div>
 	<?php } ?>
 	<div class="accordion">
+	<div class="accordion-item--title__mobile">
+		<div class="fit-content">
+			<p><?php echo $title ?></p>
+		</div>
+	</div>
 	<?php if( have_rows('accordion-item') ): ?>
 
 		<?php $i = 0; ; while( have_rows('accordion-item') ): the_row();

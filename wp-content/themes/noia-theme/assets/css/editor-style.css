@@ -316,7 +316,11 @@ hr {
   flex-direction: column;
   width: 100%;
   overflow: hidden;
-  z-index: 999;
+}
+@media (max-width: 49.99em) {
+  .accordion {
+    z-index: 999;
+  }
 }
 @media (min-width: 50em) {
   .accordion {
@@ -388,6 +392,20 @@ hr {
   .accordion-item {
     width: 20%;
     height: auto;
+  }
+}
+.accordion-item--title__mobile {
+  padding: 1rem 0;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+}
+.accordion-item--title__mobile .fit-content {
+  padding: 0 0 0 1rem;
+}
+@media (min-width: 50em) {
+  .accordion-item--title__mobile {
+    display: none;
   }
 }
 .accordion-item--open {
