@@ -889,7 +889,7 @@ hr {
   height: 50%;
   overflow: hidden;
   z-index: 2;
-  padding: 0 2rem 1rem 2rem;
+  padding: var(--spacing-s);
 }
 @media (min-width: 50em) {
   .cta--links-item {

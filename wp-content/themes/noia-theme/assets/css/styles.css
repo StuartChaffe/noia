@@ -1442,7 +1442,7 @@ html.with-featherlight {
   height: 50%;
   overflow: hidden;
   z-index: 2;
-  padding: 0 2rem 1rem 2rem;
+  padding: var(--spacing-s);
 }
 @media (min-width: 50em) {
   .cta--links-item {
@@ -3043,6 +3043,7 @@ body.nav-open:after {
 }
 .global-footer--content__foot {
   display: flex;
+  flex-direction: column;
   margin-top: auto;
   justify-content: space-between;
   padding-top: var(--spacing);
@@ -3050,6 +3051,7 @@ body.nav-open:after {
 }
 @media (min-width: 50em) {
   .global-footer--content__foot {
+    flex-direction: row;
     padding-top: var(--spacing-l);
   }
 }
