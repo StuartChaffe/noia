@@ -18,8 +18,12 @@
 		}
 	}
 	&--full {
-		margin: 0 1rem 0.5rem 1rem;
-		width: calc(100% - 1rem);
+		margin: 0 0 0.5rem 0;
+		width: 100%;
+		@include mq(medium) {
+			margin: 0 1rem 0.5rem 1rem;
+			width: calc(100% - 1rem);
+		}
 	}
 }
 

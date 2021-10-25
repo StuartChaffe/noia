@@ -373,8 +373,14 @@ table tbody tr:hover {
   }
 }
 .form-fields--full {
-  margin: 0 1rem 0.5rem 1rem;
-  width: calc(100% - 1rem);
+  margin: 0 0 0.5rem 0;
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .form-fields--full {
+    margin: 0 1rem 0.5rem 1rem;
+    width: calc(100% - 1rem);
+  }
 }
 
 input[type=email],
