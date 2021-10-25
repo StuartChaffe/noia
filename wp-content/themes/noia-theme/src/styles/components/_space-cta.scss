@@ -4,7 +4,10 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	padding: var(--spacing) 0;
+	padding: var(--spacing) 2rem;
+	@include mq(medium) {
+		padding: var(--spacing) 0;
+	}
 	&:before {
 		content: '';
 		position: absolute;

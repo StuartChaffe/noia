@@ -1,10 +1,17 @@
 .space-description {
 	display: flex;
-	// margin-bottom: var(--spacing);
+	flex-direction: column;
+	@include mq(medium) {
+		flex-direction: row;
+	}
 	&-item {
-		width: 50%;
-		padding: var(--spacing);
-		padding-right: var(--spacing-l);
+		width: 100%;
+		padding: var(--spacing-s);
+		@include mq(medium) {
+			width: 50%;
+			padding: var(--spacing);
+			padding-right: var(--spacing-l);
+		}
 
 		.lead {
 			// margin-bottom: 0;

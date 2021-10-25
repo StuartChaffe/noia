@@ -2,6 +2,10 @@
 	display: flex;
 	position: relative;
 	padding-bottom: var(--spacing);
+	flex-direction: column;
+	@include mq(medium) {
+		flex-direction: row;
+	}
 	.bkg--red {
 		margin-bottom: 0;
 	}
@@ -20,8 +24,15 @@
 		}
 	}
 	&--text {
-		padding-left: var(--spacing);
-		padding-right: var(--spacing);
+		padding-left: var(--spacing-xs);
+		padding-right: var(--spacing-xs);
+		@include mq($until: medium) {
+			padding-top: var(--spacing-s);
+		}
+		@include mq(medium) {
+			padding-left: var(--spacing);
+			padding-right: var(--spacing);
+		}
 		&__sticky {
 			position: sticky;
 			top: calc(var(--spacing) + 35px);
@@ -41,19 +52,29 @@
 		&__half {
 			// margin: 0 var(--spacing);
 			.text-block--text {
-				width: 50%;
+				width: 100%;
+				@include mq(medium) {
+					width: 50%;
+				}
 			}
 			.text-block--text__content{
 				// width: 50%;
 				padding: var(--spacing);
 				p {
-					padding-right: 50%;
+					padding-right: 0;
+					@include mq(medium) {
+						padding-right: 50%;
+					}
 				}
 			}
 		}
 		&-inner {
-			padding: 55px var(--spacing);
-			padding-bottom: var(--spacing-s);
+			padding: 45px var(--spacing-xs);
+			padding-bottom: 0;
+			@include mq(medium) {
+				padding: 55px var(--spacing);
+				padding-bottom: var(--spacing-s);
+			}
 			.text-block--text__content{
 				padding: 0;
 			}
@@ -81,11 +102,16 @@
 		// }
 	}
 	&--images {
-		// flex: 100%;
-		width: 50%;
-		// height: 50vw;
-		max-height: 600px;
+		width: 100%;
+		// max-height: 600px;
 		overflow: hidden;
+		padding-left: var(--spacing-xs);
+		padding-right: var(--spacing-xs);
+		@include mq(medium) {
+			width: 50%;
+			padding-left: 0;
+			padding-right: 0;
+		}
 		.slick-track,
 		.slick-list {
 			// max-height: 100%;
@@ -114,11 +140,16 @@
 		}
 	}
 	&--image {
-		// flex: 100%;
-		width: 70%;
-		max-height: 600px;
+		width: 100%;
+		// max-height: 600px;
 		overflow: hidden;
-		// height: 50vw;
+		padding-left: var(--spacing-xs);
+		padding-right: var(--spacing-xs);
+		@include mq(medium) {
+			width: 70%;
+			padding-left: 0;
+			padding-right: 0;
+		}
 
 		img {
 			width: 100%;
@@ -144,6 +175,17 @@
 			}
 			.text-block--image {
 				order: 0;
+			}
+		}
+
+		&__right {
+			@include mq($until: medium) {
+				.text-block--text {
+					order: 1;
+				}
+				.text-block--image {
+					order: 0;
+				}
 			}
 		}
 	}

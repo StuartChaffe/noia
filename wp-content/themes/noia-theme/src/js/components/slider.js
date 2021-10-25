@@ -23,23 +23,25 @@ jQuery(document).ready(function($) {
 		settings: "unslick",
 		slidesToShow: 3,
 		// slidesToScroll: 3,
+		centerMode: true,
+		centerPadding: '200px',
+		
 		autoplay: true,
 		arrows: false,
 		dots: false,
 		adaptiveHeight: true,
-		centerMode: true,
-		centerPadding: '200px',
 		responsive: [
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 2,
-				}
-			},
 			{
 				breakpoint: 640,
 				settings: {
 					slidesToShow: 1,
+					centerPadding: '100px',
+				}
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+					centerMode: true,
 				}
 			}
 		]
