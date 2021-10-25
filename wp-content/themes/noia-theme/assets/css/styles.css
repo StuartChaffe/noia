@@ -3083,14 +3083,21 @@ body.nav-open:after {
 .global-footer--content__links {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .global-footer--content__links ul {
   list-style-type: none;
   padding-left: 0;
   margin-top: 0;
 }
+@media (max-width: 49.99em) {
+  .global-footer--content__explore, .global-footer--content__info {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+}
 .global-footer--content__contact {
-  width: 50%;
+  width: 100%;
 }
 @media (min-width: 50em) {
   .global-footer--content__contact {
