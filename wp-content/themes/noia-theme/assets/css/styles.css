@@ -1886,7 +1886,6 @@ html.with-featherlight {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   text-align: center;
   height: 100%;
 }
@@ -1895,7 +1894,6 @@ html.with-featherlight {
     padding: 0 2rem;
     border-left: 1px solid #C7C7C7;
     border-bottom: 1px solid #C7C7C7;
-    justify-content: center;
   }
 }
 .modal-inner-item p {
