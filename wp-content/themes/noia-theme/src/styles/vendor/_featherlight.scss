@@ -79,6 +79,11 @@ html.with-featherlight {
 	/* make sure its visible */
 	display: flex;
 	height: 100%;
+	padding-top: 1.5rem;
+	@include mq(medium) {
+		padding-top: 0;
+	}
+	
 }
 
 /* don't show these though */

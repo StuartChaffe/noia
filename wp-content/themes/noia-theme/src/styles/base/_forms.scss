@@ -5,7 +5,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 900px;
-	margin: 2rem auto;
+	margin: 1rem auto;
+	@include mq(medium) {
+		margin: 2rem auto;
+	}
 	&--half {
 		margin: 0 0 0.5rem 0;
 		width: 100%;
