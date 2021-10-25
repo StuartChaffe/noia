@@ -1873,6 +1873,7 @@ html.with-featherlight {
   display: flex !important;
   width: 100%;
   height: 100%;
+  padding-bottom: 1rem;
   flex-direction: column;
 }
 @media (min-width: 50em) {
@@ -1886,6 +1887,7 @@ html.with-featherlight {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   height: 100%;
 }
