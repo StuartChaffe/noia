@@ -12,7 +12,7 @@ html.with-featherlight {
 }
 
 .featherlight {
-	padding: var(--spacing-l);
+	padding: var(--spacing-xs);
 	display: none;
 
 	/* dimensions: spanning the background from edge to edge */
@@ -31,6 +31,9 @@ html.with-featherlight {
 	background: #333;
 	/* IE8 "hack" for nested featherlights */
 	background: rgba(0, 0, 0, 0);
+	@include mq(medium) {
+		padding: var(--spacing-l);
+	}
 }
 
 /* support for nested featherlights. Does not work in IE8 (use JS to fix) */
