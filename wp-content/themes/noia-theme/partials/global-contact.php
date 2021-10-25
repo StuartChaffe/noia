@@ -5,13 +5,13 @@ $rightcontent = get_field( 'form_content_right', 'options');
 
 <div class="global-modal" id="part-1">
 	<div class="modal-inner">
-		<div class="modal-inner-item">
+		<div class="modal-inner-item modal-inner-item__center">
 			<?php echo $leftcontent ?>
 			<div class="modal-inner-item--buttons">
 				<a href="#part-2" class="btn ajax-featherlight">Stay with us</a>
 			</div>
 		</div>
-		<div class="modal-inner-item">
+		<div class="modal-inner-item modal-inner-item__center">
 			<?php echo $rightcontent ?>
 			<div class="modal-inner-item--buttons">
 				<a href="#part-4" class="btn ajax-featherlight">Tell us about your idea</a>

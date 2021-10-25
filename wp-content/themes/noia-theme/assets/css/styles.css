@@ -1887,7 +1887,6 @@ html.with-featherlight {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   height: 100%;
 }
@@ -1919,6 +1918,9 @@ html.with-featherlight {
 }
 .modal-inner-item--buttons {
   margin-top: 2rem;
+}
+.modal-inner-item__center {
+  justify-content: center;
 }
 
 .btn-back {
