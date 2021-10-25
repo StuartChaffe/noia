@@ -12,7 +12,7 @@
 	<?php if( have_rows('spaces-details-images') ): ?>
 	<div class="carousel">
 		<div class="banner banner-space fade">
-			<div class="banner--content fit-content">
+			<div class="banner--content">
 				<p class="animate"><?php the_title(); ?></p>
 			</div>
 		</div>
