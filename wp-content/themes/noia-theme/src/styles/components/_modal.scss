@@ -17,13 +17,15 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-start;
 		text-align: center;
 		height: 100%;
 		overflow: auto;
 		@include mq(medium) {
 			padding: 0 2rem;
 			border-left: 1px solid #C7C7C7;
+			border-bottom: 1px solid #C7C7C7;
+			justify-content: center;
 		}
 		p {
 			max-width: 500px;
@@ -38,6 +40,9 @@
 			@include mq(medium) {
 				border-bottom: none;
 			}
+		}
+		&:last-of-type {
+			border-bottom: none;
 		}
 		&--buttons {
 			margin-top: 2rem;

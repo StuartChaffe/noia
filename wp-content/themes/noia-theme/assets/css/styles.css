@@ -358,8 +358,14 @@ table tbody tr:hover {
   margin: 2rem auto;
 }
 .form-fields--half {
-  margin: 0 1rem 0.5rem 1rem;
-  width: calc(50% - 2rem);
+  margin: 0 0 0.5rem 0;
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .form-fields--half {
+    margin: 0 1rem 0.5rem 1rem;
+    width: calc(50% - 2rem);
+  }
 }
 .form-fields--full {
   margin: 0 1rem 0.5rem 1rem;
@@ -1870,7 +1876,7 @@ html.with-featherlight {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   height: 100%;
   overflow: auto;
@@ -1879,6 +1885,8 @@ html.with-featherlight {
   .modal-inner-item {
     padding: 0 2rem;
     border-left: 1px solid #C7C7C7;
+    border-bottom: 1px solid #C7C7C7;
+    justify-content: center;
   }
 }
 .modal-inner-item p {
@@ -1896,6 +1904,9 @@ html.with-featherlight {
   .modal-inner-item:first-of-type {
     border-bottom: none;
   }
+}
+.modal-inner-item:last-of-type {
+  border-bottom: none;
 }
 .modal-inner-item--buttons {
   margin-top: 2rem;
