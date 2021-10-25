@@ -587,6 +587,7 @@ input[type=radio] {
   display: inline-block;
   border-radius: 0;
   padding: 0.3rem 0.6rem;
+  margin-bottom: 2rem;
   border: 0;
   color: white;
   font-family: var(--display-family);
