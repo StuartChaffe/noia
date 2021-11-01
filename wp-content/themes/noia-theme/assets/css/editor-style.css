@@ -1354,9 +1354,11 @@ hr {
 
 .addthis_inline_share_toolbox {
   margin-top: 1rem;
+  margin-left: -0.5rem;
 }
 .addthis_inline_share_toolbox .at-share-btn {
   background-color: transparent !important;
+  margin: 0 !important;
 }
 .addthis_inline_share_toolbox .at-share-btn:hover {
   transform: translateY(0) !important;

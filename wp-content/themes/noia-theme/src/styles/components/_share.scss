@@ -6,8 +6,11 @@
 }
 .addthis_inline_share_toolbox {
 	margin-top: 1rem;
+	margin-left: -0.5rem;
 	.at-share-btn {
 		background-color: transparent !important;
+		margin: 0 !important;
+		// padding: 0 !important;
 		&:hover {
 			transform: translateY(0) !important;
 			svg {
