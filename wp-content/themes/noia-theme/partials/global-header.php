@@ -26,9 +26,9 @@
 		<div class="mobile-menu--foot">
 			<div class="mobile-menu--foot__contact">
 				<div class="mobile-menu--foot__social">
-					<a href=""><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-twitter.svg" alt="twitter Logo" /></a>
-					<a href=""><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-insta.svg" alt="instagram Logo" /></a>
-					<a href=""><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-medium.svg" alt="medium Logo" /></a>
+					<a href="https://twitter.com/noiascape/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-twitter.svg" alt="twitter Logo" /></a>
+					<a href="https://www.instagram.com/noiascape/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-insta.svg" alt="instagram Logo" /></a>
+					<!-- <a href=""><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-medium.svg" alt="medium Logo" /></a> -->
 				</div>
 
 				<a href=""><p>hello@noiascape.com</p></a>
