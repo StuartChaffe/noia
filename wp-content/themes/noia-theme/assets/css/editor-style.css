@@ -200,6 +200,10 @@ p.large,
   font-size: var(--font-size-large);
 }
 
+strong {
+  font-weight: var(--font-weight-normal);
+}
+
 ul,
 ol {
   margin-top: 1.5rem;
