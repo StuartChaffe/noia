@@ -2481,6 +2481,11 @@ html.with-featherlight {
   margin-bottom: 0;
 }
 
+.intro-block {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
 .intro-block .text-block--text-inner {
   padding: var(--spacing-s) var(--spacing);
 }
@@ -2561,6 +2566,10 @@ html.with-featherlight {
 
 .color-white {
   color: white;
+}
+
+.color-black {
+  color: var(--color-text-base);
 }
 
 .content {

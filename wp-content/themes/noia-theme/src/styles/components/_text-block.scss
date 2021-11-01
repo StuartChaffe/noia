@@ -219,6 +219,9 @@
 } 
 
 .intro-block {
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
 	.text-block--text-inner {
 		padding: var(--spacing-s) var(--spacing);
 		@include mq(large) {
