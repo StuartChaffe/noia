@@ -13,6 +13,7 @@ $textoverlay = get_field( 'banner-text-overlay');
 $textcolor = get_field( 'banner-text-overlay-colour');
 $bkgfade = get_field( 'banner-blur');
 ?>
+<div class="container--large">
 <?php if ( $textoverlay ) { ?><div class="banner-text--outer"><?php } ?>
 <section class="banner fade" <?php if ( $bkgimage ) { ?>style="background-image: url(<?php echo $bkgimage['url']; ?>)"<?php } ?>>
 	<?php if ( $overlay == '1' ) { ?><div class="banner--overlay"></div><?php } ?>
@@ -60,3 +61,4 @@ $bkgfade = get_field( 'banner-blur');
 
 </section>
 <?php if ( $textoverlay ) { ?></div><?php } ?>
+</div>

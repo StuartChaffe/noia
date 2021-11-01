@@ -24,6 +24,7 @@ function origin_cpts() {
 	    'query_var'             => true,
 	    'has_archive'           => false,
 		'show_in_rest'			=> $gutenberg_enabled,
+		
 	    'supports'              => array(
 	        'title',
 	        'editor',

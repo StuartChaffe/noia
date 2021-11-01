@@ -1606,6 +1606,13 @@ hr {
   max-width: var(--container-width-s);
 }
 
+.container--large {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1800px;
+}
+
 .main {
   max-width: var(--content-width);
   margin-top: var(--spacing-l);
