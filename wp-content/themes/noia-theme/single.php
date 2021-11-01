@@ -26,6 +26,7 @@
 
 			<div class="journal--header__share">
 				<p>Share this article</p>
+				<div class="addthis_inline_share_toolbox"></div>
 			</div>
 		</div>
 	</div>

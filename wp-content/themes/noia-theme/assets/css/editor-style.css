@@ -747,6 +747,7 @@ hr {
   position: relative;
   z-index: 3;
   flex-direction: column;
+  align-items: flex-start;
 }
 .banner-journal p {
   margin-bottom: 0;
