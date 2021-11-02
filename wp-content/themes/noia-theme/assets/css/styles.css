@@ -201,7 +201,7 @@ p.large,
 }
 
 strong {
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
 }
 
 ul,
@@ -1271,6 +1271,9 @@ html.with-featherlight {
 }
 .banner--content p {
   font-weight: var(--font-weight-light);
+}
+.banner--content p strong {
+  font-weight: var(--font-weight-bold);
 }
 .banner--video {
   position: absolute;
