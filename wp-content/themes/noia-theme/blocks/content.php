@@ -12,6 +12,7 @@ $share = get_field('content-share');
     <?php if ( is_single() ) { ?>
         <div class="content--share">
             <p>Share this article</p>
+            <div class="addthis_inline_share_toolbox"></div>
         </div>
     <?php } ?>
 </div>
