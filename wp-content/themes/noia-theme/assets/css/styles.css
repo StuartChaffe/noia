@@ -1690,10 +1690,13 @@ html.with-featherlight {
   align-items: flex-start;
 }
 .journal--image {
-  margin-top: -75px;
+  transform: translateY(-75px);
   margin-bottom: var(--spacing);
   width: 110%;
   margin-left: -5%;
+}
+.journal--image + .content {
+  transform: translateY(-75px);
 }
 
 .location-images {
