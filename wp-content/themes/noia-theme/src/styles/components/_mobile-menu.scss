@@ -115,6 +115,13 @@ body.nav-open {
 	ul {
 		padding-left: 0;
 		margin-bottom: var(--spacing);
+		.menu-item-has-children {
+			a:hover {
+				+ .sub-menu {
+					display: block;
+				}
+			}
+		}
 		li {
 			// margin-bottom: 1.5rem;
 			a {
@@ -125,6 +132,10 @@ body.nav-open {
 			.sub-menu {
 				margin-bottom: 0.5rem;
 				margin-left: 0.3rem;
+				display: none;
+				&:hover {
+					display: block;
+				}
 				li { 
 					margin-bottom: 0;
 					display: flex;

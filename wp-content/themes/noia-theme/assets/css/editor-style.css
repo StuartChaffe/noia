@@ -343,8 +343,10 @@ hr {
   height: calc(90vh - 106px);
   width: 100%;
   top: 106px;
+  bottom: 0.5rem;
   opacity: 1;
   transition: opacity 300ms ease-in-out;
+  padding: 0 1rem 0.5rem 1rem;
 }
 .accordion-block--title__hide {
   opacity: 0 !important;
@@ -357,7 +359,7 @@ hr {
   overflow: hidden;
   z-index: 2;
   width: 100%;
-  top: calc(90vh + 0px);
+  top: calc(90vh - 0.5rem);
   align-items: center;
   justify-content: center;
   opacity: 1;
