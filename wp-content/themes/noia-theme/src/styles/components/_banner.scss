@@ -134,10 +134,11 @@
 		transition: all .25s ease-out;
 		padding-left: 1rem;
 		padding-right: 1rem;
-		padding-bottom: 1rem;
+		padding-bottom: 2.5rem;
 		@include mq(large) {
 			padding-left: 1.9rem;
 			padding-right: 1.9rem;
+			padding-bottom: 1rem;
 		}
 		h1, h2, h3, h4, p {
 			line-height: 100%;

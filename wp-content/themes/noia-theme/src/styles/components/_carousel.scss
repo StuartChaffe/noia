@@ -1,7 +1,7 @@
 .carousel {
     height: 100vh;
 	&-inner {
-		background: red;
+		// background: red;
 	}
 	&-slider {
 		height: 100%;
@@ -12,10 +12,24 @@
 			max-height: 100vh !important;
 		}
 		.slick-prev {
-			left: 15px;
+			left: 10px;
+			@include mq($until: medium) {
+				top: auto;
+				bottom: 0;
+			}
+			@include mq(medium) {
+				left: 15px;
+			}
 		}
 		.slick-next {
-			right: 15px;
+			right: 10px;
+			@include mq($until: medium) {
+				top: auto;
+				bottom: 0;
+			}
+			@include mq(medium) {
+				right: 15px;
+			}
 		}
 
 		&-item {

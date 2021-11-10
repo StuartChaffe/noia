@@ -38,8 +38,8 @@ body.nav-open {
 	right: 0;
 	display: flex;
 	flex-direction: column;
-	padding: var(--spacing);
-	padding-top: var(--spacing-l);
+	padding: var(--spacing-s);
+	padding-top: 75px;
 	width: 100%;
 	height: 100%;
 	z-index: z-scale(navigation);
@@ -48,6 +48,11 @@ body.nav-open {
 	background-color: var(--color-primary);
 	overflow-y: auto;
 	border: 0;
+
+	@include mq(medium) {
+		padding: var(--spacing);
+		padding-top: var(--spacing-l);
+	}
 
 	.heading {
 		border-top: 1px solid var(--color-text-base);
@@ -118,7 +123,10 @@ body.nav-open {
 		.menu-item-has-children {
 			a:hover {
 				+ .sub-menu {
-					display: block;
+					display: none;
+					@include mq(medium) {
+						display: block;
+					}
 				}
 			}
 		}
@@ -133,6 +141,7 @@ body.nav-open {
 				margin-bottom: 0.5rem;
 				margin-left: 0.3rem;
 				display: none;
+		
 				&:hover {
 					display: block;
 				}
@@ -146,7 +155,7 @@ body.nav-open {
 					}
 					a {
 						@include mq($until: medium) {
-							padding: 0.5rem 0;
+							// padding: 0.5rem 0;
 							display: block;
 						}
 						// color: white;
