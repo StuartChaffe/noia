@@ -1,6 +1,9 @@
 .content {
 	font-size: var(--font-size-small);
-	padding-bottom: var(--spacing-l);
+	padding-bottom: var(--spacing-s);
+	@include mq(medium) {
+		padding-bottom: var(--spacing-l);
+	}
 	> * {
 		max-width: var(--content-width);
 		margin-right: auto;
@@ -8,16 +11,23 @@
 	}
 
 	&--share {
-		margin-top: var(--spacing-l);
+		margin-top: var(--spacing);
 		border-top: 1px solid black;
 		padding-top: 0.5rem;
+		@include mq(medium) {
+			margin-top: var(--spacing-l);
+		}
 	}
 
 	img {
 		margin-top: var(--spacing-l);
 	}
 	.wp-caption {
-		margin-bottom: var(--spacing-l);
+		margin-bottom: var(--spacing);
+		max-width: 100%;
+		@include mq(medium) {
+			margin-bottom: var(--spacing-l);
+		}
 	}
 
 	p {

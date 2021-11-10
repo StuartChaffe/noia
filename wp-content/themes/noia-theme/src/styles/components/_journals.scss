@@ -2,10 +2,13 @@
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	padding: var(--spacing-l) calc(var(--spacing) - 12.5px);
+	padding: var(--spacing) 1rem 0 1rem;
+	@include mq(medium) {
+		padding: var(--spacing-l) calc(var(--spacing) - 12.5px);
+	}
 
 	&-item {
-		width: calc(100% / 4 );
+		width: calc(100% / 2 );
 		padding: 0 12.5px;
 		text-align: center;
 		display: flex;
@@ -13,6 +16,9 @@
 		align-items: center;
 		margin-top: auto;
 		margin-bottom: var(--spacing);
+		@include mq(medium) {
+			width: calc(100% / 4 );
+		}
 
 		img {
 			margin-bottom: var(--spacing-s);
@@ -30,7 +36,10 @@
 
 .journal {
 	&--header {
-		padding: var(--spacing-xl) 0;
+		padding: var(--spacing) 0;
+		@include mq(medium) {
+			padding: var(--spacing-xl) 0;
+		}
 		&__cat {
 			margin-bottom: 1rem;
 		}
@@ -39,31 +48,47 @@
 			font-size: var(--font-size-small);
 			border-top: 1px solid black;
 			padding-top: 0.5rem;
-			padding-right: 8rem;
+			width: 100%;
+			// padding-right: 8rem;
+			@include mq(medium) {
+				padding-right: 8rem;
+			}
 			p {
 				font-size: var(--font-size-small);
 			}
 		}
 		h1 {
-			font-size: 50px;
+			font-size: 30px;
 			line-height: 1;
 			margin-bottom: 1rem;
+			@include mq(medium) {
+				font-size: 50px;
+			}
 		}
 		&__inner {
-			padding: 0 var(--spacing) !important;
+			padding: 0 var(--spacing-s) !important;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
+			@include mq(medium) {
+				padding: 0 var(--spacing) !important;
+			}
 		}
 	}
 	&--image {
-		transform: translateY(-75px);
 		margin-bottom: var(--spacing);
-		width: 110%;
-		margin-left: -5%;
+		padding-top: 1rem;
+		@include mq(medium) {
+			padding-top: 0;
+			width: 110%;
+			margin-left: -5%;
+			transform: translateY(-75px);
+		}
 
 		+ .content {
-			transform: translateY(-75px);
+			@include mq(medium) {
+				transform: translateY(-75px);
+			}
 		}
 	}
 }

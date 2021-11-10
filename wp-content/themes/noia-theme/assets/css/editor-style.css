@@ -855,8 +855,8 @@ hr {
 .carousel-slider-item--content {
   display: flex;
   align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   width: 100%;
   color: white;
   height: auto;
@@ -870,14 +870,15 @@ hr {
   }
 }
 .carousel-slider-item--content h1, .carousel-slider-item--content h2, .carousel-slider-item--content h3, .carousel-slider-item--content h4 {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
   line-height: 1.08 !important;
   font-weight: var(--font-weight-light);
 }
 @media (min-width: 50em) {
   .carousel-slider-item--content h1, .carousel-slider-item--content h2, .carousel-slider-item--content h3, .carousel-slider-item--content h4 {
     padding-left: 200px;
+    padding-right: 40px;
   }
 }
 .carousel-slider-item--content p {
@@ -953,12 +954,13 @@ hr {
   height: 50%;
   overflow: hidden;
   z-index: 2;
-  padding: var(--spacing-s);
+  padding: var(--spacing-s) 1rem;
 }
 @media (min-width: 50em) {
   .cta--links-item {
     width: 50%;
     height: auto;
+    padding: var(--spacing-s);
   }
 }
 .cta--links-item:first-child {
@@ -1442,11 +1444,14 @@ hr {
 .text-block {
   display: flex;
   position: relative;
-  padding-bottom: var(--spacing);
+  padding-bottom: var(--spacing-s);
+  padding-top: var(--spacing-s);
   flex-direction: column;
 }
 @media (min-width: 50em) {
   .text-block {
+    padding-top: 0;
+    padding-bottom: var(--spacing);
     flex-direction: row;
   }
 }
@@ -1507,8 +1512,7 @@ hr {
   }
 }
 .text-block--text-inner {
-  padding: 45px var(--spacing-xs);
-  padding-bottom: 0;
+  padding: var(--spacing-s) var(--spacing);
 }
 @media (min-width: 50em) {
   .text-block--text-inner {
@@ -1693,7 +1697,12 @@ hr {
 
 .content {
   font-size: var(--font-size-small);
-  padding-bottom: var(--spacing-l);
+  padding-bottom: var(--spacing-s);
+}
+@media (min-width: 50em) {
+  .content {
+    padding-bottom: var(--spacing-l);
+  }
 }
 .content > * {
   max-width: var(--content-width);
@@ -1701,15 +1710,26 @@ hr {
   margin-left: auto;
 }
 .content--share {
-  margin-top: var(--spacing-l);
+  margin-top: var(--spacing);
   border-top: 1px solid black;
   padding-top: 0.5rem;
+}
+@media (min-width: 50em) {
+  .content--share {
+    margin-top: var(--spacing-l);
+  }
 }
 .content img {
   margin-top: var(--spacing-l);
 }
 .content .wp-caption {
-  margin-bottom: var(--spacing-l);
+  margin-bottom: var(--spacing);
+  max-width: 100%;
+}
+@media (min-width: 50em) {
+  .content .wp-caption {
+    margin-bottom: var(--spacing-l);
+  }
 }
 .content p {
   font-size: var(--font-size-small);

@@ -51,11 +51,11 @@
 			height: 50%;
 			overflow: hidden;
 			z-index: 2;
-			padding: var(--spacing-s);
+			padding: var(--spacing-s) 1rem;
 			@include mq(medium) {
 				width: 50%;
 				height: auto;
-
+				padding: var(--spacing-s);
 			}
 			&:first-child {
 				border-bottom: 1px solid rgba(255, 255, 255, 0.3);

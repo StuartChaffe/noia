@@ -1,9 +1,12 @@
 .text-block {
 	display: flex;
 	position: relative;
-	padding-bottom: var(--spacing);
+	padding-bottom: var(--spacing-s);
+	padding-top: var(--spacing-s);
 	flex-direction: column;
 	@include mq(medium) {
+		padding-top: 0;
+		padding-bottom: var(--spacing);
 		flex-direction: row;
 	}
 	.bkg--red {
@@ -69,8 +72,8 @@
 			}
 		}
 		&-inner {
-			padding: 45px var(--spacing-xs);
-			padding-bottom: 0;
+			padding: var(--spacing-s) var(--spacing);
+			// padding-bottom: 0;
 			@include mq(medium) {
 				padding: 55px var(--spacing);
 				padding-bottom: var(--spacing-s);
