@@ -1719,7 +1719,7 @@ html.with-featherlight {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: var(--spacing) 1rem 0 1rem;
+  padding: var(--spacing) 1rem 1rem 1rem;
 }
 @media (min-width: 50em) {
   .journals {
