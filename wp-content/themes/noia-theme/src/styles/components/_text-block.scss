@@ -222,9 +222,15 @@
 } 
 
 .intro-block {
-	background-size: cover;
+	background-size: 100% 100%;
 	background-position: center center;
-	background-attachment: fixed;
+	background-repeat: no-repeat;
+	@include mq(large) {
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+	}
+	
 	.text-block--text-inner {
 		padding: var(--spacing-s) var(--spacing-s);
 		@include mq(large) {

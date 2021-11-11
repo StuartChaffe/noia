@@ -83,8 +83,7 @@
 
 		&--title__mobile {
 			padding: 1rem 0;
-			background: black;
-			color: white;
+			background: var(--color-primary);
 			text-transform: uppercase;
 			.fit-content {
 				width: 100%;

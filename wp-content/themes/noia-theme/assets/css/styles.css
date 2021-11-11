@@ -910,8 +910,7 @@ html.with-featherlight {
 }
 .accordion-item--title__mobile {
   padding: 1rem 0;
-  background: black;
-  color: white;
+  background: var(--color-primary);
   text-transform: uppercase;
 }
 .accordion-item--title__mobile .fit-content {
@@ -2562,9 +2561,16 @@ html.with-featherlight {
 }
 
 .intro-block {
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center center;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+@media (min-width: 70em) {
+  .intro-block {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
 }
 .intro-block .text-block--text-inner {
   padding: var(--spacing-s) var(--spacing-s);
