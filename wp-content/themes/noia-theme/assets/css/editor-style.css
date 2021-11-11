@@ -1857,7 +1857,7 @@ hr {
   }
 }
 .intro-block .text-block--text-inner {
-  padding: 1rem;
+  padding: 1.5rem 1rem;
 }
 @media (min-width: 70em) {
   .intro-block .text-block--text-inner {
