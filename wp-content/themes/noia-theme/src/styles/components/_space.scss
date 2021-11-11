@@ -50,6 +50,10 @@
 	}
 }
 .spaces {
+	.slick-prev,
+	.slick-next {
+		display: none;
+	}
 	.banner-space {
 		background-color: rgba(0, 0, 0, 0.4);
 	}

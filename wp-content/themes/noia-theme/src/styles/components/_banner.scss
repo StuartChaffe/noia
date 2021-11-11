@@ -201,7 +201,7 @@
 		}
 		&--details {
 			margin-top: auto;
-			margin-bottom: 1.5rem;
+			margin-bottom: rem;
 			color: white;
 			padding-left: 1rem;
 			width: 100%;
@@ -227,6 +227,9 @@
 		.banner--content {
 			p {
 				@extend .heading-1;
+				@include mq(medium) {
+					font-size: var(--font-size-h2);
+				}
 			}
 		}
 	}

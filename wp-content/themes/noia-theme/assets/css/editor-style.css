@@ -963,7 +963,7 @@ hr {
 }
 .banner-space--details {
   margin-top: auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: rem;
   color: white;
   padding-left: 1rem;
   width: 100%;
@@ -987,6 +987,11 @@ hr {
 }
 .banner-space--details + .banner--content {
   margin-top: 0 !important;
+}
+@media (min-width: 50em) {
+  .banner-space .banner--content p {
+    font-size: var(--font-size-h2);
+  }
 }
 .banner-journal {
   position: relative;
@@ -1633,6 +1638,10 @@ hr {
   color: white;
 }
 
+.spaces .slick-prev,
+.spaces .slick-next {
+  display: none;
+}
 .spaces .banner-space {
   background-color: rgba(0, 0, 0, 0.4);
 }
