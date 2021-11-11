@@ -1549,6 +1549,7 @@ hr {
   padding: 0.4rem 0.7rem;
   font-size: var(--font-size-small);
   margin-top: 1.4rem;
+  width: 110px;
 }
 .membership-block .text-block--text__half {
   width: 100%;

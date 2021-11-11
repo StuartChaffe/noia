@@ -18,13 +18,21 @@
 		.text-block--text-title {
 			display: flex;
 			align-items: flex-start;
+			flex-direction: column;
+			@include mq(medium) {
+				flex-direction: row;
+			}
 			span {
-				margin-left: auto;
 				background-color: black;
 				color: white;
 				padding: 0.4rem 0.7rem;
 				font-size: var(--font-size-small);
-				margin-top: 1.4rem;
+				margin-top: 0;
+				width: 110px;
+				@include mq(medium) {
+					margin-left: auto;
+					margin-top: 1.4rem;
+				}
 			}
 		}
 		.text-block--text__half {
