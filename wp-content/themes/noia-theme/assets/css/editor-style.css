@@ -1320,10 +1320,15 @@ hr {
   padding-bottom: var(--spacing);
 }
 .image-block--images {
-  width: 60%;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   margin-left: auto;
+}
+@media (min-width: 50em) {
+  .image-block--images {
+    width: 60%;
+  }
 }
 .image-block--images-item {
   margin: 0 12.5px;

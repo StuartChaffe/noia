@@ -25,10 +25,13 @@
 		}
 	}
 	&--images {
-		width: 60%;
+		width: 100%;
 		display: flex;
 		align-items: flex-start;
 		margin-left: auto;
+		@include mq(medium) {
+			width: 60%;
+		}
 		&-item {
 			margin: 0 12.5px;
 			position: sticky;
