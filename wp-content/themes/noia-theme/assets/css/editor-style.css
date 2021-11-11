@@ -700,7 +700,7 @@ hr {
   }
 }
 .accordion-item--title p {
-  font-size: 45px;
+  font-size: 38px;
   color: white;
 }
 @media (min-width: 50em) {
@@ -816,7 +816,7 @@ hr {
   }
 }
 .banner--logo-large {
-  max-width: 50%;
+  max-width: 40%;
 }
 .banner--text-overlay {
   position: absolute;
@@ -1143,9 +1143,14 @@ hr {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 50em) {
+  .carousel-slider-item--overlay {
+    height: 100vh;
+  }
 }
 
 .cta {
@@ -1587,7 +1592,7 @@ hr {
 }
 .space-description-item {
   width: 100%;
-  padding: var(--spacing-s);
+  padding: 1rem;
 }
 @media (min-width: 50em) {
   .space-description-item {
@@ -1660,7 +1665,12 @@ hr {
   margin-top: 3rem;
   padding-top: 0.5rem;
   border-top: 1px solid var(--color-text-base);
-  width: 50%;
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .share {
+    width: 50%;
+  }
 }
 
 .addthis_inline_share_toolbox {
@@ -1784,7 +1794,7 @@ hr {
   }
 }
 .text-block--text-inner {
-  padding: var(--spacing-s) var(--spacing);
+  padding: 1.5rem 1rem 0 1rem;
 }
 @media (min-width: 50em) {
   .text-block--text-inner {
@@ -1883,6 +1893,9 @@ hr {
   .carousel + .text-block, .container--large + .text-block {
     padding-top: var(--spacing);
   }
+}
+.carousel + .text-block .text-block--text-inner, .container--large + .text-block .text-block--text-inner {
+  padding-top: 0;
 }
 
 .intro-block {
