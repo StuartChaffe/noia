@@ -3,11 +3,16 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 75vh;
+	height: 50vh;
 	width: 100%;
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
+
+	@include mq(medium) {
+		height: 75vh;
+	}
+	
 	&--video {
 		position: absolute;
 		overflow: hidden;

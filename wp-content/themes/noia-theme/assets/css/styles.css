@@ -1517,11 +1517,16 @@ html.with-featherlight {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 75vh;
+  height: 50vh;
   width: 100%;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+}
+@media (min-width: 50em) {
+  .cta {
+    height: 75vh;
+  }
 }
 .cta--video {
   position: absolute;
