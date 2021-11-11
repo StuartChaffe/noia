@@ -3,12 +3,16 @@
 	&--slider {
 		// padding-top: var(--spacing);
 		.slick-slide {
-			margin-top: auto;
+			@include mq(medium) {
+				margin-top: auto;
+			}
 		}
 		.slick-list {
 			.slick-track {
 				display: flex;
-				align-items: baseline;
+				@include mq(medium) {
+					align-items: baseline;
+				}
 			}
 			    height: 100%;
 		}

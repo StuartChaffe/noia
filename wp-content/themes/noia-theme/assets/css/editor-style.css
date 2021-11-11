@@ -1359,15 +1359,21 @@ hr {
 .location-images {
   padding-bottom: 60px;
 }
-.location-images--slider .slick-slide {
-  margin-top: auto;
+@media (min-width: 50em) {
+  .location-images--slider .slick-slide {
+    margin-top: auto;
+  }
 }
 .location-images--slider .slick-list {
   height: 100%;
 }
 .location-images--slider .slick-list .slick-track {
   display: flex;
-  align-items: baseline;
+}
+@media (min-width: 50em) {
+  .location-images--slider .slick-list .slick-track {
+    align-items: baseline;
+  }
 }
 .location-images--slider-item {
   padding: 0 0.5rem;
