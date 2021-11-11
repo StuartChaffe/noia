@@ -3276,7 +3276,12 @@ body.nav-open:after {
 .mobile-menu--foot__social {
   display: flex;
   align-items: center;
-  margin-bottom: var(--spacing-s);
+  margin-bottom: 1rem;
+}
+@media (min-width: 50em) {
+  .mobile-menu--foot__social {
+    margin-bottom: var(--spacing-s);
+  }
 }
 .mobile-menu--foot__social a {
   padding: 0 0.5rem;
@@ -3289,6 +3294,11 @@ body.nav-open:after {
 }
 .mobile-menu--foot__logo {
   width: 150px;
+}
+@media (max-width: 49.99em) {
+  .mobile-menu--foot__logo {
+    margin-bottom: 4px;
+  }
 }
 @media (min-width: 50em) {
   .mobile-menu {

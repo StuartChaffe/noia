@@ -77,7 +77,10 @@ body.nav-open {
 		&__social {
 			display: flex;
 			align-items: center;
-			margin-bottom: var(--spacing-s);
+			margin-bottom: 1rem;
+			@include mq(medium) {
+				margin-bottom: var(--spacing-s);
+			}
 			a {
 				padding: 0 0.5rem;
 				&:first-of-type {
@@ -90,6 +93,9 @@ body.nav-open {
 		}
 		&__logo {
 			width: 150px;
+			@include mq($until: medium) {
+				margin-bottom: 4px;
+			}
 		}
 	}
 
