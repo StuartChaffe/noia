@@ -119,6 +119,12 @@
 	}
 	&-close {
 		display: none;
+		width: 18px;
+		height: 22px;
+		@include mq(medium) {
+			width: 22px;
+			height: 28px;
+		}
 	}
 }
 .global-header--nav-box {

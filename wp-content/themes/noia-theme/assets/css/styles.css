@@ -3100,6 +3100,14 @@ html.with-featherlight {
 }
 .global-header--nav-close {
   display: none;
+  width: 18px;
+  height: 22px;
+}
+@media (min-width: 50em) {
+  .global-header--nav-close {
+    width: 22px;
+    height: 28px;
+  }
 }
 
 .global-header--nav-box {
