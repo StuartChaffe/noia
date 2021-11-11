@@ -1316,10 +1316,12 @@ hr {
     padding: var(--spacing);
   }
 }
-.image-block--text__sticky {
-  position: sticky;
-  top: var(--spacing);
-  padding-bottom: var(--spacing);
+@media (min-width: 50em) {
+  .image-block--text__sticky {
+    position: sticky;
+    top: var(--spacing);
+    padding-bottom: var(--spacing);
+  }
 }
 .image-block--images {
   width: 100%;
@@ -1333,10 +1335,15 @@ hr {
   }
 }
 .image-block--images-item {
-  margin: 0 12.5px;
+  margin: 0 0.5rem;
   position: sticky;
   top: 0;
   width: 50%;
+}
+@media (min-width: 50em) {
+  .image-block--images-item {
+    margin: 0 12.5px;
+  }
 }
 .image-block--images-item:first-child {
   margin-left: 0;

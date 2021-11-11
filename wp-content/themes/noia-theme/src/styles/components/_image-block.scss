@@ -21,9 +21,11 @@
 			padding: var(--spacing);
 		}
 		&__sticky {
-			position: sticky;
-			top: var(--spacing);
-			padding-bottom: var(--spacing);
+			@include mq(medium) {
+					position: sticky;
+				top: var(--spacing);
+				padding-bottom: var(--spacing);
+			}
 		}
 	}
 	&--images {
@@ -35,10 +37,13 @@
 			width: 60%;
 		}
 		&-item {
-			margin: 0 12.5px;
+			margin: 0 0.5rem;
 			position: sticky;
 			top: 0;
 			width: 50%;
+			@include mq(medium) {
+				margin: 0 12.5px;
+			}
 			&:first-child {
 				margin-left: 0;
 				img {
