@@ -52,7 +52,7 @@
 .spaces {
 	.slick-prev,
 	.slick-next {
-		display: none;
+		display: none !important;
 	}
 	.banner-space {
 		background-color: rgba(0, 0, 0, 0.4);

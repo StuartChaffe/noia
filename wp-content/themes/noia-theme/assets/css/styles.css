@@ -2459,7 +2459,7 @@ html.with-featherlight {
 
 .spaces .slick-prev,
 .spaces .slick-next {
-  display: none;
+  display: none !important;
 }
 .spaces .banner-space {
   background-color: rgba(0, 0, 0, 0.4);
