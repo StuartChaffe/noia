@@ -2059,11 +2059,13 @@ html.with-featherlight {
   padding: 0.4rem 0.7rem;
   font-size: var(--font-size-small);
   margin-top: 0;
+  margin-bottom: 1rem;
   width: 110px;
 }
 @media (min-width: 50em) {
   .membership-block .text-block--text-title span {
     margin-left: auto;
+    margin-bottom: 0;
     margin-top: 1.4rem;
   }
 }
