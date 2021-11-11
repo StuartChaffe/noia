@@ -2781,7 +2781,7 @@ html.with-featherlight {
   }
 }
 .content .wp-caption {
-  margin-bottom: var(--spacing);
+  margin-bottom: 2rem;
   max-width: 100%;
 }
 @media (min-width: 50em) {
