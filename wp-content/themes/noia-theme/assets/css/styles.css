@@ -1727,7 +1727,7 @@ html.with-featherlight {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: var(--spacing) 1rem 1rem 1rem;
+  padding: var(--spacing) 0.5rem 1rem 0.5rem;
 }
 @media (min-width: 50em) {
   .journals {
@@ -1736,7 +1736,7 @@ html.with-featherlight {
 }
 .journals-item {
   width: calc(100% / 2 );
-  padding: 0 12.5px;
+  padding: 0 0.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1745,6 +1745,7 @@ html.with-featherlight {
 }
 @media (min-width: 50em) {
   .journals-item {
+    padding: 0 12.5px;
     margin-top: auto;
     width: calc(100% / 4 );
     margin-bottom: var(--spacing);
