@@ -1,7 +1,7 @@
 .text-block {
 	display: flex;
 	position: relative;
-	padding-bottom: var(--spacing-s);
+	padding-bottom: 1rem;
 	padding-top: var(--spacing-s);
 	flex-direction: column;
 	@include mq(medium) {
