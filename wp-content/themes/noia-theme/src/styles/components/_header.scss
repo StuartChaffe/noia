@@ -69,16 +69,21 @@
 	z-index: 999;
 	transition: all .1s ease-in-out;
 
-	&:hover {
-		width: 60px;
-		height: 60px;
-		margin: -5px -5px 0 0;
-		background-color: black;
-	}
-
 	@include mq(medium) {
 		width: 50px;
 		height: 50px;
+	}
+
+	&:hover {
+		width: 50px;
+		height: 50px;
+		margin: -5px -5px 0 0;
+		background-color: black;
+
+		@include mq(medium) {
+			width: 60px;
+			height: 60px;
+		}
 	}
 }
 
@@ -107,6 +112,10 @@
 	&-logo {
 		width: 22px;
 		height: 28px;
+		@include mq(medium) {
+			width: 22px;
+			height: 28px;
+		}
 	}
 	&-close {
 		display: none;
