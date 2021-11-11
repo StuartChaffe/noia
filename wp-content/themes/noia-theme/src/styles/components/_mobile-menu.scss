@@ -29,7 +29,10 @@ body.nav-open {
 }
 .mobile-header__nav,
 .mobile-menu .heading-3 {
-	margin-left: 2rem;
+	
+	@include mq(medium) {
+		margin-left: 2rem;
+	}
 }
 
 .mobile-menu {
@@ -124,7 +127,6 @@ body.nav-open {
 			a:hover {
 				+ .sub-menu {
 					display: block;
-					background-color: green;
 					opacity: 1 !important;
 				}
 			}
