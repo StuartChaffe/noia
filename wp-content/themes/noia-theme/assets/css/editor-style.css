@@ -1346,7 +1346,7 @@ hr {
 .manifesto {
   background-color: white;
   width: 100%;
-  padding: var(--spacing) 0;
+  padding: 1rem 0;
 }
 @media (min-width: 50em) {
   .manifesto {
@@ -1360,13 +1360,13 @@ hr {
 }
 .manifesto--intro {
   width: 100%;
-  padding-right: 120px;
   padding-left: 0;
   margin-bottom: var(--spacing);
 }
 @media (min-width: 50em) {
   .manifesto--intro {
     width: 50%;
+    padding-right: 120px;
     padding-left: 1rem;
   }
 }
