@@ -1678,7 +1678,8 @@ html.with-featherlight {
   display: flex;
   flex-direction: column;
   padding-bottom: var(--spacing);
-  padding-right: var(--spacing);
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 @media (min-width: 50em) {
   .image-block {
