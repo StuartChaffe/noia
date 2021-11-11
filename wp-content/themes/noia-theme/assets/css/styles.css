@@ -2567,7 +2567,7 @@ html.with-featherlight {
   background-attachment: fixed;
 }
 .intro-block .text-block--text-inner {
-  padding: var(--spacing-s) var(--spacing);
+  padding: var(--spacing-s) var(--spacing-s);
 }
 @media (min-width: 70em) {
   .intro-block .text-block--text-inner {

@@ -226,7 +226,7 @@
 	background-position: center center;
 	background-attachment: fixed;
 	.text-block--text-inner {
-		padding: var(--spacing-s) var(--spacing);
+		padding: var(--spacing-s) var(--spacing-s);
 		@include mq(large) {
 			padding: var(--spacing-l) var(--spacing-xxl);
 		}
