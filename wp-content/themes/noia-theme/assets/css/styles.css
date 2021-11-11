@@ -1690,7 +1690,7 @@ html.with-featherlight {
 }
 .image-block--text {
   width: 100%;
-  padding: var(--spacing);
+  padding: var(--spacing) 0;
   padding-top: 0;
   padding-bottom: 0;
   position: sticky;
@@ -1699,6 +1699,7 @@ html.with-featherlight {
 @media (min-width: 50em) {
   .image-block--text {
     width: 40%;
+    padding: var(--spacing);
   }
 }
 .image-block--text__sticky {
