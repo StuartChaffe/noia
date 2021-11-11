@@ -2,13 +2,16 @@
 	position: relative;
 	display: flex;
 	align-items: flex-start;
-	height: 100vh;
+	height: 70vh;
 	width: 100%;
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
 	z-index: 2;
 	overflow: hidden;
+	@include mq(medium) {
+		height: 100vh;
+	}
 	@include mq(large) {
 		align-items: center;
 	}

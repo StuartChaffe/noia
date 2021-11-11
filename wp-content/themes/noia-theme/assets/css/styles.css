@@ -192,7 +192,13 @@ p.small,
 
 p.lead,
 .lead {
-  font-size: var(--font-size-lead);
+  font-size: 22px;
+}
+@media (min-width: 50em) {
+  p.lead,
+.lead {
+    font-size: var(--font-size-lead);
+  }
 }
 
 p.large,
@@ -1138,13 +1144,18 @@ html.with-featherlight {
   position: relative;
   display: flex;
   align-items: flex-start;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   z-index: 2;
   overflow: hidden;
+}
+@media (min-width: 50em) {
+  .banner {
+    height: 100vh;
+  }
 }
 @media (min-width: 70em) {
   .banner {
@@ -2581,7 +2592,7 @@ html.with-featherlight {
   }
 }
 .intro-block p {
-  font-size: 22px;
+  font-size: var(--font-size-lead);
 }
 @media (min-width: 70em) {
   .intro-block p {

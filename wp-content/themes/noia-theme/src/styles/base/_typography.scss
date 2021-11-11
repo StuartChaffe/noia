@@ -15,7 +15,10 @@ p.small,
 
 p.lead,
 .lead {
-	font-size: var(--font-size-lead);
+	font-size: 22px;
+	@include mq(medium) {
+		font-size: var(--font-size-lead);
+	}
 }
 p.large,
 .large {

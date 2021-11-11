@@ -238,7 +238,7 @@
 		}
 	}
 	p {
-		font-size: 22px;
+		font-size: var(--font-size-lead);
 		@include mq(large) {
 			font-size: calc(var(--font-size-lead) * 2);
 			line-height: 1;
