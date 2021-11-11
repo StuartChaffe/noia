@@ -2010,7 +2010,8 @@ hr {
   }
 }
 .content p {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size);
+  line-height: 1.2;
 }
 .content h2,
 .content h3,
