@@ -1618,7 +1618,7 @@ hr {
   }
 }
 .intro-block p {
-  font-size: var(--font-size-lead);
+  font-size: 22px;
 }
 @media (min-width: 70em) {
   .intro-block p {
