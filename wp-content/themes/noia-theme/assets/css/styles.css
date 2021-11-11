@@ -1889,9 +1889,14 @@ html.with-featherlight {
   align-items: baseline;
 }
 .location-images--slider-item {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 50em) {
+  .location-images--slider-item {
+    padding: 0 1rem;
+  }
 }
 .location-images--slider-item:hover {
   cursor: pointer;

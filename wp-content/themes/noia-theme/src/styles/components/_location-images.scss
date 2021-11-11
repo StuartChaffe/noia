@@ -14,9 +14,12 @@
 		}
 		&-item {
 			// width: 25%;
-			padding: 0 1rem;
+			padding: 0 0.5rem;
 			display: flex;
 			flex-direction: column;
+			@include mq(medium) {
+				padding: 0 1rem;
+			}
 			&:hover {
 				cursor: pointer;
 			}
