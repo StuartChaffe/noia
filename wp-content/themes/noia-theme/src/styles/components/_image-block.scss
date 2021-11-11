@@ -1,7 +1,13 @@
 .image-block {
 	display: flex;
+	flex-direction: column;
 	padding-bottom: var(--spacing);
 	padding-right: var(--spacing);
+	@include mq(medium) {
+		flex-direction: row;
+		padding-left: 200px;
+		padding-right: 40px;
+	}
 	&--text {
 		width: 40%;
 		padding: var(--spacing);

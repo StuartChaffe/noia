@@ -1290,8 +1290,16 @@ hr {
 
 .image-block {
   display: flex;
+  flex-direction: column;
   padding-bottom: var(--spacing);
   padding-right: var(--spacing);
+}
+@media (min-width: 50em) {
+  .image-block {
+    flex-direction: row;
+    padding-left: 200px;
+    padding-right: 40px;
+  }
 }
 .image-block--text {
   width: 40%;
