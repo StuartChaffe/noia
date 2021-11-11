@@ -214,7 +214,7 @@
 .text-block.bkg--red {
 	margin-bottom: 0;
 }
-.carousel {
+.carousel, .container--large {
 	+ .text-block {
 		padding-top: 1rem;
 		@include mq(medium) {

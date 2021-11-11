@@ -2629,11 +2629,11 @@ html.with-featherlight {
   margin-bottom: 0;
 }
 
-.carousel + .text-block {
+.carousel + .text-block, .container--large + .text-block {
   padding-top: 1rem;
 }
 @media (min-width: 50em) {
-  .carousel + .text-block {
+  .carousel + .text-block, .container--large + .text-block {
     padding-top: var(--spacing);
   }
 }
