@@ -21,11 +21,17 @@
 		}
 
 		img {
-			margin-bottom: var(--spacing-s);
+			margin-bottom: 1rem;
+			@include mq(medium) {
+				margin-bottom: var(--spacing-s);
+			}
 		}
 
 		p {
-			margin-bottom: var(--spacing-s);
+			margin-bottom: 1rem;
+			@include mq(medium) {
+				margin-bottom: var(--spacing-s);
+			}
 		}
 
 		&--title {

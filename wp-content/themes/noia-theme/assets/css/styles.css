@@ -1742,10 +1742,20 @@ html.with-featherlight {
   }
 }
 .journals-item img {
-  margin-bottom: var(--spacing-s);
+  margin-bottom: 1rem;
+}
+@media (min-width: 50em) {
+  .journals-item img {
+    margin-bottom: var(--spacing-s);
+  }
 }
 .journals-item p {
-  margin-bottom: var(--spacing-s);
+  margin-bottom: 1rem;
+}
+@media (min-width: 50em) {
+  .journals-item p {
+    margin-bottom: var(--spacing-s);
+  }
 }
 .journals-item--title {
   min-height: 139px;
