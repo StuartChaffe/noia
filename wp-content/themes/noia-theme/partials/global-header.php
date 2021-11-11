@@ -1,7 +1,7 @@
 <header class="global-header__menu">
 	<button class="global-header__menu-btn" data-toggle="#mobile-menu" data-toggle-body-class="nav-open" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
 		<span class="global-header--nav-box">
-			<span class="global-header--nav-logo"><svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<span class="global-header--nav-logo"><svg viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M22 28H19.9048V1.86667H2.09524V28L0 28V0H22V28Z" fill="white"/>
 			</svg></span>
 
