@@ -260,11 +260,11 @@ h4 {
   margin-bottom: 0.5rem;
 }
 
-h1, .heading-1, .banner--content p, .banner--link__inner p {
+h1, .heading-1, .banner-space .banner--content p, .banner--content p, .banner--link__inner p {
   font-size: var(--font-size-h1);
 }
 
-h2, .heading-2, .banner-space .banner--content p {
+h2, .heading-2 {
   font-size: var(--font-size-h2);
 }
 
@@ -1154,7 +1154,7 @@ html.with-featherlight {
 .banner {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   height: 70vh;
   width: 100%;
   background-size: cover;
@@ -1349,7 +1349,7 @@ html.with-featherlight {
 }
 .banner-space--details {
   margin-top: auto;
-  margin-bottom: 2.75rem;
+  margin-bottom: 1.5rem;
   color: white;
   padding-left: 1rem;
   width: 100%;
@@ -1359,6 +1359,7 @@ html.with-featherlight {
   .banner-space--details {
     padding-left: 1.9rem;
     padding-right: 60%;
+    margin-bottom: 2.75rem;
   }
 }
 .banner-space--details .btn {
@@ -1418,7 +1419,12 @@ html.with-featherlight {
 }
 
 .carousel {
-  height: 100vh;
+  height: 70vh;
+}
+@media (min-width: 50em) {
+  .carousel {
+    height: 100vh;
+  }
 }
 .carousel-slider {
   height: 100%;

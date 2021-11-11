@@ -1,5 +1,8 @@
 .carousel {
-    height: 100vh;
+    height: 70vh;
+	@include mq(medium) {
+		height: 100vh;
+	}
 	&-inner {
 		// background: red;
 	}

@@ -1,8 +1,8 @@
 .banner {
 	position: relative;
 	display: flex;
-	// align-items: flex-start;
-	align-items: center;
+	align-items: flex-start;
+	// align-items: center;
 	height: 70vh;
 	width: 100%;
 	background-size: cover;
@@ -201,7 +201,7 @@
 		}
 		&--details {
 			margin-top: auto;
-			margin-bottom: 2.75rem;
+			margin-bottom: 1.5rem;
 			color: white;
 			padding-left: 1rem;
 			width: 100%;
@@ -209,6 +209,7 @@
 			@include mq(medium) {
 				padding-left: 1.9rem;
 				padding-right: 60%;
+				margin-bottom: 2.75rem;
 			}
 			.btn {
 				margin-top: 1.5rem;
@@ -225,7 +226,7 @@
 		}
 		.banner--content {
 			p {
-				@extend .heading-2;
+				@extend .heading-1;
 			}
 		}
 	}
