@@ -1062,7 +1062,7 @@ hr {
   .carousel-slider .slick-prev {
     top: auto;
     bottom: 0;
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 50em) {
@@ -1077,7 +1077,7 @@ hr {
   .carousel-slider .slick-next {
     top: auto;
     bottom: 0;
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 50em) {

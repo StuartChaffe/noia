@@ -1448,7 +1448,7 @@ html.with-featherlight {
   .carousel-slider .slick-prev {
     top: auto;
     bottom: 0;
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 50em) {
@@ -1463,7 +1463,7 @@ html.with-featherlight {
   .carousel-slider .slick-next {
     top: auto;
     bottom: 0;
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 50em) {
