@@ -1656,7 +1656,7 @@ hr {
 }
 
 .addthis_inline_share_toolbox {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-left: -0.5rem;
 }
 .addthis_inline_share_toolbox .at-share-btn {
@@ -1988,7 +1988,7 @@ hr {
   margin-left: auto;
 }
 .content--share {
-  margin-top: var(--spacing);
+  margin-top: 2rem;
   border-top: 1px solid black;
   padding-top: 0.5rem;
 }
