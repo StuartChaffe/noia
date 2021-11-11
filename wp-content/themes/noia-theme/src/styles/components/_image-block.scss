@@ -1,11 +1,12 @@
 .image-block {
 	display: flex;
 	flex-direction: column;
-	padding-bottom: var(--spacing);
+	padding-bottom: 1rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	@include mq(medium) {
 		flex-direction: row;
+		padding-bottom: var(--spacing);
 		padding-left: 200px;
 		padding-right: 40px;
 	}
