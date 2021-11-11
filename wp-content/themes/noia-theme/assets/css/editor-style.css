@@ -905,7 +905,7 @@ hr {
   transition: all 0.25s ease-out;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1rem;
 }
 @media (min-width: 70em) {
   .banner--content {
