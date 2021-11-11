@@ -1693,13 +1693,13 @@ html.with-featherlight {
   padding: var(--spacing) 0;
   padding-top: 0;
   padding-bottom: 0;
-  position: sticky;
-  top: 0;
 }
 @media (min-width: 50em) {
   .image-block--text {
     width: 40%;
     padding: var(--spacing);
+    position: sticky;
+    top: 0;
   }
 }
 @media (min-width: 50em) {

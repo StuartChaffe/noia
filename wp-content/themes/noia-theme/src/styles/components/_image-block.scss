@@ -14,15 +14,15 @@
 		padding: var(--spacing) 0;
 		padding-top: 0;
 		padding-bottom: 0;
-		position: sticky;
-		top: 0;
 		@include mq(medium) {
 			width: 40%;
 			padding: var(--spacing);
+			position: sticky;
+			top: 0;
 		}
 		&__sticky {
 			@include mq(medium) {
-					position: sticky;
+				position: sticky;
 				top: var(--spacing);
 				padding-bottom: var(--spacing);
 			}
