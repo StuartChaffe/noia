@@ -1302,12 +1302,17 @@ hr {
   }
 }
 .image-block--text {
-  width: 40%;
+  width: 100%;
   padding: var(--spacing);
   padding-top: 0;
   padding-bottom: 0;
   position: sticky;
   top: 0;
+}
+@media (min-width: 50em) {
+  .image-block--text {
+    width: 40%;
+  }
 }
 .image-block--text__sticky {
   position: sticky;

@@ -9,12 +9,15 @@
 		padding-right: 40px;
 	}
 	&--text {
-		width: 40%;
+		width: 100%;
 		padding: var(--spacing);
 		padding-top: 0;
 		padding-bottom: 0;
 		position: sticky;
 		top: 0;
+		@include mq(medium) {
+			width: 40%;
+		}
 		&__sticky {
 			position: sticky;
 			top: var(--spacing);
