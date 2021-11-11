@@ -37,8 +37,10 @@
 			padding-right: var(--spacing);
 		}
 		&__sticky {
-			position: sticky;
-			top: calc(var(--spacing) + 35px);
+			@include mq(medium) {
+				position: sticky;
+				top: calc(var(--spacing) + 35px);
+			}
 			// padding-bottom: var(--spacing);
 			hr {
 				border-top: 1px solid var(--color-primary) !important;

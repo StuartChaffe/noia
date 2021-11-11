@@ -2568,9 +2568,11 @@ html.with-featherlight {
     padding-right: var(--spacing);
   }
 }
-.text-block--text__sticky {
-  position: sticky;
-  top: calc(var(--spacing) + 35px);
+@media (min-width: 50em) {
+  .text-block--text__sticky {
+    position: sticky;
+    top: calc(var(--spacing) + 35px);
+  }
 }
 .text-block--text__sticky hr {
   border-top: 1px solid var(--color-primary) !important;
