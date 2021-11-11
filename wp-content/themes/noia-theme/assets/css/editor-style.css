@@ -963,7 +963,7 @@ hr {
 }
 .banner-space--details {
   margin-top: auto;
-  margin-bottom: rem;
+  margin-bottom: 1.5rem;
   color: white;
   padding-left: 1rem;
   width: 100%;
@@ -1039,6 +1039,7 @@ hr {
 
 .carousel {
   height: 70vh;
+  overflow: hidden;
 }
 @media (min-width: 50em) {
   .carousel {
