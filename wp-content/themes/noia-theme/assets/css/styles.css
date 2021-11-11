@@ -2698,7 +2698,7 @@ html.with-featherlight {
 
 .container--small {
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 1rem;
   width: 100%;
   max-width: var(--container-width-s);
 }
@@ -2786,7 +2786,7 @@ html.with-featherlight {
 }
 .content p {
   font-size: var(--font-size);
-  line-height: 1.2;
+  line-height: 1.3;
 }
 .content h2,
 .content h3,
