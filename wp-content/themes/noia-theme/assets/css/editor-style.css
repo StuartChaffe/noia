@@ -1,4 +1,200 @@
 @charset "UTF-8";
+.u-bold {
+  font-weight: bold !important;
+}
+
+.u-semibold {
+  font-weight: 600 !important;
+}
+
+.u-regular {
+  font-weight: normal !important;
+}
+
+.u-light {
+  font-weight: 300 !important;
+}
+
+.u-italic {
+  font-style: italic !important;
+}
+
+.u-caps {
+  text-transform: uppercase !important;
+}
+
+.u-left-align {
+  text-align: left !important;
+}
+
+.u-center {
+  text-align: center !important;
+}
+
+.u-right-align {
+  text-align: right !important;
+}
+
+.mt-xxl {
+  margin-top: var(--spacing-xxl) !important;
+}
+
+.mt-xl {
+  margin-top: var(--spacing-xl) !important;
+}
+
+.mt-l {
+  margin-top: var(--spacing-l) !important;
+}
+
+.mt {
+  margin-top: var(--spacing) !important;
+}
+
+.mt-s {
+  margin-top: var(--spacing-s) !important;
+}
+
+.mb-xxl {
+  margin-bottom: var(--spacing-xxl) !important;
+}
+
+.mb-xl {
+  margin-bottom: var(--spacing-xl) !important;
+}
+
+.mb-l {
+  margin-bottom: var(--spacing-l) !important;
+}
+
+.mb {
+  margin-bottom: var(--spacing) !important;
+}
+
+.mb-s {
+  margin-bottom: var(--spacing-s) !important;
+}
+
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 49.99em) {
+  .hidemobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 50em) {
+  .hidedesktop {
+    display: none !important;
+  }
+}
+
+.animate {
+  transform: translateY(-100%);
+  transition: transform 0.25s ease-out;
+}
+
+.animate--visible {
+  transform: translateY(0);
+  transition: transform 0.25s ease-out;
+  transition-delay: 1s;
+}
+
+.animate-up {
+  transform: translateX(-40px);
+  opacity: 0;
+  transition: all 0.25s ease-out;
+}
+
+.animate-up--visible {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.25s ease-out;
+  transition-delay: 0.5s;
+}
+
+.arrow {
+  transform: translate(-40px, -50%);
+  opacity: 0;
+  transition: all 0.25s ease-out;
+}
+
+.arrow--visible {
+  transform: translate(0, -50%);
+  opacity: 1;
+  transition: all 0.25s ease-out;
+  transition-delay: 0.5s;
+}
+
+.reveal {
+  opacity: 0;
+  transition: all 0.25s ease-out;
+  transform: translateY(200px);
+}
+
+.text-reveal {
+  opacity: 1;
+  transition: all 0.25s ease-out;
+  transform: translateY(0px);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hide {
+  opacity: 0;
+  transition: all 0.25s ease-out;
+}
+
+.blur {
+  filter: blur(30px);
+  transition: all 0.25s ease-out;
+}
+
+.keyline {
+  border-top: 1px solid black;
+}
+.keyline .text-block--text {
+  margin-top: var(--spacing-xs);
+}
+
 @font-face {
   font-family: "Noiafont";
   src: url("../fonts/noiafont.eot");
