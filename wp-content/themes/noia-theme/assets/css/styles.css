@@ -2046,15 +2046,26 @@ html.with-featherlight {
 .membership-block .text-block--text-title {
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
+}
+@media (min-width: 50em) {
+  .membership-block .text-block--text-title {
+    flex-direction: row;
+  }
 }
 .membership-block .text-block--text-title span {
-  margin-left: auto;
   background-color: black;
   color: white;
   padding: 0.4rem 0.7rem;
   font-size: var(--font-size-small);
-  margin-top: 1.4rem;
+  margin-top: 0;
   width: 110px;
+}
+@media (min-width: 50em) {
+  .membership-block .text-block--text-title span {
+    margin-left: auto;
+    margin-top: 1.4rem;
+  }
 }
 .membership-block .text-block--text__half {
   width: 100%;
