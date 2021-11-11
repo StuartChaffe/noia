@@ -2102,9 +2102,14 @@ html.with-featherlight {
 .membership-item--image {
   position: relative;
   width: 100%;
-  height: 20vw;
+  height: 50vw;
   overflow: hidden;
   margin-bottom: 1rem;
+}
+@media (min-width: 50em) {
+  .membership-item--image {
+    height: 20vw;
+  }
 }
 .membership-item--image img {
   position: absolute;
