@@ -1766,7 +1766,7 @@ html.with-featherlight {
 }
 
 .journal--header {
-  padding: var(--spacing) 0;
+  padding: 2rem 0 1.6rem 0;
 }
 @media (min-width: 50em) {
   .journal--header {
@@ -1777,7 +1777,7 @@ html.with-featherlight {
   margin-bottom: 1rem;
 }
 .journal--header__share {
-  margin-top: var(--spacing);
+  margin-top: 2rem;
   font-size: var(--font-size-small);
   border-top: 1px solid black;
   padding-top: 0.5rem;
@@ -1785,6 +1785,7 @@ html.with-featherlight {
 }
 @media (min-width: 50em) {
   .journal--header__share {
+    margin-top: var(--spacing);
     padding-right: 8rem;
   }
 }
@@ -1793,11 +1794,13 @@ html.with-featherlight {
 }
 .journal--header h1 {
   font-size: 30px;
-  line-height: 1;
+  line-height: 1.15;
   margin-bottom: 1rem;
+  padding-right: 2rem;
 }
 @media (min-width: 50em) {
   .journal--header h1 {
+    padding-right: 0;
     font-size: 50px;
   }
 }
