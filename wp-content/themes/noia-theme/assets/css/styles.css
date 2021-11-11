@@ -1848,7 +1848,7 @@ html.with-featherlight {
 .manifesto--intro {
   width: 100%;
   padding-left: 0;
-  margin-bottom: var(--spacing);
+  margin-bottom: 2rem;
 }
 @media (min-width: 50em) {
   .manifesto--intro {
