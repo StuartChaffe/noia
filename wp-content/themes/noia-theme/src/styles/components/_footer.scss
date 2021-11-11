@@ -1,7 +1,7 @@
 .global-footer {
 	margin-top: auto;
 	background-color: white;
-	padding: 1rem;
+	padding: 1.5rem 1rem;
 	display: flex;
 	flex-direction: column;
 	z-index: 5;
@@ -16,10 +16,11 @@
 	// width: 100%;
 
 	&--logo {
-		width: 25%;
-		display: flex;
+		width: 35%;
+		display: none;
 		margin-bottom: 2rem;
 		@include mq(medium) {
+			display: flex;
 			margin-bottom: 0;
 		}
 		img {
