@@ -670,6 +670,9 @@ hr {
     line-height: 100px;
   }
 }
+.accordion-item--number p {
+  font-weight: var(--font-weight-light);
+}
 .accordion-item--number .fit-content {
   transition: font-size 0.2s ease-in-out;
 }

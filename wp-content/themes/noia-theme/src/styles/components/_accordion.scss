@@ -144,6 +144,9 @@
 				font-size: 5rem;
 				line-height: 100px;
 			}
+			p {
+				font-weight: var(--font-weight-light);
+			}
 			.fit-content {
 				transition: font-size 0.2s ease-in-out;
 			}
