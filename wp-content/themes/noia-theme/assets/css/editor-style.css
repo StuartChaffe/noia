@@ -566,12 +566,12 @@ hr {
   width: 100%;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
   z-index: 2;
   overflow: hidden;
 }
 @media (min-width: 50em) {
   .banner {
+    background-attachment: fixed;
     height: 100vh;
   }
 }
