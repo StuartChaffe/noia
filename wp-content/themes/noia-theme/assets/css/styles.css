@@ -2925,8 +2925,8 @@ html.with-featherlight {
 .global-header__menu-btn {
   cursor: pointer;
   overflow: visible;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 100px;
   background-color: var(--color-primary);
   border: 0;
@@ -2943,6 +2943,13 @@ html.with-featherlight {
   margin: -5px -5px 0 0;
   background-color: black;
 }
+@media (min-width: 50em) {
+  .global-header__menu-btn {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .menu-active {
   overflow: hidden;
 }
@@ -3247,24 +3254,32 @@ body.nav-open:after {
   margin-bottom: var(--spacing);
 }
 .mobile-menu ul .menu-item-has-children a:hover + .sub-menu {
-  display: none;
-}
-@media (min-width: 50em) {
-  .mobile-menu ul .menu-item-has-children a:hover + .sub-menu {
-    display: block;
-  }
+  display: block;
+  background-color: green;
+  opacity: 1 !important;
 }
 .mobile-menu ul li a {
   color: var(--color-text-base);
   font-size: var(--font-size-lead);
 }
+.mobile-menu ul li a:hover .sub-menu {
+  display: none;
+}
+@media (min-width: 50em) {
+  .mobile-menu ul li a:hover .sub-menu {
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+}
 .mobile-menu ul li .sub-menu {
   margin-bottom: 0.5rem;
   margin-left: 0.3rem;
   display: none;
+  transition: all 0.2s ease-in-out;
 }
 .mobile-menu ul li .sub-menu:hover {
   display: block;
+  opacity: 1;
 }
 .mobile-menu ul li .sub-menu li {
   margin-bottom: 0;

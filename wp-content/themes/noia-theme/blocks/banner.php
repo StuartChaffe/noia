@@ -4,6 +4,7 @@
 */
 $image = get_field( 'banner-image');
 $logo = get_field( 'banner-logo');
+$mobilelogo = get_field( 'banner-mobile-logo');
 $text = get_field( 'banner-text', false, false);
 $link = get_field( 'banner-background-link');
 $bkgimage = get_field( 'banner-background-image');

@@ -123,27 +123,36 @@ body.nav-open {
 		.menu-item-has-children {
 			a:hover {
 				+ .sub-menu {
-					display: none;
-					@include mq(medium) {
-						display: block;
-					}
+					display: block;
+					background-color: green;
+					opacity: 1 !important;
 				}
 			}
 		}
 		li {
-			// margin-bottom: 1.5rem;
 			a {
 				color: var(--color-text-base);
 				font-size: var(--font-size-lead);
+				&:hover {
+					.sub-menu {
+						display: none;
+						@include mq(medium) {
+							display: block;
+							transition: all .2s ease-in-out;
+						}
+					}
+				}
 			}
 
 			.sub-menu {
 				margin-bottom: 0.5rem;
 				margin-left: 0.3rem;
 				display: none;
+				transition: all .2s ease-in-out;
 		
 				&:hover {
 					display: block;
+					opacity: 1;
 				}
 				li { 
 					margin-bottom: 0;
