@@ -1,8 +1,8 @@
 .text-block {
 	display: flex;
 	position: relative;
-	padding-bottom: 1rem;
-	padding-top: var(--spacing-s);
+	padding-bottom: 2rem;
+	// padding-top: var(--spacing-s);
 	flex-direction: column;
 	@include mq(medium) {
 		padding-top: 0;
@@ -214,10 +214,12 @@
 .text-block.bkg--red {
 	margin-bottom: 0;
 }
-
 .carousel {
 	+ .text-block {
-		// padding-top: var(--spacing);
+		padding-top: 1rem;
+		@include mq(medium) {
+			padding-top: var(--spacing);
+		}
 	}
 } 
 

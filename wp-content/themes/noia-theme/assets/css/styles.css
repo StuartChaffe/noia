@@ -2470,8 +2470,7 @@ html.with-featherlight {
 .text-block {
   display: flex;
   position: relative;
-  padding-bottom: 1rem;
-  padding-top: var(--spacing-s);
+  padding-bottom: 2rem;
   flex-direction: column;
 }
 @media (min-width: 50em) {
@@ -2628,6 +2627,15 @@ html.with-featherlight {
 
 .text-block.bkg--red {
   margin-bottom: 0;
+}
+
+.carousel + .text-block {
+  padding-top: 1rem;
+}
+@media (min-width: 50em) {
+  .carousel + .text-block {
+    padding-top: var(--spacing);
+  }
 }
 
 .intro-block {
