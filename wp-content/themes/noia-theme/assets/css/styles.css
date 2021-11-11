@@ -1761,6 +1761,9 @@ html.with-featherlight {
 .journals-item--title {
   min-height: 139px;
 }
+.journals-item--title .btn {
+  margin-bottom: 1rem;
+}
 
 .journal--header {
   padding: var(--spacing) 0;
