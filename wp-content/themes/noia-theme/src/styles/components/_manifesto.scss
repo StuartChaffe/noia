@@ -1,7 +1,7 @@
 .manifesto {
 	background-color: white;
 	width: 100%;
-	padding: 2.5rem 0;
+	padding: 2.5rem 0 2.75rem 0;
 	@include mq(medium) {
 		padding: var(--spacing-l) 0;
 	}

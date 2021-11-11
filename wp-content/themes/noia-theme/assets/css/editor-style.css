@@ -1351,7 +1351,7 @@ hr {
 .manifesto {
   background-color: white;
   width: 100%;
-  padding: 2.5rem 0;
+  padding: 2.5rem 0 2.75rem 0;
 }
 @media (min-width: 50em) {
   .manifesto {
