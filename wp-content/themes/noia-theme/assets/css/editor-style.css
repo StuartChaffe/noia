@@ -1346,7 +1346,7 @@ hr {
 .manifesto {
   background-color: white;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem 0 var(--spacing) 0;
 }
 @media (min-width: 50em) {
   .manifesto {
@@ -1416,6 +1416,9 @@ hr {
   .manifesto-item {
     min-height: 300px;
   }
+}
+.manifesto-item:last-child {
+  margin-bottom: 0;
 }
 .manifesto-item--number {
   position: sticky;
