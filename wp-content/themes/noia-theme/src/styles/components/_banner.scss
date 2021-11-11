@@ -9,6 +9,9 @@
 	background-position: center center;
 	z-index: 2;
 	overflow: hidden;
+	@include mq($until: medium) {
+		align-items: center;
+	}
 	@include mq(medium) {
 		background-attachment: fixed;
 		height: 100vh;
@@ -226,8 +229,8 @@
 		}
 		.banner--content {
 			p {
-				@extend .heading-2;
-				@include mq($until: medium) {
+				@extend .heading-1;
+				@include mq(medium) {
 					font-size: var(--font-size-h2);
 				}
 			}
