@@ -4,6 +4,9 @@
 		top: 0;
 		z-index: 99;
 		padding: 0.6rem;
+		@include mq($until: medium) {
+			display: none;
+		}
 
 		@include mq(medium) {
 			padding: 0.6rem 5.5rem 0.6rem var(--spacing);

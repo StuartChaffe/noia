@@ -2416,6 +2416,11 @@ html.with-featherlight {
   z-index: 99;
   padding: 0.6rem;
 }
+@media (max-width: 49.99em) {
+  .space-nav {
+    display: none;
+  }
+}
 @media (min-width: 50em) {
   .space-nav {
     padding: 0.6rem 5.5rem 0.6rem var(--spacing);
