@@ -310,7 +310,7 @@ hr {
 
 .caption,
 .wp-caption-text {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-small) !important;
   color: #B5B5B5;
   margin-top: 0.5rem;
 }
@@ -1813,7 +1813,7 @@ html.with-featherlight {
   }
 }
 .journal--image {
-  margin-bottom: var(--spacing);
+  margin-bottom: 2rem;
   padding-top: 1rem;
 }
 @media (min-width: 50em) {
@@ -2773,7 +2773,12 @@ html.with-featherlight {
   }
 }
 .content img {
-  margin-top: var(--spacing-l);
+  margin-top: 2rem;
+}
+@media (min-width: 50em) {
+  .content img {
+    margin-top: var(--spacing-l);
+  }
 }
 .content .wp-caption {
   margin-bottom: var(--spacing);

@@ -20,7 +20,10 @@
 	}
 
 	img {
-		margin-top: var(--spacing-l);
+		margin-top: 2rem;
+		@include mq(medium) {
+			margin-top: var(--spacing-l);
+		}
 	}
 	.wp-caption {
 		margin-bottom: var(--spacing);

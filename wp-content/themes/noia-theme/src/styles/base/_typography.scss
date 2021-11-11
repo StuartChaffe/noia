@@ -114,7 +114,7 @@ hr {
 }
 .caption,
 .wp-caption-text { 
-	font-size: var(--font-size-small);
+	font-size: var(--font-size-small) !important;
 	color: #B5B5B5;
 	margin-top: 0.5rem;
 }
