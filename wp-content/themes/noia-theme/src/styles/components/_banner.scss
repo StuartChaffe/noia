@@ -226,8 +226,8 @@
 		}
 		.banner--content {
 			p {
-				@extend .heading-1;
-				@include mq(medium) {
+				@extend .heading-2;
+				@include mq($until: medium) {
 					font-size: var(--font-size-h2);
 				}
 			}

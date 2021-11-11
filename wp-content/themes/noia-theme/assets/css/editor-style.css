@@ -456,11 +456,11 @@ h4 {
   margin-bottom: 0.5rem;
 }
 
-h1, .heading-1, .banner-space .banner--content p, .banner--content p, .banner--link__inner p {
+h1, .heading-1, .banner--content p, .banner--link__inner p {
   font-size: var(--font-size-h1);
 }
 
-h2, .heading-2 {
+h2, .heading-2, .banner-space .banner--content p {
   font-size: var(--font-size-h2);
 }
 
@@ -988,7 +988,7 @@ hr {
 .banner-space--details + .banner--content {
   margin-top: 0 !important;
 }
-@media (min-width: 50em) {
+@media (max-width: 49.99em) {
   .banner-space .banner--content p {
     font-size: var(--font-size-h2);
   }
