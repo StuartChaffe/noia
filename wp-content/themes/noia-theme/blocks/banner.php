@@ -29,7 +29,10 @@ $bkgfade = get_field( 'banner-blur');
 <?php } ?>
 
 <?php if ( $logo ) { ?>
-	<img class="banner--logo" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
+	<img class="banner--logo<?php if ( $logo ) { ?> hidemobile<?php } ?>" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
+<?php } ?>
+<?php if ( $mobilelogo ) { ?>
+	<img class="banner--logo banner--logo-large hidedesktop" src="<?php echo $mobilelogo['url']; ?>" alt="<?php echo $mobilelogo['alt']; ?>" />
 <?php } ?>
 <?php if ( $textoverlay ) { ?>
 <div class="banner--text-overlay <?php echo $textcolor ?>">

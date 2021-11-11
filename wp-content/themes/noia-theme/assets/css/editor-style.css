@@ -383,7 +383,7 @@ hr {
   position: relative;
   width: 100%;
   height: 100px;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
@@ -402,6 +402,7 @@ hr {
 }
 @media (min-width: 50em) {
   .accordion-item {
+    padding: 0 0.5rem;
     width: 20%;
     height: auto;
   }
@@ -424,7 +425,7 @@ hr {
   position: absolute;
   display: flex;
   right: 0;
-  top: 0.5rem;
+  top: 1rem;
   color: white;
   font-size: 55px;
   z-index: 9;
@@ -440,6 +441,11 @@ hr {
   transform: rotate(90deg);
 }
 @media (min-width: 50em) {
+  .accordion-item--open {
+    top: 0.5rem;
+  }
+}
+@media (min-width: 50em) {
   .accordion-item--shrink {
     width: 44px;
   }
@@ -448,7 +454,7 @@ hr {
   display: flex;
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: -5px;
   opacity: 1;
   width: 120px;
   font-size: 4rem;
@@ -459,6 +465,7 @@ hr {
 }
 @media (min-width: 50em) {
   .accordion-item--number {
+    left: 0px;
     font-size: 5rem;
     line-height: 100px;
   }
@@ -482,7 +489,7 @@ hr {
   opacity: 0;
   color: white;
   transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 0.6rem 0 0 0.3rem;
+  padding: 0.6rem 0 0 0rem;
 }
 @media (min-width: 50em) {
   .accordion-item--title {
@@ -508,7 +515,7 @@ hr {
   flex-direction: column;
   margin-top: 0.7rem;
   width: 100%;
-  padding: 0 0.75rem 2rem 0.4rem;
+  padding: 0 0.75rem 2rem 0rem;
 }
 @media (min-width: 50em) {
   .accordion-item--content {
@@ -602,6 +609,9 @@ hr {
     margin-top: 0px;
   }
 }
+.banner--logo-large {
+  max-width: 50%;
+}
 .banner--text-overlay {
   position: absolute;
   top: 0;
@@ -641,7 +651,12 @@ hr {
   margin-top: auto;
   width: 100%;
   position: relative;
-  padding: 0 1rem;
+  padding: 0.75rem 1rem;
+}
+@media (min-width: 50em) {
+  .banner--link {
+    padding: 0 1rem;
+  }
 }
 .banner--link__inner {
   height: auto;
@@ -1159,7 +1174,7 @@ hr {
   display: flex;
   align-items: flex-start;
   padding-top: 0;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
 }
 @media (min-width: 50em) {
   .manifesto-list {
@@ -1168,12 +1183,13 @@ hr {
   }
 }
 .manifesto-list--content {
-  width: 50%;
+  width: 100%;
   border-left: 1px solid #C7C7C7;
   padding-left: 1rem;
 }
 @media (min-width: 50em) {
   .manifesto-list--content {
+    width: 50%;
     margin-bottom: 280px;
   }
 }
@@ -1181,6 +1197,11 @@ hr {
   width: 50%;
   position: sticky;
   top: 2rem;
+}
+@media (max-width: 49.99em) {
+  .manifesto-list--images {
+    display: none;
+  }
 }
 .manifesto-item {
   display: flex;
@@ -1627,7 +1648,7 @@ hr {
   }
 }
 .intro-block .text-block--text-inner {
-  padding: var(--spacing-s) var(--spacing-s);
+  padding: 1rem;
 }
 @media (min-width: 70em) {
   .intro-block .text-block--text-inner {

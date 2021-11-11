@@ -232,7 +232,7 @@
 	}
 	
 	.text-block--text-inner {
-		padding: var(--spacing-s) var(--spacing-s);
+		padding: 1rem;
 		@include mq(large) {
 			padding: var(--spacing-l) var(--spacing-xxl);
 		}

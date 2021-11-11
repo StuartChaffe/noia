@@ -37,6 +37,10 @@
 			max-width: 60%;
 			margin-top: 0px;
 		}
+
+		&-large {
+			max-width: 50%;
+		}
 	}
 	&--text-overlay {
 		position: absolute;
@@ -80,7 +84,10 @@
 		margin-top: auto;
 		width: 100%;
 		position: relative;
-		padding: 0 1rem;
+		padding: 0.75rem 1rem;
+		@include mq(medium) {
+			padding: 0 1rem;
+		}
 
 		&__inner {
 			height: auto;
