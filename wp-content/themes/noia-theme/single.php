@@ -22,6 +22,7 @@
 			<?php if ( $author ) { ?>
 				Written by <?php echo $author; ?>.
 			<?php } ?>	
+			<br class="hidedesktop" />
 			<?php if ( $editor ) { ?>
 				Edited by <?php echo $editor; ?>
 			<?php } ?>
