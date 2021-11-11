@@ -1838,7 +1838,7 @@ html.with-featherlight {
 .manifesto {
   background-color: white;
   width: 100%;
-  padding: 1rem 0 var(--spacing) 0;
+  padding: 2.5rem 0;
 }
 @media (min-width: 50em) {
   .manifesto {
