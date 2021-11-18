@@ -1203,7 +1203,7 @@ html.with-featherlight {
   }
 }
 .banner--logo-large {
-  max-width: 40%;
+  max-width: 60%;
 }
 .banner--text-overlay {
   position: absolute;
@@ -3553,7 +3553,7 @@ body.nav-open:after {
   align-items: center;
 }
 .mobile-menu ul li .sub-menu li::before {
-  content: "-";
+  content: "·";
   margin-right: 0.3rem;
 }
 .mobile-menu ul li .sub-menu li a {
