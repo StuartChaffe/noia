@@ -1678,7 +1678,7 @@ html.with-featherlight {
 .image-block {
   display: flex;
   flex-direction: column;
-  padding-bottom: 1rem;
+  padding-bottom: 0;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -1716,14 +1716,16 @@ html.with-featherlight {
   display: flex;
   align-items: flex-start;
   margin-left: auto;
+  flex-direction: column;
 }
 @media (min-width: 50em) {
   .image-block--images {
     width: 60%;
+    flex-direction: row;
   }
 }
 .image-block--images-item {
-  margin: 0;
+  margin: 0 0 1rem 0;
   position: sticky;
   top: 0;
   width: 100%;
