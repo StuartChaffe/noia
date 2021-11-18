@@ -29,7 +29,9 @@
 			}
 			&--content {
 				min-height: 66px;
-				padding-right: 50px;
+				@include mq(medium) {
+					padding-right: 50px;
+				}
 			}
 
 			p {

@@ -1399,7 +1399,11 @@ hr {
 }
 .location-images--slider-item--content {
   min-height: 66px;
-  padding-right: 50px;
+}
+@media (min-width: 50em) {
+  .location-images--slider-item--content {
+    padding-right: 50px;
+  }
 }
 .location-images--slider-item p {
   font-size: var(--font-size-small);
