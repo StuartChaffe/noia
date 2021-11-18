@@ -79,8 +79,11 @@
 				}
 				p {
 					max-width: 900px;
-					padding: 0 2rem;
+					padding: 0;
 					margin: 0 auto;
+					@include mq(medium) {
+						padding: 0 2rem;
+					}
 
 				}
 			}

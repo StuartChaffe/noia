@@ -1134,8 +1134,13 @@ hr {
 }
 .carousel-slider-item--content p {
   max-width: 900px;
-  padding: 0 2rem;
+  padding: 0;
   margin: 0 auto;
+}
+@media (min-width: 50em) {
+  .carousel-slider-item--content p {
+    padding: 0 2rem;
+  }
 }
 .carousel-slider-item--overlay {
   position: absolute;
