@@ -38,12 +38,13 @@
 			width: 60%;
 		}
 		&-item {
-			margin: 0 0.5rem;
+			margin: 0;
 			position: sticky;
 			top: 0;
-			width: 50%;
+			width: 100%;
 			@include mq(medium) {
 				margin: 0 12.5px;
+				width: 50%;
 			}
 			&:first-child {
 				margin-left: 0;

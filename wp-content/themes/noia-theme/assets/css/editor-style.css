@@ -1337,14 +1337,15 @@ hr {
   }
 }
 .image-block--images-item {
-  margin: 0 0.5rem;
+  margin: 0;
   position: sticky;
   top: 0;
-  width: 50%;
+  width: 100%;
 }
 @media (min-width: 50em) {
   .image-block--images-item {
     margin: 0 12.5px;
+    width: 50%;
   }
 }
 .image-block--images-item:first-child {
@@ -1869,7 +1870,7 @@ hr {
   }
 }
 .text-block--text-inner {
-  padding: 1.5rem 1rem 0 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 @media (min-width: 50em) {
   .text-block--text-inner {
