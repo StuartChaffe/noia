@@ -523,7 +523,6 @@ textarea.wpcf7-not-valid {
 }
 
 .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
-  font-size: var(--font-size-large) !important;
   margin: 0 !important;
   font-weight: 700;
   padding: 20px !important;
@@ -835,11 +834,6 @@ html.with-featherlight {
   flex-direction: column;
   width: 100%;
   overflow: hidden;
-}
-@media (max-width: 49.99em) {
-  .accordion {
-    z-index: 999;
-  }
 }
 @media (min-width: 50em) {
   .accordion {

@@ -3,9 +3,6 @@
 	flex-direction: column;
 	width: 100%;
 	overflow: hidden;
-	@include mq($until: medium) {
-		z-index: 999;
-	}
 	@include mq(medium) {
 		flex-direction: row;
 		height: 90vh;

@@ -524,11 +524,6 @@ hr {
   width: 100%;
   overflow: hidden;
 }
-@media (max-width: 49.99em) {
-  .accordion {
-    z-index: 999;
-  }
-}
 @media (min-width: 50em) {
   .accordion {
     flex-direction: row;
