@@ -1885,7 +1885,12 @@ html.with-featherlight {
 }
 
 .location-images {
-  padding-bottom: 60px;
+  padding-bottom: 2rem;
+}
+@media (min-width: 50em) {
+  .location-images {
+    padding-bottom: 60px;
+  }
 }
 @media (min-width: 50em) {
   .location-images--slider .slick-slide {
