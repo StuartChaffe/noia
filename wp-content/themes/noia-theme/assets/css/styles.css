@@ -1726,14 +1726,14 @@ html.with-featherlight {
 }
 .image-block--images-item {
   margin: 0 0 1rem 0;
-  position: sticky;
-  top: 0;
   width: 100%;
 }
 @media (min-width: 50em) {
   .image-block--images-item {
     margin: 0 12.5px;
     width: 50%;
+    position: sticky;
+    top: 0;
   }
 }
 .image-block--images-item:first-child {
