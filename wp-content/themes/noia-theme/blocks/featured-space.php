@@ -33,7 +33,7 @@ $featuredspaces = get_field( 'featured-space' );
 					<?php } ?>
 					<a class="btn" href="<?php the_permalink($featuredspace); ?>">Read more</a>
 				</div>
-				<div class="banner--content fit-content">
+				<div class="banner--content">
 					<p class="animate"><?php echo $title ?></p>
 				</div>
 			</div>
