@@ -1551,7 +1551,6 @@ hr {
 }
 .membership-block {
   background-color: var(--color-primary);
-  padding-bottom: var(--spacing-xs);
 }
 @media (min-width: 50em) {
   .membership-block {
