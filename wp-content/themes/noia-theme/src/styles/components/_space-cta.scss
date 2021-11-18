@@ -27,7 +27,10 @@
 			margin: 0 auto;
 		}
 		.btn {
-			margin-top: 2rem;
+			margin-top: 1rem;
+			@include mq(medium) {
+				margin-top: 2rem;
+			}
 		}
 	}
 }

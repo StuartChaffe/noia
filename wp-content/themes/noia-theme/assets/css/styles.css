@@ -2479,7 +2479,12 @@ html.with-featherlight {
   margin: 0 auto;
 }
 .space-cta--content .btn {
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+@media (min-width: 50em) {
+  .space-cta--content .btn {
+    margin-top: 2rem;
+  }
 }
 
 .space-description {
