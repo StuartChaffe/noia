@@ -1880,6 +1880,14 @@ hr {
 .text-block--text-inner .text-block--text__content {
   padding: 0;
 }
+.text-block--text-inner hr {
+  display: none;
+}
+@media (min-width: 50em) {
+  .text-block--text-inner hr {
+    display: block;
+  }
+}
 .text-block--text__full {
   width: 100%;
   padding: 0;

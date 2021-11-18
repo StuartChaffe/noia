@@ -83,6 +83,13 @@
 			.text-block--text__content{
 				padding: 0;
 			}
+
+			hr {
+				display: none;
+				@include mq(medium) {
+					display: block;
+				}
+			}
 		}
 		&__full {
 			// margin: 0 var(--spacing);
