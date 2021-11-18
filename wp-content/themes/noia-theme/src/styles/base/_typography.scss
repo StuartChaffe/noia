@@ -16,6 +16,7 @@ p.small,
 p.lead,
 .lead {
 	font-size: 22px;
+	margin-bottom: var(--spacing-xs);
 	@include mq(medium) {
 		font-size: var(--font-size-lead);
 	}

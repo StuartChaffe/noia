@@ -7,6 +7,7 @@
 	&-item {
 		width: 100%;
 		padding: 1rem;
+		padding-bottom: 0;
 		@include mq(medium) {
 			width: 50%;
 			padding: var(--spacing);
@@ -17,6 +18,11 @@
 			// margin-bottom: 0;
 		}
 		.share {
+			// padding: 0;
+			padding: 0.5rem 0 1.6rem 0;
+			@include mq(medium) {
+				padding: 0.5rem 0 0 0;
+			}
 			p {
 				font-size: var(--font-size-small);
 			}
