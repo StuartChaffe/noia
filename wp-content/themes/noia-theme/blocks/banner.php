@@ -9,6 +9,7 @@ $text = get_field( 'banner-text', false, false);
 $link = get_field( 'banner-background-link');
 $bkgimage = get_field( 'banner-background-image');
 $bkgvideo = get_field( 'banner-background-video');
+$bkgvideomobile = get_field( 'banner-background-video-mobile');
 $overlay = get_field( 'banner-background-overlay');
 $textoverlay = get_field( 'banner-text-overlay');
 $textcolor = get_field( 'banner-text-overlay-colour');
@@ -24,7 +25,8 @@ $bkgfade = get_field( 'banner-blur');
 
 <?php if ( $bkgvideo ) { ?>
 	<div class="banner--video">
-		<video class="banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?>" src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
+		<video class="banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?><?php if ( $bkgvideomobile ) { ?> hidemobile<?php } ?>" src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
+		<?php if ( $bkgvideomobile ) { ?><video class="banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?> hidedesktop" src="<?php echo $bkgvideomobile['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video><?php } ?>
 	</div>
 
 	<div class="banner--video__button">
