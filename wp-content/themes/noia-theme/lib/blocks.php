@@ -145,13 +145,13 @@ function noia_acf_blocks() {
 		));
 		acf_register_block(array(
 			'name'				=> 'image',
-			'title'				=> __('Image'),
+			'title'				=> __('Image / video'),
 			'description'		=> __('Add a full width image'),
 			'render_callback'	=> 'noia_acf_block_render_callback',
 			'category'			=> 'noia-blocks',
 			'icon'				=> 'format-image',
 			'align' 			=> 'full',
-			'keywords'			=> array( 'images, image' ),
+			'keywords'			=> array( 'images, image, video' ),
 			'example'         => array(
 				'attributes' => array(
 					'mode' => 'preview',

@@ -1,7 +1,31 @@
 {
     "key": "group_6101906e1f1db",
-    "title": "Image",
+    "title": "Image \/ video",
     "fields": [
+        {
+            "key": "field_61ae10397d73b",
+            "label": "Image or video?",
+            "name": "image-video",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Image": "Image",
+                "Video": "Video"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "Image",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
         {
             "key": "field_6102947c4214a",
             "label": "Image",
@@ -9,7 +33,15 @@
             "type": "image",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61ae10397d73b",
+                        "operator": "==",
+                        "value": "Image"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -24,7 +56,8 @@
             "max_width": "",
             "max_height": "",
             "max_size": "",
-            "mime_types": ""
+            "mime_types": "",
+            "default_value": ""
         },
         {
             "key": "field_6102949e4214b",
@@ -33,7 +66,15 @@
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61ae10397d73b",
+                        "operator": "==",
+                        "value": "Image"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -52,13 +93,69 @@
             "type": "link",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61ae10397d73b",
+                        "operator": "==",
+                        "value": "Image"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_61ae0f023b26d",
+            "label": "Video",
+            "name": "image-video",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61ae10397d73b",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "",
+            "default_value": ""
+        },
+        {
+            "key": "field_61ae11d63f7f4",
+            "label": "Video - mobile",
+            "name": "image-video-mobile",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "",
+            "default_value": ""
         }
     ],
     "location": [
@@ -78,5 +175,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1627559357
+    "show_in_rest": 0,
+    "modified": 1638797814
 }
