@@ -20,15 +20,9 @@
 			$price = get_field( 'spaces-price', get_the_ID());
 			$shortdesc = get_field( 'spaces-short-desc', get_the_ID());
 			$images = get_field('spaces-images', get_the_ID());
+			$imagesmobile = get_field('spaces-images-mobile', get_the_ID());
 
-			// Image
-			// $image = get_field( 'post-image', $post);
-			// $alt = $image['alt'];
-			// $size = 'Square-large';
-			// $thumb = $image['sizes'][ $size ];
-			// $featuredimage = get_field( 'post-featured-image', $post);
 		?>
-		<!-- <div class="spaces-item"> -->
 		<?php if( have_rows('spaces-images', get_the_ID()) ): ?>
 			<div class="carousel">
 				<div class="banner banner-space fade">
@@ -54,13 +48,13 @@
 				<div class="carousel-slider">
 				<?php while( have_rows('spaces-images', get_the_ID()) ): the_row();
 					$image = get_sub_field('spaces-image', get_the_ID());
+					$imagemobile = get_sub_field('spaces-image', get_the_ID());
 				?>
 					<div class="carousel-slider-item fade" style="background-image: url(<?php echo $image['url']; ?>)">&nbsp;</div>
 				<?php endwhile; ?>
 				</div>
 			</div>
 		<?php endif; ?>
-		<!-- </div> -->
 		<?php endwhile; wp_reset_query(); ?>
 	</section>
 <?php endif; ?>

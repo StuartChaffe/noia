@@ -1510,6 +1510,20 @@ html.with-featherlight {
   background-size: cover;
   background-position: center center;
 }
+.carousel-slider-item img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: none;
+  min-height: 100%;
+  min-width: 100%;
+}
+@media (min-width: 50em) {
+  .carousel-slider-item img {
+    display: none;
+  }
+}
 .carousel-slider-item--content {
   display: flex;
   align-items: center;
@@ -1563,6 +1577,11 @@ html.with-featherlight {
 @media (min-width: 50em) {
   .carousel-slider-item--overlay {
     height: 100vh;
+  }
+}
+@media (max-width: 49.99em) {
+  .carousel .bkg-none {
+    background-image: none !important;
   }
 }
 

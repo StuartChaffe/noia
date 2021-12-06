@@ -19,9 +19,11 @@
 		<div class="carousel-slider">
 		<?php while( have_rows('spaces-details-images') ): the_row();
 			$image = get_sub_field('spaces-image');
+			$imagemobile = get_sub_field('spaces-image-mobile');
 			$overlay = get_sub_field( 'spaces-image-overlay');
 		?>
-			<div class="carousel-slider-item fade" style="background-image: url(<?php echo $image['url']; ?>)">
+			<div class="carousel-slider-item fade <?php if ( $imagemobile ) { ?>bkg-none<?php } ?>" style="background-image: url(<?php echo $image['url']; ?>)">
+			<?php if ( $imagemobile ) { ?><img loading="lazy" src="<?php echo $imagemobile['url']; ?>" alt="<?php echo $imagemobile['alt']; ?>"><?php } ?>
 			<?php if ( $overlay == '1' ) { ?><div class="banner--overlay"></div><?php } ?>&nbsp;</div>
 		<?php endwhile; ?>
 		</div>

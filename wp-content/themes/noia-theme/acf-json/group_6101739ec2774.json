@@ -178,7 +178,15 @@
             "type": "file",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61017493028bc",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -292,5 +300,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1638789529
+    "show_in_rest": 0,
+    "modified": 1638796950
 }
