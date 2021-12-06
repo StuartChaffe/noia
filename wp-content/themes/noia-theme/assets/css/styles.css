@@ -3255,6 +3255,7 @@ html.with-featherlight {
   display: none;
   width: 18px;
   height: 22px;
+  z-index: 999;
 }
 @media (min-width: 50em) {
   .global-header--nav-close {
