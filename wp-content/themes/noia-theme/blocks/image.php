@@ -22,6 +22,6 @@ $type = get_field('image-video');
 </section>
 <?php } else { ?>
 	<video class="video video--full<?php if ( $videomobile ) { ?> hidemobile<?php } ?>" src="<?php echo $video['url']; ?>" loop="false" muted="" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
-	<?php if ( $videomobile ) { ?><video class="video" src="<?php echo $videomobile['url']; ?>" loop="false" muted="" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video><?php } ?>
+	<?php if ( $videomobile ) { ?><video class="video hidedesktop" src="<?php echo $videomobile['url']; ?>" loop="false" muted="" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video><?php } ?>
 <?php } ?>	
 <!-- </div> -->
