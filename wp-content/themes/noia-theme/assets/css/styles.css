@@ -1831,7 +1831,6 @@ html.with-featherlight {
 @media (min-width: 50em) {
   .journals-item {
     padding: 0 12.5px;
-    margin-top: auto;
     width: calc(100% / 4 );
     margin-bottom: var(--spacing);
   }

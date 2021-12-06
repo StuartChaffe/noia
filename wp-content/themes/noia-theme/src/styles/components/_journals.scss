@@ -20,7 +20,7 @@
 		margin-bottom: 1rem;
 		@include mq(medium) {
 			padding: 0 12.5px;
-			margin-top: auto;
+			// margin-top: auto;
 			width: calc(100% / 4 );
 			margin-bottom: var(--spacing);
 		}
