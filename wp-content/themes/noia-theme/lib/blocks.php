@@ -119,6 +119,16 @@ function noia_acf_blocks() {
 			),
 		));
 		acf_register_block(array(
+			'name'				=> 'featured-journals',
+			'title'				=> __('Featured journals'),
+			'description'		=> __('Add featured journals'),
+			'render_callback'	=> 'noia_acf_block_render_callback',
+			'category'			=> 'noia-blocks',
+			'icon'				=> 'screenoptions',
+			'align' 			=> 'wide',
+			'keywords'			=> array( 'journals, featured' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'journals',
 			'title'				=> __('All Journals'),
 			'description'		=> __('Add all journals'),
@@ -458,6 +468,7 @@ function noia_allowed_block_types( $allowed_blocks ) {
 		'acf/cta',
 		'acf/featured-space',
 		'acf/featured-journal',
+		'acf/featured-journals',
 		'acf/intro-block',
 		'acf/image',
 		'acf/image-block',

@@ -2986,12 +2986,12 @@ html.with-featherlight {
 .content li p {
   display: inline;
 }
-.content li:before {
+.content li::marker {
   content: "•";
   position: absolute;
   left: 0;
-  top: 0;
-  font-size: 1.7rem;
+  top: 2px;
+  font-size: 0.7rem;
   line-height: 1;
   font-weight: bold;
   margin-right: 0.6em;
