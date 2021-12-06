@@ -7,14 +7,14 @@
 		// padding-top: var(--spacing);
 		.slick-slide {
 			@include mq(medium) {
-				margin-top: auto;
+				// margin-top: auto;
 			}
 		}
 		.slick-list {
 			.slick-track {
 				display: flex;
 				@include mq(medium) {
-					align-items: baseline;
+					// align-items: baseline;
 				}
 			}
 			    height: 100%;

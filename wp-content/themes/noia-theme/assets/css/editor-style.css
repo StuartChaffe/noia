@@ -1414,21 +1414,11 @@ hr {
     padding-bottom: 60px;
   }
 }
-@media (min-width: 50em) {
-  .location-images--slider .slick-slide {
-    margin-top: auto;
-  }
-}
 .location-images--slider .slick-list {
   height: 100%;
 }
 .location-images--slider .slick-list .slick-track {
   display: flex;
-}
-@media (min-width: 50em) {
-  .location-images--slider .slick-list .slick-track {
-    align-items: baseline;
-  }
 }
 .location-images--slider-item {
   padding: 0 0.5rem;
