@@ -135,6 +135,8 @@
 	position: relative;
 	align-items: center;
 	justify-content: center;
+	z-index: 999;
+	background: green;
 }
 
 .global-header--nav-inner {
