@@ -1,11 +1,11 @@
 jQuery(document).ready(function($) {
 	$(".carousel-slider").slick({
 		// settings: "unslick",
-		speed: 300,
+		speed: 1500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 4000,
+		autoplaySpeed: 2000,
 		arrows: true,
 		infinite: true,
 		dots: false,
