@@ -14,6 +14,7 @@ $overlay = get_field( 'banner-background-overlay');
 $textoverlay = get_field( 'banner-text-overlay');
 $textcolor = get_field( 'banner-text-overlay-colour');
 $bkgfade = get_field( 'banner-blur');
+$controls = get_field( 'banner-background-video-control');
 ?>
 <div class="container--large">
 <?php if ( $textoverlay ) { ?><div class="banner-text--outer"><?php } ?>
@@ -28,7 +29,7 @@ $bkgfade = get_field( 'banner-blur');
 		<video class="banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?><?php if ( $bkgvideomobile ) { ?> hidemobile<?php } ?>" src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
 		<?php if ( $bkgvideomobile ) { ?><video class="banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?> hidedesktop" src="<?php echo $bkgvideomobile['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video><?php } ?>
 	</div>
-
+	<?php if ( $controls ) { ?>
 	<div class="banner--video__button">
 		<div class="button-unmute">
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -53,6 +54,7 @@ $bkgfade = get_field( 'banner-blur');
 			</svg>
 		</div>
 	</div>
+	<?php } ?>
 <?php } ?>
 
 <?php if ( $logo ) { ?>

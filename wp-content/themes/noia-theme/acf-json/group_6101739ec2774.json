@@ -200,6 +200,33 @@
             "default_value": ""
         },
         {
+            "key": "field_61ae314034e7e",
+            "label": "Show audio controls?",
+            "name": "banner-background-video-control",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61017493028bc",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
             "key": "field_610bab8a62bfd",
             "label": "Overlay?",
             "name": "banner-background-overlay",
@@ -301,5 +328,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1638796950
+    "modified": 1638805894
 }
