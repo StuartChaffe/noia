@@ -2184,10 +2184,6 @@ hr {
 }
 
 .global-container {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  min-height: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
 }
