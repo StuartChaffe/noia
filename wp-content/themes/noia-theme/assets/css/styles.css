@@ -3343,7 +3343,7 @@ html.with-featherlight {
   display: none;
 }
 .is-toggled .global-header--nav-close {
-  display: flex;
+  display: block;
 }
 
 .is-toggled .global-header--nav-inner {
