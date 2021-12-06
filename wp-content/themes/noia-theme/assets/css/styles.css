@@ -393,6 +393,9 @@ table tbody tr:hover {
     width: calc(100% - 1rem);
   }
 }
+.form-fields textarea {
+  height: 40px;
+}
 
 input[type=email],
 input[type=number],

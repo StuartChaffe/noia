@@ -25,6 +25,9 @@
 			width: calc(100% - 1rem);
 		}
 	}
+	textarea {
+		height: 40px;
+	}
 }
 
 input[type="email"],
