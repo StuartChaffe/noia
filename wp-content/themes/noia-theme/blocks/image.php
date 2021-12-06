@@ -10,6 +10,7 @@ $link = get_field('image-button');
 $type = get_field('image-video');
 ?>
 
+<!-- <div class="global-container"> -->
 <?php if ( $type == 'Image' ) { ?> 
 <section class="image" <?php if ( $image ) { ?>style="background-image: url(<?php echo $image['url']; ?>)"<?php } ?>>
 	<?php if ( $content ) { ?>
@@ -20,6 +21,7 @@ $type = get_field('image-video');
 	<?php } ?>	
 </section>
 <?php } else { ?>
-	<video class="video<?php if ( $videomobile ) { ?> hidemobile<?php } ?>" src="<?php echo $video['url']; ?>" loop="false" muted="" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
+	<video class="video video--full<?php if ( $videomobile ) { ?> hidemobile<?php } ?>" src="<?php echo $video['url']; ?>" loop="false" muted="" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
 	<?php if ( $videomobile ) { ?><video class="video" src="<?php echo $videomobile['url']; ?>" loop="false" muted="" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video><?php } ?>
 <?php } ?>	
+<!-- </div> -->

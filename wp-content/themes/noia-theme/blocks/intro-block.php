@@ -9,8 +9,9 @@ $content = $text['textblock-content'];
 $color = $text['textblock-text-colour'];
 $size = $text['textblock-text-size'];
 ?>
-
-<section class="intro-block text-block <?php echo $bkgcolor ?> <?php echo $size ?>" <?php if ( $bkgimage ) { ?>style="background-image: url(<?php echo $bkgimage['url']; ?>)"<?php } ?>>
+<div class="intro-block <?php echo $bkgcolor ?>" <?php if ( $bkgimage ) { ?>style="background-image: url(<?php echo $bkgimage['url']; ?>)"<?php } ?>>
+<div class="global-container">
+<section class="text-block <?php echo $size ?>" >
 	<div class="<?php echo $size ?>">
 		<div class="text-block--text-inner">
 			<div class="text-block--text__content <?php echo $color ?>">
@@ -19,3 +20,5 @@ $size = $text['textblock-text-size'];
 		</div>
 	</div>
 </section>
+</div>
+</div>

@@ -15,6 +15,6 @@
 <?php include get_theme_file_path('assets/svg/sprite.php'); ?>
 </div>
 
-<div class="global-container">
+<!-- <div class="global-container"> -->
 <?php get_template_part( 'partials/global-alert' ); ?>
 <?php get_template_part( 'partials/global-header' ); ?>

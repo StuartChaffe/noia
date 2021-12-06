@@ -11,6 +11,8 @@ $colthree = get_field('membership-column-three');
   
 ?>
 
+<div class="bkg--red">
+<div class="global-container">
 <section class="membership-block" id="membership">
 <?php if ( $title || $content ) { ?>
 	<div class="text-block">
@@ -56,3 +58,5 @@ $colthree = get_field('membership-column-three');
 		</div>
 	</div>
 </section>
+</div>
+</div>

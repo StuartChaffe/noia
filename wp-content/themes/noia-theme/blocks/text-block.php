@@ -10,7 +10,8 @@ $keyline = $text['textblock-text-keyline'];
 $images = get_field('textblock-images');
 $position = get_field('textblock-image-position');
 ?>
-
+<div class="<?php echo $bkgcolor ?>">
+<div class="global-container">
 <section class="text-block <?php echo $bkgcolor ?> <?php echo $size ?><?php if ( $images ) { ?> text-block--has-image<?php } ?> <?php echo $position ?>">
 	
 	<?php if ( $images) { ?>
@@ -53,3 +54,5 @@ $position = get_field('textblock-image-position');
 	</div>
 	<?php } ?>
 </section>
+</div>
+</div>

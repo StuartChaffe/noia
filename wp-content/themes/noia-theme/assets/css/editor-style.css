@@ -1463,6 +1463,10 @@ hr {
   color: white;
 }
 
+.video--full {
+  width: 100%;
+}
+
 .journals {
   position: relative;
   display: flex;

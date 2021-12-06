@@ -9,6 +9,7 @@ $content = get_field('location-content');
 
 <section class="location-images">
 <?php if ( $title || $content ) { ?>
+	<div class="global-container">	
 	<div class="text-block">
 		<div class="text-block--text__half">
 			<div class="text-block--text-inner">
@@ -20,7 +21,9 @@ $content = get_field('location-content');
 			</div>
 		</div>
 	</div>
+</div>
 <?php } ?>
+
 
 	<div class="location-images--slider">
 	<?php if( have_rows('location-item') ): ?>

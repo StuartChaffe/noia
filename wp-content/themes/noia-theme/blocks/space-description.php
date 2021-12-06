@@ -7,7 +7,8 @@ $contentleft = get_field( 'space-content-left' );
 $contentright = get_field( 'space-content-right' );
 $price = get_field( 'spaces-price', get_the_ID());
 ?>
-
+<div class="<?php echo $bkgcolor ?>">
+<div class="global-container">
 <section class="space-description <?php echo $bkgcolor ?>" id="info">
 	<div class="space-description-item space-description--left">
 	<?php if ( $contentleft ) { ?>
@@ -27,3 +28,5 @@ $price = get_field( 'spaces-price', get_the_ID());
 		</div>
 	</div>
 </section>
+</div>
+</div>
