@@ -814,6 +814,9 @@ hr {
 .banner--logo-large {
   max-width: 60%;
 }
+.banner .hide {
+  opacity: 0;
+}
 .banner--text-overlay {
   position: absolute;
   top: 0;

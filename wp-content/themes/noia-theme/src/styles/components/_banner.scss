@@ -44,6 +44,9 @@
 			max-width: 60%;
 		}
 	}
+	.hide {
+		opacity: 0;
+	}
 	&--text-overlay {
 		position: absolute;
 		top: 0;

@@ -8,5 +8,8 @@ jQuery(function ($) {
 	$(".banner--video__button").click( function (){
 		$("video").prop('muted', !$("video").prop('muted'));
 		$(this).toggleClass('unmute');
+
+		$(".banner--logo").toggleClass('hide');
 	});
+	
 });
