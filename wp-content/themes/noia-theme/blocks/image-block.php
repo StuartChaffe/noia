@@ -8,6 +8,7 @@ $imageone = $image['imageblock-images-1'];
 $imagetwo = $image['imageblock-images-2'];
 ?>
 
+<div class="global-container">
 <section class="image-block">
 	<?php if ( $content) { ?>
 	<div class="image-block--text">
@@ -25,3 +26,4 @@ $imagetwo = $image['imageblock-images-2'];
 		</div>
 	</div>
 </section>
+</div>
