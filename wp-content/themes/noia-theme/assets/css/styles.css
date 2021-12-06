@@ -2977,6 +2977,7 @@ html.with-featherlight {
 .content ul {
   margin-top: 1.5em;
   padding: 0;
+  padding-left: 1.2rem;
 }
 .content li {
   position: relative;

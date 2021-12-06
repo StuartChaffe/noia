@@ -6,6 +6,20 @@ $title = get_field( 'journals_title' );
 $featuredposts = get_field( 'featured_journals' );
 
 ?>
+<div class="journals">
+
+<div class="journals-item">
+	<p>Ideas</p>
+					<img loading="lazy" src="//noia.local:3000/wp-content/uploads/blog-1.png" alt="">
+				<div class="journals-item--title">
+		<p>A place to amplify the everyday rituals  of meeting and greeting.</p>
+		<a class="btn" href="//noia.local:3000/journal/a-place-to-amplify-the-everyday-rituals-%e2%80%a8of-meeting-and-greeting/">Read</a>
+	</div>
+</div>
+
+
+</div>
+
 <?php if( $posts ): ?>
 	<?php foreach( $posts as $post): ?>
 	<?php
