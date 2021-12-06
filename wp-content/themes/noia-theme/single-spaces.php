@@ -16,7 +16,7 @@
 				<p class="animate"><?php the_title(); ?></p>
 			</div>
 		</div>
-		<div class="carousel-slider-space">
+		<div class="carousel-slider">
 		<?php while( have_rows('spaces-details-images') ): the_row();
 			$image = get_sub_field('spaces-image');
 			$imagemobile = get_sub_field('spaces-image-mobile');

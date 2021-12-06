@@ -74,6 +74,7 @@
 			margin-bottom: 1rem;
 			@include mq(medium) {
 				height: 20vw;
+				max-height: 360px;
 			}
 			img {
 				position: absolute;

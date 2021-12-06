@@ -78,6 +78,7 @@
 	--container-width-l: 100rem;
 	--container-width-s: 50rem;
 	--content-width: 50rem;
+	--container-max: 1800px;
 
 	@include mq(large) {
 		--font-size-h1: calc(10rem + 0.2vw);

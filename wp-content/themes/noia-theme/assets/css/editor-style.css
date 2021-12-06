@@ -257,6 +257,7 @@ img.aligncenter {
   --container-width-l: 100rem;
   --container-width-s: 50rem;
   --content-width: 50rem;
+  --container-max: 1800px;
 }
 @media (min-width: 70em) {
   :root {
@@ -1787,6 +1788,7 @@ hr {
 @media (min-width: 50em) {
   .membership-item--image {
     height: 20vw;
+    max-height: 360px;
   }
 }
 .membership-item--image img {
@@ -2186,7 +2188,7 @@ hr {
   position: relative;
   flex-direction: column;
   min-height: 100%;
-  max-width: 1800px;
+  max-width: var(--container-max);
   margin: 0 auto;
 }
 
