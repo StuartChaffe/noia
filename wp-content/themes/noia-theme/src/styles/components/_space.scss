@@ -4,6 +4,7 @@
 		top: 0;
 		z-index: 99;
 		padding: 0.6rem;
+		display: none;
 		@include mq($until: medium) {
 			display: none;
 		}

@@ -2580,6 +2580,7 @@ html.with-featherlight {
   top: 0;
   z-index: 99;
   padding: 0.6rem;
+  display: none;
 }
 @media (max-width: 49.99em) {
   .space-nav {
