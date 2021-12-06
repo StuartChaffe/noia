@@ -42,7 +42,6 @@
 
 				<p>LASTEST ARTICLE — <?php echo $cat ?></p>
 				<p class="lead"><?php echo $title ?></p>
-				<?php echo $author ?>
 				<?php echo $editor ?>
 
 				<a class="btn" href="<?php the_permalink($post); ?>">Read more</a>
