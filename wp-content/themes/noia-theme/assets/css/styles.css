@@ -3197,7 +3197,7 @@ html.with-featherlight {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 998;
   transition: all 0.1s ease-in-out;
 }
 @media (min-width: 50em) {
