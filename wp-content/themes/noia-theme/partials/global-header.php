@@ -6,8 +6,7 @@
 			</svg></span>
 
 			<span class="global-header--nav-close">
-			<svg viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M22 28H19.9048V1.86667H2.09524V28L0 28V0H22V28Z" fill="white"/>
+				<svg viewBox="0 0 24 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square"><g transform="translate(2.000000, 2.000000)" stroke="#FFFFFF" stroke-width="2"><line x1="0" y1="0" x2="7" y2="7" id="Line"></line><line x1="10" y1="10" x2="20" y2="20" id="Line"></line><line x1="0" y1="0" x2="20" y2="20" id="Line" transform="translate(10.000000, 10.000000) scale(-1, 1) translate(-10.000000, -10.000000) "></line></g></g></svg>
 			</svg>
 			</span>
 		</span>
