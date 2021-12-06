@@ -6,6 +6,9 @@
 	@include mq(medium) {
 		padding: var(--spacing-l) calc(var(--spacing) - 12.5px);
 	}
+	&-title {
+		font-size: 50px;
+	}
 
 	&-item {
 		width: calc(100% / 2 );

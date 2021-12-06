@@ -9,7 +9,7 @@ $featuredposts = get_field( 'featured_journals' );
 <div class="journals">
 
 <?php if ( $title ) { ?>
-	<h2><?php echo $title ?></h2>
+	<h2 class="journals-title"><?php echo $title ?></h2>
 <?php } ?>
 
 <?php if( $featuredposts ) { ?>
