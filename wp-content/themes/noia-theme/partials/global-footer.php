@@ -11,7 +11,8 @@ $classes = get_body_class();
 <a href="#part-1" class="ask ajax-featherlight"><img src="<?php echo get_template_directory_uri(); ?>/src/images/ask.svg" alt="ask Logo" /></a>
 <?php } ?>
 <?php get_template_part( 'partials/global-contact' ); ?>
-
+<div class="bkg--white">
+<div class="global-container">
 <footer class="global-footer">
 	<div class="global-footer--logo">
 		<?php if ( $logo ) { ?>
@@ -54,3 +55,5 @@ $classes = get_body_class();
 		</div>
 	</div>
 </footer>
+</div>
+</div>
