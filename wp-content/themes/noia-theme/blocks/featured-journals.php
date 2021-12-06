@@ -33,7 +33,7 @@ $featuredposts = get_field( 'featured_journals' );
 				<?php } ?>
 				<div class="journals-item--title">
 					<p><?php echo $journaltitle; ?></p>
-					<a class="btn" href="<?php echo get_permalink(); ?>">Read</a>
+					<a class="btn" href="<?php echo get_permalink($featuredpost); ?>">Read</a>
 				</div>
 				
 			</div>
