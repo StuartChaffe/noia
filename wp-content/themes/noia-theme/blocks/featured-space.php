@@ -37,7 +37,7 @@ $featuredspaces = get_field( 'featured-space' );
 					<p class="animate"><?php echo $title ?></p>
 				</div>
 			</div>
-			<div class="carousel-slide">
+			<div class="carousel-slider">
 			<?php while( have_rows('spaces-images', $featuredspace) ): the_row();
 				$image = get_sub_field('spaces-image', $featuredspace);
 			?>
