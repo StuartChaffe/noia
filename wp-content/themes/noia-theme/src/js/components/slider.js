@@ -15,9 +15,9 @@ jQuery(document).ready(function($) {
 	});
 	$(".location-images--slider").slick({
 		// speed: 10000,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        // cssEase: 'linear',
+		autoplay: true,
+		autoplaySpeed: 3000,
+		// cssEase: 'linear',
 		pauseOnHover: true,
 
 		settings: "unslick",

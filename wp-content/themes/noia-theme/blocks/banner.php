@@ -24,7 +24,7 @@ $bkgfade = get_field( 'banner-blur');
 
 <?php if ( $bkgvideo ) { ?>
 	<div class="banner--video">
-		<video class="banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?>" src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
+		<video class="banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?>" src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
 	</div>
 <?php } ?>
 
