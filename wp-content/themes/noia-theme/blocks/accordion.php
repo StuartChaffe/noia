@@ -44,8 +44,6 @@ $counter = 1;
 			<div class="accordion-item--content">
 				<?php echo $content ?>
 			</div>
-
-
 		</div>
 		<?php endwhile; ?>
 	<?php endif; ?>

@@ -192,6 +192,32 @@
 			transform: translate(-50%, -50%);
 
 		}
+		&__button {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			z-index: 999;
+			left: 50%;
+			bottom: 2rem;
+			transform: translateX(-50%);
+			&:hover {
+				cursor: pointer;
+			}
+			.button-mute {
+				display: none;
+			}
+			.button-unmute {
+				display: block;
+			}
+		}
+	}
+	.unmute {
+		.button-mute {
+			display: block;
+		}
+		.button-unmute {
+			display: none;
+		}
 	}
 
 	&-space {

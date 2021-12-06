@@ -7,9 +7,6 @@ import './components/slider';
 import './components/accordion';
 import './components/fitty';
 import './components/modal';
+import './components/video';
 import './components/scrollto';
 import './components/manifesto';
-
-// var rellax = new Rellax('.parallax', {
-//     center: true
-// });r
