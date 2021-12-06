@@ -1465,46 +1465,46 @@ html.with-featherlight {
     height: 100vh;
   }
 }
-.carousel-slider {
+.carousel-slider, .carousel-slider-space {
   height: 100%;
 }
-.carousel-slider .slick-list, .carousel-slider .slick-track, .carousel-slider .slick-slide {
+.carousel-slider .slick-list, .carousel-slider .slick-track, .carousel-slider .slick-slide, .carousel-slider-space .slick-list, .carousel-slider-space .slick-track, .carousel-slider-space .slick-slide {
   height: 100vh !important;
 }
-.carousel-slider .slick-slide {
+.carousel-slider .slick-slide, .carousel-slider-space .slick-slide {
   max-height: 100vh !important;
 }
-.carousel-slider .slick-prev {
+.carousel-slider .slick-prev, .carousel-slider-space .slick-prev {
   left: 10px;
 }
 @media (max-width: 49.99em) {
-  .carousel-slider .slick-prev {
+  .carousel-slider .slick-prev, .carousel-slider-space .slick-prev {
     top: auto;
     bottom: 0;
     display: none !important;
   }
 }
 @media (min-width: 50em) {
-  .carousel-slider .slick-prev {
+  .carousel-slider .slick-prev, .carousel-slider-space .slick-prev {
     left: 15px;
   }
 }
-.carousel-slider .slick-next {
+.carousel-slider .slick-next, .carousel-slider-space .slick-next {
   right: 10px;
 }
 @media (max-width: 49.99em) {
-  .carousel-slider .slick-next {
+  .carousel-slider .slick-next, .carousel-slider-space .slick-next {
     top: auto;
     bottom: 0;
     display: none !important;
   }
 }
 @media (min-width: 50em) {
-  .carousel-slider .slick-next {
+  .carousel-slider .slick-next, .carousel-slider-space .slick-next {
     right: 15px;
   }
 }
-.carousel-slider-item {
+.carousel-slider-item, .carousel-slider-space-item {
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -1513,7 +1513,7 @@ html.with-featherlight {
   background-size: cover;
   background-position: center center;
 }
-.carousel-slider-item img {
+.carousel-slider-item img, .carousel-slider-space-item img {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1523,11 +1523,11 @@ html.with-featherlight {
   min-width: 100%;
 }
 @media (min-width: 50em) {
-  .carousel-slider-item img {
+  .carousel-slider-item img, .carousel-slider-space-item img {
     display: none;
   }
 }
-.carousel-slider-item--content {
+.carousel-slider-item--content, .carousel-slider-space-item--content {
   display: flex;
   align-items: center;
   padding-left: 1rem;
@@ -1539,34 +1539,34 @@ html.with-featherlight {
   z-index: 2;
 }
 @media (min-width: 50em) {
-  .carousel-slider-item--content {
+  .carousel-slider-item--content, .carousel-slider-space-item--content {
     padding-left: 0px;
     padding-right: 0px;
   }
 }
-.carousel-slider-item--content h1, .carousel-slider-item--content h2, .carousel-slider-item--content h3, .carousel-slider-item--content h4 {
+.carousel-slider-item--content h1, .carousel-slider-item--content h2, .carousel-slider-item--content h3, .carousel-slider-item--content h4, .carousel-slider-space-item--content h1, .carousel-slider-space-item--content h2, .carousel-slider-space-item--content h3, .carousel-slider-space-item--content h4 {
   padding-left: 0px;
   padding-right: 0px;
   line-height: 1.08 !important;
   font-weight: var(--font-weight-light);
 }
 @media (min-width: 50em) {
-  .carousel-slider-item--content h1, .carousel-slider-item--content h2, .carousel-slider-item--content h3, .carousel-slider-item--content h4 {
+  .carousel-slider-item--content h1, .carousel-slider-item--content h2, .carousel-slider-item--content h3, .carousel-slider-item--content h4, .carousel-slider-space-item--content h1, .carousel-slider-space-item--content h2, .carousel-slider-space-item--content h3, .carousel-slider-space-item--content h4 {
     padding-left: 200px;
     padding-right: 40px;
   }
 }
-.carousel-slider-item--content p {
+.carousel-slider-item--content p, .carousel-slider-space-item--content p {
   max-width: 900px;
   padding: 0;
   margin: 0 auto;
 }
 @media (min-width: 50em) {
-  .carousel-slider-item--content p {
+  .carousel-slider-item--content p, .carousel-slider-space-item--content p {
     padding: 0 2rem;
   }
 }
-.carousel-slider-item--overlay {
+.carousel-slider-item--overlay, .carousel-slider-space-item--overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1578,7 +1578,7 @@ html.with-featherlight {
   background-color: rgba(0, 0, 0, 0.4);
 }
 @media (min-width: 50em) {
-  .carousel-slider-item--overlay {
+  .carousel-slider-item--overlay, .carousel-slider-space-item--overlay {
     height: 100vh;
   }
 }

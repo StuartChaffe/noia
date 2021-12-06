@@ -7,7 +7,8 @@
 	&-inner {
 		// background: red;
 	}
-	&-slider {
+	&-slider,
+	&-slider-space {
 		height: 100%;
 		.slick-list, .slick-track, .slick-slide {
 			height: 100vh !important;
