@@ -16,6 +16,35 @@
 		touch-action: pan-y;
 	-webkit-tap-highlight-color: transparent;
 }
+// .carousel {
+// 	.slick-slide {
+// 		border: 10px solid red;
+// 		transition-delay: 1s;
+// 	}
+// 	.slick-list {
+// 		transition-delay: 1s;
+// 	}
+// }
+
+// .carousel + .carousel {
+// 	.slick-slide {
+// 		border: 10px solid orange;
+// 		transition-delay: 4s;
+// 	}
+// 	.slick-list {
+// 		transition-delay: 4s;
+// 	}
+// }
+// .carousel + .carousel + .carousel {
+// 	.slick-slide {
+// 		border: 10px solid yellow;
+// 		transition-delay: 6s;
+// 	}
+// 	.slick-list {
+// 		transition-delay: 6s;
+// 	}
+// }
+
 
 .slick-list {
 	position: relative;

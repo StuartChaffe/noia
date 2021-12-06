@@ -1,4 +1,18 @@
 jQuery(document).ready(function($) {
+	$(".carousel-slider-space").slick({
+		// settings: "unslick",
+		speed: 300,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: false,
+		autoplaySpeed: 4000,
+		arrows: true,
+		infinite: true,
+		dots: false,
+		adaptiveHeight: true,
+		pauseOnHover: false,
+		fade: true
+	});
 	$(".carousel-slider").slick({
 		// settings: "unslick",
 		speed: 300,
