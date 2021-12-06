@@ -3255,13 +3255,16 @@ html.with-featherlight {
   display: none;
   width: 18px;
   height: 22px;
-  z-index: 999;
+  z-index: 9999;
 }
 @media (min-width: 50em) {
   .global-header--nav-close {
     width: 22px;
     height: 28px;
   }
+}
+.global-header--nav-close svg {
+  z-index: 9999;
 }
 
 .global-header--nav-box {
@@ -3271,8 +3274,8 @@ html.with-featherlight {
   position: relative;
   align-items: center;
   justify-content: center;
-  z-index: 999;
-  background: green;
+  z-index: 9999;
+  background: yellow;
 }
 
 .global-header--nav-inner {
