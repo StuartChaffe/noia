@@ -609,7 +609,7 @@ hr {
 .accordion-item--open {
   position: absolute;
   display: flex;
-  left: 120px;
+  right: 0;
   top: 1rem;
   color: white;
   font-size: 55px;
@@ -627,7 +627,7 @@ hr {
 }
 @media (min-width: 50em) {
   .accordion-item--open {
-    top: 0.75rem;
+    top: 50%;
   }
 }
 @media (min-width: 50em) {
@@ -670,6 +670,7 @@ hr {
   align-items: center;
   z-index: 1;
   position: relative;
+  height: 100%;
 }
 @media (max-width: 49.99em) {
   .accordion-item--header .hide {
