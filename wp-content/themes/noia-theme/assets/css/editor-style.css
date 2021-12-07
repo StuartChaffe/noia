@@ -957,7 +957,7 @@ hr {
   height: 30px;
   z-index: 999;
   left: 50%;
-  bottom: 2rem;
+  bottom: 4rem;
   transform: translateX(-50%);
 }
 .banner--video__button:hover {
