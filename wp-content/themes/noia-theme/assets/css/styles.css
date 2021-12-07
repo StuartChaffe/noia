@@ -1162,7 +1162,6 @@ html.with-featherlight {
 .banner {
   position: relative;
   display: flex;
-  align-items: flex-start;
   height: 70vh;
   width: 100%;
   background-size: cover;
