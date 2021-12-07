@@ -762,7 +762,8 @@ hr {
 .banner {
   position: relative;
   display: flex;
-  height: 100vh;
+  height: 90vh;
+  max-height: 1920px;
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -957,7 +958,7 @@ hr {
   height: 30px;
   z-index: 999;
   left: 50%;
-  bottom: 4rem;
+  bottom: 6rem;
   transform: translateX(-50%);
 }
 .banner--video__button:hover {
