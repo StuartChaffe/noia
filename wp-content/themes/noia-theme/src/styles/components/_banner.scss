@@ -3,7 +3,7 @@
 	display: flex;
 	align-items: flex-start;
 	// align-items: center;
-	height: 70vh;
+	height: 65vh;
 	width: 100%;
 	background-size: cover;
 	background-position: center center;
@@ -178,7 +178,7 @@
 		bottom: 0;
 		right: 0;
 		width: 100%;
-		height: 70vh;
+		height: 65vh;
 		background-size: cover;
 		background-position: center;
 		@include mq(large) {
@@ -191,6 +191,7 @@
 			min-height: 100%;
 			max-width: none;
 			position: absolute !important;
+			width: 100%;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);

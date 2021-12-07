@@ -18,7 +18,7 @@ jQuery(function ($) {
 	function Animation() {
 		$('.animate').each(function(){
 			//var ImageHeight = $(window).height() / 2;
-			var screenHeight = $(window).height() - 120;
+			var screenHeight = $(window).height() - 220;
 			if($(document).scrollTop() >= $(this).offset().top - screenHeight) {
 			$(this).addClass('animate--visible');
 			} 
