@@ -1521,7 +1521,11 @@ html.with-featherlight {
   width: 100%;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+}
+@media (min-width: 50em) {
+  .carousel-slider-item, .carousel-slider-space-item {
+    background-attachment: fixed;
+  }
 }
 .carousel-slider-item img, .carousel-slider-space-item img {
   position: absolute;
