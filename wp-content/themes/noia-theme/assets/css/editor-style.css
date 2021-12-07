@@ -452,6 +452,10 @@ a:hover {
   text-decoration: underline;
 }
 
+h2 {
+  letter-spacing: -2px;
+}
+
 h1,
 h2,
 h3,
@@ -2045,7 +2049,7 @@ hr {
 .text-block .small p {
   width: 70%;
 }
-.text-block hr + h2 {
+.text-block hr + .text-block--text__content h2 {
   margin-top: 13px;
 }
 .text-block hr + h3, .text-block hr h4, .text-block hr p {
