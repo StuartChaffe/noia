@@ -5,8 +5,14 @@ jQuery(function ($) {
 		$(this).prop('muted', !$(this).prop('muted'));
 	});
 
-	$(".banner--video__button").click( function (){
-		$("video").prop('muted', !$("video").prop('muted'));
+	$(".banner--video__button-desktop").click( function (){
+		$(".banner--video-desktop").prop('muted', !$(".banner--video-desktop").prop('muted'));
+		$(this).toggleClass('unmute');
+
+		$(".banner--logo").toggleClass('hide');
+	});
+	$(".banner--video__button-mobile").click( function (){
+		$(".banner--video-mobile").prop('muted', !$(".banner--video-mobile").prop('muted'));
 		$(this).toggleClass('unmute');
 
 		$(".banner--logo").toggleClass('hide');

@@ -205,6 +205,18 @@
 			left: 50%;
 			bottom: 6rem;
 			transform: translateX(-50%);
+			&-desktop {
+				display: none;
+				@include mq(medium) {
+					display: block;
+				}
+			}
+			&-mobile {
+				display: block;
+				@include mq(medium) {
+					display: none;
+				}
+			}
 			&:hover {
 				cursor: pointer;
 			}
