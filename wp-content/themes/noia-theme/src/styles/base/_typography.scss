@@ -64,10 +64,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-h2 {
-	letter-spacing: -2px;
-}
-
 h1,
 h2,
 h3,
@@ -79,6 +75,10 @@ h5 {
 	color: var(--heading-color);
 	margin-bottom: 1rem;
 
+}
+h2 {
+	letter-spacing: -2px;
+	font-weight: var(--font-weight-normal);
 }
 h4 {
 	margin-bottom: 0.5rem;
