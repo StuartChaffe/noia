@@ -935,7 +935,7 @@ html.with-featherlight {
 .accordion-item--open {
   position: absolute;
   display: flex;
-  right: 0;
+  left: 120px;
   top: 1rem;
   color: white;
   font-size: 55px;
@@ -953,13 +953,17 @@ html.with-featherlight {
 }
 @media (min-width: 50em) {
   .accordion-item--open {
-    top: 0.5rem;
+    top: 0.75rem;
   }
 }
 @media (min-width: 50em) {
   .accordion-item--shrink {
     width: 44px;
   }
+}
+.accordion-item--shrink .accordion-item--open {
+  right: 0;
+  left: auto;
 }
 .accordion-item--number {
   display: flex;
@@ -1070,6 +1074,8 @@ html.with-featherlight {
 .accordion-item--show .accordion-item--open {
   transform: rotate(45deg);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  right: 0;
+  left: auto;
 }
 
 .accordion-item.accordion-item--show:before {
