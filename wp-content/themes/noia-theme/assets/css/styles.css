@@ -1162,9 +1162,9 @@ html.with-featherlight {
 .banner {
   position: relative;
   display: flex;
-  height: 90vh;
+  height: 100vh;
   min-height: 600px;
-  max-height: 1920px;
+  max-height: 800px;
   width: 100%;
   background-size: cover;
   background-position: center center;
