@@ -2873,6 +2873,10 @@ html.with-featherlight {
 }
 .intro-block p {
   font-size: var(--font-size-lead);
+  font-weight: var(--font-weight-light);
+}
+.intro-block p strong, .intro-block p b {
+  font-weight: var(--font-weight-normal);
 }
 @media (min-width: 70em) {
   .intro-block p {

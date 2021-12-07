@@ -251,6 +251,10 @@
 	}
 	p {
 		font-size: var(--font-size-lead);
+		font-weight: var(--font-weight-light);
+		strong, b {
+			font-weight: var(--font-weight-normal);
+		}
 		@include mq(large) {
 			font-size: calc(var(--font-size-lead) * 2);
 			line-height: 1;
