@@ -21,7 +21,7 @@ $featuredimage = get_the_post_thumbnail_url();
 	<section class="banner banner-journal fade" style="background-image: url(<?php echo $featuredimage ?>)">
 		<div class="banner--overlay"></div>
 		<div class="animate-up banner-journal--details">
-			<p>LASTEST ARTICLE — <?php echo $cat ?></p>
+			<p><?php echo $cat ?></p>
 			<p class="lead"><?php echo $title ?></p>
 
 			<a class="btn" href="<?php the_permalink($post); ?>">Read more</a>

@@ -4147,12 +4147,12 @@ img.aligncenter {
   }
 }
 
-.fade {
+.fadein {
   opacity: 0;
   transition: opacity 0.75s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.fade--visible {
+.fadein--visible {
   opacity: 1;
   transition: opacity 0.75s ease-in-out, transform 0.3s ease-in-out;
 }

@@ -14,7 +14,7 @@ $size = $text['textblock-text-size'];
 <section class="text-block <?php echo $size ?>" >
 	<div class="<?php echo $size ?>">
 		<div class="text-block--text-inner">
-			<div class="text-block--text__content fade <?php echo $color ?>">
+			<div class="text-block--text__content fadein <?php echo $color ?>">
 				<?php echo $content ?>
 			</div>
 		</div>

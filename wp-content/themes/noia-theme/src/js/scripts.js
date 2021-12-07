@@ -16,11 +16,11 @@ import './components/manifesto';
 
 jQuery(function ($) {
 	function Animation() {
-		$('.fade').each(function(){
+		$('.fadein').each(function(){
 			//var ImageHeight = $(window).height() / 2;
 			var screenHeight = $(window).height() - 620;
 			if($(document).scrollTop() >= $(this).offset().top - screenHeight) {
-			$(this).addClass('fade--visible');
+			$(this).addClass('fadein--visible');
 			} 
 		});
 	};
