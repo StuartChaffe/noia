@@ -49,6 +49,9 @@
 				}
 				.fit-content {
 					text-align: center;
+					p {
+						font-weight: var(--font-weight-light);
+					}
 				}
 				@include mq(medium) {
 					display: flex;

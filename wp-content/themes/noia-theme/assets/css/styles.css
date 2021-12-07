@@ -886,6 +886,9 @@ html.with-featherlight {
 .accordion-block--title__inner .fit-content {
   text-align: center;
 }
+.accordion-block--title__inner .fit-content p {
+  font-weight: var(--font-weight-light);
+}
 @media (min-width: 50em) {
   .accordion-block--title__inner {
     display: flex;
@@ -4146,14 +4149,12 @@ img.aligncenter {
 
 .animate {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.75s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .animate--visible {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.75s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .arrow {
