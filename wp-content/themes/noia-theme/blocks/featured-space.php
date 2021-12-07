@@ -3,6 +3,7 @@
 * The template used for displaying a featured space.
 */
 $featuredspaces = get_field( 'featured-space' );
+$arrows = get_field('banner-arrows');
 ?>
 
 <section class="featured-space">
@@ -37,7 +38,7 @@ $featuredspaces = get_field( 'featured-space' );
 					<p class="animate"><?php echo $title ?></p>
 				</div>
 			</div>
-			<div class="carousel-slider">
+			<div class="carousel-slider<?php if ( $arrows == '0' ) { ?> arrows-hide<?php } ?>">
 			<?php while( have_rows('spaces-images', $featuredspace) ): the_row();
 				$image = get_sub_field('spaces-image', $featuredspace);
 			?>
