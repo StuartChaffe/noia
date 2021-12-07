@@ -541,7 +541,7 @@ hr {
 }
 .accordion-block--title__inner {
   position: sticky;
-  display: flex;
+  display: none;
   height: auto;
   overflow: hidden;
   z-index: 2;
@@ -559,6 +559,11 @@ hr {
 }
 .accordion-block--title__inner .fit-content {
   text-align: center;
+}
+@media (min-width: 50em) {
+  .accordion-block--title__inner {
+    display: flex;
+  }
 }
 .accordion-item {
   position: relative;

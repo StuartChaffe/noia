@@ -32,7 +32,7 @@
 
 			&__inner {
 				position: sticky;
-				display: flex;
+				display: none;
 				height: auto;
 				overflow: hidden;
 				z-index: 2;
@@ -49,6 +49,9 @@
 				}
 				.fit-content {
 					text-align: center;
+				}
+				@include mq(medium) {
+					display: flex;
 				}
 			}			
 		}
