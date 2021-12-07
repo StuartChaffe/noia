@@ -76,12 +76,12 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 .animate {
 	opacity: 0;
 	transform: translateY(30px);
-	transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+	transition: opacity .5s ease-in-out, transform .3s ease-in-out;
 }
 .animate--visible {
 	opacity: 1;
 	transform: translateY(0);
-	transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+	transition: opacity .5s ease-in-out, transform .3s ease-in-out;
 }
 .arrow {
 	transform: translate(-40px, -50%);
