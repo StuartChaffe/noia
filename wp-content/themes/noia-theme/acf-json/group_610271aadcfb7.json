@@ -260,6 +260,25 @@
                     "ui_off_text": ""
                 }
             ]
+        },
+        {
+            "key": "field_61af3b4453051",
+            "label": "Show arrows?",
+            "name": "banner-arrows",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -279,5 +298,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1638795379
+    "show_in_rest": 0,
+    "modified": 1638873991
 }

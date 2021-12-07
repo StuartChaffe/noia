@@ -7,6 +7,12 @@
 	&-inner {
 		// background: red;
 	}
+	.arrows-hide {
+		.slick-prev,
+		.slick-next {
+			display: none !important;
+		}
+	}
 	&-slider,
 	&-slider-space {
 		height: 100%;
@@ -21,7 +27,7 @@
 			@include mq($until: medium) {
 				top: auto;
 				bottom: 0;
-				display: none !important;
+				// display: none !important;
 			}
 			@include mq(medium) {
 				left: 15px;
@@ -32,7 +38,7 @@
 			@include mq($until: medium) {
 				top: auto;
 				bottom: 0;
-				display: none !important;
+				// display: none !important;
 			}
 			@include mq(medium) {
 				right: 15px;

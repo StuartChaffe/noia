@@ -7,6 +7,7 @@
 	$price = get_field( 'spaces-price' );
 	$shortdesc = get_field( 'spaces-short-desc' );
 	$images = get_field('spaces-details-images');
+	$arrows = get_field('banner-arrows');
 	$classes = get_body_class();
 ?>
 	<?php if( have_rows('spaces-details-images') ): ?>
@@ -16,7 +17,7 @@
 				<p class="animate"><?php the_title(); ?></p>
 			</div>
 		</div>
-		<div class="carousel-slider">
+		<div class="carousel-slider<?php if ( $arrows == '0' ) { ?> arrows-hide<?php } ?>">
 		<?php while( have_rows('spaces-details-images') ): the_row();
 			$image = get_sub_field('spaces-image');
 			$imagemobile = get_sub_field('spaces-image-mobile');

@@ -1466,6 +1466,10 @@ html.with-featherlight {
     height: 100vh;
   }
 }
+.carousel .arrows-hide .slick-prev,
+.carousel .arrows-hide .slick-next {
+  display: none !important;
+}
 .carousel-slider, .carousel-slider-space {
   height: 100%;
 }
@@ -1482,7 +1486,6 @@ html.with-featherlight {
   .carousel-slider .slick-prev, .carousel-slider-space .slick-prev {
     top: auto;
     bottom: 0;
-    display: none !important;
   }
 }
 @media (min-width: 50em) {
@@ -1497,7 +1500,6 @@ html.with-featherlight {
   .carousel-slider .slick-next, .carousel-slider-space .slick-next {
     top: auto;
     bottom: 0;
-    display: none !important;
   }
 }
 @media (min-width: 50em) {

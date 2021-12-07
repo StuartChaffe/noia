@@ -3,9 +3,10 @@
 * The template used for displaying a carousel block.
 */
 $items = get_field('carousel-item');
+$arrows = get_field('banner-arrows');
 ?>
 <section class="carousel fade">
-	<div class="carousel-slider slick-slider">
+	<div class="carousel-slider<?php if ( $arrows == '0' ) { ?> arrows-hide<?php } ?> slick-slider">
 	<?php if( have_rows('carousel-item') ): ?>
 
 		<?php while( have_rows('carousel-item') ): the_row();
