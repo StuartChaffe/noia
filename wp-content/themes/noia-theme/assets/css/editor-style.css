@@ -768,8 +768,6 @@ hr {
   position: relative;
   display: flex;
   height: 100vh;
-  min-height: 600px;
-  max-height: 750px;
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -778,6 +776,8 @@ hr {
 }
 @media (max-width: 49.99em) {
   .banner {
+    min-height: 600px;
+    max-height: 750px;
     align-items: center;
   }
 }
@@ -966,6 +966,11 @@ hr {
   left: 50%;
   bottom: 6rem;
   transform: translateX(-50%);
+}
+@media (min-width: 50em) {
+  .banner--video__button {
+    bottom: 2rem;
+  }
 }
 .banner--video__button-desktop {
   display: none;

@@ -4,14 +4,15 @@
 	// align-items: flex-start;
 	// align-items: center;
 	height: 100vh;
-	min-height: 600px;
-	max-height: 750px;
+	
 	width: 100%;
 	background-size: cover;
 	background-position: center center;
 	z-index: 2;
 	overflow: hidden;
 	@include mq($until: medium) {
+		min-height: 600px;
+		max-height: 750px;
 		align-items: center;
 	}
 	@include mq(medium) {
@@ -206,6 +207,9 @@
 			left: 50%;
 			bottom: 6rem;
 			transform: translateX(-50%);
+			@include mq(medium) {
+				bottom: 2rem;
+			}
 			&-desktop {
 				display: none;
 				@include mq(medium) {
