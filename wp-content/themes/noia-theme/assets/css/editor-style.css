@@ -1127,6 +1127,11 @@ hr {
 .carousel .banner {
   height: 70vh;
 }
+@media (min-width: 50em) {
+  .carousel .banner {
+    height: 100vh;
+  }
+}
 .carousel-slider, .carousel-slider-space {
   height: 100%;
 }

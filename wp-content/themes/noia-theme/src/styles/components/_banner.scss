@@ -11,8 +11,8 @@
 	z-index: 2;
 	overflow: hidden;
 	@include mq($until: medium) {
-		min-height: 600px;
-		max-height: 750px;
+		// min-height: 600px;
+		// max-height: 750px;
 		align-items: center;
 	}
 	@include mq(medium) {
