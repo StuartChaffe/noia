@@ -609,7 +609,7 @@ hr {
 .accordion-item--open {
   position: absolute;
   display: flex;
-  right: 0;
+  right: 0.5rem;
   top: 1rem;
   color: white;
   font-size: 55px;
@@ -636,7 +636,7 @@ hr {
   }
 }
 .accordion-item--shrink .accordion-item--open {
-  right: 0;
+  right: 0.5rem;
   left: auto;
 }
 .accordion-item--number {
@@ -670,7 +670,6 @@ hr {
   align-items: center;
   z-index: 1;
   position: relative;
-  height: 100%;
 }
 @media (max-width: 49.99em) {
   .accordion-item--header .hide {
@@ -749,7 +748,7 @@ hr {
 .accordion-item--show .accordion-item--open {
   transform: rotate(45deg);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  right: 0;
+  right: 0.5rem;
   left: auto;
 }
 
