@@ -1125,6 +1125,7 @@ hr {
   width: 100%;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
 }
 .carousel-slider-item img, .carousel-slider-space-item img {
   position: absolute;
