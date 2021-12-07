@@ -39,7 +39,7 @@
 		&__sticky {
 			@include mq(medium) {
 				position: sticky;
-				top: calc(var(--spacing) + 35px);
+				top: calc(var(--spacing) + 35px)
 			}
 			// padding-bottom: var(--spacing);
 			hr {
