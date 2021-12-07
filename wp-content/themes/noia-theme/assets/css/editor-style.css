@@ -763,7 +763,7 @@ hr {
   position: relative;
   display: flex;
   align-items: flex-start;
-  height: 65vh;
+  height: 70vh;
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -772,6 +772,7 @@ hr {
 }
 @media (max-width: 49.99em) {
   .banner {
+    height: 65vh;
     align-items: center;
   }
 }
@@ -939,7 +940,7 @@ hr {
   background-size: cover;
   background-position: center;
 }
-@media (min-width: 70em) {
+@media (min-width: 50em) {
   .banner--video {
     height: 100vh;
     transform: scale(1.1);
@@ -950,10 +951,14 @@ hr {
   min-height: 100%;
   max-width: none;
   position: absolute !important;
-  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 49.99em) {
+  .banner--video video {
+    width: 100%;
+  }
 }
 .banner--video__button {
   position: absolute;

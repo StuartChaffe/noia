@@ -1163,7 +1163,7 @@ html.with-featherlight {
   position: relative;
   display: flex;
   align-items: flex-start;
-  height: 65vh;
+  height: 70vh;
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -1172,6 +1172,7 @@ html.with-featherlight {
 }
 @media (max-width: 49.99em) {
   .banner {
+    height: 65vh;
     align-items: center;
   }
 }
@@ -1339,7 +1340,7 @@ html.with-featherlight {
   background-size: cover;
   background-position: center;
 }
-@media (min-width: 70em) {
+@media (min-width: 50em) {
   .banner--video {
     height: 100vh;
     transform: scale(1.1);
@@ -1350,10 +1351,14 @@ html.with-featherlight {
   min-height: 100%;
   max-width: none;
   position: absolute !important;
-  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 49.99em) {
+  .banner--video video {
+    width: 100%;
+  }
 }
 .banner--video__button {
   position: absolute;
