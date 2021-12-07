@@ -1179,8 +1179,6 @@ html.with-featherlight {
 }
 @media (max-width: 49.99em) {
   .banner {
-    min-height: 600px;
-    max-height: 750px;
     align-items: center;
   }
 }
@@ -1503,6 +1501,9 @@ html.with-featherlight {
 .carousel .arrows-hide .slick-prev,
 .carousel .arrows-hide .slick-next {
   display: none !important;
+}
+.carousel .banner {
+  height: 70vh;
 }
 .carousel-slider, .carousel-slider-space {
   height: 100%;
