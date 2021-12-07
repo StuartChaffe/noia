@@ -7,6 +7,7 @@ import './components/slider';
 import './components/accordion';
 import './components/fitty';
 import './components/modal';
+// import './components/menu';
 import './components/video';
 import './components/scrollto';
 import './components/manifesto';

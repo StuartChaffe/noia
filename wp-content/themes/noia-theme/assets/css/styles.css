@@ -3566,28 +3566,13 @@ body.nav-open:after {
     margin-bottom: var(--spacing);
   }
 }
-.mobile-menu ul .menu-item-has-children a:hover + .sub-menu {
-  display: block;
-  opacity: 1 !important;
-}
 .mobile-menu ul li a {
   color: var(--color-text-base);
   font-size: var(--font-size-lead);
 }
-.mobile-menu ul li a:hover .sub-menu {
-  display: none;
-}
-@media (min-width: 50em) {
-  .mobile-menu ul li a:hover .sub-menu {
-    display: block;
-    transition: all 0.2s ease-in-out;
-  }
-}
 .mobile-menu ul li .sub-menu {
   margin-bottom: 0.5rem;
   margin-left: 0.3rem;
-  display: none;
-  transition: all 0.2s ease-in-out;
 }
 .mobile-menu ul li .sub-menu:hover {
   display: block;
@@ -3597,6 +3582,7 @@ body.nav-open:after {
   margin-bottom: 0;
   display: flex;
   align-items: center;
+  transition: all 1s ease-in-out;
 }
 .mobile-menu ul li .sub-menu li::before {
   content: "·";
