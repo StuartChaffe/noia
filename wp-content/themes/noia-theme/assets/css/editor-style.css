@@ -1946,6 +1946,9 @@ hr {
   justify-content: center;
   text-align: center;
   padding: var(--spacing) 2rem;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: none;
 }
 @media (min-width: 50em) {
   .space-cta {
@@ -1971,13 +1974,8 @@ hr {
   max-width: 500px;
   margin: 0 auto;
 }
-.space-cta--content .btn {
-  margin-top: 1rem;
-}
-@media (min-width: 50em) {
-  .space-cta--content .btn {
-    margin-top: 2rem;
-  }
+.space-cta--content p:last-of-type {
+  margin-bottom: 1rem;
 }
 
 .text-block {
