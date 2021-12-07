@@ -4112,27 +4112,15 @@ img.aligncenter {
 }
 
 .animate {
-  transform: translateY(-100%);
-  transition: transform 0.25s ease-out;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .animate--visible {
-  transform: translateY(0);
-  transition: transform 0.25s ease-out;
-  transition-delay: 1s;
-}
-
-.animate-up {
-  transform: translateX(-40px);
-  opacity: 0;
-  transition: all 0.25s ease-out;
-}
-
-.animate-up--visible {
-  transform: translateX(0);
   opacity: 1;
-  transition: all 0.25s ease-out;
-  transition-delay: 0.5s;
+  transform: translateY(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .arrow {

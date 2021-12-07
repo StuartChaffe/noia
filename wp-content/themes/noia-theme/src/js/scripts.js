@@ -11,3 +11,21 @@ import './components/modal';
 import './components/video';
 import './components/scrollto';
 import './components/manifesto';
+
+
+
+jQuery(function ($) {
+	function Animation() {
+		$('.animate').each(function(){
+			//var ImageHeight = $(window).height() / 2;
+			var screenHeight = $(window).height() - 120;
+			if($(document).scrollTop() >= $(this).offset().top - screenHeight) {
+			$(this).addClass('animate--visible');
+			} 
+		});
+	};
+	Animation();
+		$(document).scroll(function(){
+		Animation();
+	});
+})
