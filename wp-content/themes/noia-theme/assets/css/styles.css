@@ -3740,8 +3740,9 @@ body.nav-open:after {
   font-size: var(--font-size-lead);
 }
 .mobile-menu ul li .sub-menu {
-  margin-bottom: 0.5rem;
-  margin-left: 0.3rem;
+  margin-bottom: 0.15rem;
+  margin-left: 1.2rem;
+  padding: 0.5rem 0;
 }
 .mobile-menu ul li .sub-menu:hover {
   display: block;
@@ -3753,11 +3754,8 @@ body.nav-open:after {
   align-items: center;
   transition: all 1s ease-in-out;
 }
-.mobile-menu ul li .sub-menu li::before {
-  content: "·";
-  margin-right: 0.3rem;
-}
 .mobile-menu ul li .sub-menu li a {
+  font-size: var(--font-size);
   font-weight: var(--font-weight-normal);
 }
 @media (max-width: 49.99em) {
