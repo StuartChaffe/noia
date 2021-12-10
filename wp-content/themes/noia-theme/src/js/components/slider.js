@@ -11,7 +11,23 @@ jQuery(document).ready(function($) {
 		dots: false,
 		adaptiveHeight: true,
 		pauseOnHover: false,
-		fade: true
+		fade: true,
+		responsive: [
+			{
+				breakpoint: 640,
+				settings: {
+					speed: 500,
+					autoplaySpeed: 1000,
+				}
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+					speed: 500,
+					autoplaySpeed: 1000,
+				}
+			}
+		]
 	});
 	$(".location-images--slider").slick({
 		// speed: 10000,
