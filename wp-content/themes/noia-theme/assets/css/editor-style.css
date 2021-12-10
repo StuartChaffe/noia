@@ -1214,6 +1214,7 @@ hr {
 }
 @media (min-width: 50em) {
   .carousel-slider-item, .carousel-slider-space-item {
+    height: 100vh;
     background-attachment: fixed;
   }
 }
