@@ -231,32 +231,38 @@
 					fill: white;
 				}
 				&:hover {
-					stroke: white;
 					opacity: 1;
-					.stroke {
-						stroke: white;
-					}
-					.fill {
-						fill: white;
-					}
-					@include mq(medium) {
-						stroke: var(--color-primary);
-						.stroke {
-							stroke: var(--color-primary);
-						}
-						.fill {
-							fill: var(--color-primary);
-						}
-					}
 				}
+				// &:hover {
+				// 	stroke: white;
+				// 	opacity: 1;
+				// 	.stroke {
+				// 		stroke: white;
+				// 	}
+				// 	.fill {
+				// 		fill: white;
+				// 	}
+				// 	@include mq(medium) {
+				// 		stroke: var(--color-primary);
+				// 		.stroke {
+				// 			stroke: var(--color-primary);
+				// 		}
+				// 		.fill {
+				// 			fill: var(--color-primary);
+				// 		}
+				// 	}
+				// }
 			}
 			.button-mute {
 				display: none;
 				width: 38px;
+				color: white;
+				opacity: 0.8;
 				.fill {
-					fill: var(--color-primary);
+					fill: white;
 				}
 				&:hover {
+					opacity: 1;
 					.fill {
 						fill: white;
 					}
@@ -265,6 +271,11 @@
 			.button-unmute {
 				display: block;
 				width: 38px;
+				color: var(--color-primary);
+				stroke: var(--color-primary);
+				.fill {
+					fill: var(--color-primary);
+				}
 			}
 			.button-replay,
 			.button-replay-mobile {
