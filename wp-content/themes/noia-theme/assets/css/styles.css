@@ -290,6 +290,7 @@ h5, .heading-5 {
 h6 {
   font-size: var(--font-size-small);
   line-height: 1.2;
+  font-weight: var(--font-weight-normal);
 }
 
 code {
