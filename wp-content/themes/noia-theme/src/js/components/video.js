@@ -22,5 +22,9 @@ jQuery(function ($) {
 	$( ".button-replay" ).click(function() {
 		$('#video-desktop').get(0).currentTime = 0;
 	});
+
+	$( ".button-replay-mobile" ).click(function() {
+		$('#video-mobile').get(0).currentTime = 0;
+	});
 	
 });

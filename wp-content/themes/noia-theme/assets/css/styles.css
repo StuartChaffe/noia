@@ -1435,7 +1435,8 @@ html.with-featherlight {
   display: block;
   width: 38px;
 }
-.banner--video__button .button-replay {
+.banner--video__button .button-replay,
+.banner--video__button .button-replay-mobile {
   margin-right: 1rem;
 }
 .banner .unmute .button-mute {

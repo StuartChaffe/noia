@@ -57,7 +57,7 @@ $controls = get_field( 'banner-background-video-control');
 		</div>
 		<?php if ( $bkgvideomobile ) { ?>
 		<div class="banner--video__button hidedesktop">
-			<div class="button button-replay">
+			<div class="button button-replay-mobile">
 				<svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path class="stroke" d="M10.6939 5C5.36227 5 1 9.62822 1 14.9944C1 20.5204 5.55713 25 11.1786 25C15.8716 25 19.8228 21.878 21 17.6316" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
 					<path class="fill" d="M18 5L10 10L10 -3.49691e-07L18 5Z" fill="currentColor"/>
