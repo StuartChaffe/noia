@@ -12,7 +12,7 @@
 		</span>
 	</button>
 	<div class="mobile-menu" id="mobile-menu">
-		<div class="mobile-menu--links">
+		<div class="mobile-menu--links fade-first">
 			<p class="heading">Explore</p>
 			<?php wp_nav_menu(array(
 				'theme_location' => 'primary',
@@ -21,10 +21,12 @@
 				'menu_class' => 'mobile-nav'
 			)); ?>
 
-			<p class="heading">Contact</p>
-			<a href="#part-1" class="ajax-featherlight"><p class="heading-3">Interested in staying or collaborating with Noiascape?</p></a>
+			<div class="fade-second">
+				<p class="heading">Contact</p>
+				<a href="#part-1" class="ajax-featherlight"><p class="heading-3">Interested in staying or collaborating with Noiascape?</p></a>
+			</div>
 		</div>
-		<div class="mobile-menu--foot">
+		<div class="mobile-menu--foot fade-third">
 			<div class="mobile-menu--foot__contact">
 				<div class="mobile-menu--foot__social">
 					<a href="https://twitter.com/noiascape/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-twitter.svg" alt="twitter Logo" /></a>

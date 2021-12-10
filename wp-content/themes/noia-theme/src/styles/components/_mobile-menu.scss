@@ -220,6 +220,27 @@ body.nav-open {
 	}
 }
 
+.fade-first,
+.fade-second,
+.fade-third {
+	opacity: 0;
+}
 .mobile-menu.is-toggled {
 	transform: translateZ(0);
+
+	.fade-first {
+		opacity: 1;
+		transition: opacity 1s ease-in-out;
+		transition-delay: 0.25s;
+	}
+	.fade-second {
+		opacity: 1;
+		transition: opacity 1s ease-in-out;
+		transition-delay: 0.5s;
+	}
+	.fade-third {
+		opacity: 1;
+		transition: opacity 1s ease-in-out;
+		transition-delay: 0.75s;
+	}
 }

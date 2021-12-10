@@ -26,8 +26,8 @@ $controls = get_field( 'banner-background-video-control');
 
 <?php if ( $bkgvideo ) { ?>
 	<div class="banner--video">
-		<video class="banner--video-desktop banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?><?php if ( $bkgvideomobile ) { ?> hidemobile<?php } ?>" src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video>
-		<?php if ( $bkgvideomobile ) { ?><video class="banner--video-mobile banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?> hidedesktop" src="<?php echo $bkgvideomobile['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster=""></video><?php } ?>
+		<video class="banner--video-desktop banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?><?php if ( $bkgvideomobile ) { ?> hidemobile<?php } ?>" src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster="http://noia.local/wp-content/uploads/spaces-link.png"></video>
+		<?php if ( $bkgvideomobile ) { ?><video class="banner--video-mobile banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?> hidedesktop" src="<?php echo $bkgvideomobile['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster="http://noia.local/wp-content/uploads/spaces-link.png"></video><?php } ?>
 	</div>
 	<?php if ( $controls ) { ?>
 		<div class="banner--video__button banner--video__button-desktop">
