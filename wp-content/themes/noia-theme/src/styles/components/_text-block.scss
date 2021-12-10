@@ -57,6 +57,11 @@
 				color: var(--color-primary);
 			}
 		}
+		&__content {
+			h2 {
+				margin-bottom: 1.4rem;
+			}
+		}
 		&__half {
 			// margin: 0 var(--spacing);
 			.text-block--text {
