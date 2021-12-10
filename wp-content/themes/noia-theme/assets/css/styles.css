@@ -1997,6 +1997,7 @@ html.with-featherlight {
 }
 .journals-title {
   font-size: 50px;
+  text-align: center;
 }
 .journals-item {
   width: calc(100% / 2 );
