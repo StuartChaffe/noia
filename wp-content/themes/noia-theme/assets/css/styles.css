@@ -3749,7 +3749,7 @@ body.nav-open:after {
   opacity: 1;
 }
 .mobile-menu ul li .sub-menu li {
-  margin-bottom: 0;
+  margin-bottom: 0.1rem;
   display: flex;
   align-items: center;
   transition: all 1s ease-in-out;
