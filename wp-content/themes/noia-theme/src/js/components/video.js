@@ -7,12 +7,14 @@ jQuery(function ($) {
 
 	$(".banner--video__button-desktop").click( function (){
 		$(".banner--video-desktop").prop('muted', !$(".banner--video-desktop").prop('muted'));
+		$(".banner--video-desktop").prop('muted', !$(".banner--video-mobile").prop('muted'));
 		$(this).toggleClass('unmute');
 
 		$(".banner--logo").toggleClass('hide');
 	});
 	$(".banner--video__button-mobile").click( function (){
 		$(".banner--video-mobile").prop('muted', !$(".banner--video-mobile").prop('muted'));
+		$(".banner--video-desktop").prop('muted', !$(".banner--video-desktop").prop('muted'));
 		$(this).toggleClass('unmute');
 
 		$(".banner--logo").toggleClass('hide');
