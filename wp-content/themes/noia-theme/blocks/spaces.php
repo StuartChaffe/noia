@@ -48,9 +48,12 @@
 				<div class="carousel-slider">
 				<?php while( have_rows('spaces-images', get_the_ID()) ): the_row();
 					$image = get_sub_field('spaces-image', get_the_ID());
-					$imagemobile = get_sub_field('spaces-image', get_the_ID());
+					$imagemobile = get_sub_field('spaces-image-mobile', get_the_ID());
 				?>
-					<div class="carousel-slider-item fade" style="background-image: url(<?php echo $image['url']; ?>)">&nbsp;</div>
+					<div class="carousel-slider-item fade <?php if ( $imagemobile ) { ?>bkg-none<?php } ?>" style="background-image: url(<?php echo $image['url']; ?>)">
+						<?php if ( $imagemobile ) { ?><div class="carousel-slider-item-mobile" style="background-image: url(<?php echo $imagemobile['url']; ?>)"><img loading="lazy" src="<?php echo $imagemobile['url']; ?>" alt="<?php echo $imagemobile['alt']; ?>"></div><?php } ?>
+					</div>
+
 				<?php endwhile; ?>
 				</div>
 			</div>
