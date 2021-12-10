@@ -32,6 +32,9 @@
 				margin-bottom: 1rem;
 			}
 		}
+		h3 + .btn {
+			margin-top: 0.98rem;
+		}
 		// .btn {
 		// 	margin-top: 1rem;
 		// 	@include mq(medium) {
