@@ -618,6 +618,12 @@ input[type=radio] {
   display: inline;
 }
 
+input[type=submit],
+input[type=reset],
+input[type=button] {
+  border-radius: 0;
+}
+
 .required {
   color: #BF5D58;
 }
