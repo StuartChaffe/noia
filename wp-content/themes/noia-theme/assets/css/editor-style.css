@@ -1635,6 +1635,10 @@ hr {
     padding: var(--spacing-l) calc(var(--spacing) - 12.5px);
   }
 }
+.journals .journals {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .journals-title {
   font-size: 50px;
   text-align: center;
