@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
 		centerPadding: '200px',
 		
 		autoplay: true,
-		arrows: false,
+		arrows: true,
 		dots: false,
 		adaptiveHeight: true,
 		responsive: [

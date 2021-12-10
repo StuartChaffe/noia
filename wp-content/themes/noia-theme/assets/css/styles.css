@@ -250,7 +250,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 0;
   line-height: var(--line-height-headings);
   font-weight: var(--font-weight-normal);
@@ -291,6 +292,7 @@ h6 {
   font-size: var(--font-size-small);
   line-height: 1.2;
   font-weight: var(--font-weight-normal);
+  margin-bottom: 0;
 }
 
 code {
@@ -2857,6 +2859,9 @@ html.with-featherlight {
 }
 .text-block--text h2 span, .text-block--text h3 span, .text-block--text h4 span {
   color: var(--color-primary);
+}
+.text-block--text__content h2 {
+  margin-bottom: 1.4rem;
 }
 .text-block--text__half .text-block--text {
   width: 100%;
