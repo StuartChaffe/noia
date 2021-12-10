@@ -52,9 +52,13 @@
 	img {
 		width: 38px;
 		height: 52px;
+		margin-top: -4px;
+    	margin-left: -3px;
 		@include mq(medium) {
 			width: 48px;
 			height: 62px;
+			margin-top: 0;
+    		margin-left: 0;
 		}
 	}
 
