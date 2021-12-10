@@ -212,16 +212,10 @@
 				bottom: 2rem;
 			}
 			&-desktop {
-				display: none;
-				@include mq(medium) {
-					display: flex;
-				}
+				display: flex;
 			}
 			&-mobile {
 				display: flex;
-				@include mq(medium) {
-					display: none;
-				}
 			}
 			&:hover {
 				cursor: pointer;

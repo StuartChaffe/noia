@@ -1001,20 +1001,10 @@ hr {
   }
 }
 .banner--video__button-desktop {
-  display: none;
-}
-@media (min-width: 50em) {
-  .banner--video__button-desktop {
-    display: flex;
-  }
+  display: flex;
 }
 .banner--video__button-mobile {
   display: flex;
-}
-@media (min-width: 50em) {
-  .banner--video__button-mobile {
-    display: none;
-  }
 }
 .banner--video__button:hover {
   cursor: pointer;
