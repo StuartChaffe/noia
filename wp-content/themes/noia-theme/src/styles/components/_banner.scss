@@ -302,6 +302,9 @@
 				margin-top: 0 !important;
 			}
 		}
+		.carousel-slider-item-mobile {
+			position: relative !important;
+		}
 		.banner--content {
 			p {
 				@extend .heading-1;
@@ -309,9 +312,6 @@
 					font-size: var(--font-size-h2);
 				}
 			}
-		}
-		.carousel-slider-item-mobile {
-			position: relative;
 		}
 	}
 	&-journal {

@@ -1479,13 +1479,13 @@ html.with-featherlight {
 .banner-space--details + .banner--content {
   margin-top: 0 !important;
 }
+.banner-space .carousel-slider-item-mobile {
+  position: relative !important;
+}
 @media (min-width: 50em) {
   .banner-space .banner--content p {
     font-size: var(--font-size-h2);
   }
-}
-.banner-space .carousel-slider-item-mobile {
-  position: relative;
 }
 .banner-journal {
   position: relative;
