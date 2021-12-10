@@ -24,8 +24,8 @@
 			$overlay = get_sub_field( 'spaces-image-overlay');
 		?>
 			<div class="carousel-slider-item fade <?php if ( $imagemobile ) { ?>bkg-none<?php } ?>" style="background-image: url(<?php echo $image['url']; ?>)">
-			<?php if ( $imagemobile ) { ?><img loading="lazy" src="<?php echo $imagemobile['url']; ?>" alt="<?php echo $imagemobile['alt']; ?>"><?php } ?>
-			<?php if ( $overlay == '1' ) { ?><div class="banner--overlay"></div><?php } ?>&nbsp;</div>
+			<?php if ( $imagemobile ) { ?><div class="carousel-slider-item-mobile" style="background-image: url(<?php echo $imagemobile['url']; ?>)"><img loading="lazy" src="<?php echo $imagemobile['url']; ?>" alt="<?php echo $imagemobile['alt']; ?>"></div><?php } ?>
+			<?php if ( $overlay == '1' ) { ?><div class="banner--overlay"></div><?php } ?></div>
 		<?php endwhile; ?>
 		</div>
 	</div>

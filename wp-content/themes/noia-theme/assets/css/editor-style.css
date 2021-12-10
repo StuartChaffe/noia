@@ -1188,6 +1188,22 @@ hr {
     background-attachment: fixed;
   }
 }
+.carousel-slider-item-mobile, .carousel-slider-space-item-mobile {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-slider-item-mobile img, .carousel-slider-space-item-mobile img {
+  display: none;
+}
+@media (min-width: 50em) {
+  .carousel-slider-item-mobile, .carousel-slider-space-item-mobile {
+    display: none;
+  }
+}
 .carousel-slider-item img, .carousel-slider-space-item img {
   position: absolute;
   left: 50%;
