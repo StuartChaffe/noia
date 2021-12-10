@@ -260,7 +260,6 @@ h6 {
 }
 
 h2 {
-  letter-spacing: -3px;
   font-weight: var(--font-weight-normal);
 }
 
@@ -2870,6 +2869,7 @@ html.with-featherlight {
   color: var(--color-primary);
 }
 .text-block--text__content h2 {
+  letter-spacing: -3px;
   margin-bottom: 1.4rem;
 }
 .text-block--text__half .text-block--text {
