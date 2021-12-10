@@ -17,14 +17,14 @@ jQuery(document).ready(function($) {
 				breakpoint: 640,
 				settings: {
 					speed: 500,
-					autoplaySpeed: 1000,
+					autoplaySpeed: 3000,
 				}
 			},
 			{
 				breakpoint: 1024,
 				settings: {
 					speed: 500,
-					autoplaySpeed: 1000,
+					autoplaySpeed: 3000,
 				}
 			}
 		]
