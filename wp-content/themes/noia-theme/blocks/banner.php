@@ -9,7 +9,9 @@ $text = get_field( 'banner-text', false, false);
 $link = get_field( 'banner-background-link');
 $bkgimage = get_field( 'banner-background-image');
 $bkgvideo = get_field( 'banner-background-video');
-$bkgvideomobile = get_field( 'banner-background-video-mobile');
+$poster = get_field( 'banner-video-poster');
+$bkgvideomobile = get_field( 'banner-video-mobile');
+$postermobile = get_field( 'banner-background-video-poster-mobile');
 $overlay = get_field( 'banner-background-overlay');
 $textoverlay = get_field( 'banner-text-overlay');
 $textcolor = get_field( 'banner-text-overlay-colour');
@@ -26,8 +28,8 @@ $controls = get_field( 'banner-background-video-control');
 
 <?php if ( $bkgvideo ) { ?>
 	<div class="banner--video">
-		<video class="banner--video-desktop banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?><?php if ( $bkgvideomobile ) { ?> hidemobile<?php } ?>" src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster="http://noia.local/wp-content/uploads/spaces-link.png"></video>
-		<?php if ( $bkgvideomobile ) { ?><video class="banner--video-mobile banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?> hidedesktop" src="<?php echo $bkgvideomobile['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster="http://noia.local/wp-content/uploads/spaces-link.png"></video><?php } ?>
+		<video class="banner--video-desktop banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?><?php if ( $bkgvideomobile ) { ?> hidemobile<?php } ?>" src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster="<?php if ( $poster ) { ?><?php echo $poster ?><?php } ?>"></video>
+		<?php if ( $bkgvideomobile ) { ?><video class="banner--video-mobile banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?> hidedesktop" src="<?php echo $bkgvideomobile['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster="<?php if ( $postermobile ) { ?><?php echo $postermobile ?><?php } ?>"></video><?php } ?>
 	</div>
 	<?php if ( $controls ) { ?>
 		<div class="banner--video__button banner--video__button-desktop">
