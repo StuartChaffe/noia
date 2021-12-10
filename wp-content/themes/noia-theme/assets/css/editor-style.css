@@ -2766,17 +2766,13 @@ hr {
 [dir=rtl] .slick-prev:before {
   content: url("../../src/icons/arrow-black-left.svg");
 }
-.slick-prev:hover {
-  background-color: var(--color-text-base);
-}
-.slick-prev:hover:before {
-  content: url("../../src/icons/arrow-swhite-left.svg");
-}
-.slick-prev:focus {
-  background-color: white;
-}
-.slick-prev:focus:before {
-  content: url("../../src/icons/arrow-black-left.svg");
+@media (min-width: 50em) {
+  .slick-prev:hover {
+    background-color: var(--color-text-base);
+  }
+  .slick-prev:hover:before {
+    content: url("../../src/icons/arrow-swhite-left.svg");
+  }
 }
 
 .slick-next {
@@ -2795,17 +2791,13 @@ hr {
 [dir=rtl] .slick-next:before {
   content: url("../../src/icons/arrow-black.svg");
 }
-.slick-next:hover {
-  background-color: var(--color-text-base);
-}
-.slick-next:hover:before {
-  content: url("../../src/icons/arrow-swhite.svg");
-}
-.slick-next:focus {
-  background-color: white;
-}
-.slick-next:focus:before {
-  content: url("../../src/icons/arrow-black.svg");
+@media (min-width: 50em) {
+  .slick-next:hover {
+    background-color: var(--color-text-base);
+  }
+  .slick-next:hover:before {
+    content: url("../../src/icons/arrow-swhite.svg");
+  }
 }
 
 .slick-disabled {
