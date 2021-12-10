@@ -757,7 +757,7 @@ hr {
 
 .accordion-item--show {
   width: 100% !important;
-  min-height: 90vh;
+  height: auto;
   transition: height 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-width: 50em) {
