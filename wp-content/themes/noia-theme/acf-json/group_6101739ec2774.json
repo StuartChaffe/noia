@@ -144,6 +144,39 @@
             "mime_types": ""
         },
         {
+            "key": "field_61b37fd0557a0",
+            "label": "Image - mobile",
+            "name": "banner-background-image-image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61017493028bc",
+                        "operator": "==",
+                        "value": "Image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "default_value": ""
+        },
+        {
             "key": "field_6101764333f9f",
             "label": "Video",
             "name": "banner-background-video",
@@ -178,7 +211,15 @@
             "type": "image",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61017493028bc",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -231,7 +272,15 @@
             "type": "image",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61017493028bc",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -397,5 +446,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1639136459
+    "modified": 1639153638
 }

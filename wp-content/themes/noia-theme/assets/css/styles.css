@@ -3011,8 +3011,8 @@ html.with-featherlight {
 }
 @media (min-width: 70em) {
   .intro-block p {
-    font-size: calc(var(--font-size-lead) * 1.8);
-    line-height: 1.025;
+    font-size: calc(var(--font-size-lead) * 1.6);
+    line-height: 1.04;
   }
 }
 
