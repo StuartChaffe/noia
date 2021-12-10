@@ -49,7 +49,7 @@
   --color-instagram: #262626;
   --color-youtube: #cc181e;
   --color-linkedin: #0077B5;
-  --body-background-color: var(--color-tertiary);
+  --body-background-color: white;
   --border-radius: 16px;
   --spacing-xxl: 200px;
   --spacing-xl: 150px;
@@ -3120,6 +3120,7 @@ html.with-featherlight {
 .content h5 {
   margin-top: var(--spacing-l);
   margin-bottom: 0;
+  display: inline-block;
 }
 .content a {
   color: var(--link-color);
