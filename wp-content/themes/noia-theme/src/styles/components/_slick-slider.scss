@@ -174,8 +174,8 @@ $slick-opacity-not-active: 0.25 !default;
 	display: flex;
     align-items: center;
     justify-content: center;
-	height: 25px;
-	width: 25px;
+	height: 30px;
+	width: 30px;
 	border-radius: 30px;
 	line-height: 0px;
 	font-size: 0px;
@@ -200,8 +200,8 @@ $slick-opacity-not-active: 0.25 !default;
 		// top: 50%;
 		// transform: translate(0, -50%);
 		color: white;
-		width: 10px;
-		height: 22px;
+		// width: 10px;
+		// height: 22px;
 		opacity: $slick-opacity-default;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
@@ -216,7 +216,7 @@ $slick-opacity-not-active: 0.25 !default;
 	// padding: 0 1rem 0 2rem;
 	&:before {
 		// position: absolute;
-		margin-left: -8px;
+		margin-left: -4px;
 		right: 1rem;
 
 		transition: .2s all ease-in-out;
@@ -242,6 +242,7 @@ $slick-opacity-not-active: 0.25 !default;
 	&:before {
 		// position: absolute;
 		// left: 1rem;
+		margin-left: 2px;
 		transition: .2s all ease-in-out;
 		content: url("../../src/icons/arrow-black.svg");
 		[dir="rtl"] & {
