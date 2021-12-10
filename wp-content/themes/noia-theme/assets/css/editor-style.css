@@ -1631,7 +1631,7 @@ hr {
 }
 @media (min-width: 50em) {
   .journals {
-    padding: var(--spacing-l) calc(var(--spacing) - 12.5px);
+    padding: var(--spacing-l) calc(var(--spacing) - 12.5px) var(--spacing-l) calc(var(--spacing) - 12.5px);
   }
 }
 .journals .journals {
