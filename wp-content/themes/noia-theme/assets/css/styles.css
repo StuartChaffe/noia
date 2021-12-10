@@ -2002,7 +2002,8 @@ html.with-featherlight {
 .journals-title {
   font-size: 50px;
   text-align: center;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .journals-item {
   width: calc(100% / 2 );
