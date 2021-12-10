@@ -28,56 +28,54 @@ $controls = get_field( 'banner-background-video-control');
 
 <?php if ( $bkgvideo ) { ?>
 	<div class="banner--video">
-		<video class="banner--video-desktop banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?><?php if ( $bkgvideomobile ) { ?> hidemobile<?php } ?>" src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster="<?php if ( $poster ) { ?><?php echo $poster ?><?php } ?>"></video>
-		<?php if ( $bkgvideomobile ) { ?><video class="banner--video-mobile banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?> hidedesktop" src="<?php echo $bkgvideomobile['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster="<?php if ( $postermobile ) { ?><?php echo $postermobile ?><?php } ?>"></video><?php } ?>
+		<video id="video-desktop" class="banner--video-desktop banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?><?php if ( $bkgvideomobile ) { ?> hidemobile<?php } ?>" src="<?php echo $bkgvideo['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster="<?php if ( $poster ) { ?><?php echo $poster ?><?php } ?>"></video>
+		<?php if ( $bkgvideomobile ) { ?><video id="video-mobile" class="banner--video-mobile banner--video-item<?php if ( $bkgfade ) { ?> banner__blur<?php } ?> hidedesktop" src="<?php echo $bkgvideomobile['url']; ?>" loop="false" muted="false" data-poster="" preload="" playsinline="" scrollspy="" autoplay="true" poster="<?php if ( $postermobile ) { ?><?php echo $postermobile ?><?php } ?>"></video><?php } ?>
 	</div>
 	<?php if ( $controls ) { ?>
-		<div class="banner--video__button banner--video__button-desktop">
-		<div class="button-unmute">
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				width="25px" height="19.23px" viewBox="403.5 502.385 25 19.23" enable-background="new 403.5 502.385 25 19.23"
-				xml:space="preserve">
-			<path d="M407.346,508.154H403.5v7.692h3.846l7.692,5.77h1.923v-19.23h-1.923L407.346,508.154z M419.681,509.28
-				c-0.375-0.375-0.984-0.375-1.36,0s-0.375,0.984,0,1.36c0.751,0.751,0.751,1.968,0,2.719c-0.375,0.376-0.375,0.984,0,1.36
-				c0.375,0.375,0.984,0.375,1.36,0C421.183,513.218,421.183,510.782,419.681,509.28z M422.401,506.56c-0.375-0.375-0.984-0.375-1.36,0
-				s-0.375,0.984,0,1.36c2.253,2.253,2.253,5.906,0,8.159c-0.375,0.376-0.375,0.984,0,1.36c0.375,0.375,0.984,0.375,1.36,0
-				C425.405,514.435,425.405,509.565,422.401,506.56z M425.12,503.841c-0.375-0.375-0.984-0.375-1.36,0
-				c-0.375,0.375-0.375,0.984,0,1.36c3.755,3.755,3.755,9.843,0,13.598c-0.375,0.376-0.375,0.984,0,1.36
-				c0.375,0.375,0.984,0.375,1.36,0C429.626,515.652,429.626,508.347,425.12,503.841z" fill="white"/>
+		<div class="banner--video__button">
+		<div class="button button-replay hidemobile">
+			<svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path class="stroke" d="M10.6939 5C5.36227 5 1 9.62822 1 14.9944C1 20.5204 5.55713 25 11.1786 25C15.8716 25 19.8228 21.878 21 17.6316" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+				<path class="fill" d="M18 5L10 10L10 -3.49691e-07L18 5Z" fill="currentColor"/>
 			</svg>
 		</div>
-		<div class="button-mute">
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				width="25px" height="18.519px" viewBox="419.5 502.74 25 18.519" enable-background="new 419.5 502.74 25 18.519"
-				xml:space="preserve">
-			<path d="M423.204,508.296H419.5v7.408h3.704l7.408,5.556h1.852V502.74h-1.852L423.204,508.296z M444.5,509.222l-1.852-1.852
-				l-2.778,2.778l-2.777-2.778l-1.823,1.838l2.749,2.792l-2.778,2.777l1.852,1.853l2.777-2.778l2.778,2.778l1.852-1.853L441.722,512
-				L444.5,509.222z" fill="white"/>
-			</svg>
+		<div class="banner--video__button-desktop">
+			<div class="button button-unmute">
+				<svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path class="stroke" d="M28.8535 23C31.0764 21.6033 32.7663 19.4562 33.6378 16.9205C34.5093 14.3845 34.5093 11.6153 33.6378 9.07952C32.7663 6.54378 31.0764 4.39663 28.8535 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+					<path class="stroke" d="M23.9662 18C25.7725 16.8791 26.8547 15.0046 26.8536 12.9988C26.8526 10.993 25.7682 9.11912 23.9609 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+					<path class="fill" d="M17.0926 23.8986L8.92426 18.1808C8.75617 18.0631 8.55597 18 8.35079 18H7.66602H1.66602C1.11373 18 0.666016 17.5523 0.666016 17V8C0.666016 7.44772 1.11373 7 1.66602 7H7.66602H8.35079C8.55597 7 8.75617 6.93689 8.92426 6.81923L17.0926 1.10142C17.7553 0.63748 18.666 1.11163 18.666 1.92066V23.0793C18.666 23.8884 17.7553 24.3625 17.0926 23.8986Z" fill="currentColor"/>
+				</svg>
+			</div>
+			<div class="button-mute">
+				<svg width="41" height="25" viewBox="0 0 41 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path class="fill" fill-rule="evenodd" clip-rule="evenodd" d="M23.8236 18.9706C24.2141 19.3611 24.8473 19.3611 25.2378 18.9706L29.4805 14.7279L33.7231 18.9706C34.1136 19.3611 34.7468 19.3611 35.1373 18.9706C35.5278 18.58 35.5278 17.9469 35.1373 17.5564L30.8947 13.3137L35.1373 9.07107C35.5278 8.68054 35.5278 8.04738 35.1373 7.65685C34.7468 7.26633 34.1136 7.26633 33.7231 7.65685L29.4805 11.8995L25.2378 7.65685C24.8473 7.26633 24.2141 7.26633 23.8236 7.65685C23.4331 8.04738 23.4331 8.68054 23.8236 9.07107L28.0663 13.3137L23.8236 17.5563C23.4331 17.9469 23.4331 18.58 23.8236 18.9706Z" fill="currentColor"/>
+					<path class="fill" d="M16.7176 23.8986L8.54926 18.1808C8.38117 18.0631 8.18097 18 7.97579 18H7.29102H1.29102C0.738731 18 0.291016 17.5523 0.291016 17V8C0.291016 7.44772 0.738731 7 1.29102 7H7.29102H7.97579C8.18097 7 8.38117 6.93689 8.54926 6.81923L16.7176 1.10142C17.3803 0.63748 18.291 1.11163 18.291 1.92066V23.0793C18.291 23.8884 17.3803 24.3625 16.7176 23.8986Z" fill="currentColor"/>
+				</svg>
+			</div>
 		</div>
 	</div>
-	<div class="banner--video__button banner--video__button-mobile">
-		<div class="button-unmute">
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				width="25px" height="19.23px" viewBox="403.5 502.385 25 19.23" enable-background="new 403.5 502.385 25 19.23"
-				xml:space="preserve">
-			<path d="M407.346,508.154H403.5v7.692h3.846l7.692,5.77h1.923v-19.23h-1.923L407.346,508.154z M419.681,509.28
-				c-0.375-0.375-0.984-0.375-1.36,0s-0.375,0.984,0,1.36c0.751,0.751,0.751,1.968,0,2.719c-0.375,0.376-0.375,0.984,0,1.36
-				c0.375,0.375,0.984,0.375,1.36,0C421.183,513.218,421.183,510.782,419.681,509.28z M422.401,506.56c-0.375-0.375-0.984-0.375-1.36,0
-				s-0.375,0.984,0,1.36c2.253,2.253,2.253,5.906,0,8.159c-0.375,0.376-0.375,0.984,0,1.36c0.375,0.375,0.984,0.375,1.36,0
-				C425.405,514.435,425.405,509.565,422.401,506.56z M425.12,503.841c-0.375-0.375-0.984-0.375-1.36,0
-				c-0.375,0.375-0.375,0.984,0,1.36c3.755,3.755,3.755,9.843,0,13.598c-0.375,0.376-0.375,0.984,0,1.36
-				c0.375,0.375,0.984,0.375,1.36,0C429.626,515.652,429.626,508.347,425.12,503.841z" fill="white"/>
+	<div class="banner--video__button">
+		<div class="button button-replay hidedesktop">
+			<svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path class="stroke" d="M10.6939 5C5.36227 5 1 9.62822 1 14.9944C1 20.5204 5.55713 25 11.1786 25C15.8716 25 19.8228 21.878 21 17.6316" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+				<path class="fill" d="M18 5L10 10L10 -3.49691e-07L18 5Z" fill="currentColor"/>
 			</svg>
 		</div>
-		<div class="button-mute">
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				width="25px" height="18.519px" viewBox="419.5 502.74 25 18.519" enable-background="new 419.5 502.74 25 18.519"
-				xml:space="preserve">
-			<path d="M423.204,508.296H419.5v7.408h3.704l7.408,5.556h1.852V502.74h-1.852L423.204,508.296z M444.5,509.222l-1.852-1.852
-				l-2.778,2.778l-2.777-2.778l-1.823,1.838l2.749,2.792l-2.778,2.777l1.852,1.853l2.777-2.778l2.778,2.778l1.852-1.853L441.722,512
-				L444.5,509.222z" fill="white"/>
-			</svg>
+		<div class="banner--video__button-mobile">
+			<div class="button button-unmute">
+				<svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path class="stroke" d="M28.8535 23C31.0764 21.6033 32.7663 19.4562 33.6378 16.9205C34.5093 14.3845 34.5093 11.6153 33.6378 9.07952C32.7663 6.54378 31.0764 4.39663 28.8535 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+					<path class="stroke" d="M23.9662 18C25.7725 16.8791 26.8547 15.0046 26.8536 12.9988C26.8526 10.993 25.7682 9.11912 23.9609 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+					<path class="fill" d="M17.0926 23.8986L8.92426 18.1808C8.75617 18.0631 8.55597 18 8.35079 18H7.66602H1.66602C1.11373 18 0.666016 17.5523 0.666016 17V8C0.666016 7.44772 1.11373 7 1.66602 7H7.66602H8.35079C8.55597 7 8.75617 6.93689 8.92426 6.81923L17.0926 1.10142C17.7553 0.63748 18.666 1.11163 18.666 1.92066V23.0793C18.666 23.8884 17.7553 24.3625 17.0926 23.8986Z" fill="currentColor"/>
+				</svg>
+			</div>
+			<div class="button-mute">
+				<svg width="41" height="25" viewBox="0 0 41 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path class="fill" fill-rule="evenodd" clip-rule="evenodd" d="M23.8236 18.9706C24.2141 19.3611 24.8473 19.3611 25.2378 18.9706L29.4805 14.7279L33.7231 18.9706C34.1136 19.3611 34.7468 19.3611 35.1373 18.9706C35.5278 18.58 35.5278 17.9469 35.1373 17.5564L30.8947 13.3137L35.1373 9.07107C35.5278 8.68054 35.5278 8.04738 35.1373 7.65685C34.7468 7.26633 34.1136 7.26633 33.7231 7.65685L29.4805 11.8995L25.2378 7.65685C24.8473 7.26633 24.2141 7.26633 23.8236 7.65685C23.4331 8.04738 23.4331 8.68054 23.8236 9.07107L28.0663 13.3137L23.8236 17.5563C23.4331 17.9469 23.4331 18.58 23.8236 18.9706Z" fill="currentColor"/>
+					<path class="fill" d="M16.7176 23.8986L8.54926 18.1808C8.38117 18.0631 8.18097 18 7.97579 18H7.29102H1.29102C0.738731 18 0.291016 17.5523 0.291016 17V8C0.291016 7.44772 0.738731 7 1.29102 7H7.29102H7.97579C8.18097 7 8.38117 6.93689 8.54926 6.81923L16.7176 1.10142C17.3803 0.63748 18.291 1.11163 18.291 1.92066V23.0793C18.291 23.8884 17.3803 24.3625 16.7176 23.8986Z" fill="currentColor"/>
+				</svg>
+			</div>
 		</div>
 	</div>
 	<?php } ?>
