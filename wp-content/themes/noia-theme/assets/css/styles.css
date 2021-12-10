@@ -4067,6 +4067,12 @@ body.nav-open:after {
 .slick-prev:hover:before {
   content: url("../../src/icons/arrow-swhite-left.svg");
 }
+.slick-prev:focus {
+  background-color: white;
+}
+.slick-prev:focus:before {
+  content: url("../../src/icons/arrow-black-left.svg");
+}
 
 .slick-next {
   right: 25px;
@@ -4089,6 +4095,12 @@ body.nav-open:after {
 }
 .slick-next:hover:before {
   content: url("../../src/icons/arrow-swhite.svg");
+}
+.slick-next:focus {
+  background-color: white;
+}
+.slick-next:focus:before {
+  content: url("../../src/icons/arrow-black.svg");
 }
 
 .slick-disabled {

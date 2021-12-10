@@ -231,6 +231,12 @@ $slick-opacity-not-active: 0.25 !default;
 			content: url("../../src/icons/arrow-swhite-left.svg");
 		}
 	}
+	&:focus {
+		background-color:  white;
+		&:before {
+			content: url("../../src/icons/arrow-black-left.svg");
+		}
+	}
 }
 
 .slick-next {
@@ -253,6 +259,12 @@ $slick-opacity-not-active: 0.25 !default;
 		background-color:  var(--color-text-base);
 		&:before {
 			content: url("../../src/icons/arrow-swhite.svg");
+		}
+	}
+	&:focus {
+		background-color:  white;
+		&:before {
+			content: url("../../src/icons/arrow-black.svg");
 		}
 	}
 }
