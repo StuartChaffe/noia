@@ -1233,7 +1233,8 @@ html.with-featherlight {
   }
 }
 .banner--logo-large {
-  max-width: 60%;
+  max-width: 55%;
+  transform: translateY(-2rem);
 }
 .banner .hide {
   opacity: 0;
@@ -1385,7 +1386,7 @@ html.with-featherlight {
   height: 30px;
   z-index: 999;
   left: 50%;
-  bottom: 6rem;
+  bottom: 7rem;
   transform: translateX(-50%);
 }
 @media (min-width: 50em) {
