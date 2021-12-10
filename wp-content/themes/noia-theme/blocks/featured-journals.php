@@ -6,7 +6,7 @@ $title = get_field( 'journals_title' );
 $featuredposts = get_field( 'featured_journals' );
 
 ?>
-<div class="journals">
+<div class="journals grad">
 
 <?php if ( $title ) { ?>
 	<h2 class="journals-title"><?php echo $title ?></h2>
