@@ -2401,11 +2401,7 @@ html.with-featherlight {
 .modal-inner-item:first-of-type {
   border-left: 0;
   border-bottom: 1px solid #C7C7C7;
-}
-@media (min-width: 50em) {
-  .modal-inner-item:first-of-type {
-    border-bottom: none;
-  }
+  border-bottom: none;
 }
 .modal-inner-item:last-of-type {
   border-bottom: none;

@@ -39,9 +39,7 @@
 		&:first-of-type {
 			border-left: 0;
 			border-bottom: 1px solid #C7C7C7;
-			@include mq(medium) {
-				border-bottom: none;
-			}
+			border-bottom: none;
 		}
 		&:last-of-type {
 			border-bottom: none;
