@@ -1484,6 +1484,9 @@ html.with-featherlight {
     font-size: var(--font-size-h2);
   }
 }
+.banner-space .carousel-slider-item-mobile {
+  position: relative;
+}
 .banner-journal {
   position: relative;
   z-index: 3;
