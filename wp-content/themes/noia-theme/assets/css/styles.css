@@ -2004,6 +2004,7 @@ html.with-featherlight {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2rem;
 }
 .journals-item {
   width: calc(100% / 2 );
