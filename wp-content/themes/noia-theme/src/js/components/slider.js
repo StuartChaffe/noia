@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 	$(".carousel-slider").slick({
 		// settings: "unslick",
-		speed: 1500,
+		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
@@ -11,23 +11,7 @@ jQuery(document).ready(function($) {
 		dots: false,
 		adaptiveHeight: true,
 		pauseOnHover: false,
-		fade: true,
-		responsive: [
-			{
-				breakpoint: 640,
-				settings: {
-					speed: 500,
-					autoplaySpeed: 3000,
-				}
-			},
-			{
-				breakpoint: 1024,
-				settings: {
-					speed: 500,
-					autoplaySpeed: 3000,
-				}
-			}
-		]
+		fade: true
 	});
 	$(".location-images--slider").slick({
 		// speed: 10000,
