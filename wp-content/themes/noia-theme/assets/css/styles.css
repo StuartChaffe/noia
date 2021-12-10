@@ -2994,6 +2994,14 @@ html.with-featherlight {
     background-attachment: fixed;
   }
 }
+.intro-block + .text-block {
+  padding-top: 1rem;
+}
+@media (min-width: 50em) {
+  .intro-block + .text-block {
+    padding-top: var(--spacing);
+  }
+}
 .intro-block .text-block--text-inner {
   padding: 1.5rem 1rem;
 }

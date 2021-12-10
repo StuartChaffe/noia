@@ -245,6 +245,12 @@
 	@include mq(large) {
 		background-attachment: fixed;
 	}
+	+ .text-block {
+		padding-top: 1rem;
+		@include mq(medium) {
+			padding-top: var(--spacing);
+		}
+	}
 	
 	.text-block--text-inner {
 		padding: 1.5rem 1rem;
