@@ -1219,6 +1219,7 @@ hr {
   }
 }
 .carousel-slider-item-mobile, .carousel-slider-space-item-mobile {
+  position: absolute;
   width: 100%;
   height: 100%;
   margin: 0;
