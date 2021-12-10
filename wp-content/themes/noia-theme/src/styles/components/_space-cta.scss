@@ -5,10 +5,10 @@
 	justify-content: center;
 	text-align: center;
 	padding: var(--spacing) 2rem;
-	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: none;
 	@include mq(medium) {
+		background-attachment: fixed;
 		padding: var(--spacing) 0;
 	}
 	&:before {

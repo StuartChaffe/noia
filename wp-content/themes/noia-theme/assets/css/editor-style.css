@@ -1999,12 +1999,12 @@ hr {
   justify-content: center;
   text-align: center;
   padding: var(--spacing) 2rem;
-  background-attachment: fixed;
   background-size: cover;
   background-repeat: none;
 }
 @media (min-width: 50em) {
   .space-cta {
+    background-attachment: fixed;
     padding: var(--spacing) 0;
   }
 }
