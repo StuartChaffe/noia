@@ -1386,7 +1386,7 @@ html.with-featherlight {
   height: 30px;
   z-index: 999;
   left: 50%;
-  bottom: 7rem;
+  bottom: 8.5rem;
   transform: translateX(-50%);
 }
 @media (min-width: 50em) {
@@ -1405,6 +1405,7 @@ html.with-featherlight {
 }
 .banner--video__button .button {
   stroke: white;
+  opacity: 0.8;
 }
 .banner--video__button .button .stroke {
   stroke: white;
@@ -1413,13 +1414,25 @@ html.with-featherlight {
   fill: white;
 }
 .banner--video__button .button:hover {
-  stroke: var(--color-primary);
+  stroke: white;
+  opacity: 1;
 }
 .banner--video__button .button:hover .stroke {
-  stroke: var(--color-primary);
+  stroke: white;
 }
 .banner--video__button .button:hover .fill {
-  fill: var(--color-primary);
+  fill: white;
+}
+@media (min-width: 50em) {
+  .banner--video__button .button:hover {
+    stroke: var(--color-primary);
+  }
+  .banner--video__button .button:hover .stroke {
+    stroke: var(--color-primary);
+  }
+  .banner--video__button .button:hover .fill {
+    fill: var(--color-primary);
+  }
 }
 .banner--video__button .button-mute {
   display: none;
@@ -1437,7 +1450,44 @@ html.with-featherlight {
 }
 .banner--video__button .button-replay,
 .banner--video__button .button-replay-mobile {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
+  stroke: white;
+  opacity: 0.8;
+}
+.banner--video__button .button-replay .stroke,
+.banner--video__button .button-replay-mobile .stroke {
+  stroke: white;
+}
+.banner--video__button .button-replay .fill,
+.banner--video__button .button-replay-mobile .fill {
+  fill: white;
+}
+.banner--video__button .button-replay:hover,
+.banner--video__button .button-replay-mobile:hover {
+  opacity: 1;
+  stroke: white;
+}
+.banner--video__button .button-replay:hover .stroke,
+.banner--video__button .button-replay-mobile:hover .stroke {
+  stroke: white;
+}
+.banner--video__button .button-replay:hover .fill,
+.banner--video__button .button-replay-mobile:hover .fill {
+  fill: white;
+}
+@media (min-width: 50em) {
+  .banner--video__button .button-replay:hover,
+.banner--video__button .button-replay-mobile:hover {
+    stroke: var(--color-primary);
+  }
+  .banner--video__button .button-replay:hover .stroke,
+.banner--video__button .button-replay-mobile:hover .stroke {
+    stroke: var(--color-primary);
+  }
+  .banner--video__button .button-replay:hover .fill,
+.banner--video__button .button-replay-mobile:hover .fill {
+    fill: var(--color-primary);
+  }
 }
 .banner .unmute .button-mute {
   display: block;

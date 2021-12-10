@@ -207,7 +207,7 @@
 			height: 30px;
 			z-index: 999;
 			left: 50%;
-			bottom: 7rem;
+			bottom: 8.5rem;
 			transform: translateX(-50%);
 			@include mq(medium) {
 				bottom: 2rem;
@@ -223,6 +223,7 @@
 			}
 			.button {
 				stroke: white;
+				opacity: 0.8;
 				.stroke {
 					stroke: white;
 				}
@@ -230,12 +231,22 @@
 					fill: white;
 				}
 				&:hover {
-					stroke: var(--color-primary);
+					stroke: white;
+					opacity: 1;
 					.stroke {
-						stroke: var(--color-primary);
+						stroke: white;
 					}
 					.fill {
-						fill: var(--color-primary);
+						fill: white;
+					}
+					@include mq(medium) {
+						stroke: var(--color-primary);
+						.stroke {
+							stroke: var(--color-primary);
+						}
+						.fill {
+							fill: var(--color-primary);
+						}
 					}
 				}
 			}
@@ -246,7 +257,6 @@
 					fill: var(--color-primary);
 				}
 				&:hover {
-
 					.fill {
 						fill: white;
 					}
@@ -258,7 +268,34 @@
 			}
 			.button-replay,
 			.button-replay-mobile {
-				margin-right: 1rem;
+				margin-right: 1.5rem;
+				stroke: white;
+				opacity: 0.8;
+				.stroke {
+					stroke: white;
+				}
+				.fill {
+					fill: white;
+				}
+				&:hover {
+					opacity: 1;
+					stroke: white;
+					.stroke {
+						stroke: white;
+					}
+					.fill {
+						fill: white;
+					}
+					@include mq(medium) {
+						stroke: var(--color-primary);
+						.stroke {
+							stroke: var(--color-primary);
+						}
+						.fill {
+							fill: var(--color-primary);
+						}
+					}
+				}
 			}
 		}
 	}
