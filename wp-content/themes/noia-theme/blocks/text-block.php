@@ -16,14 +16,12 @@ $position = get_field('textblock-image-position');
 	
 	<?php if ( $images) { ?>
 
-	<?php if ( $content ) { ?>
 	<div class="text-block--text<?php if ( $keyline  == '0' ) { ?> small<?php } ?>">
 		<?php if ( $images ) { ?><div class="text-block--text__sticky"><?php } ?>
 		<?php if ( $keyline  == '1' ) { ?><hr /><?php } ?>
 			<?php echo $content ?>
 		<?php if ( $images ) { ?></div><?php } ?>
 	</div>
-	<?php } ?>
 	<?php if( have_rows('textblock-images') ): ?>
 
 		<?php if (count($images) == 1) {?>
