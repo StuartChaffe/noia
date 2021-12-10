@@ -1479,9 +1479,6 @@ html.with-featherlight {
 .banner-space--details + .banner--content {
   margin-top: 0 !important;
 }
-.banner-space .carousel-slider-item-mobile {
-  position: relative !important;
-}
 @media (min-width: 50em) {
   .banner-space .banner--content p {
     font-size: var(--font-size-h2);
@@ -2742,6 +2739,10 @@ html.with-featherlight {
 .spaces .banner-space {
   background-color: rgba(0, 0, 0, 0.4);
 }
+.spaces .carousel .carousel-slider-item-mobile {
+  position: relative !important;
+}
+
 .text-block {
   display: flex;
   position: relative;

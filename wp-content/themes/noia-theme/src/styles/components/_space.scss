@@ -60,4 +60,9 @@
 	}
 	&-item {
 	}
+	.carousel {
+		.carousel-slider-item-mobile {
+			position: relative !important;
+		}
+	}
 }
