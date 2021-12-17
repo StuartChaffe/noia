@@ -1086,15 +1086,15 @@ hr {
 .banner--video__button .button-replay:hover,
 .banner--video__button .button-replay-mobile:hover {
   opacity: 1;
-  stroke: white;
+  stroke: var(--color-primary);
 }
 .banner--video__button .button-replay:hover .stroke,
 .banner--video__button .button-replay-mobile:hover .stroke {
-  stroke: white;
+  stroke: var(--color-primary);
 }
 .banner--video__button .button-replay:hover .fill,
 .banner--video__button .button-replay-mobile:hover .fill {
-  fill: white;
+  fill: var(--color-primary);
 }
 @media (min-width: 50em) {
   .banner--video__button .button-replay:hover,

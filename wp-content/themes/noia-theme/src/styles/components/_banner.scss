@@ -298,12 +298,12 @@
 				}
 				&:hover {
 					opacity: 1;
-					stroke: white;
+					stroke: var(--color-primary);
 					.stroke {
-						stroke: white;
+						stroke: var(--color-primary);
 					}
 					.fill {
-						fill: white;
+						fill: var(--color-primary);
 					}
 					@include mq(medium) {
 						stroke: var(--color-primary);
