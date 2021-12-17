@@ -215,6 +215,7 @@ strong {
 ul,
 ol {
   margin-top: 1.5rem;
+  margin-bottom: 0;
   padding-left: 1em;
 }
 ul + p,
@@ -227,6 +228,7 @@ ol ul,
 ul ol,
 ol ol {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 li p {

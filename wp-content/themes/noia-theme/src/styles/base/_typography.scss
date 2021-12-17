@@ -33,7 +33,7 @@ ul,
 ol {
 	// list-style: none;
 	margin-top: 1.5rem;
-	// margin-bottom: 1.5rem;
+	margin-bottom: 0;
 	padding-left: 1em;
 	+ p {
 		margin-top: 1.5rem;
@@ -45,7 +45,7 @@ ol ul,
 ul ol,
 ol ol {
 	margin-top: 0;
-	// margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 li p {
