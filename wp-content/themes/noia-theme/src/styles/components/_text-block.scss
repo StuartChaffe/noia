@@ -233,7 +233,8 @@
 	margin-bottom: 0;
 }
 .carousel, .container--large {
-	+ .text-block {
+	+ .text-block,
+	+ .bkg--pink {
 		padding-top: 1rem;
 		@include mq(medium) {
 			padding-top: var(--spacing);
@@ -251,7 +252,8 @@
 	@include mq(large) {
 		background-attachment: fixed;
 	}
-	+ .text-block {
+	+ .text-block,
+	+ .bkg--pink {
 		padding-top: 1rem;
 		@include mq(medium) {
 			padding-top: var(--spacing);
