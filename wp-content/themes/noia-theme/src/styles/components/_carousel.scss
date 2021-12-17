@@ -2,7 +2,7 @@
     height: 70vh;
 	overflow: hidden;
 	@include mq(medium) {
-		height: 100vh;
+		height: 70vh;
 	}
 	&-inner {
 		// background: red;
@@ -16,7 +16,7 @@
 	.banner {
 		height: 70vh;
 		@include mq(medium) {
-			height: 100vh;
+			height: 70vh;
 		}
 	}
 	&-slider,

@@ -805,7 +805,7 @@ hr {
 .banner {
   position: relative;
   display: flex;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -857,7 +857,7 @@ hr {
 .banner--text-overlay {
   position: absolute;
   top: 0;
-  height: 100vh;
+  height: 70vh;
   z-index: 999;
   letter-spacing: -0.25px;
   font-size: calc(1rem + 3.5vw);
@@ -885,7 +885,7 @@ hr {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -977,7 +977,7 @@ hr {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   background-size: cover;
   background-position: center;
 }
@@ -1197,7 +1197,7 @@ hr {
 }
 @media (min-width: 50em) {
   .carousel {
-    height: 100vh;
+    height: 70vh;
   }
 }
 .carousel .arrows-hide .slick-prev,
@@ -1209,7 +1209,7 @@ hr {
 }
 @media (min-width: 50em) {
   .carousel .banner {
-    height: 100vh;
+    height: 70vh;
   }
 }
 .carousel-slider, .carousel-slider-space {
