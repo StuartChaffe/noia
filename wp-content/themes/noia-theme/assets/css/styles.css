@@ -1208,7 +1208,7 @@ html.with-featherlight {
 .banner {
   position: relative;
   display: flex;
-  height: 70vh;
+  height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -1217,6 +1217,7 @@ html.with-featherlight {
 }
 @media (max-width: 49.99em) {
   .banner {
+    height: 70vh;
     align-items: center;
   }
 }
@@ -1260,7 +1261,7 @@ html.with-featherlight {
 .banner--text-overlay {
   position: absolute;
   top: 0;
-  height: 70vh;
+  height: 100vh;
   z-index: 999;
   letter-spacing: -0.25px;
   font-size: calc(1rem + 3.5vw);
@@ -1288,7 +1289,7 @@ html.with-featherlight {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -1380,7 +1381,7 @@ html.with-featherlight {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
 }
@@ -1600,7 +1601,7 @@ html.with-featherlight {
 }
 @media (min-width: 50em) {
   .carousel {
-    height: 70vh;
+    height: 100vh;
   }
 }
 .carousel .arrows-hide .slick-prev,
@@ -1612,7 +1613,7 @@ html.with-featherlight {
 }
 @media (min-width: 50em) {
   .carousel .banner {
-    height: 70vh;
+    height: 100vh;
   }
 }
 .carousel-slider, .carousel-slider-space {
