@@ -223,7 +223,7 @@
 			}
 			.button {
 				stroke: white;
-				opacity: 0.8;
+				// opacity: 0.8;
 				.stroke {
 					stroke: white;
 				}
@@ -257,7 +257,7 @@
 				display: none;
 				width: 38px;
 				color: white;
-				opacity: 0.8;
+				// opacity: 0.8;
 				.fill {
 					fill: white;
 				}
@@ -271,17 +271,24 @@
 			.button-unmute {
 				display: block;
 				width: 38px;
-				color: var(--color-primary);
-				stroke: var(--color-primary);
+				color: white;
+				stroke: white;
 				.fill {
-					fill: var(--color-primary);
+					fill: white;
+				}
+				&:hover {
+					color: var(--color-primary);
+					stroke: var(--color-primary);
+					.fill {
+						fill: var(--color-primary);
+					}
 				}
 			}
 			.button-replay,
 			.button-replay-mobile {
 				margin-right: 1.5rem;
 				stroke: white;
-				opacity: 0.8;
+				// opacity: 0.8;
 				.stroke {
 					stroke: white;
 				}

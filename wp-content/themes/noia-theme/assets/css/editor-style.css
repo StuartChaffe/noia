@@ -1020,7 +1020,6 @@ hr {
 }
 .banner--video__button .button {
   stroke: white;
-  opacity: 0.8;
 }
 .banner--video__button .button .stroke {
   stroke: white;
@@ -1035,7 +1034,6 @@ hr {
   display: none;
   width: 38px;
   color: white;
-  opacity: 0.8;
 }
 .banner--video__button .button-mute .fill {
   fill: white;
@@ -1049,17 +1047,23 @@ hr {
 .banner--video__button .button-unmute {
   display: block;
   width: 38px;
+  color: white;
+  stroke: white;
+}
+.banner--video__button .button-unmute .fill {
+  fill: white;
+}
+.banner--video__button .button-unmute:hover {
   color: var(--color-primary);
   stroke: var(--color-primary);
 }
-.banner--video__button .button-unmute .fill {
+.banner--video__button .button-unmute:hover .fill {
   fill: var(--color-primary);
 }
 .banner--video__button .button-replay,
 .banner--video__button .button-replay-mobile {
   margin-right: 1.5rem;
   stroke: white;
-  opacity: 0.8;
 }
 .banner--video__button .button-replay .stroke,
 .banner--video__button .button-replay-mobile .stroke {
