@@ -1654,6 +1654,11 @@ hr {
   margin-right: auto;
   margin-bottom: 2rem;
 }
+@media (min-width: 50em) {
+  .journals-title {
+    margin-bottom: 4rem;
+  }
+}
 .journals-item {
   width: calc(100% / 2 );
   padding: 0 0.5rem;
