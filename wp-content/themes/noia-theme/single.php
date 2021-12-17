@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container--large">
+
 <?php while ( have_posts() ) : the_post(); ?>
 <?php
 	$author = get_field( 'journal-author');
@@ -43,5 +43,5 @@
 		<?php the_content(); ?>
 	</article>	
 <?php endwhile; ?>
-</div>
+
 <?php get_footer(); ?>
