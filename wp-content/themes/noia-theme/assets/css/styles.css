@@ -128,6 +128,8 @@ body {
   background-color: var(--body-background-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
 }
 
 article {
@@ -4276,6 +4278,10 @@ body.nav-open:after {
 
 .mt-s {
   margin-top: var(--spacing-s) !important;
+}
+
+.mt-a {
+  margin-top: auto;
 }
 
 .mb-xxl {

@@ -55,6 +55,10 @@
   margin-top: var(--spacing-s) !important;
 }
 
+.mt-a {
+  margin-top: auto;
+}
+
 .mb-xxl {
   margin-bottom: var(--spacing-xxl) !important;
 }
@@ -334,6 +338,8 @@ body {
   background-color: var(--body-background-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
 }
 
 article {

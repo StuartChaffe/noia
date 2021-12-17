@@ -56,6 +56,9 @@ body {
 	background-color: var(--body-background-color);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	display: flex;
+	flex-direction: column;
 }
 
 article {
