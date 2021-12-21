@@ -262,26 +262,37 @@
 				.fill {
 					fill: white;
 				}
+				.stroke {
+					stroke: white;
+				}
 				&:hover {
-					opacity: 1;
-					.fill {
-						fill: white;
+					@include mq(medium) {
+						color: var(--color-primary);
+						stroke: var(--color-primary);
+						.stroke {
+							stroke: var(--color-primary);
+						}
+						.fill {
+							fill: var(--color-primary);
+						}
 					}
 				}
 			}
 			.button-unmute {
 				display: block;
 				width: 38px;
-				color: white;
-				stroke: white;
+				color: var(--color-primary);
+				stroke: var(--color-primary);
 				.fill {
-					fill: white;
+					fill: var(--color-primary);
 				}
 				&:hover {
-					color: var(--color-primary);
-					stroke: var(--color-primary);
-					.fill {
-						fill: var(--color-primary);
+					@include mq(medium) {
+						color: white;
+						stroke: white;
+						.fill {
+							fill: white;
+						}
 					}
 				}
 			}
@@ -297,13 +308,12 @@
 					fill: white;
 				}
 				&:hover {
-					opacity: 1;
-					stroke: var(--color-primary);
+					stroke: white;
 					.stroke {
-						stroke: var(--color-primary);
+						stroke: white;
 					}
 					.fill {
-						fill: var(--color-primary);
+						fill: white;
 					}
 					@include mq(medium) {
 						stroke: var(--color-primary);

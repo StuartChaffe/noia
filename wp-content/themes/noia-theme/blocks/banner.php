@@ -80,7 +80,7 @@ $controls = get_field( 'banner-background-video-control');
 			<div class="banner--video__button-mobile">
 				<div class="button button-unmute">
 					<svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path class="fill" d="M15 20L6.94444 14.4444L0 14.4V5.6H6.94444L15 0V20Z" fill="white"/>
+						<path class="fill" d="M15 20L6.94444 14.4444L0 14.4V5.6H6.94444L15 0V20Z" fill="currentColor"/>
 						<path class="fill" fill-rule="evenodd" clip-rule="evenodd" d="M28.8995 5.71428L28.1924 5L23.9502 9.28522L19.7081 5.00005L19.001 5.71433L23.2431 9.9995L19 14.2857L19.7071 15L23.9502 10.7138L28.1934 15L28.9005 14.2857L24.6573 9.9995L28.8995 5.71428Z" fill="currentColor"/>
 					</svg>
 				</div>

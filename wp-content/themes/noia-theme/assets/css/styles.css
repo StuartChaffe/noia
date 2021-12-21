@@ -1445,27 +1445,38 @@ html.with-featherlight {
 .banner--video__button .button-mute .fill {
   fill: white;
 }
-.banner--video__button .button-mute:hover {
-  opacity: 1;
+.banner--video__button .button-mute .stroke {
+  stroke: white;
 }
-.banner--video__button .button-mute:hover .fill {
-  fill: white;
+@media (min-width: 50em) {
+  .banner--video__button .button-mute:hover {
+    color: var(--color-primary);
+    stroke: var(--color-primary);
+  }
+  .banner--video__button .button-mute:hover .stroke {
+    stroke: var(--color-primary);
+  }
+  .banner--video__button .button-mute:hover .fill {
+    fill: var(--color-primary);
+  }
 }
 .banner--video__button .button-unmute {
   display: block;
   width: 38px;
-  color: white;
-  stroke: white;
-}
-.banner--video__button .button-unmute .fill {
-  fill: white;
-}
-.banner--video__button .button-unmute:hover {
   color: var(--color-primary);
   stroke: var(--color-primary);
 }
-.banner--video__button .button-unmute:hover .fill {
+.banner--video__button .button-unmute .fill {
   fill: var(--color-primary);
+}
+@media (min-width: 50em) {
+  .banner--video__button .button-unmute:hover {
+    color: white;
+    stroke: white;
+  }
+  .banner--video__button .button-unmute:hover .fill {
+    fill: white;
+  }
 }
 .banner--video__button .button-replay,
 .banner--video__button .button-replay-mobile {
@@ -1482,16 +1493,15 @@ html.with-featherlight {
 }
 .banner--video__button .button-replay:hover,
 .banner--video__button .button-replay-mobile:hover {
-  opacity: 1;
-  stroke: var(--color-primary);
+  stroke: white;
 }
 .banner--video__button .button-replay:hover .stroke,
 .banner--video__button .button-replay-mobile:hover .stroke {
-  stroke: var(--color-primary);
+  stroke: white;
 }
 .banner--video__button .button-replay:hover .fill,
 .banner--video__button .button-replay-mobile:hover .fill {
-  fill: var(--color-primary);
+  fill: white;
 }
 @media (min-width: 50em) {
   .banner--video__button .button-replay:hover,
