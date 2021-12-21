@@ -46,17 +46,29 @@ $controls = get_field( 'banner-background-video-control');
 			</div>
 			<div class="banner--video__button-desktop">
 				<div class="button button-unmute">
-					<svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path class="fill" d="M15 20L6.94444 14.4444L0 14.4V5.6H6.94444L15 0V20Z" fill="white"/>
-						<path class="fill" fill-rule="evenodd" clip-rule="evenodd" d="M28.8995 5.71428L28.1924 5L23.9502 9.28522L19.7081 5.00005L19.001 5.71433L23.2431 9.9995L19 14.2857L19.7071 15L23.9502 10.7138L28.1934 15L28.9005 14.2857L24.6573 9.9995L28.8995 5.71428Z" fill="currentColor"/>
+					<svg width="29px" height="20px" viewBox="0 0 29 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g class="fill" transform="translate(-134.000000, -124.000000)" fill="currentColor">
+								<g transform="translate(134.000000, 124.000000)">
+									<polygon fill-rule="nonzero" points="15 20 6.9 14.4 0 14.4 0 5.6 6.9 5.6 15 0"></polygon>
+									<polygon points="29 5.7 28.3 5 24 9.3 19.8 5 19.1 5.7 23.3 10 19.1 14.3 19.8 15 24 10.7 28.2 15 28.9 14.3 24.8 10"></polygon>
+								</g>
+							</g>
+						</g>
 					</svg>
 				</div>
 				<div class="button-mute">
-					<svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path class="stoke" d="M24 18C25.6351 16.8826 26.8781 15.1649 27.5192 13.1364C28.1603 11.1076 28.1603 8.89227 27.5192 6.86362C26.8782 4.83502 25.6351 3.1173 24 2" stroke="currentColor"/>
-						<path class="stoke" d="M21.0037 14C22.2525 13.1033 23.0008 11.6037 23 9.99902C22.9993 8.39438 22.2496 6.89529 21 6" stroke="currentColor"/>
-						<path class="fill" d="M15 20L6.94444 14.4444L0 14.4V5.6H6.94444L15 0V20Z" fill="currentColor"/>
-					</svg>
+				<svg width="29px" height="20px" viewBox="0 0 29 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g class="fill" transform="translate(-134.000000, -101.000000)" fill="currentColor" fill-rule="nonzero">
+            <g transform="translate(134.000000, 101.000000)">
+                <polygon points="15 20 6.9 14.4 0 14.4 0 5.6 6.9 5.6 15 0"></polygon>
+                <path d="M24.8,18.4 C26.5,17.2 27.8,15.4 28.5,13.3 C28.8,12.2 29,11.1 29,10 C29,8.9 28.8,7.8 28.5,6.7 C27.8,4.6 26.5,2.8 24.8,1.6 L24.2,2.4 C25.7,3.4 26.9,5.1 27.5,7 C27.8,8 28,9 28,10 C28,11 27.8,12 27.5,13 C26.9,14.9 25.7,16.6 24.2,17.6 L24.8,18.4 L24.8,18.4 Z" ></path>
+                <path d="M21.8,14.4 L21.8,14.4 C23.2,13.4 24,11.8 24,10 L24,10 C24,8.2 23.2,6.6 21.8,5.6 L21.2,6.4 C22.3,7.2 23,8.5 23,10 L23,10 C23,11.4 22.3,12.8 21.2,13.6 L21.8,14.4"></path>
+            </g>
+        </g>
+    </g>
+</svg>
 				</div>
 			</div>
 		</div>
@@ -75,17 +87,29 @@ $controls = get_field( 'banner-background-video-control');
 			</div>
 			<div class="banner--video__button-mobile">
 				<div class="button button-unmute">
-					<svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path class="fill" d="M15 20L6.94444 14.4444L0 14.4V5.6H6.94444L15 0V20Z" fill="currentColor"/>
-						<path class="fill" fill-rule="evenodd" clip-rule="evenodd" d="M28.8995 5.71428L28.1924 5L23.9502 9.28522L19.7081 5.00005L19.001 5.71433L23.2431 9.9995L19 14.2857L19.7071 15L23.9502 10.7138L28.1934 15L28.9005 14.2857L24.6573 9.9995L28.8995 5.71428Z" fill="currentColor"/>
+					<svg width="29px" height="20px" viewBox="0 0 29 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g class="fill" transform="translate(-134.000000, -124.000000)" fill="currentColor">
+								<g transform="translate(134.000000, 124.000000)">
+									<polygon fill-rule="nonzero" points="15 20 6.9 14.4 0 14.4 0 5.6 6.9 5.6 15 0"></polygon>
+									<polygon points="29 5.7 28.3 5 24 9.3 19.8 5 19.1 5.7 23.3 10 19.1 14.3 19.8 15 24 10.7 28.2 15 28.9 14.3 24.8 10"></polygon>
+								</g>
+							</g>
+						</g>
 					</svg>
 				</div>
 				<div class="button-mute">
-					<svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path class="stoke" d="M24 18C25.6351 16.8826 26.8781 15.1649 27.5192 13.1364C28.1603 11.1076 28.1603 8.89227 27.5192 6.86362C26.8782 4.83502 25.6351 3.1173 24 2" stroke="currentColor"/>
-						<path class="stoke" d="M21.0037 14C22.2525 13.1033 23.0008 11.6037 23 9.99902C22.9993 8.39438 22.2496 6.89529 21 6" stroke="currentColor"/>
-						<path class="fill" d="M15 20L6.94444 14.4444L0 14.4V5.6H6.94444L15 0V20Z" fill="currentColor"/>
-					</svg>
+				<svg width="29px" height="20px" viewBox="0 0 29 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g class="fill" transform="translate(-134.000000, -101.000000)" fill="currentColor" fill-rule="nonzero">
+            <g transform="translate(134.000000, 101.000000)">
+                <polygon points="15 20 6.9 14.4 0 14.4 0 5.6 6.9 5.6 15 0"></polygon>
+                <path d="M24.8,18.4 C26.5,17.2 27.8,15.4 28.5,13.3 C28.8,12.2 29,11.1 29,10 C29,8.9 28.8,7.8 28.5,6.7 C27.8,4.6 26.5,2.8 24.8,1.6 L24.2,2.4 C25.7,3.4 26.9,5.1 27.5,7 C27.8,8 28,9 28,10 C28,11 27.8,12 27.5,13 C26.9,14.9 25.7,16.6 24.2,17.6 L24.8,18.4 L24.8,18.4 Z" ></path>
+                <path d="M21.8,14.4 L21.8,14.4 C23.2,13.4 24,11.8 24,10 L24,10 C24,8.2 23.2,6.6 21.8,5.6 L21.2,6.4 C22.3,7.2 23,8.5 23,10 L23,10 C23,11.4 22.3,12.8 21.2,13.6 L21.8,14.4"></path>
+            </g>
+        </g>
+    </g>
+</svg>
 				</div>
 			</div>
 		</div>
