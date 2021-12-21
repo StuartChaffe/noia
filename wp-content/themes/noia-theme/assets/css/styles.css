@@ -1410,6 +1410,11 @@ html.with-featherlight {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 49.99em) {
+  .banner--video video {
+    top: 35vh;
+  }
+}
 .banner--video__button {
   position: absolute;
   display: flex;
