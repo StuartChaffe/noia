@@ -3456,6 +3456,7 @@ html.with-featherlight {
   .global-header__menu-btn:hover {
     width: 60px;
     height: 60px;
+    background-color: black;
   }
 }
 
