@@ -1402,7 +1402,7 @@ html.with-featherlight {
 .banner--video video {
   min-width: 100%;
   min-height: 100%;
-  max-width: none;
+  max-width: 100%;
   position: absolute !important;
   top: 50%;
   left: 50%;
