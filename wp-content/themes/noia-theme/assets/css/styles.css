@@ -1384,12 +1384,13 @@ html.with-featherlight {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   background-size: cover;
   background-position: center;
 }
 @media (min-width: 50em) {
   .banner--video {
+    height: 100vh;
     transform: scale(1.1);
   }
 }
