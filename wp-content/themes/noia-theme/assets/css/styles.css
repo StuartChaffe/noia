@@ -1256,7 +1256,7 @@ html.with-featherlight {
   }
 }
 .banner--logo-large {
-  max-width: 45%;
+  max-width: 55%;
 }
 .banner .hide {
   opacity: 0;
@@ -1409,7 +1409,7 @@ html.with-featherlight {
   height: 30px;
   z-index: 999;
   left: 50%;
-  bottom: 2rem;
+  bottom: 1rem;
   transform: translateX(-50%);
 }
 @media (min-width: 50em) {
@@ -2014,8 +2014,7 @@ html.with-featherlight {
   }
 }
 .journals .journals {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
 }
 .journals-title {
   font-size: 50px;
@@ -3458,6 +3457,9 @@ html.with-featherlight {
 .global-header--nav__mobile.is-toggled {
   transform: translateX(-100%);
   transition: all 0.2s ease-in-out;
+}
+.global-header--nav__mobile.is-toggled:focus {
+  background-color: var(--color-primary);
 }
 
 .global-header--nav-btn.is-toggled {

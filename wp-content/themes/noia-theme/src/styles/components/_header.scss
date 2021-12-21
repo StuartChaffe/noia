@@ -85,6 +85,9 @@
 			height: 60px;
 		}
 	}
+	// &:focus {
+	// 	background-color: var(--color-primary);
+	// }
 }
 
 .menu-active {
@@ -94,6 +97,9 @@
 	transform: translateX(-100%);
 	transition: all 0.2s ease-in-out;
 	// background: $body-background-color;
+	&:focus {
+		background-color: var(--color-primary);
+	}
 }
 .global-header--nav-btn.is-toggled {
 	transition: .3s background-color ease-in-out;
