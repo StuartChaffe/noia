@@ -34,17 +34,15 @@ $controls = get_field( 'banner-background-video-control');
 	<?php if ( $controls ) { ?>
 		<div class="banner--video__button hidemobile">
 			<div class="button button-replay">
-			<svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<g clip-path="url(#clip0_523_787)">
-					<path class="fill" d="M12 2.5L8 5L8 -1.74846e-07L12 2.5Z" fill="currentColor"/>
-					<path class="fill" fill-rule="evenodd" clip-rule="evenodd" d="M8 2C3.58172 2 0 5.58172 0 10C0 14.4183 3.58172 18 8 18C12.4183 18 16 14.4183 16 10H15C15 13.866 11.866 17 8 17C4.13401 17 1 13.866 1 10C1 6.13401 4.13401 3 8 3V2Z" fill="currentColor"/>
-				</g>
-				<defs>
-					<clipPath id="clip0_523_787">
-						<rect class="fill" width="16" height="20" fill="currentColor"/>
-					</clipPath>
-				</defs>
-			</svg>
+			<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g class="fill" transform="translate(-134.000000, -68.000000)" fill="currentColor">
+							<g transform="translate(134.000000, 68.000000)">
+								<path d="M9,3.33333333 C4.6125,3.33333333 1.125,6.77777778 1.125,11.1111111 C1.125,15.4444444 4.6125,18.8888889 9,18.8888889 C13.3875,18.8888889 16.875,15.4444444 16.875,11.1111111 L18,11.1111111 C18,16 13.95,20 9,20 C4.05,20 0,16 0,11.1111111 C0,6.22222222 4.05,2.22222222 9,2.22222222 L9,0 L13.5,2.77777778 L9,5.55555556 L9,3.33333333 Z"></path>
+							</g>
+						</g>
+					</g>
+				</svg>
 			</div>
 			<div class="banner--video__button-desktop">
 				<div class="button button-unmute">
@@ -65,16 +63,14 @@ $controls = get_field( 'banner-background-video-control');
 		<?php if ( $bkgvideomobile ) { ?>
 		<div class="banner--video__button hidedesktop">
 			<div class="button-replay-mobile">
-				<svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<g clip-path="url(#clip0_523_787)">
-						<path class="fill" d="M12 2.5L8 5L8 -1.74846e-07L12 2.5Z" fill="currentColor"/>
-						<path class="fill" fill-rule="evenodd" clip-rule="evenodd" d="M8 2C3.58172 2 0 5.58172 0 10C0 14.4183 3.58172 18 8 18C12.4183 18 16 14.4183 16 10H15C15 13.866 11.866 17 8 17C4.13401 17 1 13.866 1 10C1 6.13401 4.13401 3 8 3V2Z" fill="currentColor"/>
+				<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g class="fill" transform="translate(-134.000000, -68.000000)" fill="currentColor">
+							<g transform="translate(134.000000, 68.000000)">
+								<path d="M9,3.33333333 C4.6125,3.33333333 1.125,6.77777778 1.125,11.1111111 C1.125,15.4444444 4.6125,18.8888889 9,18.8888889 C13.3875,18.8888889 16.875,15.4444444 16.875,11.1111111 L18,11.1111111 C18,16 13.95,20 9,20 C4.05,20 0,16 0,11.1111111 C0,6.22222222 4.05,2.22222222 9,2.22222222 L9,0 L13.5,2.77777778 L9,5.55555556 L9,3.33333333 Z"></path>
+							</g>
+						</g>
 					</g>
-					<defs>
-						<clipPath id="clip0_523_787">
-							<rect class="fill" width="16" height="20" fill="currentColor"/>
-						</clipPath>
-					</defs>
 				</svg>
 			</div>
 			<div class="banner--video__button-mobile">
