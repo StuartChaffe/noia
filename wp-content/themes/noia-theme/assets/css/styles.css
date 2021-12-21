@@ -1634,7 +1634,12 @@ html.with-featherlight {
   height: 100%;
 }
 .carousel-slider .slick-list, .carousel-slider .slick-track, .carousel-slider .slick-slide, .carousel-slider-space .slick-list, .carousel-slider-space .slick-track, .carousel-slider-space .slick-slide {
-  height: 100vh !important;
+  height: 70vh !important;
+}
+@media (min-width: 50em) {
+  .carousel-slider .slick-list, .carousel-slider .slick-track, .carousel-slider .slick-slide, .carousel-slider-space .slick-list, .carousel-slider-space .slick-track, .carousel-slider-space .slick-slide {
+    height: 100vh !important;
+  }
 }
 .carousel-slider .slick-slide, .carousel-slider-space .slick-slide {
   max-height: 100vh !important;

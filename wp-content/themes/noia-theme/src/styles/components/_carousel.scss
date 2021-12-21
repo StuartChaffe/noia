@@ -23,7 +23,10 @@
 	&-slider-space {
 		height: 100%;
 		.slick-list, .slick-track, .slick-slide {
-			height: 100vh !important;
+			height: 70vh !important;
+			@include mq(medium) {
+				height: 100vh !important;
+			}
 		}
 		.slick-slide {
 			max-height: 100vh !important;
