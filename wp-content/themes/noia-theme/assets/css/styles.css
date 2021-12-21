@@ -1392,6 +1392,7 @@ html.with-featherlight {
   height: 70vh;
   background-size: cover;
   background-position: center;
+  background: black;
 }
 @media (min-width: 50em) {
   .banner--video {
@@ -1402,6 +1403,7 @@ html.with-featherlight {
 .banner--video video {
   min-width: 100%;
   min-height: 100%;
+  max-width: none;
   height: 70vh;
   position: absolute !important;
   top: 50%;
