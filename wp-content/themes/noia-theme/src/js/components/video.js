@@ -26,5 +26,9 @@ jQuery(function ($) {
 	$( ".button-replay-mobile" ).click(function() {
 		$('#video-mobile').get(0).currentTime = 0;
 	});
-	
+
+	setTimeout(function(){
+		$('.banner--logo').removeClass('hide').addClass('hide');
+	},10000);
+
 });
