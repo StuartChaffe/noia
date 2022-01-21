@@ -1412,6 +1412,7 @@ html.with-featherlight {
 }
 @media (max-width: 49.99em) {
   .banner--video video {
+    width: 100%;
     top: 35vh;
   }
 }

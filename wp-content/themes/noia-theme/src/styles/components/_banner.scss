@@ -204,7 +204,7 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			@include mq($until: medium) {
-				// width: 100%;
+				width: 100%;
 				top: 35vh;
 			}
 		}
