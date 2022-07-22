@@ -8,6 +8,9 @@
 <link rel="icon" href="/favicon.ico"><!-- 32×32 -->
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0146a544b89e552c5e3c27ffa/34537882a71b3b4245a3f3fbb.js");</script>
+
+	
 <?php wp_head(); ?>
 
 <!-- Google Analytics -->
